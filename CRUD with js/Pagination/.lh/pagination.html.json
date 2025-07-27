@@ -1,0 +1,54 @@
+{
+    "sourceFile": "pagination.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1753443733918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753443756552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <!DOCTYPE html>\r\n     <html lang=\"en\">\r\n \r\n     <head>\r\n-        <link rel=\"stylesheet\" href=\"style.css\" >\r\n+        <link rel=\"stylesheet\" href=\"pagination.css\" >\r\n     </head>\r\n \r\n     <body>\r\n         <h2>User Data Management</h2>\r\n@@ -47,7 +47,7 @@\n     <option >30</option>\r\n     <option >50</option>\r\n </select>\r\n <div id=\"footer\"> </div>\r\n-<script src=\"apply.js\" ></script>\r\n+<script src=\"pagination.js\" ></script>\r\n     </body>\r\n     </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753443768100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,18 +27,8 @@\n                 <button id=\"edit_data_btn\" onClick=\"performEdit(); addBgcolorToAge(); validateInputs();\" >Update</button>\r\n                 <button id=\"cancel_data_btn\" onClick=\"cancelDataUpdate()\" >Cancel</button>\r\n             </div>\r\n         <table id=\"outputTable\">\r\n-            <!-- <thead>\r\n-                <tr>\r\n-                <th>Id</th>\r\n-                <th data-column=\"name\">Name <span class=\"arrow\" onclick=\"sortTable(1, this); \" data-order=\"asc\">&#9650;</span></th>\r\n-                <th data-column=\"age\">Age <span class=\"arrow\" onclick=\"sortTable(2, this)\" data-order=\"asc\">&#9650;</span></th>\r\n-                <th data-column=\"state\">State <span class=\"arrow\" onclick=\"sortTable(3, this)\" data-order=\"asc\">&#9650;</span></th>\r\n-                <th data-column=\"city\">City <span class=\"arrow\" onclick=\"sortTable(4, this)\" data-order=\"asc\">&#9650;</span></th>\r\n-                <th>Action</th>\r\n-                </tr>\r\n-            </thead> -->\r\n             <tbody> </tbody>\r\n         </table>\r\n  <!--rpp =rows per page-->\r\n <select id=\"pagesToShow\">\r\n"
+                },
+                {
+                    "date": 1753462760501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             <select id=\"city\">\r\n             <option value=\"\" >-- Select an option --</option>\r\n         </select>\r\n             <br>\r\n-    <button type=\"submit\" id=\"addData\" onclick=\" addDataToTable();\">Submit</button>\r\n+    <button type=\"submit\" id=\"addData\" onclick=\" addTableDataToStorage();\">Submit</button>\r\n         </div>\r\n         \r\n         <div id=\"edit_section\" style=\"display: none;\">\r\n                 <button id=\"edit_data_btn\" onClick=\"performEdit(); addBgcolorToAge(); validateInputs();\" >Update</button>\r\n"
+                },
+                {
+                    "date": 1753523088542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n             <tbody> </tbody>\r\n         </table>\r\n  <!--rpp =rows per page-->\r\n <select id=\"pagesToShow\">\r\n+    <option>All</option>\r\n     <option >10</option>\r\n     <option >20</option>\r\n     <option >30</option>\r\n     <option >50</option>\r\n"
+                },
+                {
+                    "date": 1753523557010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tbody> </tbody>\r\n         </table>\r\n  <!--rpp =rows per page-->\r\n <select id=\"pagesToShow\">\r\n-    <option>All</option>\r\n+    <option value=\"30\">All</option>\r\n     <option >10</option>\r\n     <option >20</option>\r\n     <option >30</option>\r\n     <option >50</option>\r\n"
+                },
+                {
+                    "date": 1753523617010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tbody> </tbody>\r\n         </table>\r\n  <!--rpp =rows per page-->\r\n <select id=\"pagesToShow\">\r\n-    <option value=\"30\">All</option>\r\n+    <option value=\"outputTable.rows.length\">All</option>\r\n     <option >10</option>\r\n     <option >20</option>\r\n     <option >30</option>\r\n     <option >50</option>\r\n"
+                },
+                {
+                    "date": 1753523643215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tbody> </tbody>\r\n         </table>\r\n  <!--rpp =rows per page-->\r\n <select id=\"pagesToShow\">\r\n-    <option value=\"outputTable.rows.length\">All</option>\r\n+    <option >All</option>\r\n     <option >10</option>\r\n     <option >20</option>\r\n     <option >30</option>\r\n     <option >50</option>\r\n"
+                },
+                {
+                    "date": 1753527071180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,13 +31,14 @@\n             <tbody> </tbody>\r\n         </table>\r\n  <!--rpp =rows per page-->\r\n <select id=\"pagesToShow\">\r\n-    <option >All</option>\r\n+    \r\n     <option >10</option>\r\n     <option >20</option>\r\n     <option >30</option>\r\n     <option >50</option>\r\n+    <option >All</option>\r\n </select>\r\n <div id=\"footer\"> </div>\r\n <script src=\"pagination.js\" ></script>\r\n     </body>\r\n"
+                },
+                {
+                    "date": 1753527116574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     <option >10</option>\r\n     <option >20</option>\r\n     <option >30</option>\r\n     <option >50</option>\r\n-    <option >All</option>\r\n+    <option value=\"100\" >All</option>\r\n </select>\r\n <div id=\"footer\"> </div>\r\n <script src=\"pagination.js\" ></script>\r\n     </body>\r\n"
+                }
+            ],
+            "date": 1753443733918,
+            "name": "Commit-0",
+            "content": "\r\n    <!DOCTYPE html>\r\n    <html lang=\"en\">\r\n\r\n    <head>\r\n        <link rel=\"stylesheet\" href=\"style.css\" >\r\n    </head>\r\n\r\n    <body>\r\n        <h2>User Data Management</h2>\r\n        <button onclick=\"show()\">Show form</button>\r\n\r\n        <div id=\"formContainer\" style=\"display:none\">\r\n            <input type=\"text\" id=\"name\" placeholder=\"Enter Full Name...\" >\r\n            <input type=\"number\" id=\"age\" placeholder=\"Enter Age...\" >\r\n            <select id=\"state\">\r\n            <option value=\"\" >-- Select an option --</option>\r\n        </select>\r\n            <select id=\"city\">\r\n            <option value=\"\" >-- Select an option --</option>\r\n        </select>\r\n            <br>\r\n    <button type=\"submit\" id=\"addData\" onclick=\" addDataToTable();\">Submit</button>\r\n        </div>\r\n        \r\n        <div id=\"edit_section\" style=\"display: none;\">\r\n                <button id=\"edit_data_btn\" onClick=\"performEdit(); addBgcolorToAge(); validateInputs();\" >Update</button>\r\n                <button id=\"cancel_data_btn\" onClick=\"cancelDataUpdate()\" >Cancel</button>\r\n            </div>\r\n        <table id=\"outputTable\">\r\n            <!-- <thead>\r\n                <tr>\r\n                <th>Id</th>\r\n                <th data-column=\"name\">Name <span class=\"arrow\" onclick=\"sortTable(1, this); \" data-order=\"asc\">&#9650;</span></th>\r\n                <th data-column=\"age\">Age <span class=\"arrow\" onclick=\"sortTable(2, this)\" data-order=\"asc\">&#9650;</span></th>\r\n                <th data-column=\"state\">State <span class=\"arrow\" onclick=\"sortTable(3, this)\" data-order=\"asc\">&#9650;</span></th>\r\n                <th data-column=\"city\">City <span class=\"arrow\" onclick=\"sortTable(4, this)\" data-order=\"asc\">&#9650;</span></th>\r\n                <th>Action</th>\r\n                </tr>\r\n            </thead> -->\r\n            <tbody> </tbody>\r\n        </table>\r\n <!--rpp =rows per page-->\r\n<select id=\"pagesToShow\">\r\n    <option >10</option>\r\n    <option >20</option>\r\n    <option >30</option>\r\n    <option >50</option>\r\n</select>\r\n<div id=\"footer\"> </div>\r\n<script src=\"apply.js\" ></script>\r\n    </body>\r\n    </html>"
+        }
+    ]
+}

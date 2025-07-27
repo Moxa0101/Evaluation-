@@ -1,0 +1,29 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+button{
+    background-color: rgb(10, 83, 161);
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px;
+}
+:disabled{
+    background-color:grey;
+}
+.activePage{
+    background-color: aqua;
+    color: white;
+}

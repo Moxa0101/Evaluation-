@@ -1,0 +1,39 @@
+.ss{
+  background-color:rgb(21, 21, 155);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  width: 70px;
+  border-color: green;
+  margin: 10px;
+  
+}
+button:disabled {
+  background-color: #ccc;
+  color: blue;
+  cursor: not-allowed;
+}
+.tbl{
+  border:#ccc;
+  grid-column: auto;
+background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+
+
+  min-height: 100vh;
+  color: black;
+  padding: 2rem;
+  min-width: 150vh;
+  margin: 50px;
+  border:solid 2px blue;
+}
+
+.ctnbtn{
+  background-color: white;
+  border: none;
+
+}
+.ctnbtn.active{
+  background-color: black;
+  color: white;
+  border:2px;
+}

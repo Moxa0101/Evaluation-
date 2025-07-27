@@ -1,0 +1,31 @@
+.record-box{
+  border: solid 3px black;
+  border-radius: 12px;
+  margin: 20px;
+
+}
+.field-label{
+  color: rgb(7, 7, 119);
+  font-weight: 500;
+}
+.status-green{
+  color: green;
+}
+.status-red{
+  color: red;
+}
+.status-yellow{
+  color: rgb(83, 83, 5);
+  
+}
+.record-box:hover{
+  background-color: aliceblue;
+  font-size: 130%;
+}
+.style{
+  color:rgb(44, 44, 211); 
+  font-family:  sans-serif;
+}
+.container{
+  margin-left: 20px;
+}

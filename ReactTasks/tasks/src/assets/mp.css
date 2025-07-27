@@ -1,0 +1,11 @@
+.mpctn{
+  display: flex;
+  padding: 10px;
+  margin:auto;
+  flex-grow: 1;
+
+}
+.mpctn1{
+  margin:10px;
+  margin-bottom: auto;
+}

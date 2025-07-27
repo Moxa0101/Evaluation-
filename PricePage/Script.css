@@ -1,0 +1,115 @@
+.title{
+    text-align: center;
+    
+}
+.top{
+    text-align: center;
+    font-weight: lighter;
+}
+.box{
+    padding-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border: 2px;
+    height: 410px;
+    width: 300px;
+    border: 2px solid grey;
+    border-radius: 8px;
+   color: grey;
+
+}
+.box:hover{
+    border-color: rgb(65, 185, 185) ;
+    transform: scale(1.05);
+}
+.popular {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00bcd4;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.custom-btn{
+    height: 30px;
+    width: 250px;
+    border:solid lightgrey ;
+    border-radius: 4px;
+    color: grey;
+    text-align:center;
+
+}
+.custom-btn:hover{
+    background-color: rgb(65, 185, 185);
+    color: white;
+}
+.custom-container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    justify-content: center;
+}
+.heading{
+    color: black;
+}
+.plan{
+    background-color: white;
+    border:2px solid grey;
+   size:10px;
+  padding: 4px 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align:left;
+  color:grey;
+  right:1cm;
+ border-right: none;
+   align-items: center;
+  color: rgb(65, 185, 185);
+}
+.plan:hover{
+    background-color: grey;
+    color: white;
+}
+.plan2{
+    color: rgb(65, 185, 185) ;
+     background-color: white;
+    border:2px solid grey;
+   size:10px;
+  padding: 4px 10px;
+  border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    align-items: center;
+  text-align:left;
+  color: rgb(65, 185, 185);
+  right:1cm;
+}
+.plan2:hover{
+     background-color: grey;
+    color: white;
+}
+ .plan-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 0;
+}
+.active-plan {
+    background-color:grey;  
+    color: white;
+    border: 1px solid ;
+}

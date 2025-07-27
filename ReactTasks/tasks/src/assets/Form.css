@@ -1,0 +1,19 @@
+.btn{
+  margin: 3px;
+  justify-content: center;
+  
+}
+.btn:hover{
+  background-color: #61dafb;
+  transform: scale(1.2);
+
+}
+.start{
+  background-color:rgb(34, 74, 138);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  color: white;
+}

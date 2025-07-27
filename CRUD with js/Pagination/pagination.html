@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="pagination.css" >
+    </head>
+
+    <body>
+        <h2>User Data Management</h2>
+        <button onclick="show()">Show form</button>
+
+        <div id="formContainer" style="display:none">
+            <input type="text" id="name" placeholder="Enter Full Name..." >
+            <input type="number" id="age" placeholder="Enter Age..." >
+            <select id="state">
+            <option value="" >-- Select an option --</option>
+        </select>
+            <select id="city">
+            <option value="" >-- Select an option --</option>
+        </select>
+            <br>
+    <button type="submit" id="addData" onclick=" addTableDataToStorage();">Submit</button>
+        </div>
+        
+        <div id="edit_section" style="display: none;">
+                <button id="edit_data_btn" onClick="performEdit(); addBgcolorToAge(); validateInputs();" >Update</button>
+                <button id="cancel_data_btn" onClick="cancelDataUpdate()" >Cancel</button>
+            </div>
+        <table id="outputTable">
+            <tbody> </tbody>
+        </table>
+ <!--rpp =rows per page-->
+<select id="pagesToShow">
+    
+    <option >10</option>
+    <option >20</option>
+    <option >30</option>
+    <option >50</option>
+    <option value="100" >All</option>
+</select>
+<div id="footer"> </div>
+<script src="pagination.js" ></script>
+    </body>
+    </html>

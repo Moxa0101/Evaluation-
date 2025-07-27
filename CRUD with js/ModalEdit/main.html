@@ -1,0 +1,76 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css" >
+    </head>
+
+    <body>
+        <h2>User Data Management</h2>
+        <button onclick="show()">Show form</button>
+
+        <div id="formContainer" style="display:none">
+            <input type="text" id="name" placeholder="Enter Full Name..." >
+            <input type="number" id="age" placeholder="Enter Age..." >
+            <select id="state">
+            <option value="" >-- Select an option --</option>
+        </select>
+            <select id="city">
+            <option value="" >-- Select an option --</option>
+        </select>
+            <br>
+    <button type="submit" id="addData" onclick=" addDataToTable();">Submit</button>
+        </div>
+    
+        <table id="outputTable">
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th data-column="name">Name <span class="arrow" onclick="sortTable(1, this); " data-order="asc">&#9650;</span></th>
+                <th data-column="age">Age <span class="arrow" onclick="sortTable(2, this)" data-order="asc">&#9650;</span></th>
+                <th data-column="state">State <span class="arrow" onclick="sortTable(3, this)" data-order="asc">&#9650;</span></th>
+                <th data-column="city">City <span class="arrow" onclick="sortTable(4, this)" data-order="asc">&#9650;</span></th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody> </tbody>
+        </table>
+
+         <div id="ModalToEdit"  class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editId">
+                     <input type="text" id="EditName" placeholder="Enter Full Name..." >
+                    <input type="number" id="EditAge" placeholder="Enter Age..." >
+                    <select id="EditState" onchange="populateCities(this.value, 'EditCity')">
+                    <option value="" >-- Select an option --</option>
+                </select>
+                    <select id="EditCity" >
+                    <option value="" >-- Select an option --</option>
+                </select>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="performEdit()" type="button" id="edit_btn" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        
+        <script src="modalEdit.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+    </body>
+    </html>

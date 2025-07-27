@@ -1,0 +1,46 @@
+{
+    "sourceFile": "pagination.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1753443792282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753443798941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,12 @@\n \r\n tr:nth-child(even) {\r\n     background-color: #dddddd;\r\n }\r\n-button{\r\n+/* button{\r\n     background-color: rgb(10, 83, 161);\r\n     padding: 10px;\r\n     border-radius: 12px;\r\n     color: white;\r\n     margin: 20px;\r\n-}\r\n+} */\r\n \r\n"
+                },
+                {
+                    "date": 1753443850351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,12 @@\n \r\n tr:nth-child(even) {\r\n     background-color: #dddddd;\r\n }\r\n-/* button{\r\n+button{\r\n     background-color: rgb(10, 83, 161);\r\n     padding: 10px;\r\n     border-radius: 12px;\r\n     color: white;\r\n     margin: 20px;\r\n-} */\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1753504007382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,4 +20,8 @@\n     color: white;\r\n     margin: 20px;\r\n }\r\n \r\n+#pagesToShow{\r\n+    position: relative;\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753527143665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,4 @@\n     color: white;\r\n     margin: 20px;\r\n }\r\n \r\n-#pagesToShow{\r\n-    position: relative;\r\n-    \r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753632385547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+table {\r\n+    font-family: arial, sans-serif;\r\n+    border-collapse: collapse;\r\n+    width: 100%;\r\n+}\r\n+tr,\r\n+th {\r\n+    border: 1px solid #dddddd;\r\n+    text-align: left;\r\n+    padding: 8px;\r\n+}\r\n+\r\n+tr:nth-child(even) {\r\n+    background-color: #dddddd;\r\n+}\r\n+button{\r\n+    background-color: rgb(10, 83, 161);\r\n+    padding: 10px;\r\n+    border-radius: 12px;\r\n+    color: white;\r\n+    margin: 20px;\r\n+}\r\n+:disabled{\r\n+    background-color: aquamarine;\r\n+}\r\n"
+                },
+                {
+                    "date": 1753632525076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,27 +22,8 @@\n }\r\n :disabled{\r\n     background-color: aquamarine;\r\n }\r\n-table {\r\n-    font-family: arial, sans-serif;\r\n-    border-collapse: collapse;\r\n-    width: 100%;\r\n-}\r\n-tr,\r\n-th {\r\n-    border: 1px solid #dddddd;\r\n-    text-align: left;\r\n-    padding: 8px;\r\n-}\r\n-\r\n-tr:nth-child(even) {\r\n-    background-color: #dddddd;\r\n-}\r\n-button{\r\n-    background-color: rgb(10, 83, 161);\r\n-    padding: 10px;\r\n-    border-radius: 12px;\r\n+.activePage{\r\n+    background-color: aqua;\r\n     color: white;\r\n-    margin: 20px;\r\n-}\r\n-\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753634208166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     color: white;\r\n     margin: 20px;\r\n }\r\n :disabled{\r\n-    background-color: aquamarine;\r\n+    background-color:grey;\r\n }\r\n .activePage{\r\n     background-color: aqua;\r\n     color: white;\r\n"
+                }
+            ],
+            "date": 1753443792282,
+            "name": "Commit-0",
+            "content": "table {\r\n    font-family: arial, sans-serif;\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n}\r\ntr,\r\nth {\r\n    border: 1px solid #dddddd;\r\n    text-align: left;\r\n    padding: 8px;\r\n}\r\n\r\ntr:nth-child(even) {\r\n    background-color: #dddddd;\r\n}\r\nbutton{\r\n    background-color: rgb(10, 83, 161);\r\n    padding: 10px;\r\n    border-radius: 12px;\r\n    color: white;\r\n    margin: 20px;\r\n}\r\n\r\n"
+        }
+    ]
+}

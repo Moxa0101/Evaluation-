@@ -1,0 +1,18 @@
+[
+    {
+     "Name" : "Moxa Shah" ,
+     "Email" : "moxasanghavi@gmail.com" ,    
+      "status" : "Active"
+    },
+    {
+         "Name" : "Zeel Shah" ,
+     "Email" : "zeelsanghavi@gmail.com" ,    
+      "status" : "Inactive"
+    },
+    {
+         "Name" : "Nimita Shah" ,
+     "Email" : "nimitasanghavi@gmail.com" ,    
+      "status" : "Pending"
+    }
+
+]
