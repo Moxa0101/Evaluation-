@@ -1,0 +1,54 @@
+{
+    "sourceFile": "ex.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1754500747233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1754500820346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n+    <link rel=\"stylesheet\" href=\"style.css\">\r\n </head>\r\n \r\n <body>\r\n     <form action=\"\">\r\n"
+                },
+                {
+                    "date": 1754501462990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n             <label for=\"\">Password</label>\r\n-            <span></span>\r\n+            <span>show</span>\r\n         </div>\r\n     </form>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1754501876435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n-            <input type=\"number\" name=\"\" id=\"\" placeholder=\"\">\r\n+            <input type=\"number\" name=\"\" id=\"\" placeholder=\"Enter your mobile number here\">\r\n             <label for=\"\">Mobile no.</label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n"
+                },
+                {
+                    "date": 1754502440448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n-            <input type=\"number\" name=\"\" id=\"\" placeholder=\"Enter your mobile number here\">\r\n+            <input type=\"number\" name=\"\" id=\"\" placeholder=\"\">\r\n             <label for=\"\">Mobile no.</label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n"
+                },
+                {
+                    "date": 1754503105050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,12 @@\n \r\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n-            <input type=\"number\" name=\"\" id=\"\" placeholder=\"\">\r\n-            <label for=\"\">Mobile no.</label>\r\n+            <input type=\"number\" name=\"\" id=\"\" placeholder=\"Enter your mobile number\">\r\n+            <label for=\"\">Mobile no.\r\n+                ::after\r\n+            </label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n             <label for=\"\">Password</label>\r\n"
+                },
+                {
+                    "date": 1754503138821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n             <input type=\"number\" name=\"\" id=\"\" placeholder=\"Enter your mobile number\">\r\n-            <label for=\"\">Mobile no.\r\n+            <label for=\"\">\"Mobile no.\"\r\n                 ::after\r\n             </label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n"
+                },
+                {
+                    "date": 1754503159637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,9 @@\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n             <input type=\"number\" name=\"\" id=\"\" placeholder=\"Enter your mobile number\">\r\n-            <label for=\"\">\"Mobile no.\"\r\n-                ::after\r\n-            </label>\r\n+            <label for=\"\">Mobile no.</label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n             <label for=\"\">Password</label>\r\n"
+                },
+                {
+                    "date": 1754503404195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n-            <input type=\"number\" name=\"\" id=\"\" placeholder=\"Enter your mobile number\">\r\n+            <input type=\"number\" name=\"\" id=\"\" placeholder=\"\">\r\n             <label for=\"\">Mobile no.</label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n"
+                },
+                {
+                    "date": 1754503832696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,24 @@\n <body>\r\n     <form action=\"\">\r\n         <div class=\"input-fields\">\r\n             <input type=\"number\" name=\"\" id=\"\" placeholder=\"\">\r\n+\r\n             <label for=\"\">Mobile no.</label>\r\n         </div>\r\n         <div class=\"input-fields\">\r\n             <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n             <label for=\"\">Password</label>\r\n             <span>show</span>\r\n         </div>\r\n     </form>\r\n+    <div class=\"form-floating mb-3\">\r\n+                <input type=\"number\" class=\"form-control\" id=\"floatingInput\" placeholder=\"\">\r\n+                <label for=\"floatingInput\">Mobile no.</label>\r\n+            </div>\r\n+            <div class=\"form-floating mb-3\">\r\n+                <input type=\"password\" class=\"form-control\" id=\"floatingPassword\" placeholder=\"Password\">\r\n+                <label for=\"floatingPassword\">Password</label>\r\n+            </div>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1754500747233,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n\r\n<body>\r\n    <form action=\"\">\r\n        <div class=\"input-fields\">\r\n            <input type=\"number\" name=\"\" id=\"\" placeholder=\"\">\r\n            <label for=\"\">Mobile no.</label>\r\n        </div>\r\n        <div class=\"input-fields\">\r\n            <input type=\"password\" name=\"\" id=\"\" placeholder=\"\">\r\n            <label for=\"\">Password</label>\r\n            <span></span>\r\n        </div>\r\n    </form>\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

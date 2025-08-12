@@ -1,3 +1,6 @@
+let Data = JSON.parse(localStorage.getItem("tabledata"));
+let currentPage = 1;
+const table = document.getElementById("outputTable");
 
 function show() {
   const form = document.getElementById("formContainer");
@@ -7,8 +10,6 @@ function show() {
     form.style.display = "none";
   }
 }
-
-const table = document.getElementById("outputTable");
 
 function addBgcolorToAge() {
   for (let i = 0; i < table.rows.length; i++) {
@@ -77,12 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
     option.textContent = state;
     stateSelect.appendChild(option);
   }
-
-  stateSelect.addEventListener('change', function () {
+  stateSelect.addEventListener('click', function () {
     const selectedState = this.value;
-
     citySelect.innerHTML = '<option value="">Select City</option>';
-
     if (selectedState) {
       const cities = citiesByState[selectedState];
       if (cities) {
@@ -97,13 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const nameInput = document.getElementById("name");
-const ageInput = document.getElementById("age");
-const stateSelect = document.getElementById("state");
-const citySelect = document.getElementById("city");
-const submitBtn = document.getElementById("addData");
-
 function validateInputs() {
+  const nameInput = document.getElementById("name");
+  const ageInput = document.getElementById("age");
+  const stateSelect = document.getElementById("state");
+  const citySelect = document.getElementById("city");
+
   let isValid = true;
   let errorMessage = "";
   let namePattern = /^[a-zA-Z]+(?: [a-zA-Z]+)+$/;
@@ -138,6 +135,8 @@ function validateInputs() {
   return isValid;
 }
 
+
+
 function addTableDataToStorage() {
   if (!validateInputs(true)) return;
   const table_data = JSON.parse(localStorage.getItem('tabledata'));
@@ -150,38 +149,81 @@ function addTableDataToStorage() {
   table_data === null ? tableData = [] : tableData = JSON.parse(localStorage.getItem('tabledata'));
   tableData.push({ Id: data_id, Name: name, Age: age, State: state, City: city });
   localStorage.setItem('tabledata', JSON.stringify(tableData));
-  clearInputs();
+
   let pagesPerShow = document.getElementById("pagesToShow").value;
   let lastPage = Math.ceil(Data.length / pagesPerShow);
+  let currentData = JSON.parse(localStorage.getItem("tabledata"));
+  clearInputs();
+  Data = currentData;
   gotoPage(lastPage);
-  let tbody = document.querySelector("#outputTable tbody");
-  let newRow = tbody.insertRow();
-  newRow.insertCell(0).innerHTML = data_id;
-  newRow.insertCell(1).innerHTML = name;
-  newRow.insertCell(2).innerHTML = age;
-  newRow.insertCell(3).innerHTML = state;
-  newRow.insertCell(4).innerHTML = city;
-  newRow.insertCell(5).innerHTML = `<button id='row_${data_id}' onClick=takeToEdit(this)>edit</button><button id='row_${data_id}' onClick=deleteData(this)>delete</button>`;
-  addBgcolorToAge();
+  showTable(pagesPerShow);
+  pagination(pagesPerShow);
 }
+
+
 
 let edit_btn_obj = null;
 function takeToEdit(obj) {
   document.getElementById("edit_section").style.display = "block";
   document.getElementById("addData").style.display = "none";
   const data = obj.closest("tr").cells;
-  edit_btn_obj = obj;
+   edit_btn_obj = obj;
   const name = data[1].innerHTML;
   const age = data[2].innerHTML;
   const state = data[3].innerHTML;
   const city = data[4].innerHTML;
   document.getElementById("name").value = name;
   document.getElementById("age").value = age;
-  document.getElementById("state").value = state;
-  document.getElementById("city").value = city;
+  document.getElementById("state").value=state;
+  if (state) {
+      const cities = citiesByState[state];
+      if (cities) {
+        cities.forEach(city => {
+          const option = document.createElement('option');
+          option.value =  city;
+          option.textContent = city;
+          document.getElementById("city").appendChild(option);
+        });
+      }
+     
+    }
+    document.getElementById("city").value=city;
   show();
-  addTableDataToStorage();
 }
+
+
+function performEdit() {
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const state = document.getElementById("state").value;
+  const city = document.getElementById("city").value;
+  cells = edit_btn_obj.closest("tr").cells;
+  cells[1].innerHTML = name;
+  cells[2].innerHTML = age;
+  cells[3].innerHTML = state;
+  cells[4].innerHTML = city;
+  console.log(city)
+  document.getElementById("edit_section").style.display = "none";
+  document.getElementById("addData").style.display = "block";
+
+  let storedData = JSON.parse(localStorage.getItem("tabledata"));
+  let editedId = cells[0].textContent;
+  storedData = storedData.map(Data => {
+    if (Data.Id == editedId) {
+      Data.Name = name;
+      Data.Age = age;
+      Data.State = state;
+      Data.City = city;
+    }
+    return Data;
+  });
+  localStorage.setItem("tabledata", JSON.stringify(storedData));
+  validateInputs();
+  clearInputs();
+  show();
+}
+
+
 
 function deleteData(obj) {
   obj.closest("tr").remove();
@@ -197,7 +239,10 @@ function deleteData(obj) {
   const pagesPerShow = document.getElementById("pagesToShow").value;
   showTable(pagesPerShow);
   pagination(pagesPerShow);
+
 }
+
+
 
 function clearInputs() {
   document.getElementById("name").value = "";
@@ -207,35 +252,6 @@ function clearInputs() {
 }
 
 
-function performEdit() {
-
-  const name = document.getElementById("name").value;
-  const age = document.getElementById("age").value;
-  const state = document.getElementById("state").value;
-  const city = document.getElementById("city").value;
-  cells = edit_btn_obj.closest("tr").cells;
-  cells[1].innerHTML = name;
-  cells[2].innerHTML = age;
-  cells[3].innerHTML = state;
-  cells[4].innerHTML = city;
-  document.getElementById("edit_section").style.display = "none";
-  document.getElementById("addData").style.display = "block";
-
-  let storedData = JSON.parse(localStorage.getItem("tabledata"));
-  let editedId = cells[0].textContent;
-  storedData = storedData.map(row => {
-    if (row[0] == editedId) {
-      row[1] = name;
-      row[2] = age;
-      row[3] = state;
-      row[4] = city;
-    }
-    return row;
-  });
-  localStorage.setItem("tabledata", JSON.stringify(storedData));
-  clearInputs();
-
-}
 
 
 function cancelDataUpdate() {
@@ -246,6 +262,8 @@ function cancelDataUpdate() {
   document.getElementById("edit_section").style.display = "none";
   document.getElementById("addData").style.display = "block";
 }
+
+
 
 let sortDirections = {};
 function sortTable(colIndex, arrowEl) {
@@ -274,6 +292,7 @@ function sortTable(colIndex, arrowEl) {
 
 }
 
+
 function updateArrowIcons(activeIndex, activeArrow) {
   const allArrows = document.querySelectorAll("th .arrow");
   allArrows.forEach(arrow => {
@@ -283,6 +302,11 @@ function updateArrowIcons(activeIndex, activeArrow) {
   activeArrow.innerHTML = sortDirections[activeIndex] ? "&#9650;" : "&#9660;";
 }
 
+const pagesPerShow = document.getElementById("pagesToShow");
+let option = document.createElement("option");
+option.value = Data.length;
+option.innerHTML = "All";
+pagesPerShow.appendChild(option);
 
 document.getElementById('pagesToShow').addEventListener("change", function () {
   let pagesPerShow = this.value;
@@ -291,19 +315,20 @@ document.getElementById('pagesToShow').addEventListener("change", function () {
   pagination(pagesPerShow);
 })
 
-let Data = JSON.parse(localStorage.getItem("tabledata"));
-let currentPage = 1;
-
 function showTable(pagesPerShow) {
   const startIndex = (currentPage - 1) * pagesPerShow;
   const endIndex = startIndex + parseInt(pagesPerShow);
   const paginatedData = Data.slice(startIndex, endIndex);
-  let tableToShow = `<thead><tr><th>id</th>
+  let tableToShow = `<thead>
+  <tr>
+  <th>id</th>
   <th>Name <span class="arrow" onclick="sortTable(1, this); " data-order="asc">&#9650;</span> </th>
   <th>Age <span class="arrow" onclick="sortTable(2, this); " data-order="asc">&#9650;</span></th>
   <th>State <span class="arrow" onclick="sortTable(3, this); " data-order="asc">&#9650;</span></th>
   <th>City <span class="arrow" onclick="sortTable(4, this); " data-order="asc">&#9650;</span></th>
-  <th>Action</th></thead>`
+  <th>Action</th>
+  </tr>
+  </thead>`
   paginatedData.forEach((row) => {
     tableToShow += `<tr>
       <td>${row.Id}</td>
@@ -315,13 +340,12 @@ function showTable(pagesPerShow) {
       <button onclick="deleteData(this)">Delete</button>
       </td></tr>`
   });
-  document.getElementById("outputTable").innerHTML = tableToShow;
+  table.innerHTML = tableToShow;
   addBgcolorToAge();
 }
 
-function pagination(pagesPerShow) {
-  let footer = document.getElementById("footer");
-  footer.innerHTML = "";
+function pagination(pagesPerShow) { 
+  document.getElementById("footer").innerHTML = "";
   let totalPages = Math.ceil((Data.length) / pagesPerShow);
   footer.innerHTML += `<button onclick="gotoPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
   for (let i = 1; i <= totalPages; i++) {
@@ -330,24 +354,70 @@ function pagination(pagesPerShow) {
   footer.innerHTML += `<button onclick="gotoPage(${currentPage + 1})"${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
 }
 
-
 function gotoPage(page) {
   currentPage = page;
   const pagesPerShow = document.getElementById("pagesToShow").value;
   showTable(pagesPerShow);
   pagination(pagesPerShow);
 }
-
-
 showTable(10);
 pagination(10);
 
 
 
+document.getElementById("search").addEventListener("input", function () {
+  table.innerHTML = "";
+  let dropdown=document.getElementById("pagesToShow");
+  dropdown.style.display="none";
+  let showdropdown=document.getElementById("pagesToShowwhilesearch");
+  showdropdown.style.display="block";
+  let Search = document.getElementById("search").value;
+  let searchedData = Data.filter(Data => Data.Name.substring(0, Search.length) == Search || Data.Age == Search || Data.State.substring(0, Search.length) == Search || Data.City.substring(0, Search.length) == Search || Data.Name.toLowerCase().substring(0, Search.length) == Search || Data.State.toLowerCase().substring(0, Search.length) == Search || Data.City.toLowerCase().substring(0, Search.length) == Search);
+  let tableToShow = `<thead><tr><th>id</th>
+      <th>Name <span class="arrow" onclick="sortTable(1, this); " data-order="asc">&#9650;</span> </th>
+      <th>Age <span class="arrow" onclick="sortTable(2, this); " data-order="asc">&#9650;</span></th>
+      <th>State <span class="arrow" onclick="sortTable(3, this); " data-order="asc">&#9650;</span></th>
+      <th>City <span class="arrow" onclick="sortTable(4, this); " data-order="asc">&#9650;</span></th>
+      <th>Action</th></thead>`
+  searchedData.forEach((row) => {
+    tableToShow += `<tr>
+      <td>${row.Id}</td>
+      <td>${row.Name}</td>
+      <td>${row.Age}</td>
+      <td>${row.State}</td>
+      <td>${row.City}</td>
+      <td><button onclick="takeToEdit(this)">Edit</button>
+      <button onclick="deleteSearchedData(this)">Delete</button>
+      </td></tr>`
+  })
+  table.innerHTML = tableToShow;
+  document.getElementById("footer").innerHTML = `<button class="activePage">1</button><span>${searchedData.length} out of ${searchedData.length}</span>`;
 
+  if(Search==""){
+    const pagesPerShow = document.getElementById("pagesToShow").value;
+    dropdown.style.display="block";
+    showdropdown.style.display="none";
+    showTable(pagesPerShow);
+    pagination(pagesPerShow);
+  }
+  addBgcolorToAge();
+})
 
-
-
+function deleteSearchedData(obj) {
+  obj.closest("tr").remove();
+  let tbody=document.querySelector('#outputTable tbody');
+   let storedData = JSON.parse(localStorage.getItem('tabledata'));
+  const id = obj.closest("tr").cells[0].innerText;
+  storedData = storedData.filter(Data => Data.Id != id);
+  storedData = storedData.map((Data, index) => {
+    Data.Id = index + 1;
+    return Data;
+  });
+   localStorage.setItem('tabledata', JSON.stringify(storedData));
+  document.getElementById("footer").innerHTML = `<button class="activePage">1</button> <span>${tbody.rows.length} out of ${tbody.rows.length}</span>`;
+  addBgcolorToAge();
+  
+}
 
 
 

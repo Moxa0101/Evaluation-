@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1753780944304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1753780944304,
+            "name": "Commit-0",
+            "content": "import Navbar2 from './Components/Navbar'\r\nimport './App.css';\r\nimport {BrowserRouter as Router,Routes,Route} from 'react-router-dom';\r\nimport Home from './Components/Home';\r\nimport Counter from './Components/Counter';\r\nimport Todolist from './Components/Todolist';\r\nimport JsonParsing from './Components/JsonParsing';\r\nimport Main from './Components/Form';\r\nimport FetchApi from './Components/FetchApi';\r\nimport ModalPopUp from './Components/ModalPopUp';\r\nimport DataTable from './Components/Sort';\r\nimport Charts from './Components/Charts';\r\nfunction App() {\r\n  return (\r\n    <>\r\n    <Router>\r\n    <Navbar2/>\r\n     <Routes>\r\n             <Route path=\"/\" element={<Home />} />\r\n             <Route path=\"/Counter\" element={<Counter/>}  />\r\n             <Route path=\"/ToDoList\" element={<Todolist />} />\r\n             <Route path=\"/JsonParsing\" element={<JsonParsing/>} />\r\n             <Route path=\"/Form\" element={<Main/>} />\r\n             <Route path=\"/FetchApi\" element={<FetchApi/>} />\r\n             <Route path=\"/ModalPopUp\" element={<ModalPopUp/>} />\r\n             <Route path=\"/Sort\" element={<DataTable/>} />\r\n             <Route path=\"/Charts\" element={<Charts/>} />\r\n     </Routes>\r\n    </Router>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default App;\r\n"
+        }
+    ]
+}

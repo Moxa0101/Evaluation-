@@ -25,7 +25,6 @@ function App() {
              <Route path="/ModalPopUp" element={<ModalPopUp/>} />
              <Route path="/Sort" element={<DataTable/>} />
              <Route path="/Charts" element={<Charts/>} />
-             
      </Routes>
     </Router>
     </>

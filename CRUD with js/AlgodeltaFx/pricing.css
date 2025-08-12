@@ -1,0 +1,440 @@
+:root {
+    --bg-color: rgb(6, 15, 17);
+    --font-color: white;
+    --font-family: monospace;
+    --feature-color: rgb(173, 255, 133);
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    color: var(--feature-color);
+    cursor: pointer;
+}
+
+/* .container-fluid{
+    max-width: 300px;
+
+} */
+@media (min-width:900px) {
+    .container-fluid {
+        max-width: 300px;
+    }
+
+    .custom_btn {
+        position: absolute;
+        right: 70px;
+        padding-bottom: 10px;
+    }
+}
+
+.navbar,
+.nav-link {
+    color: var(--font-color) !important;
+    font-family: var(--font-family);
+
+}
+
+.navbar-toggler {
+    color: var(--font-color) !important;
+    font-family: var(--font-family);
+}
+
+
+.nav-link {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.custom_btn {
+    background-color: var(--font-color);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.custom_btn:hover {
+    background-color: var(--feature-color);
+}
+
+.logoImg {
+    max-width: 200px;
+}
+
+.upperBody {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: larger;
+    color: var(--feature-color);
+    font-family: var(--font-family);
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBelow {
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+}
+
+.calcBtn {
+    background-color: var(--feature-color);
+    color: black;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calcBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+    z-index: -1;
+    animation: glowPulse 4s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.4),
+            0 0 20px rgba(0, 123, 255, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(27, 16, 180, 0.943),
+            0 0 30px rgb(52, 85, 173);
+    }
+}
+
+.card {
+    display: flex;
+    background-color: rgb(10, 24, 25);
+    color: var(--font-color);
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.title,
+.flagCtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.timeDuration {
+    color: var(--feature-color);
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: smaller;
+    font-weight: bolder;
+    border-radius: 12px;
+    box-shadow: var(--feature-color) 0px 4px 5px -2px, var(--feature-color) 0px 3px 7px -3px;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.priceBtn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: rgba(84, 237, 112, 0.471) 0px 6px 12px -2px, rgba(63, 196, 54, 0.3) 0px 3px 7px -3px;
+    background-color: var(--feature-color);
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
+.priceBtn:hover {
+    transform: translateY(-3px);
+    background-color: rgb(196, 244, 171);
+    box-shadow: 0 0 15px rgba(138, 214, 152, 0.8),
+        0 0 25px rgba(149, 223, 144, 0.6);
+}
+
+.allCards {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+#multipleCardholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.right-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+@media (max-width:1000px) {
+    #multipleCardholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .right-grid {
+        display: grid;
+    }
+
+}
+
+.card_1,
+.card_4 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(9, 22, 23);
+    border-radius: 8PX;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 160px;
+    padding: 30px;
+}
+
+.card_2,
+.card_3 {
+    box-sizing: border-box;
+    background-color: rgb(9, 22, 23);
+    border-radius: 8PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    padding: 30px;
+}
+
+.calcCard {
+    background-color: rgb(15, 29, 33);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 35px;
+    margin: 50px;
+
+}
+
+.month_options {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-family);
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.month_option {
+    font-size: smaller;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(191, 194, 194, 0.16) 0px 1px 4px;
+    border: none;
+    background-color: rgb(15, 29, 33);
+    color: var(--font-color);
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.active {
+    background: #adff851a;
+    color: var(--feature-color);
+    font-weight: bold;
+}
+
+.couter {
+    display: flex;
+}
+
+.counting,
+.countingInd {
+    padding: 10px;
+    background-color: rgb(15, 29, 33);
+    box-sizing: border-box;
+    margin-right: 10px;
+    box-shadow: rgba(191, 194, 194, 0.16) 0px 1px 4px;
+    border: none;
+    border-radius: 8px;
+    color: var(--font-color);
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus,
+.minus {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(15, 29, 33);
+    color: var(--feature-color);
+    border: 1px solid var(--feature-color);
+    width: 12%
+}
+
+.plus:hover {
+    background-color: var(--feature-color);
+    color: black;
+}
+
+.minus:hover {
+    background-color: var(--feature-color);
+    color: black;
+}
+
+.pricePerAcc,
+.pricePerAccInd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: smaller;
+}
+
+.totalPrice,
+.totalPriceInd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    color: var(--feature-color);
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.calculateBtn {
+    font-size: smaller;
+    font-weight: bold;
+    font-family: var(--font-family);
+    margin-top: 10px;
+    background-color: var(--feature-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.calculateBtn:hover {
+    background-color: rgb(119, 196, 81);
+}
+
+#country_select {
+    border-radius: 8px;
+    padding: 7px;
+    background-color: rgb(15, 29, 33);
+    color: var(--font-color);
+}
+
+select {
+    appearance: none;
+}
+
+.custom_container {
+    border-radius: 8px;
+    background-color: rgb(9, 31, 27);
+    color: var(--font-color);
+    width: 95%;
+    padding: 50px;
+    overflow: hidden;
+
+}
+
+#backgroundImgInCard {
+    position: absolute;
+    right: 35px;
+    object-fit: cover;
+}
+
+.textBelowCalc {
+    align-items: center;
+    justify-content: center;
+}
+
+.contactBtn {
+    padding: 13px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: var(--font-color);
+    font-weight: bold;
+}
+
+.startBtn {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: var(--feature-color);
+    font-weight: bold;
+}
+
+
+.listHeading {
+    color: var(--feature-color);
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+}

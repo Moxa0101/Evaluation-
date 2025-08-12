@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="styleImage.css" rel="stylesheet">
+</head>
+
+<body>
+    <button id="showBtn" class="btn btn-primary" onclick="show()">Show form</button>
+    <div class="container mt-5">
+        <form id="form">
+
+            <div class="mb-3">
+                <label>Name:</label>
+                <input type="text" class="form-control" placeholder="Enter your Name here..." id="Name">
+            </div>
+            <div class="mb-3">
+                <label>Position:</label>
+                <input type="text" class="form-control" placeholder="Enter your Position here..." id="position">
+            </div>
+            <div class="mb-3">
+                <label>Description:</label>
+                <input type="text" class="form-control" placeholder="Enter your Description here..." id="description">
+            </div>
+            <div class="mb-3">
+                <label>Image:</label>
+                <input type="file" class="form-control" id="image">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="addToStorage()">Submit</button>
+
+        </form>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carouselItems" data-bs-interval="5000">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="apply.js"></script>
+</body>
+
+</html>

@@ -24,6 +24,10 @@ button{
     background-color:grey;
 }
 .activePage{
-    background-color: aqua;
+    background-color: rgb(64, 163, 244);
     color: white;
+}
+#search{
+    margin-bottom: 20px;
+    margin-left: 800px;
 }

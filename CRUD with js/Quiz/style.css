@@ -1,0 +1,92 @@
+body{
+    background-color:  rgb(111, 149, 203)  ;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 90px;
+    margin-top:20%;
+    padding: 20px;
+    background-color:  rgb(111, 149, 203);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 12px;
+
+}     
+#logo{
+    margin:20%;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    color: white;
+    margin: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.answer{
+    color: green;
+}
+.card-body{
+    color: white;
+    margin:5%;
+    align-items: center;
+    justify-content: center;
+    border:none;  
+}
+#timerOfQuestion{
+
+    margin-left:85%;
+    color:black;
+    box-sizing: content-box;
+    background-color: white;
+}
+button:hover{
+    transform: scale(1.11);
+}
+#restartBtn{
+    margin: 5%;
+}
+#timer{
+    color: white;
+
+}
+.customContainer{
+    font-size: large;
+    background-color: white;
+    color:  rgb(53, 127, 230);
+    border: 2px solid white;
+    border-radius: 8px;
+    padding:5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.customContainer:hover{
+    transform: scale(1.02);
+}
+#questionOptions{
+    margin:30px;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.fail{
+    color: red;
+}
+
+.pass{
+    color: green;
+}
+
+#scorecard{
+    margin:30px;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

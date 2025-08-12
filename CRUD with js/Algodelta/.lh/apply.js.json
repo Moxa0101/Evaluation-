@@ -1,0 +1,558 @@
+{
+    "sourceFile": "apply.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 135,
+            "patches": [
+                {
+                    "date": 1754539789848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1754539800388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n   }\r\n \r\n   function resetPlaceholder(input) {\r\n     if (!input.value) {\r\n-      input.placeholder = \"Enter password\";\r\n+      input.placeholder = \"Mobile No.\";\r\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754539807188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n \r\n   function resetPlaceholder(input) {\r\n     if (!input.value) {\r\n       input.placeholder = \"Mobile No.\";\r\n-    }\n\\ No newline at end of file\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754539970358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,13 @@\n   function resetPlaceholder(input) {\r\n     if (!input.value) {\r\n       input.placeholder = \"Mobile No.\";\r\n     }\r\n-}\n\\ No newline at end of file\n+}\r\n+function changePlaceholder(input) {\r\n+    input.placeholder = \"Enter your password\";\r\n+  }\r\n+\r\n+  function resetPlaceholder(input) {\r\n+    if (!input.value) {\r\n+      input.placeholder = \"Enter password\";\r\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754539975931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,6 @@\n \r\n   function resetPlaceholder(input) {\r\n     if (!input.value) {\r\n       input.placeholder = \"Enter password\";\r\n-    }\n\\ No newline at end of file\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754539981959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n   }\r\n \r\n   function resetPlaceholder(input) {\r\n     if (!input.value) {\r\n-      input.placeholder = \"Enter password\";\r\n+      input.placeholder = \"Password\";\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754539994772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n     if (!input.value) {\r\n       input.placeholder = \"Mobile No.\";\r\n     }\r\n }\r\n-function changePlaceholder(input) {\r\n+function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n-  function resetPlaceholder(input) {\r\n+  function resetPasswordPlaceholder(input) {\r\n     if (!input.value) {\r\n       input.placeholder = \"Password\";\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754540052718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     if (!input.value) {\r\n       input.placeholder = \"Mobile No.\";\r\n     }\r\n }\r\n+\r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1754540165386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   }\r\n \r\n   function resetPlaceholder(input) {\r\n     if (!input.value) {\r\n-      input.placeholder = \"Mobile No.\";\r\n+      input.placeholder = \"Mobile No\";\r\n     }\r\n }\r\n \r\n function changePasswordPlaceholder(input) {\r\n"
+                },
+                {
+                    "date": 1754540184544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n function changePlaceholder(input) {\r\n     input.placeholder = \"Enter your Mobile no.\";\r\n   }\r\n \r\n-  function resetPlaceholder(input) {\r\n-    if (!input.value) {\r\n-      input.placeholder = \"Mobile No\";\r\n-    }\r\n+//   function resetPlaceholder(input) {\r\n+//     if (!input.value) {\r\n+//       input.placeholder = \"Mobile No\";\r\n+//     }\r\n }\r\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n"
+                },
+                {
+                    "date": 1754540198322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n //   function resetPlaceholder(input) {\r\n //     if (!input.value) {\r\n //       input.placeholder = \"Mobile No\";\r\n //     }\r\n-}\r\n \r\n+\r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1754540208725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,11 @@\n function changePlaceholder(input) {\r\n     input.placeholder = \"Enter your Mobile no.\";\r\n   }\r\n \r\n-//   function resetPlaceholder(input) {\r\n-//     if (!input.value) {\r\n-//       input.placeholder = \"Mobile No\";\r\n-//     }\r\n \r\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n-  function resetPasswordPlaceholder(input) {\r\n-    if (!input.value) {\r\n-      input.placeholder = \"Password\";\r\n-    }\r\n-}\n\\ No newline at end of file\n+ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754540410331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n function changePlaceholder(input) {\r\n     input.placeholder = \"Enter your Mobile no.\";\r\n   }\r\n \r\n-\r\n-\r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n- \n\\ No newline at end of file\n+function forgotPasswordForm(){\r\n+    document.getElementById(\"rightLogin\").style.display=\"none\";\r\n+    document.getElementById(\"forgotPassword\").style.display=\"block\";\r\n+} \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754540451610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n function forgotPasswordForm(){\r\n-    document.getElementById(\"rightLogin\").style.display=\"none\";\r\n+    //document.getElementById(\"rightLogin\").style.display=\"none\";\r\n     document.getElementById(\"forgotPassword\").style.display=\"block\";\r\n } \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754540459069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n function forgotPasswordForm(){\r\n-    //document.getElementById(\"rightLogin\").style.display=\"none\";\r\n+    document.getElementById(\"rightLogin\").style.display=\"none\";\r\n     document.getElementById(\"forgotPassword\").style.display=\"block\";\r\n } \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754540914604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,12 @@\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n   }\r\n \r\n+  function confirmNewPasswordPlaceholder(obj){\r\n+    obj.placeholder=\"Re-enter password\"\r\n+  }\r\n+\r\n function forgotPasswordForm(){\r\n     document.getElementById(\"rightLogin\").style.display=\"none\";\r\n     document.getElementById(\"forgotPassword\").style.display=\"block\";\r\n } \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754540927258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,11 @@\n \r\n   function confirmNewPasswordPlaceholder(obj){\r\n     obj.placeholder=\"Re-enter password\"\r\n   }\r\n+  function NewPasswordPlaceholder(obj){\r\n+    obj.placeholder=\"Re-enter password\"\r\n+  }\r\n \r\n function forgotPasswordForm(){\r\n     document.getElementById(\"rightLogin\").style.display=\"none\";\r\n     document.getElementById(\"forgotPassword\").style.display=\"block\";\r\n"
+                },
+                {
+                    "date": 1754540953297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   function confirmNewPasswordPlaceholder(obj){\r\n     obj.placeholder=\"Re-enter password\"\r\n   }\r\n   function NewPasswordPlaceholder(obj){\r\n-    obj.placeholder=\"Re-enter password\"\r\n+    obj.placeholder=\"Enter new password\"\r\n   }\r\n \r\n function forgotPasswordForm(){\r\n     document.getElementById(\"rightLogin\").style.display=\"none\";\r\n"
+                },
+                {
+                    "date": 1754541155233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,23 @@\n function changePlaceholder(input) {\r\n     input.placeholder = \"Enter your Mobile no.\";\r\n-  }\r\n+}\r\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n-  }\r\n+}\r\n \r\n-  function confirmNewPasswordPlaceholder(obj){\r\n-    obj.placeholder=\"Re-enter password\"\r\n-  }\r\n-  function NewPasswordPlaceholder(obj){\r\n-    obj.placeholder=\"Enter new password\"\r\n-  }\r\n+function confirmNewPasswordPlaceholder(obj) {\r\n+    obj.placeholder = \"Re-enter password\"\r\n+}\r\n\\ No newline at end of file\n+function NewPasswordPlaceholder(obj) {\r\n+    obj.placeholder = \"Enter new password\"\r\n+}\r\n \r\n-function forgotPasswordForm(){\r\n-    document.getElementById(\"rightLogin\").style.display=\"none\";\r\n-    document.getElementById(\"forgotPassword\").style.display=\"block\";\r\n-} \n+function forgotPasswordForm() {\r\n+    document.getElementById(\"rightLogin\").style.display = \"none\";\r\n+    document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n+} \r\n+function backToLogin(){\r\n+    document.getElementById(\"rightLogin\").style.display = \"block\";\r\n+    document.getElementById(\"forgotPassword\").style.display = \"none\";\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754543954271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     obj.placeholder = \"Enter new password\"\r\n }\r\n \r\n function forgotPasswordForm() {\r\n-    document.getElementById(\"rightLogin\").style.display = \"none\";\r\n+    document.getElementsByClassName(\"customcontainer\")[0].style.display = \"none\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n } \r\n function backToLogin(){\r\n     document.getElementById(\"rightLogin\").style.display = \"block\";\r\n"
+                },
+                {
+                    "date": 1754543993476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     obj.placeholder = \"Enter new password\"\r\n }\r\n \r\n function forgotPasswordForm() {\r\n-    document.getElementsByClassName(\"customcontainer\")[0].style.display = \"none\";\r\n+    document.getElementById(\"rightLogin\").style.display = \"none\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n } \r\n function backToLogin(){\r\n     document.getElementById(\"rightLogin\").style.display = \"block\";\r\n"
+                },
+                {
+                    "date": 1754545153322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n }\r\n+function resetPlaceholder(obj){\r\n+    if(!obj.placeholder){\r\n+        obj.placeholder=\"Mobile no.\"\r\n+    }\r\n+}\r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n"
+                },
+                {
+                    "date": 1754545212748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n }\r\n-function resetPlaceholder(obj){\r\n-    if(!obj.placeholder){\r\n-        obj.placeholder=\"Mobile no.\"\r\n-    }\r\n-}\r\n+// function resetPlaceholder(obj){\r\n+//     if(!obj.placeholder){\r\n+//         obj.placeholder=\"Mobile no.\"\r\n+//     }\r\n+// }\r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n"
+                },
+                {
+                    "date": 1754545256395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n }\r\n-// function resetPlaceholder(obj){\r\n-//     if(!obj.placeholder){\r\n-//         obj.placeholder=\"Mobile no.\"\r\n-//     }\r\n-// }\r\n+function resetPlaceholder(obj){\r\n+    if(!obj.placeholder){\r\n+        obj.placeholder=\"Mobile no.\"\r\n+    }\r\n+}\r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n"
+                },
+                {
+                    "date": 1754545302034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,8 @@\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n }\r\n-function resetPlaceholder(obj){\r\n-    if(!obj.placeholder){\r\n-        obj.placeholder=\"Mobile no.\"\r\n-    }\r\n-}\r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n"
+                },
+                {
+                    "date": 1754545417497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,15 @@\n \r\n function changePasswordPlaceholder(input) {\r\n     input.placeholder = \"Enter your password\";\r\n }\r\n+function resetPlaceholder(obj){\r\n+    if(!obj.value){\r\n+        obj.placeholder=\"Mobile no.\"\r\n+    }\r\n+}\r\n \r\n+\r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n function NewPasswordPlaceholder(obj) {\r\n"
+                },
+                {
+                    "date": 1754545465639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-function changePlaceholder(input) {\r\n-    input.placeholder = \"Enter your Mobile no.\";\r\n+function changePlaceholder(obj) {\r\n+    obj.placeholder = \"Enter your Mobile no.\";\r\n }\r\n \r\n-function changePasswordPlaceholder(input) {\r\n-    input.placeholder = \"Enter your password\";\r\n+function changePasswordPlaceholder(obj) {\r\n+    obj.placeholder = \"Enter your password\";\r\n }\r\n function resetPlaceholder(obj){\r\n     if(!obj.value){\r\n         obj.placeholder=\"Mobile no.\"\r\n"
+                },
+                {
+                    "date": 1754545503807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n \r\n function changePasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Enter your password\";\r\n }\r\n-function resetPlaceholder(obj){\r\n-    if(!obj.value){\r\n-        obj.placeholder=\"Mobile no.\"\r\n-    }\r\n-}\r\n+// function resetPlaceholder(obj){\r\n+//     if(!obj.value){\r\n+//         obj.placeholder=\"Mobile no.\"\r\n+//     }\r\n+// }\r\n \r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n"
+                },
+                {
+                    "date": 1754545659137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n \r\n function changePasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Enter your password\";\r\n }\r\n-// function resetPlaceholder(obj){\r\n-//     if(!obj.value){\r\n-//         obj.placeholder=\"Mobile no.\"\r\n-//     }\r\n-// }\r\n+function resetPlaceholder(obj){\r\n+    if(!obj.value){\r\n+        obj.placeholder=\"Mobile no.\"\r\n+    }\r\n+}\r\n \r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n"
+                },
+                {
+                    "date": 1754545668745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,20 @@\n function changePlaceholder(obj) {\r\n     obj.placeholder = \"Enter your Mobile no.\";\r\n }\r\n \r\n-function changePasswordPlaceholder(obj) {\r\n-    obj.placeholder = \"Enter your password\";\r\n-}\r\n function resetPlaceholder(obj){\r\n     if(!obj.value){\r\n         obj.placeholder=\"Mobile no.\"\r\n     }\r\n }\r\n \r\n+function changePasswordPlaceholder(obj) {\r\n+    obj.placeholder = \"Enter your password\";\r\n+}\r\n \r\n+\r\n+\r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n function NewPasswordPlaceholder(obj) {\r\n"
+                },
+                {
+                    "date": 1754545959340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,13 @@\n function changePasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Enter your password\";\r\n }\r\n \r\n+function resetPasswordPlaceholder(obj){\r\n+    if(!obj.value){\r\n+        obj.placeholder=\"Password\"\r\n+    }\r\n+}\r\n \r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n"
+                },
+                {
+                    "date": 1754546086217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,12 +21,24 @@\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n+\r\n+function resetconfirmNewPasswordPlaceholder(obj){\r\n+    if(obj.value){\r\n+        obj.placeholder=\"Confirm Password\"\r\n+    }\r\n+}\r\n+\r\n function NewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Enter new password\"\r\n }\r\n \r\n+function resetNewPasswordPlaceholder(obj){\r\n+    if(obj.value){\r\n+        obj.placeholder=\"New Password\"\r\n+    }\r\n+}\r\n function forgotPasswordForm() {\r\n     document.getElementById(\"rightLogin\").style.display = \"none\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n } \r\n"
+                },
+                {
+                    "date": 1754546129822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n     if(obj.value){\r\n         obj.placeholder=\"New Password\"\r\n     }\r\n }\r\n+\r\n function forgotPasswordForm() {\r\n     document.getElementById(\"rightLogin\").style.display = \"none\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n } \r\n"
+                },
+                {
+                    "date": 1754546190149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n \r\n function resetconfirmNewPasswordPlaceholder(obj){\r\n-    if(obj.value){\r\n+    if(!obj.value){\r\n         obj.placeholder=\"Confirm Password\"\r\n     }\r\n }\r\n \r\n@@ -33,9 +33,9 @@\n     obj.placeholder = \"Enter new password\"\r\n }\r\n \r\n function resetNewPasswordPlaceholder(obj){\r\n-    if(obj.value){\r\n+    if(!obj.value){\r\n         obj.placeholder=\"New Password\"\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1754549510447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,5 +45,15 @@\n } \r\n function backToLogin(){\r\n     document.getElementById(\"rightLogin\").style.display = \"block\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"none\";\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+const passwordField = document.getElementById('passwordField');\r\n+  const togglePassword = document.getElementById('togglePassword');\r\n+\r\n+  togglePassword.addEventListener('click', function() {\r\n+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n+    passwordField.setAttribute('type', type);\r\n+    this.classList.toggle('fa-eye');\r\n+    this.classList.toggle('fa-eye-slash');\r\n+  });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754549535461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,7 @@\n \r\n   togglePassword.addEventListener('click', function() {\r\n     const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     passwordField.setAttribute('type', type);\r\n+    this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n-    this.classList.toggle('fa-eye-slash');\r\n   });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754550169162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,5 +55,25 @@\n     const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     passwordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n+  });\r\n+\r\n+  const newpasswordField = document.getElementById('passwordField');\r\n+  const newtogglePassword = document.getElementById('togglePassword');\r\n+\r\n+  togglePassword.addEventListener('click', function() {\r\n+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n+    passwordField.setAttribute('type', type);\r\n+    this.classList.toggle('fa-eye-slash');\r\n+    this.classList.toggle('fa-eye');\r\n+  });\r\n+\r\n+  const confirmpasswordField = document.getElementById('passwordField');\r\n+  const confirmtogglePassword = document.getElementById('togglePassword');\r\n+\r\n+  togglePassword.addEventListener('click', function() {\r\n+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n+    passwordField.setAttribute('type', type);\r\n+    this.classList.toggle('fa-eye-slash');\r\n+    this.classList.toggle('fa-eye');\r\n   });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754550258847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,23 +57,23 @@\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n   });\r\n \r\n-  const newpasswordField = document.getElementById('passwordField');\r\n-  const newtogglePassword = document.getElementById('togglePassword');\r\n+  const newpasswordField = document.getElementById('newpasswordField');\r\n+  const newtogglePassword = document.getElementById('newtogglePassword');\r\n \r\n-  togglePassword.addEventListener('click', function() {\r\n-    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n-    passwordField.setAttribute('type', type);\r\n+  newtogglePassword.addEventListener('click', function() {\r\n+    const type = newpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n+    newpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n   });\r\n \r\n-  const confirmpasswordField = document.getElementById('passwordField');\r\n-  const confirmtogglePassword = document.getElementById('togglePassword');\r\n+  const confirmpasswordField = document.getElementById('confirmpasswordField');\r\n+  const confirmtogglePassword = document.getElementById('confirmtogglePassword');\r\n \r\n-  togglePassword.addEventListener('click', function() {\r\n-    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n-    passwordField.setAttribute('type', type);\r\n+  confirmtogglePassword.addEventListener('click', function() {\r\n+    const type = confirmpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n+    confirmpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n   });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754561037667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,6 @@\n     const type = confirmpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     confirmpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n-  });\n\\ No newline at end of file\n+  });\r\n+\r\n"
+                },
+                {
+                    "date": 1754561052222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,80 +1,80 @@\n function changePlaceholder(obj) {\r\n     obj.placeholder = \"Enter your Mobile no.\";\r\n }\r\n \r\n-function resetPlaceholder(obj){\r\n-    if(!obj.value){\r\n-        obj.placeholder=\"Mobile no.\"\r\n+function resetPlaceholder(obj) {\r\n+    if (!obj.value) {\r\n+        obj.placeholder = \"Mobile no.\"\r\n     }\r\n }\r\n \r\n function changePasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Enter your password\";\r\n }\r\n \r\n-function resetPasswordPlaceholder(obj){\r\n-    if(!obj.value){\r\n-        obj.placeholder=\"Password\"\r\n+function resetPasswordPlaceholder(obj) {\r\n+    if (!obj.value) {\r\n+        obj.placeholder = \"Password\"\r\n     }\r\n }\r\n \r\n \r\n function confirmNewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Re-enter password\"\r\n }\r\n \r\n-function resetconfirmNewPasswordPlaceholder(obj){\r\n-    if(!obj.value){\r\n-        obj.placeholder=\"Confirm Password\"\r\n+function resetconfirmNewPasswordPlaceholder(obj) {\r\n+    if (!obj.value) {\r\n+        obj.placeholder = \"Confirm Password\"\r\n     }\r\n }\r\n \r\n function NewPasswordPlaceholder(obj) {\r\n     obj.placeholder = \"Enter new password\"\r\n }\r\n \r\n-function resetNewPasswordPlaceholder(obj){\r\n-    if(!obj.value){\r\n-        obj.placeholder=\"New Password\"\r\n+function resetNewPasswordPlaceholder(obj) {\r\n+    if (!obj.value) {\r\n+        obj.placeholder = \"New Password\"\r\n     }\r\n }\r\n \r\n function forgotPasswordForm() {\r\n     document.getElementById(\"rightLogin\").style.display = \"none\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n-} \r\n-function backToLogin(){\r\n+}\r\n+function backToLogin() {\r\n     document.getElementById(\"rightLogin\").style.display = \"block\";\r\n     document.getElementById(\"forgotPassword\").style.display = \"none\";\r\n }\r\n \r\n const passwordField = document.getElementById('passwordField');\r\n-  const togglePassword = document.getElementById('togglePassword');\r\n+const togglePassword = document.getElementById('togglePassword');\r\n \r\n-  togglePassword.addEventListener('click', function() {\r\n+togglePassword.addEventListener('click', function () {\r\n     const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     passwordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n-  });\r\n+});\r\n \r\n-  const newpasswordField = document.getElementById('newpasswordField');\r\n-  const newtogglePassword = document.getElementById('newtogglePassword');\r\n+const newpasswordField = document.getElementById('newpasswordField');\r\n+const newtogglePassword = document.getElementById('newtogglePassword');\r\n \r\n-  newtogglePassword.addEventListener('click', function() {\r\n+newtogglePassword.addEventListener('click', function () {\r\n     const type = newpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     newpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n-  });\r\n+});\r\n \r\n-  const confirmpasswordField = document.getElementById('confirmpasswordField');\r\n-  const confirmtogglePassword = document.getElementById('confirmtogglePassword');\r\n+const confirmpasswordField = document.getElementById('confirmpasswordField');\r\n+const confirmtogglePassword = document.getElementById('confirmtogglePassword');\r\n \r\n-  confirmtogglePassword.addEventListener('click', function() {\r\n+confirmtogglePassword.addEventListener('click', function () {\r\n     const type = confirmpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     confirmpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n-  });\r\n+});\r\n \r\n"
+                },
+                {
+                    "date": 1754566296841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,16 +38,8 @@\n         obj.placeholder = \"New Password\"\r\n     }\r\n }\r\n \r\n-function forgotPasswordForm() {\r\n-    document.getElementById(\"rightLogin\").style.display = \"none\";\r\n-    document.getElementById(\"forgotPassword\").style.display = \"block\";\r\n-}\r\n-function backToLogin() {\r\n-    document.getElementById(\"rightLogin\").style.display = \"block\";\r\n-    document.getElementById(\"forgotPassword\").style.display = \"none\";\r\n-}\r\n \r\n const passwordField = document.getElementById('passwordField');\r\n const togglePassword = document.getElementById('togglePassword');\r\n \r\n"
+                },
+                {
+                    "date": 1754566406579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,18 @@\n         obj.placeholder = \"New Password\"\r\n     }\r\n }\r\n \r\n+function refferalIdPlaceholder(obj) {\r\n+    obj.placeholder = \"Enter new password\"\r\n+}\r\n \r\n+function resetIdPlaceholder(obj) {\r\n+    if (!obj.value) {\r\n+        obj.placeholder = \"New Password\"\r\n+    }\r\n+}\r\n+\r\n const passwordField = document.getElementById('passwordField');\r\n const togglePassword = document.getElementById('togglePassword');\r\n \r\n togglePassword.addEventListener('click', function () {\r\n"
+                },
+                {
+                    "date": 1754566426377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,13 +38,13 @@\n         obj.placeholder = \"New Password\"\r\n     }\r\n }\r\n \r\n-function refferalIdPlaceholder(obj) {\r\n+function resetIdPlaceholder(obj) {\r\n     obj.placeholder = \"Enter new password\"\r\n }\r\n \r\n-function resetIdPlaceholder(obj) {\r\n+function refferalIdPlaceholder(obj) {\r\n     if (!obj.value) {\r\n         obj.placeholder = \"New Password\"\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1754566441935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     }\r\n }\r\n \r\n function resetIdPlaceholder(obj) {\r\n-    obj.placeholder = \"Enter new password\"\r\n+    obj.placeholder = \"Enter Refferal Id\"\r\n }\r\n \r\n function refferalIdPlaceholder(obj) {\r\n     if (!obj.value) {\r\n"
+                },
+                {
+                    "date": 1754566473978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n }\r\n \r\n function refferalIdPlaceholder(obj) {\r\n     if (!obj.value) {\r\n-        obj.placeholder = \"New Password\"\r\n+        obj.placeholder = \"Referral Id(Optional)\"\r\n     }\r\n }\r\n \r\n const passwordField = document.getElementById('passwordField');\r\n"
+                },
+                {
+                    "date": 1754566559697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,13 +38,13 @@\n         obj.placeholder = \"New Password\"\r\n     }\r\n }\r\n \r\n-function resetIdPlaceholder(obj) {\r\n+function refferalIdPlaceholder(obj) {\r\n     obj.placeholder = \"Enter Refferal Id\"\r\n }\r\n \r\n-function refferalIdPlaceholder(obj) {\r\n+function resetIdPlaceholder(obj) {\r\n     if (!obj.value) {\r\n         obj.placeholder = \"Referral Id(Optional)\"\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1754568667406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,4 +78,7 @@\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n });\r\n \r\n+function validateInputs{\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754568836186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,7 +78,7 @@\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n });\r\n \r\n-function validateInputs{\r\n-    \r\n+function validateInputs(){\r\n+    let isValid=true;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754568998222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,5 +80,8 @@\n });\r\n \r\n function validateInputs(){\r\n     let isValid=true;\r\n+    let errorMessage=\"\";\r\n+    const mobileNumber=document.getElementById(\"Mo-number\")\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569003510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,7 +81,7 @@\n \r\n function validateInputs(){\r\n     let isValid=true;\r\n     let errorMessage=\"\";\r\n-    const mobileNumber=document.getElementById(\"Mo-number\")\r\n+    const mobileNumber=document.getElementById(\"Mo-number\").value\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569023721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,7 +81,8 @@\n \r\n function validateInputs(){\r\n     let isValid=true;\r\n     let errorMessage=\"\";\r\n-    const mobileNumber=document.getElementById(\"Mo-number\").value\r\n+    const mobileNumber=document.getElementById(\"Mo-number\");\r\n+    const \r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569144114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,9 @@\n function validateInputs(){\r\n     let isValid=true;\r\n     let errorMessage=\"\";\r\n     const mobileNumber=document.getElementById(\"Mo-number\");\r\n-    const \r\n+    const sepassword=document.getElementById(\"setPassword\");\r\n+    const newpassword=document.getElementById(\"newpasswordField\");\r\n+    const confirmpassword=document.getElementById(\"confirmpasswordField\")\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569261727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,7 +84,13 @@\n     let errorMessage=\"\";\r\n     const mobileNumber=document.getElementById(\"Mo-number\");\r\n     const sepassword=document.getElementById(\"setPassword\");\r\n     const newpassword=document.getElementById(\"newpasswordField\");\r\n-    const confirmpassword=document.getElementById(\"confirmpasswordField\")\r\n+    const confirmpassword=document.getElementById(\"confirmpasswordField\");\r\n \r\n+    let numberPattern=\"/^(\\+\\d{1,3}[- ]?)?\\d{10}$/\"\r\n+    if (!numberPattern.test(nameInput.value.trim())) {\r\n+    errorMessage += \"Enter full  name.\\n\";\r\n+    isValid = false;\r\n+  }\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569276756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n     const sepassword=document.getElementById(\"setPassword\");\r\n     const newpassword=document.getElementById(\"newpasswordField\");\r\n     const confirmpassword=document.getElementById(\"confirmpasswordField\");\r\n \r\n-    let numberPattern=\"/^(\\+\\d{1,3}[- ]?)?\\d{10}$/\"\r\n+    let numberPattern= /^(\\+\\d{1,3}[- ]?)?\\d{10}$/\r\n     if (!numberPattern.test(nameInput.value.trim())) {\r\n     errorMessage += \"Enter full  name.\\n\";\r\n     isValid = false;\r\n   }\r\n"
+                },
+                {
+                    "date": 1754569285001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n     const newpassword=document.getElementById(\"newpasswordField\");\r\n     const confirmpassword=document.getElementById(\"confirmpasswordField\");\r\n \r\n     let numberPattern= /^(\\+\\d{1,3}[- ]?)?\\d{10}$/\r\n-    if (!numberPattern.test(nameInput.value.trim())) {\r\n+    if (!numberPattern.test(mobileNumber.value.trim())) {\r\n     errorMessage += \"Enter full  name.\\n\";\r\n     isValid = false;\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1754569309810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n     const confirmpassword=document.getElementById(\"confirmpasswordField\");\r\n \r\n     let numberPattern= /^(\\+\\d{1,3}[- ]?)?\\d{10}$/\r\n     if (!numberPattern.test(mobileNumber.value.trim())) {\r\n-    errorMessage += \"Enter full  name.\\n\";\r\n+    errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n     isValid = false;\r\n   }\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569327600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,6 +91,9 @@\n     if (!numberPattern.test(mobileNumber.value.trim())) {\r\n     errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n     isValid = false;\r\n   }\r\n-\r\n+if (!isValid) {\r\n+    alert(errorMessage);\r\n+  }\r\n+  return isValid;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754569399387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,5 +95,6 @@\n if (!isValid) {\r\n     alert(errorMessage);\r\n   }\r\n   return isValid;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1754569409904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n \r\n const confirmpasswordField = document.getElementById('confirmpasswordField');\r\n const confirmtogglePassword = document.getElementById('confirmtogglePassword');\r\n \r\n-confirmtogglePassword.addEventListener('click', function () {\r\n+confirmtogglePassword?.addEventListener('click', function () {\r\n     const type = confirmpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     confirmpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n"
+                },
+                {
+                    "date": 1754569418918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \r\n const newpasswordField = document.getElementById('newpasswordField');\r\n const newtogglePassword = document.getElementById('newtogglePassword');\r\n \r\n-newtogglePassword.addEventListener('click', function () {\r\n+newtogglePassword?.addEventListener('click', function () {\r\n     const type = newpasswordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     newpasswordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n"
+                },
+                {
+                    "date": 1754569551349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,23 +78,29 @@\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n });\r\n \r\n-function validateInputs(){\r\n-    let isValid=true;\r\n-    let errorMessage=\"\";\r\n-    const mobileNumber=document.getElementById(\"Mo-number\");\r\n-    const sepassword=document.getElementById(\"setPassword\");\r\n-    const newpassword=document.getElementById(\"newpasswordField\");\r\n-    const confirmpassword=document.getElementById(\"confirmpasswordField\");\r\n+function validateInputs() {\r\n+    let isValid = true;\r\n+    let errorMessage = \"\";\r\n+    const mobileNumber = document.getElementById(\"Mo-number\");\r\n+    const setpassword = document.getElementById(\"setPassword\");\r\n+    const newpassword = document.getElementById(\"newpasswordField\");\r\n+    const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n \r\n-    let numberPattern= /^(\\+\\d{1,3}[- ]?)?\\d{10}$/\r\n+    let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber.value.trim())) {\r\n-    errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n-    isValid = false;\r\n-  }\r\n-if (!isValid) {\r\n-    alert(errorMessage);\r\n-  }\r\n-  return isValid;\r\n+        errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n+        isValid = false;\r\n+    }\r\n+    let passwordPattern=;\r\n+    if (!numberPattern.test(mobileNumber.value.trim())) {\r\n+        errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n+        isValid = false;\r\n+    }\r\n+\r\n+    if (!isValid) {\r\n+        alert(errorMessage);\r\n+    }\r\n+    return isValid;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1754569557425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,9 +92,9 @@\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n     let passwordPattern=;\r\n-    if (!numberPattern.test(mobileNumber.value.trim())) {\r\n+    if (!numberPattern.test(setpassword.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754569626602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n         isValid = false;\r\n     }\r\n     let passwordPattern=;\r\n     if (!numberPattern.test(setpassword.value.trim())) {\r\n-        errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n+        errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n     if (!isValid) {\r\n"
+                },
+                {
+                    "date": 1754569665520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n     if (!numberPattern.test(mobileNumber.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n-    let passwordPattern=;\r\n+    let passwordPattern=const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n     if (!numberPattern.test(setpassword.value.trim())) {\r\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n"
+                },
+                {
+                    "date": 1754569691712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n     if (!numberPattern.test(mobileNumber.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n-    let passwordPattern=const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n+    let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n     if (!numberPattern.test(setpassword.value.trim())) {\r\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n"
+                },
+                {
+                    "date": 1754569699769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,9 +92,9 @@\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n     let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n-    if (!numberPattern.test(setpassword.value.trim())) {\r\n+    if (!passwordPattern.test(setpassword.value.trim())) {\r\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754569766993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,10 @@\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n+    if(newpassword.value.trim()===confirmpassword.value.trim())\r\n+\r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n"
+                },
+                {
+                    "date": 1754569825910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,12 @@\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n-    if(newpassword.value.trim()===confirmpassword.value.trim())\r\n+    if(!(newpassword.value.trim()===confirmpassword.value.trim())){\r\n+        errorMessage+=\"new password and congirm password must be same\";\r\n+        isValid=false;\r\n+    }\r\n \r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n"
+                },
+                {
+                    "date": 1754569869320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,11 @@\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n+    if(newpassword.value.trim()===\"\" && confirmpassword.value.trim()===\"\"){\r\n+\r\n+    }\r\n     if(!(newpassword.value.trim()===confirmpassword.value.trim())){\r\n         errorMessage+=\"new password and congirm password must be same\";\r\n         isValid=false;\r\n     }\r\n"
+                },
+                {
+                    "date": 1754569888406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,10 @@\n         isValid = false;\r\n     }\r\n \r\n     if(newpassword.value.trim()===\"\" && confirmpassword.value.trim()===\"\"){\r\n-\r\n+        errorMessage+=\"enter something\";\r\n+        isValid=false;\r\n     }\r\n     if(!(newpassword.value.trim()===confirmpassword.value.trim())){\r\n         errorMessage+=\"new password and congirm password must be same\";\r\n         isValid=false;\r\n"
+                },
+                {
+                    "date": 1754569904706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \r\n const passwordField = document.getElementById('passwordField');\r\n const togglePassword = document.getElementById('togglePassword');\r\n \r\n-togglePassword.addEventListener('click', function () {\r\n+togglePassword?.addEventListener('click', function () {\r\n     const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';\r\n     passwordField.setAttribute('type', type);\r\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n"
+                },
+                {
+                    "date": 1754570074925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,19 +87,19 @@\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n-    if (!numberPattern.test(mobileNumber.value.trim())) {\r\n+    if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n     let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n-    if (!passwordPattern.test(setpassword.value.trim())) {\r\n+    if (!passwordPattern.test(setpassword?.value.trim())) {\r\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n-    if(newpassword.value.trim()===\"\" && confirmpassword.value.trim()===\"\"){\r\n+    if(newpassword?.value.trim()===\"\" && confirmpassword.value.trim()===\"\"){\r\n         errorMessage+=\"enter something\";\r\n         isValid=false;\r\n     }\r\n     if(!(newpassword.value.trim()===confirmpassword.value.trim())){\r\n"
+                },
+                {
+                    "date": 1754570092516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,13 +97,13 @@\n         errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n-    if(newpassword?.value.trim()===\"\" && confirmpassword.value.trim()===\"\"){\r\n+    if(newpassword?.value.trim()===\"\" && confirmpassword?.value.trim()===\"\"){\r\n         errorMessage+=\"enter something\";\r\n         isValid=false;\r\n     }\r\n-    if(!(newpassword.value.trim()===confirmpassword.value.trim())){\r\n+    if(!(newpassword?.value.trim()===confirmpassword?.value.trim())){\r\n         errorMessage+=\"new password and congirm password must be same\";\r\n         isValid=false;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754571899592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n         isValid = false;\r\n     }\r\n     let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n     if (!passwordPattern.test(setpassword?.value.trim())) {\r\n-        errorMessage += \"passweord must containe 8 character and 1 special and 1 capital character\\n\";\r\n+        errorMessage += \"password must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n     if(newpassword?.value.trim()===\"\" && confirmpassword?.value.trim()===\"\"){\r\n"
+                },
+                {
+                    "date": 1754587470430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,9 @@\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n+    const referralId=document.getElementById(\"referralId\");\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n"
+                },
+                {
+                    "date": 1754587512653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,12 @@\n         errorMessage+=\"new password and congirm password must be same\";\r\n         isValid=false;\r\n     }\r\n \r\n+    if(referralId.value.trim()==\"\" ){\r\n+        isValid=true;\r\n+    }\r\n+\r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n"
+                },
+                {
+                    "date": 1754587607649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,10 @@\n         errorMessage+=\"new password and congirm password must be same\";\r\n         isValid=false;\r\n     }\r\n \r\n-    if(referralId.value.trim()==\"\" ){\r\n+    let codepattern=/^\\d*$/;\r\n+    if(referralId.value.trim()===\"\" || referralId.value.trim()===codepattern){\r\n         isValid=true;\r\n     }\r\n \r\n     if (!isValid) {\r\n"
+                },
+                {
+                    "date": 1754587805309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId.value.trim()===\"\" || referralId.value.trim()===codepattern){\r\n+    if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern){\r\n         isValid=true;\r\n     }\r\n \r\n     if (!isValid) {\r\n"
+                },
+                {
+                    "date": 1754587962812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,9 @@\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n+\r\n     let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n     if (!passwordPattern.test(setpassword?.value.trim())) {\r\n         errorMessage += \"password must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n@@ -108,9 +109,9 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern){\r\n+    if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern || numberPattern.test(mobileNumber?.value.trim())){\r\n         isValid=true;\r\n     }\r\n \r\n     if (!isValid) {\r\n"
+                },
+                {
+                    "date": 1754588007463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,8 +112,11 @@\n     let codepattern=/^\\d*$/;\r\n     if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern || numberPattern.test(mobileNumber?.value.trim())){\r\n         isValid=true;\r\n     }\r\n+    else{\r\n+        errorMessage+=\"Enter valid 10 digit Mobile-No..\"\r\n+    }\r\n \r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n"
+                },
+                {
+                    "date": 1754588027039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,9 +92,9 @@\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n-\r\n+    \r\n     let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n     if (!passwordPattern.test(setpassword?.value.trim())) {\r\n         errorMessage += \"password must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n@@ -109,14 +109,11 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern || numberPattern.test(mobileNumber?.value.trim())){\r\n+    if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern){\r\n         isValid=true;\r\n     }\r\n-    else{\r\n-        errorMessage+=\"Enter valid 10 digit Mobile-No..\"\r\n-    }\r\n \r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n"
+                },
+                {
+                    "date": 1754588238718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,8 +113,13 @@\n     if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern){\r\n         isValid=true;\r\n     }\r\n \r\n+    if (!isChecked) {\r\n+        alert(\"check the checkbox\");\r\n+        return;\r\n+    }\r\n+\r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n"
+                },
+                {
+                    "date": 1754588252054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,11 @@\n     const setpassword = document.getElementById(\"setPassword\");\r\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n     const referralId=document.getElementById(\"referralId\");\r\n+    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n \r\n+\r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n"
+                },
+                {
+                    "date": 1754588320833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim()===\"\" || referralId?.value.trim()===codepattern){\r\n+    if(referralId?.value.trim()===\"\" || codepattern.test(referralId?.value.trim())){\r\n         isValid=true;\r\n     }\r\n \r\n     if (!isChecked) {\r\n"
+                },
+                {
+                    "date": 1754588354789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,10 +111,11 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim()===\"\" || codepattern.test(referralId?.value.trim())){\r\n-        isValid=true;\r\n+    if(referralId?.value.trim()===\"\" || !codepattern.test(referralId?.value.trim())){\r\n+        alert(\"referral Id must be numeric\")\r\n+        isValid=false;\r\n     }\r\n \r\n     if (!isChecked) {\r\n         alert(\"check the checkbox\");\r\n"
+                },
+                {
+                    "date": 1754588370015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim()===\"\" || !codepattern.test(referralId?.value.trim())){\r\n+    if(referralId?.value.trim() || !codepattern.test(referralId?.value.trim())){\r\n         alert(\"referral Id must be numeric\")\r\n         isValid=false;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754588381038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n         isValid=false;\r\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim() || !codepattern.test(referralId?.value.trim())){\r\n+    if(referralId?.value.trim() && !codepattern.test(referralId?.value.trim())){\r\n         alert(\"referral Id must be numeric\")\r\n         isValid=false;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754588433459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,9 +112,9 @@\n     }\r\n \r\n     let codepattern=/^\\d*$/;\r\n     if(referralId?.value.trim() && !codepattern.test(referralId?.value.trim())){\r\n-        alert(\"referral Id must be numeric\")\r\n+        errorMessage+=\"referral Id must be numeric\";\r\n         isValid=false;\r\n     }\r\n \r\n     if (!isChecked) {\r\n"
+                },
+                {
+                    "date": 1754588450785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n         isValid=false;\r\n     }\r\n \r\n     if (!isChecked) {\r\n-        alert(\"check the checkbox\");\r\n+        errorMessage+=\"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n     if (!isValid) {\r\n"
+                },
+                {
+                    "date": 1754588619523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n     if(newpassword?.value.trim()===\"\" && confirmpassword?.value.trim()===\"\"){\r\n         errorMessage+=\"enter something\";\r\n         isValid=false;\r\n     }\r\n-    if(!(newpassword?.value.trim()===confirmpassword?.value.trim())){\r\n+    if((newpassword?.value.trim()!==confirmpassword?.value.trim())){\r\n         errorMessage+=\"new password and congirm password must be same\";\r\n         isValid=false;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754588789995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n     this.classList.toggle('fa-eye-slash');\r\n     this.classList.toggle('fa-eye');\r\n });\r\n \r\n-function validateInputs() {\r\n+function validateLogin() {\r\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n"
+                },
+                {
+                    "date": 1754588863357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,14 +83,10 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n-    const newpassword = document.getElementById(\"newpasswordField\");\r\n-    const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n-    const referralId=document.getElementById(\"referralId\");\r\n-    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n-\r\n-\r\n+   const isChecked = document.getElementById(\"checkDefault\").checked;\r\n+   \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n@@ -101,9 +97,27 @@\n         errorMessage += \"password must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n-    if(newpassword?.value.trim()===\"\" && confirmpassword?.value.trim()===\"\"){\r\n+   \r\n+\r\n+    if (!isChecked) {\r\n+        errorMessage+=\"check the checkbox\";\r\n+        return;\r\n+    }\r\n+\r\n+    if (!isValid) {\r\n+        alert(errorMessage);\r\n+    }\r\n+    return isValid;\r\n+}\r\n+\r\n+ const newpassword = document.getElementById(\"newpasswordField\");\r\n+    const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n+    const referralId=document.getElementById(\"referralId\");\r\n+    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n+\r\n+ if(newpassword?.value.trim()===\"\" && confirmpassword?.value.trim()===\"\"){\r\n         errorMessage+=\"enter something\";\r\n         isValid=false;\r\n     }\r\n     if((newpassword?.value.trim()!==confirmpassword?.value.trim())){\r\n@@ -114,17 +128,5 @@\n     let codepattern=/^\\d*$/;\r\n     if(referralId?.value.trim() && !codepattern.test(referralId?.value.trim())){\r\n         errorMessage+=\"referral Id must be numeric\";\r\n         isValid=false;\r\n-    }\r\n-\r\n-    if (!isChecked) {\r\n-        errorMessage+=\"check the checkbox\";\r\n-        return;\r\n-    }\r\n-\r\n-    if (!isValid) {\r\n-        alert(errorMessage);\r\n-    }\r\n-    return isValid;\r\n-}\r\n-\r\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754588887910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n-   \r\n+\r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n@@ -110,8 +110,11 @@\n     }\r\n     return isValid;\r\n }\r\n \r\n+function validateForgetPassword(){\r\n+\r\n+\r\n  const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n     const referralId=document.getElementById(\"referralId\");\r\n     const isChecked = document.getElementById(\"checkDefault\").checked;\r\n@@ -128,5 +131,6 @@\n     let codepattern=/^\\d*$/;\r\n     if(referralId?.value.trim() && !codepattern.test(referralId?.value.trim())){\r\n         errorMessage+=\"referral Id must be numeric\";\r\n         isValid=false;\r\n-    }\n\\ No newline at end of file\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754588924674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,10 +111,8 @@\n     return isValid;\r\n }\r\n \r\n function validateForgetPassword(){\r\n-\r\n-\r\n  const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n     const referralId=document.getElementById(\"referralId\");\r\n     const isChecked = document.getElementById(\"checkDefault\").checked;\r\n"
+                },
+                {
+                    "date": 1754588943289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,5 +130,15 @@\n     if(referralId?.value.trim() && !codepattern.test(referralId?.value.trim())){\r\n         errorMessage+=\"referral Id must be numeric\";\r\n         isValid=false;\r\n     }\r\n+     if (!isChecked) {\r\n+        errorMessage+=\"check the checkbox\";\r\n+        return;\r\n+    }\r\n+\r\n+    if (!isValid) {\r\n+        alert(errorMessage);\r\n+    }\r\n+    return isValid;\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754589075676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,26 +83,26 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n-   const isChecked = document.getElementById(\"checkDefault\").checked;\r\n+    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n     }\r\n-    \r\n-    let passwordPattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n+\r\n+    let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8}$/;;\r\n     if (!passwordPattern.test(setpassword?.value.trim())) {\r\n         errorMessage += \"password must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n-   \r\n \r\n+\r\n     if (!isChecked) {\r\n-        errorMessage+=\"check the checkbox\";\r\n+        errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n     if (!isValid) {\r\n@@ -110,30 +110,31 @@\n     }\r\n     return isValid;\r\n }\r\n \r\n-function validateForgetPassword(){\r\n- const newpassword = document.getElementById(\"newpasswordField\");\r\n+function validateForgetPassword() {\r\n+    const mobileNumber = document.getElementById(\"Mo-number\");\r\n+    const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n-    const referralId=document.getElementById(\"referralId\");\r\n+    const referralId = document.getElementById(\"referralId\");\r\n     const isChecked = document.getElementById(\"checkDefault\").checked;\r\n \r\n- if(newpassword?.value.trim()===\"\" && confirmpassword?.value.trim()===\"\"){\r\n-        errorMessage+=\"enter something\";\r\n-        isValid=false;\r\n+    if (newpassword?.value.trim() === \"\" && confirmpassword?.value.trim() === \"\") {\r\n+        errorMessage += \"enter something\";\r\n+        isValid = false;\r\n     }\r\n-    if((newpassword?.value.trim()!==confirmpassword?.value.trim())){\r\n-        errorMessage+=\"new password and congirm password must be same\";\r\n-        isValid=false;\r\n+    if ((newpassword?.value.trim() !== confirmpassword?.value.trim())) {\r\n+        errorMessage += \"new password and congirm password must be same\";\r\n+        isValid = false;\r\n     }\r\n \r\n-    let codepattern=/^\\d*$/;\r\n-    if(referralId?.value.trim() && !codepattern.test(referralId?.value.trim())){\r\n-        errorMessage+=\"referral Id must be numeric\";\r\n-        isValid=false;\r\n+    let codepattern = /^\\d*$/;\r\n+    if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n+        errorMessage += \"referral Id must be numeric\";\r\n+        isValid = false;\r\n     }\r\n-     if (!isChecked) {\r\n-        errorMessage+=\"check the checkbox\";\r\n+    if (!isChecked) {\r\n+        errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n     if (!isValid) {\r\n"
+                },
+                {
+                    "date": 1754589123351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n     const referralId = document.getElementById(\"referralId\");\r\n-    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n+    const isChecked = document.getElementById(\"checkDefault\");\r\n \r\n     if (newpassword?.value.trim() === \"\" && confirmpassword?.value.trim() === \"\") {\r\n         errorMessage += \"enter something\";\r\n         isValid = false;\r\n@@ -131,9 +131,9 @@\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n     }\r\n-    if (!isChecked) {\r\n+    if (!(isChecked.checked)) {\r\n         errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754589132827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n     }\r\n-    if (!(isChecked.checked)) {\r\n+    if (!(isChecked?.checked)) {\r\n         errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754589159063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,14 @@\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n     const referralId = document.getElementById(\"referralId\");\r\n     const isChecked = document.getElementById(\"checkDefault\");\r\n \r\n+    let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n+    if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n+        errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n+        isValid = false;\r\n+    }\r\n+\r\n     if (newpassword?.value.trim() === \"\" && confirmpassword?.value.trim() === \"\") {\r\n         errorMessage += \"enter something\";\r\n         isValid = false;\r\n     }\r\n"
+                },
+                {
+                    "date": 1754589168326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n-    const isChecked = document.getElementById(\"checkDefault\").checked;\r\n+    const isChecked = document.getElementById(\"checkDefault\");\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n"
+                },
+                {
+                    "date": 1754589185141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n     }\r\n \r\n \r\n \r\n-    if (!isChecked) {\r\n+    if (!isChecked?.checked) {\r\n         errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754589202445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n     }\r\n \r\n \r\n \r\n-    if (!isChecked?.checked) {\r\n+    if (!(isChecked?.checked)) {\r\n         errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1754589232113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,8 +111,10 @@\n     return isValid;\r\n }\r\n \r\n function validateForgetPassword() {\r\n+    let isValid = true;\r\n+    let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n     const referralId = document.getElementById(\"referralId\");\r\n"
+                },
+                {
+                    "date": 1754589267626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,13 +134,9 @@\n         errorMessage += \"new password and congirm password must be same\";\r\n         isValid = false;\r\n     }\r\n \r\n-    let codepattern = /^\\d*$/;\r\n-    if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n-        errorMessage += \"referral Id must be numeric\";\r\n-        isValid = false;\r\n-    }\r\n+    \r\n     if (!(isChecked?.checked)) {\r\n         errorMessage += \"check the checkbox\";\r\n         return;\r\n     }\r\n@@ -149,5 +145,13 @@\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n \r\n+}\r\n+\r\n+validateRegistration(){\r\n+    let codepattern = /^\\d*$/;\r\n+    if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n+        errorMessage += \"referral Id must be numeric\";\r\n+        isValid = false;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754589277941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n     return isValid;\r\n \r\n }\r\n \r\n-validateRegistration(){\r\n+function validateRegistration(){\r\n     let codepattern = /^\\d*$/;\r\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n"
+                },
+                {
+                    "date": 1754589340272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n-    const referralId = document.getElementById(\"referralId\");\r\n+    \r\n     const isChecked = document.getElementById(\"checkDefault\");\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n@@ -148,10 +148,19 @@\n \r\n }\r\n \r\n function validateRegistration(){\r\n+    let isValid = true;\r\n+    let errorMessage = \"\";\r\n+    const mobileNumber = document.getElementById(\"Mo-number\");\r\n+    const referralId = document.getElementById(\"referralId\");\r\n     let codepattern = /^\\d*$/;\r\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n     }\r\n+    if (!isValid) {\r\n+        alert(errorMessage);\r\n+    }\r\n+    return isValid;\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1754589365464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,8 +152,13 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const referralId = document.getElementById(\"referralId\");\r\n+     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n+    if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n+        errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n+        isValid = false;\r\n+    }\r\n     let codepattern = /^\\d*$/;\r\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n"
+                },
+                {
+                    "date": 1754589425341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,12 +135,9 @@\n         isValid = false;\r\n     }\r\n \r\n     \r\n-    if (!(isChecked?.checked)) {\r\n-        errorMessage += \"check the checkbox\";\r\n-        return;\r\n-    }\r\n+    \r\n \r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n"
+                },
+                {
+                    "date": 1754589441503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,10 +116,8 @@\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const newpassword = document.getElementById(\"newpasswordField\");\r\n     const confirmpassword = document.getElementById(\"confirmpasswordField\");\r\n-    \r\n-    const isChecked = document.getElementById(\"checkDefault\");\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n"
+                },
+                {
+                    "date": 1754589448877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,15 +97,8 @@\n         errorMessage += \"password must containe 8 character and 1 special and 1 capital character\\n\";\r\n         isValid = false;\r\n     }\r\n \r\n-\r\n-\r\n-    if (!(isChecked?.checked)) {\r\n-        errorMessage += \"check the checkbox\";\r\n-        return;\r\n-    }\r\n-\r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n"
+                },
+                {
+                    "date": 1754589455039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,8 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const setpassword = document.getElementById(\"setPassword\");\r\n-    const isChecked = document.getElementById(\"checkDefault\");\r\n \r\n     let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n"
+                },
+                {
+                    "date": 1754589524850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,9 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const referralId = document.getElementById(\"referralId\");\r\n+    const isChecked=document.getElementById(\"checkDefault\").checked\r\n      let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n"
+                },
+                {
+                    "date": 1754589549630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n     let isValid = true;\r\n     let errorMessage = \"\";\r\n     const mobileNumber = document.getElementById(\"Mo-number\");\r\n     const referralId = document.getElementById(\"referralId\");\r\n-    const isChecked=document.getElementById(\"checkDefault\").checked\r\n+    const isChecked=document.getElementById(\"checkDefault\").checked;\r\n      let numberPattern = /^(\\+\\d{1,3}[- ]?)?\\d{10}$/;\r\n     if (!numberPattern.test(mobileNumber?.value.trim())) {\r\n         errorMessage += \"Enter valid 10 digit Mobile-No..\\n\";\r\n         isValid = false;\r\n@@ -150,8 +150,13 @@\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n     }\r\n+\r\n+    if (!isChecked) {\r\n+        errorMessage += \"You must agree to terms.\\n\";\r\n+        isValid = false;\r\n+    }\r\n     if (!isValid) {\r\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n"
+                },
+                {
+                    "date": 1754589560853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,9 +150,8 @@\n     if (referralId?.value.trim() && !codepattern.test(referralId?.value.trim())) {\r\n         errorMessage += \"referral Id must be numeric\";\r\n         isValid = false;\r\n     }\r\n-\r\n     if (!isChecked) {\r\n         errorMessage += \"You must agree to terms.\\n\";\r\n         isValid = false;\r\n     }\r\n"
+                },
+                {
+                    "date": 1754589712047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,5 +159,24 @@\n         alert(errorMessage);\r\n     }\r\n     return isValid;\r\n \r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+document.addEventListener(\"DOMContentLoaded\", () => {\r\n+    const referralInput = document.getElementById(\"referralId\");\r\n+\r\n+    referralInput.addEventListener(\"change\", () => {\r\n+        const value = referralInput.value.trim();\r\n+\r\n+        if (value !== \"\") {\r\n+            // Update URL without reloading the page\r\n+            const newUrl = new URL(window.location.href);\r\n+            newUrl.searchParams.set(\"referral\", value);\r\n+            window.history.replaceState({}, \"\", newUrl);\r\n+\r\n+            // Disable the input\r\n+            referralInput.readOnly = true;\r\n+            referralInput.style.backgroundColor = \"#f0f0f0\"; // Optional: visual cue\r\n+        }\r\n+    });\r\n+});\r\n"
+                },
+                {
+                    "date": 1754589852953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,22 +161,15 @@\n     return isValid;\r\n \r\n }\r\n \r\n-document.addEventListener(\"DOMContentLoaded\", () => {\r\n-    const referralInput = document.getElementById(\"referralId\");\r\n+window.addEventListener(\"DOMContentLoaded\", () => {\r\n+    const urlParams = new URLSearchParams(window.location.search);\r\n+    const referral = urlParams.get(\"referral\");\r\n \r\n-    referralInput.addEventListener(\"change\", () => {\r\n-        const value = referralInput.value.trim();\r\n-\r\n-        if (value !== \"\") {\r\n-            // Update URL without reloading the page\r\n-            const newUrl = new URL(window.location.href);\r\n-            newUrl.searchParams.set(\"referral\", value);\r\n-            window.history.replaceState({}, \"\", newUrl);\r\n-\r\n-            // Disable the input\r\n-            referralInput.readOnly = true;\r\n-            referralInput.style.backgroundColor = \"#f0f0f0\"; // Optional: visual cue\r\n-        }\r\n-    });\r\n+    if (referral) {\r\n+        const referralInput = document.getElementById(\"referralId\");\r\n+        referralInput.value = referral;\r\n+        referralInput.readOnly = true; // disables input\r\n+        referralInput.style.backgroundColor = \"#f0f0f0\"; // optional grey style\r\n+    }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590217799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,8 @@\n \r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n-        referralInput.readOnly = true; // disables input\r\n-        referralInput.style.backgroundColor = \"#f0f0f0\"; // optional grey style\r\n+        referralInput.readOnly = true;\r\n+        referralInput.style.backgroundColor = \"#f0f0f0\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590225615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,7 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true;\r\n-        referralInput.style.backgroundColor = \"#f0f0f0\"; \r\n+        referralInput.style.backgroundColor = \"grey\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590231892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,7 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true;\r\n-        referralInput.style.backgroundColor = \"grey\"; \r\n+        referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590243329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,7 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true;\r\n-        referralInput.style.backgroundColor = \"gray\"; \r\n+        referralInput.style.backgroundColor = \"#f0f0f0\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590255111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,7 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true;\r\n-        referralInput.style.backgroundColor = \"#f0f0f0\"; \r\n+        referralInput.style.backgroundColor = \"grey\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590267781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,7 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true;\r\n-        referralInput.style.backgroundColor = \"grey\"; \r\n+        referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590351110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,14 +162,7 @@\n \r\n }\r\n \r\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n-    const urlParams = new URLSearchParams(window.location.search);\r\n-    const referral = urlParams.get(\"referral\");\r\n-\r\n-    if (referral) {\r\n-        const referralInput = document.getElementById(\"referralId\");\r\n-        referralInput.value = referral;\r\n-        referralInput.readOnly = true;\r\n-        referralInput.style.backgroundColor = \"gray\"; \r\n-    }\r\n+    const queryString=window.location.search;\r\n+    const urlParams=new URLSearchParams(\"queryString\")\r\n });\r\n"
+                },
+                {
+                    "date": 1754590362576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,6 +163,6 @@\n }\r\n \r\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n     const queryString=window.location.search;\r\n-    const urlParams=new URLSearchParams(\"queryString\")\r\n+    const urlParams=new URLSearchParams(queryString);\r\n });\r\n"
+                },
+                {
+                    "date": 1754590415380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,5 +164,6 @@\n \r\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n     const queryString=window.location.search;\r\n     const urlParams=new URLSearchParams(queryString);\r\n+    const refferal=document.get(\"referralId\");\r\n });\r\n"
+                },
+                {
+                    "date": 1754590438826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,5 +165,11 @@\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n     const queryString=window.location.search;\r\n     const urlParams=new URLSearchParams(queryString);\r\n     const refferal=document.get(\"referralId\");\r\n+    if (referral) {\r\n+        const referralInput = document.getElementById(\"referralId\");\r\n+        referralInput.value = referral;\r\n+        referralInput.readOnly = true; // disables input\r\n+        referralInput.style.backgroundColor = \"#f0f0f0\"; // optional grey style\r\n+    }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590446514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n \r\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n     const queryString=window.location.search;\r\n     const urlParams=new URLSearchParams(queryString);\r\n-    const refferal=document.get(\"referralId\");\r\n+    const referal=document.get(\"referralId\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true; // disables input\r\n"
+                },
+                {
+                    "date": 1754590489824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n \r\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n     const queryString=window.location.search;\r\n     const urlParams=new URLSearchParams(queryString);\r\n-    const referal=document.get(\"referralId\");\r\n+    const referral=document.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true; // disables input\r\n"
+                },
+                {
+                    "date": 1754590520810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,8 @@\n     const referral=document.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n-        referralInput.readOnly = true; // disables input\r\n-        referralInput.style.backgroundColor = \"#f0f0f0\"; // optional grey style\r\n+        referralInput.readOnly = true; \r\n+        referralInput.style.backgroundColor = \"#f0f0f0\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590528170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,7 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true; \r\n-        referralInput.style.backgroundColor = \"#f0f0f0\"; \r\n+        referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590571493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,8 @@\n     const referral=document.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n-        referralInput.readOnly = true; \r\n+        referralInput.style.disabled = true; \r\n         referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590630395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,8 @@\n     const referral=document.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n-        referralInput.style.disabled = true; \r\n+        referralInput.readOnly = true; \r\n         referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590827951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n \r\n window.addEventListener(\"DOMContentLoaded\", () => {\r\n     const queryString=window.location.search;\r\n     const urlParams=new URLSearchParams(queryString);\r\n-    const referral=document.get(\"referral\");\r\n+    const referral=urlParams.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.readOnly = true; \r\n"
+                },
+                {
+                    "date": 1754590843185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,8 @@\n     const referral=urlParams.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n-        referralInput.readOnly = true; \r\n+        referralInput.style.disabled = true; \r\n         referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590861456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,8 @@\n     const referral=urlParams.get(\"referral\");\r\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n-        referralInput.style.disabled = true; \r\n-        referralInput.style.backgroundColor = \"gray\"; \r\n+        referralInput.disabled = true; \r\n+        //referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                },
+                {
+                    "date": 1754590871169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,7 +169,6 @@\n     if (referral) {\r\n         const referralInput = document.getElementById(\"referralId\");\r\n         referralInput.value = referral;\r\n         referralInput.disabled = true; \r\n-        //referralInput.style.backgroundColor = \"gray\"; \r\n     }\r\n });\r\n"
+                }
+            ],
+            "date": 1754539789848,
+            "name": "Commit-0",
+            "content": "function changePlaceholder(input) {\r\n    input.placeholder = \"Enter your Mobile no.\";\r\n  }\r\n\r\n  function resetPlaceholder(input) {\r\n    if (!input.value) {\r\n      input.placeholder = \"Enter password\";\r\n    }"
+        }
+    ]
+}
