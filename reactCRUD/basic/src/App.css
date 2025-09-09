@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: black !important;
+}
+
+.card {
+  background: linear-gradient(to right, #434343, #000000);
+  font-family: sans-serif;
+  border: 1px solid grey;
+  color: white !important;
+  padding: 10px;
+}
+
+button {
+  margin: 5px !important;
+}
+
+input {
+  background: linear-gradient(to right, #434343, #000000);
+  color: white !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white !important;
+}
+
+.modal-content {
+  background: rgb(23, 23, 23) !important;
+  color: white !important;
+}
+
+.btn-close {
+  filter: brightness(0) invert(1) !important;
+}
+
+.btn-submit,
+.btn-reset {
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  background: rgb(13, 110, 253);
+}
+
+.btn-submit:hover {
+  background: green;
+}
+
+.btn-reset:hover {
+  background: red;
+}
+

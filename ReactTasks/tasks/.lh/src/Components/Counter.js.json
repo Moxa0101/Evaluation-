@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/Components/Counter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1756961904375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756961921720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         <>\r\n             <button onClick={decrement} disabled={counter === 0}>  - </button>\r\n             <span> {counter} </span>\r\n             <button onClick={increment} disabled={counter === 100}>  + </button>\r\n-            <button onClick={() => setCounter(0)}>Reset</button>\r\n+            <div><button onClick={() => setCounter(0)}>Reset</button></div>\r\n \r\n         </>\r\n     );\r\n }\r\n"
+                }
+            ],
+            "date": 1756961904375,
+            "name": "Commit-0",
+            "content": "import '../App.css';\r\nimport React, { useState } from 'react';\r\n\r\nfunction Counter() {\r\n\r\n\r\n    const [counter, setCounter] = useState(0);\r\n\r\n    function decrement() {\r\n        return setCounter(counter - 1);\r\n    }\r\n    function increment() {\r\n        return setCounter(counter + 1);\r\n    }\r\n    return (\r\n        <>\r\n            <button onClick={decrement} disabled={counter === 0}>  - </button>\r\n            <span> {counter} </span>\r\n            <button onClick={increment} disabled={counter === 100}>  + </button>\r\n            <button onClick={() => setCounter(0)}>Reset</button>\r\n\r\n        </>\r\n    );\r\n}\r\n\r\nexport default Counter;\r\n"
+        }
+    ]
+}

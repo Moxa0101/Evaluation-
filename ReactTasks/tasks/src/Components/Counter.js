@@ -8,15 +8,11 @@ function Counter() {
 
     function decrement() {
         return setCounter(counter - 1);
-
-
     }
     function increment() {
         return setCounter(counter + 1);
     }
     return (
-
-
         <>
             <button onClick={decrement} disabled={counter === 0}>  - </button>
             <span> {counter} </span>

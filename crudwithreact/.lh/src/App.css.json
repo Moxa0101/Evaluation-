@@ -1,0 +1,102 @@
+{
+    "sourceFile": "src/App.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 21,
+            "patches": [
+                {
+                    "date": 1757337269288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757337277762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,6 @@\n }\n \n body{\n   background: black;\n+  color: white;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337692954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,7 +37,7 @@\n   }\n }\n \n body{\n-  background: black;\n-  color: white;\n+  background: black !important;\n+  color: white !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337709514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,5 +39,9 @@\n \n body{\n   background: black !important;\n   color: white !important;\n+}\n+\n+.card{\n+  background: grey;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337755607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,17 +31,22 @@\n @keyframes App-logo-spin {\n   from {\n     transform: rotate(0deg);\n   }\n+\n   to {\n     transform: rotate(360deg);\n   }\n }\n \n-body{\n+body {\n   background: black !important;\n   color: white !important;\n }\n \n-.card{\n-  background: grey;\n+.card {\n+    background: linear-gradient(to right, #434343, #000000);\n+  font-family: sans-serif;\n+  border: 1px solid grey;\n+  color: white !important;\n+  padding: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337761225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,7 +46,6 @@\n .card {\n     background: linear-gradient(to right, #434343, #000000);\n   font-family: sans-serif;\n   border: 1px solid grey;\n-  color: white !important;\n   padding: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337771118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,6 @@\n .card {\n     background: linear-gradient(to right, #434343, #000000);\n   font-family: sans-serif;\n   border: 1px solid grey;\n-  padding: 10px;\n+  color: white !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337784671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,52 @@\n+.App {\n+  text-align: center;\n+}\n+\n+.App-logo {\n+  height: 40vmin;\n+  pointer-events: none;\n+}\n+\n+@media (prefers-reduced-motion: no-preference) {\n+  .App-logo {\n+    animation: App-logo-spin infinite 20s linear;\n+  }\n+}\n+\n+.App-header {\n+  background-color: #282c34;\n+  min-height: 100vh;\n+  display: flex;\n+  flex-direction: column;\n+  align-items: center;\n+  justify-content: center;\n+  font-size: calc(10px + 2vmin);\n+  color: white;\n+}\n+\n+.App-link {\n+  color: #61dafb;\n+}\n+\n+@keyframes App-logo-spin {\n+  from {\n+    transform: rotate(0deg);\n+  }\n+\n+  to {\n+    transform: rotate(360deg);\n+  }\n+}\n+\n+body {\n+  background: black !important;\n+  color: white !important;\n+}\n+\n+.card {\n+    background: linear-gradient(to right, #434343, #000000);\n+  font-family: sans-serif;\n+  border: 1px solid grey;\n+  color: white !important;\n+  padding: 10px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337854850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,55 +49,8 @@\n   border: 1px solid grey;\n   color: white !important;\n   padding: 10px;\n }\n-.App {\n-  text-align: center;\n-}\n \n-.App-logo {\n-  height: 40vmin;\n-  pointer-events: none;\n-}\n-\n-@media (prefers-reduced-motion: no-preference) {\n-  .App-logo {\n-    animation: App-logo-spin infinite 20s linear;\n-  }\n-}\n-\n-.App-header {\n-  background-color: #282c34;\n-  min-height: 100vh;\n-  display: flex;\n-  flex-direction: column;\n-  align-items: center;\n-  justify-content: center;\n-  font-size: calc(10px + 2vmin);\n-  color: white;\n-}\n-\n-.App-link {\n-  color: #61dafb;\n-}\n-\n-@keyframes App-logo-spin {\n-  from {\n-    transform: rotate(0deg);\n-  }\n-\n-  to {\n-    transform: rotate(360deg);\n-  }\n-}\n-\n-body {\n-  background: black !important;\n-  color: white !important;\n-}\n-\n-.card {\n-    background: linear-gradient(to right, #434343, #000000);\n-  font-family: sans-serif;\n-  border: 1px solid grey;\n-  color: white !important;\n+.ml-20{\n+  margin-left: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337864425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,6 +51,6 @@\n   padding: 10px;\n }\n \n .ml-20{\n-  margin-left: 10px;\n+  margin-left: 14px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337897074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,56 @@\n+.App {\n+  text-align: center;\n+}\n+\n+.App-logo {\n+  height: 40vmin;\n+  pointer-events: none;\n+}\n+\n+@media (prefers-reduced-motion: no-preference) {\n+  .App-logo {\n+    animation: App-logo-spin infinite 20s linear;\n+  }\n+}\n+\n+.App-header {\n+  background-color: #282c34;\n+  min-height: 100vh;\n+  display: flex;\n+  flex-direction: column;\n+  align-items: center;\n+  justify-content: center;\n+  font-size: calc(10px + 2vmin);\n+  color: white;\n+}\n+\n+.App-link {\n+  color: #61dafb;\n+}\n+\n+@keyframes App-logo-spin {\n+  from {\n+    transform: rotate(0deg);\n+  }\n+\n+  to {\n+    transform: rotate(360deg);\n+  }\n+}\n+\n+body {\n+  background: black !important;\n+  color: white !important;\n+}\n+\n+.card {\n+    background: linear-gradient(to right, #434343, #000000);\n+  font-family: sans-serif;\n+  border: 1px solid grey;\n+  color: white !important;\n+  padding: 10px;\n+}\n+\n+.ml-20{\n+  margin-left: 17px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337905218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,62 +51,6 @@\n   padding: 10px;\n }\n \n .ml-20{\n-  margin-left: 17px;\n-}\n-.App {\n-  text-align: center;\n-}\n-\n-.App-logo {\n-  height: 40vmin;\n-  pointer-events: none;\n-}\n-\n-@media (prefers-reduced-motion: no-preference) {\n-  .App-logo {\n-    animation: App-logo-spin infinite 20s linear;\n-  }\n-}\n-\n-.App-header {\n-  background-color: #282c34;\n-  min-height: 100vh;\n-  display: flex;\n-  flex-direction: column;\n-  align-items: center;\n-  justify-content: center;\n-  font-size: calc(10px + 2vmin);\n-  color: white;\n-}\n-\n-.App-link {\n-  color: #61dafb;\n-}\n-\n-@keyframes App-logo-spin {\n-  from {\n-    transform: rotate(0deg);\n-  }\n-\n-  to {\n-    transform: rotate(360deg);\n-  }\n-}\n-\n-body {\n-  background: black !important;\n-  color: white !important;\n-}\n-\n-.card {\n-    background: linear-gradient(to right, #434343, #000000);\n-  font-family: sans-serif;\n-  border: 1px solid grey;\n-  color: white !important;\n-  padding: 10px;\n-}\n-\n-.ml-20{\n-  margin-left: 14px;\n+  margin-left: 16px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757337991500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n \n .card {\n     background: linear-gradient(to right, #434343, #000000);\n   font-family: sans-serif;\n-  border: 1px solid grey;\n+  border: 1px solid rgb(54, 52, 52);\n   color: white !important;\n   padding: 10px;\n }\n \n"
+                },
+                {
+                    "date": 1757338008567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,56 @@\n+.App {\n+  text-align: center;\n+}\n+\n+.App-logo {\n+  height: 40vmin;\n+  pointer-events: none;\n+}\n+\n+@media (prefers-reduced-motion: no-preference) {\n+  .App-logo {\n+    animation: App-logo-spin infinite 20s linear;\n+  }\n+}\n+\n+.App-header {\n+  background-color: #282c34;\n+  min-height: 100vh;\n+  display: flex;\n+  flex-direction: column;\n+  align-items: center;\n+  justify-content: center;\n+  font-size: calc(10px + 2vmin);\n+  color: white;\n+}\n+\n+.App-link {\n+  color: #61dafb;\n+}\n+\n+@keyframes App-logo-spin {\n+  from {\n+    transform: rotate(0deg);\n+  }\n+\n+  to {\n+    transform: rotate(360deg);\n+  }\n+}\n+\n+body {\n+  background: black !important;\n+  color: white !important;\n+}\n+\n+.card {\n+    background: linear-gradient(to right, #434343, #000000);\n+  font-family: sans-serif;\n+  border: 1px solid grey !important;\n+  color: white !important;\n+  padding: 10px;\n+}\n+\n+.ml-20{\n+  margin-left: 16px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757338015002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,56 @@\n+.App {\n+  text-align: center;\n+}\n+\n+.App-logo {\n+  height: 40vmin;\n+  pointer-events: none;\n+}\n+\n+@media (prefers-reduced-motion: no-preference) {\n+  .App-logo {\n+    animation: App-logo-spin infinite 20s linear;\n+  }\n+}\n+\n+.App-header {\n+  background-color: #282c34;\n+  min-height: 100vh;\n+  display: flex;\n+  flex-direction: column;\n+  align-items: center;\n+  justify-content: center;\n+  font-size: calc(10px + 2vmin);\n+  color: white;\n+}\n+\n+.App-link {\n+  color: #61dafb;\n+}\n+\n+@keyframes App-logo-spin {\n+  from {\n+    transform: rotate(0deg);\n+  }\n+\n+  to {\n+    transform: rotate(360deg);\n+  }\n+}\n+\n+body {\n+  background: black !important;\n+  color: white !important;\n+}\n+\n+.card {\n+    background: linear-gradient(to right, #434343, #000000);\n+  font-family: sans-serif;\n+  border: 1px solid rgb(97, 96, 96) !important;\n+  color: white !important;\n+  padding: 10px;\n+}\n+\n+.ml-20{\n+  margin-left: 16px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757338022053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,124 +45,12 @@\n \n .card {\n     background: linear-gradient(to right, #434343, #000000);\n   font-family: sans-serif;\n-  border: 1px solid rgb(97, 96, 96) !important;\n+  border: 1px solid rgb(49, 49, 49) !important;\n   color: white !important;\n   padding: 10px;\n }\n \n .ml-20{\n   margin-left: 16px;\n-}\n-.App {\n-  text-align: center;\n-}\n-\n-.App-logo {\n-  height: 40vmin;\n-  pointer-events: none;\n-}\n-\n-@media (prefers-reduced-motion: no-preference) {\n-  .App-logo {\n-    animation: App-logo-spin infinite 20s linear;\n-  }\n-}\n-\n-.App-header {\n-  background-color: #282c34;\n-  min-height: 100vh;\n-  display: flex;\n-  flex-direction: column;\n-  align-items: center;\n-  justify-content: center;\n-  font-size: calc(10px + 2vmin);\n-  color: white;\n-}\n-\n-.App-link {\n-  color: #61dafb;\n-}\n-\n-@keyframes App-logo-spin {\n-  from {\n-    transform: rotate(0deg);\n-  }\n-\n-  to {\n-    transform: rotate(360deg);\n-  }\n-}\n-\n-body {\n-  background: black !important;\n-  color: white !important;\n-}\n-\n-.card {\n-    background: linear-gradient(to right, #434343, #000000);\n-  font-family: sans-serif;\n-  border: 1px solid grey !important;\n-  color: white !important;\n-  padding: 10px;\n-}\n-\n-.ml-20{\n-  margin-left: 16px;\n-}\n-.App {\n-  text-align: center;\n-}\n-\n-.App-logo {\n-  height: 40vmin;\n-  pointer-events: none;\n-}\n-\n-@media (prefers-reduced-motion: no-preference) {\n-  .App-logo {\n-    animation: App-logo-spin infinite 20s linear;\n-  }\n-}\n-\n-.App-header {\n-  background-color: #282c34;\n-  min-height: 100vh;\n-  display: flex;\n-  flex-direction: column;\n-  align-items: center;\n-  justify-content: center;\n-  font-size: calc(10px + 2vmin);\n-  color: white;\n-}\n-\n-.App-link {\n-  color: #61dafb;\n-}\n-\n-@keyframes App-logo-spin {\n-  from {\n-    transform: rotate(0deg);\n-  }\n-\n-  to {\n-    transform: rotate(360deg);\n-  }\n-}\n-\n-body {\n-  background: black !important;\n-  color: white !important;\n-}\n-\n-.card {\n-    background: linear-gradient(to right, #434343, #000000);\n-  font-family: sans-serif;\n-  border: 1px solid rgb(54, 52, 52);\n-  color: white !important;\n-  padding: 10px;\n-}\n-\n-.ml-20{\n-  margin-left: 16px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757353784183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,5 +52,9 @@\n }\n \n .ml-20{\n   margin-left: 16px;\n+}\n+\n+.modal-content{\n+  background: #000000;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757353791911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,6 +55,6 @@\n   margin-left: 16px;\n }\n \n .modal-content{\n-  background: #000000;\n+  background: #000000 !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757353805996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,5 +56,6 @@\n }\n \n .modal-content{\n   background: #000000 !important;\n+  color: white !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757353822908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,8 @@\n .ml-20{\n   margin-left: 16px;\n }\n \n-.modal-content{\n+.modal-content,.input{\n   background: #000000 !important;\n   color: white !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757353830670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,8 @@\n .ml-20{\n   margin-left: 16px;\n }\n \n-.modal-content,.input{\n+.modal-content,input{\n   background: #000000 !important;\n   color: white !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757353853235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,9 @@\n \n .modal-content,input{\n   background: #000000 !important;\n   color: white !important;\n+}\n+\n+input::placeholder{\n+  color: white !important;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1757337269288,
+            "name": "Commit-0",
+            "content": ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\nbody{\n  background: black;\n}"
+        }
+    ]
+}

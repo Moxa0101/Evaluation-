@@ -1,0 +1,274 @@
+:root {
+    --font-color: white;
+    --backgroundOf-feature: rgb(25, 28, 36);
+}
+
+body {
+    background: black;
+}
+
+@media (max-width:727px) {
+
+    .card-body1 {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .rightCtn,
+    .leftCtn {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:415px) {
+    .toggleSwitchGroup {
+        flex-direction: column !important;
+    }
+
+}
+
+@media (max-width:1118px) {
+    .leftCtn {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+    }
+
+    /* .textbox{
+        width: max-content!important;
+    } */
+
+}
+
+
+.card {
+    background: var(--backgroundOf-feature);
+    border-radius: 8px;
+    margin: 20px;
+    color: var(--font-color);
+}
+
+.syntax_generator {
+    border: none;
+    padding: 15px;
+    color: var(--font-color);
+    background: var(--backgroundOf-feature);
+    font-weight: 450;
+    margin: 10px;
+}
+
+.active {
+    background: rgb(42, 48, 56);
+    border: 1px solid var(--font-color);
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: rgba(198, 195, 195, 0.35) 0px 5px 10px;
+}
+
+option {
+    border-radius: 8px;
+    border: none;
+}
+
+select {
+    background-color: rgb(42, 48, 56);
+    padding: 7px;
+    border-radius: 8px;
+    color: var(--font-color);
+    border: none;
+}
+
+.textbox {
+    background-color: rgb(42, 48, 56);
+    padding: 7px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: var(--font-color);
+    border: none;
+    max-width: 150px;
+}
+
+
+
+.arrow {
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(42, 48, 56);
+    border-left: 1px solid white;
+    padding: 7px;
+    color: #ccc;
+}
+
+.card1 {
+    border-radius: 8px;
+    border: 1px solid var(--font-color);
+
+}
+
+.card-body1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4%;
+}
+
+.generatedCode {
+    background-color: rgb(42, 48, 56);
+    border-radius: 8px;
+    width: 100%;
+    height: 700px;
+    font-size: larger;
+}
+
+.rightCtn {
+    width: 50%;
+}
+
+.leftCtn {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+
+
+.textAndButtonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #EQOption2,
+#showNumberBox {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-right: 15px;
+} */
+
+
+
+.dropdownList {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid rgb(32, 112, 186);
+    background: var(--backgroundOf-feature);
+    color: var(--font-color);
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 9999;
+    position: absolute;
+    margin-top: 40px;
+    width: 200px;
+    display: none;
+}
+
+.dropdownList li {
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.dropdownList li:hover {
+    background: rgb(32, 112, 186);
+}
+
+
+.text-muted {
+    color: rgb(109 122 135 / 75%) !important;
+}
+
+.arrow img {
+    filter: brightness(0) invert(1);
+}
+
+.arrow img:hover {
+    filter: blur(3px);
+}
+
+#quantityBox {
+    background-color: rgb(42, 48, 56);
+    padding: 7px;
+    border-radius: 8px;
+    color: var(--font-color);
+    border: none;
+    margin-left: 5px;
+}
+
+.details img {
+    filter: brightness(0) invert(0.3);
+}
+
+#BtnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.buyBtn,
+.sellBtn {
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    background: rgb(42, 48, 56);
+    color: var(--font-color);
+    border: none;
+    font-size: larger;
+}
+
+.toggleSwitchGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+#targetValbox,
+#stoplossValbox,
+#trailtriggerValbox,
+#trailPointValbox,
+#trailGapValbox,
+#futExpiryGap,
+#rollovervalbox,
+#timeBox,
+#premiumbox ,#maxvariationbox{
+    background-color: rgb(42, 48, 56);
+    padding: 7px;
+    border-radius: 8px;
+    color: var(--font-color);
+    border: none;
+    margin-left: 5px;
+}
+
+select:disabled {
+    opacity: 0.5;
+}
+
+#futSwitchshowCtn ,#CEcontentreuse ,#ceSwitchCtn, .strategyorder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+b{
+    margin-left: 5px;
+}

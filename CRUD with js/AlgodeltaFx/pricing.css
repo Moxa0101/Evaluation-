@@ -18,10 +18,7 @@ body {
     cursor: pointer;
 }
 
-/* .container-fluid{
-    max-width: 300px;
 
-} */
 @media (min-width:900px) {
     .container-fluid {
         max-width: 300px;

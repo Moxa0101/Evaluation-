@@ -1,0 +1,178 @@
+{
+    "sourceFile": "basic/src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 40,
+            "patches": [
+                {
+                    "date": 1756964090302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756964098592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n import logo from './logo.svg';\n import './App.css';\n \n function App() {\n-  return (\n-    \n-  )\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756964108838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import logo from './logo.svg';\n+\n import './App.css';\n \n function App() {\n }\n"
+                },
+                {
+                    "date": 1756964240109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,10 @@\n \n import './App.css';\n \n function App() {\n+  <>\n+  \n+  </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756965983420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n \n import './App.css';\n+import fetchData from './componet/apiCRUD';\n \n function App() {\n   <>\n-  \n+  return fetchData;\n   </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966208808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import fetchData from './componet/apiCRUD';\n \n function App() {\n   <>\n-  return fetchData;\n+  <Link to=\"/crud\">API CRUD</Link>\n   </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966242413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import fetchData from './componet/apiCRUD';\n \n function App() {\n   <>\n-  <Link to=\"/crud\">API CRUD</Link>\n+\n   </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966356630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import fetchData from './componet/apiCRUD';\n \n function App() {\n   <>\n-\n+<fetchData/>\n   </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966741170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,8 @@\n import './App.css';\n import fetchData from './componet/apiCRUD';\n \n function App() {\n-  <>\n <fetchData/>\n-  </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966746231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n import './App.css';\n import fetchData from './componet/apiCRUD';\n \n function App() {\n+  <>\n <fetchData/>\n+  </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966775920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+import React from 'react';\n import './App.css';\n import fetchData from './componet/apiCRUD';\n \n function App() {\n"
+                },
+                {
+                    "date": 1756966812437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import fetchData from './componet/apiCRUD';\n \n function App() {\n   <>\n-<fetchData/>\n+    <fetchData />\n   </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756966834197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import './App.css';\n-import fetchData from './componet/apiCRUD';\n+import fetchData from './componet/apiCRUD.js';\n \n function App() {\n   <>\n     <fetchData />\n"
+                },
+                {
+                    "date": 1756966897733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import './App.css';\n-import fetchData from './componet/apiCRUD.js';\n+import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n   <>\n     <fetchData />\n"
+                },
+                {
+                    "date": 1756967459700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,8 @@\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n-  <>\n-    <fetchData />\n-  </>\n+    <ApiCRUD />\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756967606383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React from 'react';\n import './App.css';\n-import ApiCRUD from './componet/apiCRUD';\n+//import ApiCRUD from './componet/apiCRUD';\n+import { Test } from './componet/test';\n \n function App() {\n     <ApiCRUD />\n }\n"
+                },
+                {
+                    "date": 1756967618917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React from 'react';\n import './App.css';\n //import ApiCRUD from './componet/apiCRUD';\n-import { Test } from './componet/test';\n+import { test } from './componet/test';\n \n function App() {\n-    <ApiCRUD />\n+    <test />\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756967629487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import './App.css';\n //import ApiCRUD from './componet/apiCRUD';\n-import { test } from './componet/test';\n+import Test from './componet/test';\n \n function App() {\n     <test />\n }\n"
+                },
+                {
+                    "date": 1756967744225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n import React from 'react';\n import './App.css';\n-//import ApiCRUD from './componet/apiCRUD';\n-import Test from './componet/test';\n+import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n-    <test />\n+    <ApiCRUD />\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756967780659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import React from 'react';\n+\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n"
+                },
+                {
+                    "date": 1756967795183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+import React from 'react';\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n"
+                },
+                {
+                    "date": 1756968002680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,11 @@\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n+  <>\n+  <h1>Hello</h1>\n     <ApiCRUD />\n+    </>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756968207518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,16 @@\n-import React from 'react';\n-import './App.css';\n-import ApiCRUD from './componet/apiCRUD';\n+// import React from 'react';\n+// import './App.css';\n+// import ApiCRUD from './componet/apiCRUD';\n \n-function App() {\n-  <>\n-  <h1>Hello</h1>\n-    <ApiCRUD />\n-    </>\n+// function App() {\n+//   <>\n+//   <h1>Hello</h1>\n+//     <ApiCRUD />\n+//     </>\n+// }\n+\n+// export default App;\n+\n+export default function App() {\n+  return <h1>Hello World</h1>;\n }\n-\n-export default App;\n"
+                },
+                {
+                    "date": 1756968270728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,12 @@\n-// import React from 'react';\n-// import './App.css';\n-// import ApiCRUD from './componet/apiCRUD';\n+import React from 'react';\n+import './App.css';\n+import ApiCRUD from './componet/apiCRUD';\n \n-// function App() {\n-//   <>\n-//   <h1>Hello</h1>\n-//     <ApiCRUD />\n-//     </>\n-// }\n+function App() {\n+  <>\n+  <h1>Hello</h1>\n+    <ApiCRUD />\n+    </>\n+}\n \n-// export default App;\n-\n-export default function App() {\n-  return <h1>Hello World</h1>;\n-}\n+export default App;\n"
+                },
+                {
+                    "date": 1756968431395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,13 @@\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n \n function App() {\n+  return(\n   <>\n   <h1>Hello</h1>\n     <ApiCRUD />\n     </>\n+  );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756968838762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React from 'react';\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n+import Card from 'react-bootstrap/Card';\n \n function App() {\n   return(\n   <>\n"
+                },
+                {
+                    "date": 1756968872976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,13 @@\n \n function App() {\n   return(\n   <>\n-  <h1>Hello</h1>\n+  <Card>\n+    <card.body>\n+\n+    </card.body>\n+  </card>\n     <ApiCRUD />\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1756968901647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n function App() {\n   return(\n   <>\n   <Card>\n-    <card.body>\n-\n-    </card.body>\n-  </card>\n-    <ApiCRUD />\n+    <Card.body>\n+        <ApiCRUD />\n+    </Card.body>\n+  </Card>\n+    \n     </>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1756968936180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n function App() {\n   return(\n   <>\n   <Card>\n-    <Card.body>\n+    <Card.Body>\n         <ApiCRUD />\n-    </Card.body>\n+    </Card.Body>\n   </Card>\n     \n     </>\n   );\n"
+                },
+                {
+                    "date": 1756969499668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,10 @@\n \n function App() {\n   return(\n   <>\n-  <Card>\n-    <Card.Body>\n         <ApiCRUD />\n-    </Card.Body>\n-  </Card>\n-    \n-    </>\n+</>\n   );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1756969506251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n import React from 'react';\n import './App.css';\n import ApiCRUD from './componet/apiCRUD';\n-import Card from 'react-bootstrap/Card';\n \n function App() {\n   return(\n   <>\n"
+                },
+                {
+                    "date": 1757072933827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react';\n+import './App.css';\n+import ApiCRUD from './componet/apiCRUD';\n+\n+function App() {\n+  return(\n+  <>\n+        <ApiCRUD />\n+</>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1757075996654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,14 @@\n import React from 'react';\n import './App.css';\n-import ApiCRUD from './componet/apiCRUD';\n+//import ApiCRUD from './componet/apiCRUD';\n+import crud from './componet/crud';\n \n function App() {\n   return(\n   <>\n-        <ApiCRUD />\n+        <crud/>\n </>\n   );\n }\n \n export default App;\n-import React from 'react';\n-import './App.css';\n-import ApiCRUD from './componet/apiCRUD';\n-\n-function App() {\n-  return(\n-  <>\n-        <ApiCRUD />\n-</>\n-  );\n-}\n-\n-export default App;\n"
+                },
+                {
+                    "date": 1757076011406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n function App() {\n   return(\n   <>\n-        <crud/>\n+        <crud />\n </>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1757076023052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n import React from 'react';\n import './App.css';\n //import ApiCRUD from './componet/apiCRUD';\n-import crud from './componet/crud';\n+import Crud from './componet/crud';\n \n function App() {\n   return(\n   <>\n-        <crud />\n+        <Crud />\n </>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1757314247096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n //import ApiCRUD from './componet/apiCRUD';\n import Crud from './componet/crud';\n \n function App() {\n-  return(\n-  <>\n-        <Crud />\n-</>\n+  return (\n+    <>\n+      <Crud />\n+    </>\n   );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757314252196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,9 @@\n import Crud from './componet/crud';\n \n function App() {\n   return (\n-    <>\n       <Crud />\n-    </>\n   );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757314310248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from 'react';\n+//import './App.css';\n+//import ApiCRUD from './componet/apiCRUD';\n+import Crud from './componet/crud';\n+\n+function App() {\n+  return (\n+      <Crud />\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1757327004930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,12 @@\n import React from 'react';\n //import './App.css';\n //import ApiCRUD from './componet/apiCRUD';\n-import Crud from './componet/crud';\n+import Crud from './componet/Crud';\n \n function App() {\n   return (\n       <Crud />\n   );\n }\n \n export default App;\n-import React from 'react';\n-import './App.css';\n-//import ApiCRUD from './componet/apiCRUD';\n-import Crud from './componet/crud';\n-\n-function App() {\n-  return (\n-      <Crud />\n-  );\n-}\n-\n-export default App;\n"
+                },
+                {
+                    "date": 1757330190864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import React from 'react';\n //import './App.css';\n //import ApiCRUD from './componet/apiCRUD';\n+import 'bootstrap/dist/css/bootstrap.min.css';\n+import 'bootstrap-icons/font/bootstrap-icons.css';\n import Crud from './componet/Crud';\n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1757336283538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n //import './App.css';\n //import ApiCRUD from './componet/apiCRUD';\n import 'bootstrap/dist/css/bootstrap.min.css';\n import 'bootstrap-icons/font/bootstrap-icons.css';\n-import Crud from './componet/Crud';\n+import Crud from './componet/crud';\n \n function App() {\n   return (\n       <Crud />\n"
+                }
+            ],
+            "date": 1756964090302,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    \n  )\n}\n\nexport default App;\n"
+        }
+    ]
+}

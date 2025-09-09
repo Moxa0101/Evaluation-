@@ -1,0 +1,22 @@
+{
+    "sourceFile": "basic/package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1756969327097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756969342568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,13 +36,4 @@\n       \"last 1 safari version\"\n     ]\n   }\n }\n-{\n-  \"devDependencies\": {\n-    \"eslint-plugin-react-hooks\": \"^5.2.0\"\n-  },\n-  \"dependencies\": {\n-    \"bootstrap\": \"^5.3.8\",\n-    \"react-bootstrap\": \"^2.10.10\"\n-  }\n-}\n"
+                }
+            ],
+            "date": 1756969327097,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"basic\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@testing-library/dom\": \"^10.4.1\",\n    \"@testing-library/jest-dom\": \"^6.8.0\",\n    \"@testing-library/react\": \"^16.3.0\",\n    \"@testing-library/user-event\": \"^13.5.0\",\n    \"react\": \"^19.1.1\",\n    \"react-dom\": \"^19.1.1\",\n    \"react-scripts\": \"5.0.1\",\n    \"web-vitals\": \"^2.1.4\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": [\n      \"react-app\",\n      \"react-app/jest\"\n    ]\n  },\n  \"browserslist\": {\n    \"production\": [\n      \">0.2%\",\n      \"not dead\",\n      \"not op_mini all\"\n    ],\n    \"development\": [\n      \"last 1 chrome version\",\n      \"last 1 firefox version\",\n      \"last 1 safari version\"\n    ]\n  }\n}\n{\n  \"devDependencies\": {\n    \"eslint-plugin-react-hooks\": \"^5.2.0\"\n  },\n  \"dependencies\": {\n    \"bootstrap\": \"^5.3.8\",\n    \"react-bootstrap\": \"^2.10.10\"\n  }\n}\n"
+        }
+    ]
+}

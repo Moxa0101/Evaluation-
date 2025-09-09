@@ -14,7 +14,7 @@ function Main() {
     const updated = submissions.filter((_, i) => i !== index);
     setSubmissions(updated);
   };
-
+ 
   return (
     <div>
       <div className='d-flex justify-content-center align-items-center'>
@@ -127,7 +127,7 @@ function Form({ onSubmit, submissions }) {
         <div className="col-md-3">
           <label className="form-label">Age:</label>
           <input
-            type="text"
+            type="number"
             className="form-control"
             name="age"
             value={form.age}

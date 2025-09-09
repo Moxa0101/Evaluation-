@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/Pagination.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1757391111676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757391163559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     const [data, setData] = useState([]);\r\n     const [page, setPage] = useState(1);\r\n \r\n     return (\r\n+        <>\r\n         <div>\r\n             <button onClick={() => { setPage(prev => prev - 1) }} disabled={page === 1}\r\n                 style={{\r\n                     padding: '5px',\r\n@@ -35,6 +36,7 @@\n                     borderRadius: \"8px\",\r\n                     border: \"none\"\r\n                 }}>Next</button>\r\n         </div>\r\n+        </>\r\n     )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757391176815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-import React from \"react\"\r\n+import React from \"react\";\r\n+import { useState } from \"react\";\r\n \r\n function Pagination() {\r\n     const cardPerPage = 9;\r\n     const [data, setData] = useState([]);\r\n"
+                },
+                {
+                    "date": 1757391355758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,5 +39,7 @@\n                 }}>Next</button>\r\n         </div>\r\n         </>\r\n     )\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+export default Pagination();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757391369923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,5 @@\n         </>\r\n     )\r\n }\r\n \r\n-export default Pagination();\n\\ No newline at end of file\n+export default Pagination;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757408745654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,45 +1,52 @@\n import React from \"react\";\r\n-import { useState } from \"react\";\r\n \r\n-function Pagination() {\r\n-    const cardPerPage = 9;\r\n-    const [data, setData] = useState([]);\r\n-    const [page, setPage] = useState(1);\r\n+function Pagination({ total, cardPerPage, page, setPage }) {\r\n+  const totalPages = Math.ceil(total / cardPerPage);\r\n \r\n-    return (\r\n-        <>\r\n-        <div>\r\n-            <button onClick={() => { setPage(prev => prev - 1) }} disabled={page === 1}\r\n-                style={{\r\n-                    padding: '5px',\r\n-                    borderRadius: \"8px\",\r\n-                    border: \"none\",\r\n-                }}\r\n-            >Prev</button>\r\n-            {Array.from({ length: Math.ceil(data.length / cardPerPage) }, (_, idx) => (\r\n-                <button\r\n-                    key={idx}\r\n-                    onClick={() => setPage(idx + 1)}\r\n-                    style={{\r\n-                        margin: \"5px\",\r\n-                        background: page === idx + 1 ? \"blue\" : \"white\",\r\n-                        color: page === idx + 1 ? \"white\" : \"black\",\r\n-                        border: \"1px solid black\",\r\n-                        borderRadius: \"8px\",\r\n-                        padding: \"10px\",\r\n-                    }}>\r\n-                    {idx + 1}\r\n-                </button>\r\n-            ))}\r\n-            <button onClick={() => { setPage(prev => prev + 1) }} disabled={page === Math.ceil(data.length / cardPerPage)}\r\n-                style={{\r\n-                    padding: '5px',\r\n-                    borderRadius: \"8px\",\r\n-                    border: \"none\"\r\n-                }}>Next</button>\r\n-        </div>\r\n-        </>\r\n-    )\r\n+  return (\r\n\\ No newline at end of file\n+    <div className=\"d-flex justify-content-center mt-3\">\r\n+      <button\r\n+        onClick={() => setPage((prev) => prev - 1)}\r\n+        disabled={page === 1}\r\n+        style={{\r\n+          padding: \"5px 10px\",\r\n+          borderRadius: \"8px\",\r\n+          border: \"1px solid black\",\r\n+        }}\r\n+      >\r\n+        Prev\r\n+      </button>\r\n+\r\n+      {Array.from({ length: totalPages }, (_, idx) => (\r\n+        <button\r\n+          key={idx}\r\n+          onClick={() => setPage(idx + 1)}\r\n+          style={{\r\n+            margin: \"5px\",\r\n+            background: page === idx + 1 ? \"blue\" : \"white\",\r\n+            color: page === idx + 1 ? \"white\" : \"black\",\r\n+            border: \"1px solid black\",\r\n+            borderRadius: \"8px\",\r\n+            padding: \"5px 10px\",\r\n+          }}\r\n+        >\r\n+          {idx + 1}\r\n+        </button>\r\n+      ))}\r\n+\r\n+      <button\r\n+        onClick={() => setPage((prev) => prev + 1)}\r\n+        disabled={page === totalPages}\r\n+        style={{\r\n+          padding: \"5px 10px\",\r\n+          borderRadius: \"8px\",\r\n+          border: \"1px solid black\",\r\n+        }}\r\n+      >\r\n+        Next\r\n+      </button>\r\n+    </div>\r\n+  );\r\n }\r\n \r\n-export default Pagination;\n+export default Pagination;\r\n"
+                }
+            ],
+            "date": 1757391111676,
+            "name": "Commit-0",
+            "content": "import React from \"react\"\r\n\r\nfunction Pagination() {\r\n    const cardPerPage = 9;\r\n    const [data, setData] = useState([]);\r\n    const [page, setPage] = useState(1);\r\n\r\n    return (\r\n        <div>\r\n            <button onClick={() => { setPage(prev => prev - 1) }} disabled={page === 1}\r\n                style={{\r\n                    padding: '5px',\r\n                    borderRadius: \"8px\",\r\n                    border: \"none\",\r\n                }}\r\n            >Prev</button>\r\n            {Array.from({ length: Math.ceil(data.length / cardPerPage) }, (_, idx) => (\r\n                <button\r\n                    key={idx}\r\n                    onClick={() => setPage(idx + 1)}\r\n                    style={{\r\n                        margin: \"5px\",\r\n                        background: page === idx + 1 ? \"blue\" : \"white\",\r\n                        color: page === idx + 1 ? \"white\" : \"black\",\r\n                        border: \"1px solid black\",\r\n                        borderRadius: \"8px\",\r\n                        padding: \"10px\",\r\n                    }}>\r\n                    {idx + 1}\r\n                </button>\r\n            ))}\r\n            <button onClick={() => { setPage(prev => prev + 1) }} disabled={page === Math.ceil(data.length / cardPerPage)}\r\n                style={{\r\n                    padding: '5px',\r\n                    borderRadius: \"8px\",\r\n                    border: \"none\"\r\n                }}>Next</button>\r\n        </div>\r\n    )\r\n}"
+        }
+    ]
+}

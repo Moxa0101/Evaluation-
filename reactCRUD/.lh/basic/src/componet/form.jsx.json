@@ -1,0 +1,18 @@
+{
+    "sourceFile": "basic/src/componet/form.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1757326017484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1757326017484,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nexport default function PostForm({ form, setForm, handleSubmit }) {\r\n    return (\r\n        <form onSubmit={handleSubmit} className='mb-4'>\r\n            <input\r\n                type='text'\r\n                name='title'\r\n                placeholder='Enter title'\r\n                onChange={(e) => setForm({ ...form, title: e.target.value })}\r\n                value={form.title}\r\n                className='form-control mb-2'\r\n                required\r\n            />\r\n            <textarea\r\n                name='body'\r\n                placeholder='Enter Description'\r\n                value={form.body}\r\n                onChange={(e) => setForm({ ...form, body: e.target.value })}\r\n                className='form-control mb-2'\r\n                required\r\n            />\r\n            <button type=\"submit\" className='btn-submit'>Submit</button>\r\n            <button\r\n                type='button'\r\n                className='btn-reset'\r\n                onClick={() => setForm({ title: \"\", body: \"\" })}\r\n            >Reset</button>\r\n        </form>\r\n    );\r\n}\r\n"
+        }
+    ]
+}

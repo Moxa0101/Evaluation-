@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo Delta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="buttonContainer">
+                <button id="strategyOrder" class="syntax_generator active"
+                    onclick="setActive(this),showStrategyOrder()">Strategy
+                    Order</button>
+                <button id="limitOrder" class="syntax_generator" onclick="setActive(this),showslOrder()">Limit
+                    Order</button>
+                <button id="slOrder" class="syntax_generator" onclick="setActive(this)">SL Order</button>
+                <button id="sqaureOf" class="syntax_generator" onclick="setActive(this)">SquareOf Position</button>
+                <button id="cancelOrder" class="syntax_generator" onclick="setActive(this)">Cancel Order</button>
+            </div>
+            <hr style="color: white;">
+            <div class="card1">
+                <div class="card-body1">
+                    <div class="leftCtn">
+
+                        <div class="textPlusDropdown1" style="margin-right: 15px;">
+                            <b>Script Type <span class="text-muted">*</span> </b>
+                            <!-- <input type="select" placeholder="Select Scirpt Type"> -->
+                            <div class="mt-2">
+                                <select id="dropdown1">
+                                    <option selected hidden>Select Scirpt Type </option>
+                                    <option value="EQ">Equity</option>
+                                    <option value="CE">CE</option>
+                                    <option value="PE">PE </option>
+                                    <option value="FUT">Future</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="textPlusDropdown3" style="display: none;  ">
+                            <b>Selected Type <span class="text-muted">*</span></b>
+                            <div>
+                                <select id="atmdropdown" class="mt-2">
+                                    <option selected hidden disabled>Select Selection Type </option>
+                                    <option value="SYMBOL_BASED">Symbol Based</option>
+                                    <option value="PREMIUM_BASED">Premium Based</option>
+                                    <option value="ATM_BASED">ATM Based</option>
+                                </select>
+                            </div>
+                            <!-- <div style="display: flex;flex-direction:row;margin-top: 0.5em;">
+                                 -->
+                            <!-- <input type="text" id="search2" class="textbox" placeholder="Select Symbol">
+                                <ul id="dropdown" class="dropdownList"></ul>
+                                <button class="arrow"><img src="C:\Users\admin\Downloads\chevron-down.svg"></button> -->
+                        </div>
+
+
+
+                        <div class="textPlusDropdown2" style="display: none;">
+                            <b>Script <span class="text-muted">*</span></b>
+                            <div class="mt-2" style="display: flex;flex-direction:row;">
+                                <input type="text" id="search" class="textbox" placeholder="Select Symbol">
+                                <ul id="dropdown" class="dropdownList"></ul>
+                                <button class="arrow"><img src="C:\Users\admin\Downloads\chevron-down.svg"></button>
+                            </div>
+                        </div>
+
+
+                        <div id="EQOption2" style="margin-top:10px;display:none"></div>
+                        <div id="showNumberBox" style="margin-left: 5px;margin-top:10px"></div>
+                        <div id="quantityEnterShow" class="mt-3" style="display: none;">
+                            <b>Transaction Type <span class="text-muted">*</span></b>
+                            <div class="BtnGroup">
+                                <button class="buyBtn">BUY</button>
+                                <button class="sellBtn">SELL</button>
+                            </div>
+                            <div class="toggleSwitchGroup">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck1">
+                                    <label class="form-check-label" for="flexSwitchCheck">Exit on purpose </label>
+                                    <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Enable this to automatically exit the position when opposite signal generated.">
+                                        <img src="images/info-circle.svg" class="m-2">
+                                    </span>
+                                </div>
+                                <div class="form-check form-switch" id="rolloverSwitch" style="display:none;">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck5">
+                                    <label class="form-check-label" for="flexSwitchCheck">RollOver </label>
+                                    <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Enable this to rollover the position to the next expiry automatically.">
+                                        <img src="images/info-circle.svg" class="m-2">
+                                    </span>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck2">
+                                    <label class="form-check-label" for="flexSwitchCheck">Target </label>
+                                    <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Enable this to set a profile target for automatically exiting the position. ">
+                                        <img src="images/info-circle.svg" class="m-2">
+                                    </span>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck3">
+                                    <label class="form-check-label" for="flexSwitchCheck">Stoploss </label>
+                                    <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Enable stoploss to automatically exit the trade if the prrice moves against you.">
+                                        <img src="images/info-circle.svg" class="m-2">
+                                    </span>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck4">
+                                    <label class="form-check-label" for="flexSwitchCheck">Trailing </label>
+                                    <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Enable this to trail your stoploss as the price moves in your favour,helping you lock in profits automatically. ">
+                                        <img src="images/info-circle.svg" class="m-2">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="targetDropdownCtn" style="display: none;margin-right: 15px;">
+                            <b>Target Type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select how to define your target - using fixed points,percentage relative to the entry price,or a specific LTP value.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <select id="targetdropdown">
+                                    <option selected hidden disabled>Select Target Type </option>
+                                    <option value="LTP">LTP</option>
+                                    <option value="POINT">POINT</option>
+                                    <option value="PERCENTAGE">PERCENTAGE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="target_value" style="display:none">
+                            <b>Target Value <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the target value based on the selected type-fixed points,percentage or a specific LTP value.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="targetValbox" placeholder="Enter Target Value">
+                                <small id="targetError" style="color:red; display:none;">Target value can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div id="rollover_value" style="display: none;margin-right:15px;">
+                            <b>RollOver Gap <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the number of days from expiry day to trigger the rollover.For example, 0= expiry day, 1=one day after expiry.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="rollovervalbox" placeholder="Enter Target Value">
+                                <small id="rolloverError" style="color:red; display:none;">Target value can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div id="rollover_time" style="display:none">
+                            <b>RollOver Time <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select time to auto-roll your position on the rollover day.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="time" id="timeBox">
+                            </div>
+                        </div>
+                        <div id="stoplossDropdownCtn" style="display: none;margin-top:5px;margin-right:15px;">
+                            <b>Stoploss Type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select how to define the stoploos - choose from fixed points,percentage of entry price,or an absolute LTP-based value">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <select id="stoplossdropdown">
+                                    <option selected hidden disabled>Select Stoploss Type </option>
+                                    <option value="LTP">LTP</option>
+                                    <option value="POINT">POINT</option>
+                                    <option value="PERCENTAGE">PERCENTAGE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="stoploss_value" style="display:none">
+                            <b>Stoploss Value <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the stoploss value based on your selected method -fixed points,percentage of entry price, or a specific LTP value.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="stoplossValbox" placeholder="Enter Target Value">
+                                <small id="stoplossError" style="color:red; display:none;">stoploss value can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+
+                        <div id="trailingDropdownCtn" style="display: none;margin-top:5px;margin-right:15px">
+                            <b class="mt-3">Trail Type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Choose how the trailing stoploss should be applied - using a fixed value,point movement,percentage,or based on LTP.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <select id="trailingdropdown">
+                                    <option selected hidden disabled>Select Trail Type </option>
+                                    <option value="LTP">LTP</option>
+                                    <option value="POINT">POINT</option>
+                                    <option value="PERCENTAGE">PERCENTAGE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="trailingtrigger_value" style="display:none;margin-right:15px;">
+                            <b>Trail trigger <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the value at which the trail stoploss mechanism should trigger based on your selected method - fixed points,percentage,or a specific LTP value.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="trailtriggerValbox" placeholder="Enter Trail Trigger">
+                                <small id="trailTriggerError" style="color:red; display:none;">Trail trigger can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div id="trailinggap_value" style="margin-right:15px;display:none;">
+                            <b>Trail Gap <span class="text-muted">*</span><span class="details" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Specify the gap to maintain between the price and the trail stop after each movement. ">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="trailGapValbox" placeholder="Enter Trail Gap">
+                                <small id="trailGapError" style="color:red; display:none;">Trail Gap can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div id="trailingpoint_value" style="margin-left:15px;display:none;">
+                            <b>Trail Point <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Define the price movement requrired to shift the trail stop by the specified gap.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="trailPointValbox" placeholder="Enter Trail Trigger">
+                                <small id="trailPointError" style="color:red; display:none;">Trail Point can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+
+                        <div class="expiryGap" style="display:none;margin-right:15px;">
+                            <b>Expiry Gap <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Use this to choose how many upcoming expiries to skip based on the selected expiry type(Weeklu orMonthly).A gap of 0 selects the nearest expiry,1 skips one and picks the next,2 skips two and picks the third,and so on">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="futExpiryGap" placeholder="Enter Expiry Gap">
+                                <small id="futExpiryGapError" style="color:red; display:none;">Expiry Gap can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="timeline" style="display: none;margin-right:15px">
+                            <b>Expiry type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select whether you want to trade Weekly or Monthly expiry contracts for the selected script.">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <select id="timelineDropdown">
+                                    <option selected hidden disabled>Select Expiry time </option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="productType" style="margin-right: 15px;display:none"></div>
+                        <div id="productOnselect" style="margin-right: 15px;"></div>
+                        <div id="futbuySell"></div>
+                        <div id="futSwitchshowCtn"></div>
+
+                        <div class="CEpremium" style="display:none;margin-right:15px;">
+                            <b>Premium <span class="text-muted">*</span><span class="details" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="">
+                                    <img src="images/info-circle.svg" class="m-2">
+                                </span></b>
+                            <div>
+                                <input type="number" id="premiumbox" placeholder="Enter Expiry Gap">
+                                <small id="premiumvalError" style="color:red; display:none;">Premium can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+
+
+                        <div id="cedropdown" style="display: none;"></div>
+
+                        <div style=" display:flex;flex-direction:row;">
+                            <div id="CEcontentreuse" style=" display:flex;flex-direction:row;">
+                                <div class="maxvariation" style="display:none;margin-right:15px;">
+                                    <b>Max Variation <span class="text-muted">*</span><span class="details"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="">
+                                            <img src="images/info-circle.svg" class="m-2">
+                                        </span></b>
+                                    <div>
+                                        <input type="number" id="maxvariationbox" value="10"
+                                            placeholder="Enter Expiry Gap">
+                                        <small id="maxvariationError" style="color:red; display:none;">Max variation
+                                            can't
+                                            be
+                                            less than 10.</small>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="ceSwitchCtn"></div>
+                    </div>
+                    </div>
+
+
+                <div class="rightCtn">
+                    <div class="textAndButtonContainer mb-3">
+                        <b>Generated Code</b>
+                        <div>
+                            <button class="btn btn-warning" id="copyBtn"><img
+                                    src="C:\Users\admin\Downloads\copy.svg"></button>
+                            <button class="btn btn-danger" id="deleteBtn"><img
+                                    src="C:\Users\admin\Downloads\x.svg"></button>
+                        </div>
+                    </div>
+                    <div class="generatedCode">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="text-content"></div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/monaco-editor@0.52.0/min/vs/loader.js"></script>
+    <script src="syntaxGenerator.js"></script>
+
+</body>
+
+</html>

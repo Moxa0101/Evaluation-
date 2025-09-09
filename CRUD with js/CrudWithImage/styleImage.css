@@ -1,7 +1,28 @@
-#showBtn {
-    margin-top: 10px;
-    margin-left: 45%;
-    margin-right: 35%;
+
+:root{
+    --card-background: rgb(244, 250, 253);
+    --text-color:black;
+    --background-color: white;
+    --color:black;
+}
+
+body.darkMode{
+    --card-background:rgba(173, 173, 190, 0.612);
+    --background-color:rgba(0, 0, 0, 0.742);
+    --color:white;
+    --text-color:white;
+}
+
+
+body{
+    background-color: var(--background-color);
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .profile-img {
@@ -13,20 +34,109 @@
     display: block;
 }
 
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    overflow: visible !important;
+}
+
+#carouselExampleAutoplaying{
+    background-color: var(--card-background);
+}
+
 .carousel-item {
     text-align: center;
     padding: 20px;
-    background-color: rgb(111, 159, 218);
 }
 
+
+#name{
+    color: var(--text-color);
+}
+
+#position{
+    color: var(--text-color);
+}
+
+
 .desc {
-    width: 100%;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--background-color);
+    position: relative;
+    max-width: 100%;
+    cursor: pointer;
+    overflow: visible;
+    color:var(--text-color);
+}
+
+.desc-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.desc .tooltip::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(106, 186, 222) transparent;
+}
+
+.desc .tooltip {
+    margin: 10px;
+    white-space: normal;
+    visibility: hidden;
+    background: rgb(106, 186, 222);
+    color: black;
+    padding: 5px 8px;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(15%);
+    max-width: 500px;
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 12px;
-    background-color: white;
-    font-size: larger;
-    padding: 20px;
+}
+
+
+
+.desc:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target]{
+    width:10px;
+    height: 10px;
+    border:solid rgb(20,157,221);
+    border-radius: 50%;
+    background-color: var(--background-color);
+}
+
+.carousel-indicators .active{
+    background-color: rgb(20,157,221);
+}
+
+
+
+
+#theme-toggle{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: solid  rgb(20,157,221) ;
 }

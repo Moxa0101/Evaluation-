@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/DeleteModal.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1757408616089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1757408616089,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { Modal, Button } from \"react-bootstrap\";\r\n\r\nexport default function DeleteModal({ show, onClose, onConfirm, post }) {\r\n  return (\r\n    <Modal show={show} onHide={onClose}>\r\n      <Modal.Header closeButton>\r\n        <Modal.Title>Confirm Delete</Modal.Title>\r\n      </Modal.Header>\r\n      <Modal.Body>\r\n        {post ? (\r\n          <>\r\n            Do you really want to delete this post?\r\n            <br />\r\n            <strong>{post.title}</strong>\r\n          </>\r\n        ) : (\r\n          \"Do you really want to delete this post?\"\r\n        )}\r\n      </Modal.Body>\r\n      <Modal.Footer>\r\n        <Button variant=\"secondary\" onClick={onClose}>\r\n          Cancel\r\n        </Button>\r\n        <Button variant=\"danger\" onClick={onConfirm}>\r\n          Delete\r\n        </Button>\r\n      </Modal.Footer>\r\n    </Modal>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

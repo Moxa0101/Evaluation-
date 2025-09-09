@@ -1,0 +1,38 @@
+{
+    "sourceFile": "basic/src/componet/test.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1756967544445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756967577835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n-import React from 'react'\r\n+import React, { useEffect } from 'react'\r\n \r\n export const test = () => {\r\n-  return (\r\n-    fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n-  .then((response) => response.json())\r\n-  .then((json) => console.log(json));\r\n-  )\r\n+    return (\r\n+        useEffect(() => {\r\n+            fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n+                .then((response) => response.json())\r\n+                .then((json) => console.log(json));\r\n+        })\r\n+    )\r\n }\r\n"
+                },
+                {
+                    "date": 1756967584538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useEffect } from 'react'\r\n \r\n-export const test = () => {\r\n+export const Test = () => {\r\n     return (\r\n         useEffect(() => {\r\n             fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n                 .then((response) => response.json())\r\n"
+                },
+                {
+                    "date": 1756967684092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useEffect } from 'react'\r\n \r\n-export const Test = () => {\r\n+export const function Test = () => {\r\n     return (\r\n         useEffect(() => {\r\n             fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n                 .then((response) => response.json())\r\n"
+                },
+                {
+                    "date": 1756967689106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useEffect } from 'react'\r\n \r\n-export const function Test = () => {\r\n+export default function Test = () => {\r\n     return (\r\n         useEffect(() => {\r\n             fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n                 .then((response) => response.json())\r\n"
+                },
+                {
+                    "date": 1756967710976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useEffect } from 'react'\r\n \r\n-export default function Test = () => {\r\n+export default function Test  ()  {\r\n     return (\r\n         useEffect(() => {\r\n             fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n                 .then((response) => response.json())\r\n"
+                }
+            ],
+            "date": 1756967544445,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nexport const test = () => {\r\n  return (\r\n    fetch('https://jsonplaceholder.typicode.com/posts/1')\r\n  .then((response) => response.json())\r\n  .then((json) => console.log(json));\r\n  )\r\n}\r\n"
+        }
+    ]
+}

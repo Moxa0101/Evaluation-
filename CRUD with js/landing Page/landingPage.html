@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algodelta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="landingPage.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div
+        style="position: sticky; top: 0;  margin-bottom:50px; background-color: rgb(6, 15, 17); z-index:2;padding-bottom:20px">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+            <div class="container-fluid">
+                <img src="C:\Users\admin\Downloads\logo.png" class="logoImg">
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Copy Trading</a>
+                    </li>
+                </ul>
+            </div>
+            <div >
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#productsSidebar" aria-controls="productsSidebar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a class="callButton" data-bs-toggle="offcanvas" data-bs-target="#phoneSidebar"><i
+                        class="fa-solid fa-phone"></i></a>
+                <a class="login ml-2 mr-2" href="./login.html">LOGIN<span class="fa-solid fa-arrow-trend-up"> </span></a>
+            </div>
+    </div>
+    </nav>
+
+    <!-- sidebar of Toggle button -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="productsSidebar"
+        style="background-color: rgb(46,46,46); text-align:left;">
+        <div class="offcanvas-header">
+            <a class="callButton" data-bs-toggle="offcanvas" data-bs-target="#phoneSidebar"><i
+                    class="fa-solid fa-phone"></i></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Copy Trading</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sidebar of phone icon -->
+    <div class="offcanvas offcanvas-end text-white" tabindex="-1" id="phoneSidebar"
+        style="background-color: rgb(46, 46, 46);">
+        <div class="offcanvas-header">
+            <img src="C:\Users\admin\Downloads\logo.png" width="30%">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body listHeading">
+            <h2>Get In Touch</h2>
+            <p> Please fill out the form below if you have a plan or project in mind that you'd like to share with us.
+            </p>
+            <p class="mt-5">We're Available, Call Now (Mon-Sat, 9 AM - 6 PM):</p>
+            <p style="font-size: larger;">Support Team : <i class="fa-solid fa-tty" style="margin-right: 10px;"></i><i
+                    class="fab fa-whatsapp" style="margin-right: 10px;"></i>+911234567891</p>
+            <p style="font-size: larger;">Sales and Franchise support : <i class="fa-solid fa-tty"
+                    style="margin-right: 10px;"></i><i class="fab fa-whatsapp"
+                    style="margin-right: 10px;"></i>+911234567891</p>
+            <p class="mt-5">Send Us An Email:<br>
+                contact@algodelta.com<br> info@algodelta.com</p>
+            <p style="opacity: 0.7; margin-top:50px">Follow us</p>
+            <div style=" font-size:x-large"><i class="fab fa-twitter m-3"></i><i class="fab fa-facebook "></i><i
+                    class="fab fa-youtube m-3"></i><i class="fab fa-linkedin"></i><i class="fab fa-instagram m-3"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- background-image -->
+    <div class="bgImg"></div>
+
+
+    <!--introduction-->
+    <h1 class="textUnderNav ">India's Best Copy Trading <br> Software</h1>
+    <p class="intro container mb-5">Place an order in your master account, and it will be copied to all child
+        accounts
+        instantly. No matter where
+        you place the order, broker's website, mobile app, or any algo trading software. That's why AlgoDelta is
+        India’s
+        top #1 choice for copy trading, built for Indian traders with bank-level data security.</p>
+
+    <a style=" margin-top:50px;" class="login" href="./login.html">LOGIN<span class="fa-solid fa-arrow-trend-up">
+        </span></a>
+
+    <!--orange gradient +slider warning and companylogos -->
+    <div class="bottomPart">
+        <h4>All Brokers Supported</h4>
+        <div class="logo-slider">
+            <div class="logo-track">
+                <img src="images/logo1.png">
+                <img src="images/logo2.png">
+                <img src="images/logo3.png">
+                <img src="images/logo4.png">
+                <img src="images/logo1.png">
+                <img src="images/logo2.png">
+                <img src="images/logo3.png">
+                <img src="images/logo4.png">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom orange gradient -->
+    <div class="bottomBg"></div>
+
+    <!-- notice slider of warning -->
+    <div class=" mt-5 reveal" style="color: rgb(255, 81, 0); text-align:center;">
+        <p>- Important Notice!!</p>
+    </div>
+    <div class="  warningBox ">
+        <div class="warning">
+            <p>
+                We are a purely technology-driven platform. We do not provide any trading recommendations, financial
+                advice, or strategy suggestions. Our system is designed to offer Single and Multiple Account
+                Management with seamless, real-time order execution. All services are in full compliance with SEBI
+                guidelines.
+            </p>
+        </div>
+    </div>
+
+
+    <!--convincing text-->
+    <div class="reasonToChoose ">
+        <h2> Why AlgoDelta </h2>
+        <p class="container mt-4">Choose Algodelta for cutting-edge trading solutions that empower you with
+            innovative
+            tools and effortless API
+            integration, enabling tailored automation strategies to enhance your trading experience.</p>
+    </div>
+
+    <!--feature introduction and guide and cards of what we provide-->
+    <div class="multipleCards ">
+        <div class="card1" >
+            <img src="images/card1.webp">
+            <div class="card-body">
+                <h5 class="mt-5">Cross-Broker Platform</h5>
+                <p class="card-text mt-3">
+                    Trade with confidence across 25+ integrated brokers. AlgoDelta’s multi-broker platform gives you
+                    real-time execution, seamless switching, and total flexibility.
+                </p>
+            </div>
+        </div>
+        <div class="card2 " >
+            <img src="images/card2.svg">
+            <div class="card-body mt-3">
+                <h5 class="mt-5">Live Portfolio Sync</h5>
+                <p class="card-text">
+                    Stay in sync with your broker — view accurate P&L, open positions, orders, and trades in real
+                    time.Modify, cancel, convert, or square off — all with lightning-fast, one-click actions. Built for
+                    traders who can’t afford delays.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="multipleCards">
+        <div class="card3 " >
+            <img src="images/card3.webp">
+            <div class="card-body mt-3">
+                <h5 class="mt-5">Smart Dashboard</h5>
+                <p class="card-text">
+                    Access a clean, fast, and intuitive dashboard that updates live. Monitor bridge activity, group
+                    positions, and platform usage — all in one place. Designed for clarity, speed, and total control
+                    over your trading environment.</p>
+            </div>
+        </div>
+        <div class="card4" >
+            <img src="images/card4.webp">
+            <div class="card-body mt-3">
+                <h5 class="mt-5">Enterprise-Grade Security</h5>
+                <p class="card-text">
+                    AlgoDelta protects your data and trades with enterprise-grade security — including OTP
+                    verification,
+                    encryption, and real-time validation.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- features of platform info -->
+    <h1 style="margin-top: 100px;" class="textUnderNav">Platform Compliance & Features</h1>
+    <p class="intro container mb-5">Unlike traditional platforms that lock users into a single brokerage, our system
+        is
+        designed to be broker-independent. Whether you trade with any INDIAN brokers, our platform integrates
+        seamlessly
+        with multiple brokers, giving traders the flexibility to use their preferred service providers.</p>
+
+
+    <div class="textAndImage container">
+        <div class="textBesideImage ">
+            <h2>Copy Trading</h2>
+            <p>Experience the power of our automated copy trading system that replicates trades with precision across
+                multiple Demat accounts. Enjoy both multiplier and fixed lot modes for scalable and consistent trade
+                execution. Perfect for traders seeking efficiency and high-speed performance. Our copy trading solution
+                is
+                designed for all skill levels and optimized for seamless integration with your trading strategy. Benefit
+                from dynamic trade replication and real-time execution. Enhance your portfolio with reliable, automated
+                trading features.</p>
+             <a class="videoWatch" href="https://www.youtube.com/embed/G1TLrKiyleo" target="_blank">Watch Video <i class="fab fa-youtube"></i></a>   
+        </div>
+        <img src="images/MasterAccountManage.svg" width="50%">
+    </div>
+
+    <div class="textAndImage ">
+        <img src="images/intro.gif" width="50%" style="margin-left: 50px;">
+        <div class="textBesideImage ">
+            <h2>Advanced Order Manager</h2>
+            <p>Gain full control of your trading strategy with our advanced Order Manager, designed for precision
+                and
+                automation. Set detailed parameters for entry triggers, stop-losses, targets, and trailing stops
+                using
+                real-time market data. Optimize your trades with a tool that caters to diverse market conditions.
+                Easily
+                group multiple positions under unified targets and stop-loss settings for sophisticated risk
+                management.
+                Simplify complex strategy execution and maximize profitability. Enhance your trading efficiency with
+                our
+                state-of-the-art order management system.</p>
+                <a class="videoWatch" href="https://www.youtube.com/embed/62QI6gHYk1k" target="_blank">Watch Video <i class="fab fa-youtube"></i></a> 
+        </div>
+    </div>
+
+    <div class="textAndImage">
+        <div class="textBesideImage ">
+            <h2>Bridge / Api / Webhook Integration</h2>
+            <p>Connect effortlessly to top platforms like TradingView, MT4, MT5, and AmiBroker with our cutting-edge
+                bridge integration. Leverage webhook technology for real-time signal processing and automated trade
+                execution. Stay ahead in the market with instant and accurate strategy deployment. This integration
+                streamlines your trading workflow and enhances overall system responsiveness. Automate your strategy
+                execution with confidence and precision. Experience a flexible, high-performance environment for all
+                your trading needs.</p>
+                <a class="videoWatch" href="https://www.youtube.com/embed/62QI6gHYk1k" target="_blank">Watch Video <i class="fab fa-youtube"></i></a> 
+        </div>
+        <img src="images/image2.png" width="50%">
+    </div>
+
+
+    <div class="card mb-3 container mt-5">
+        <div class="row g-0">
+
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title mb-3" >Let's Create an Amazing Project Together!</h1>
+                    <p class="
+                     ">AlgoDelta offers custom software development services for trading and
+                        investment needs with a
+                        focus on quality, security, and user experience. The experienced development team is ready
+                        to
+                        deliver solutions that meet clients' requirements.</p>
+                    <button id="connectBtn"><span class="m-4">Let's Get Connected<i class="fa-solid fa-arrow-trend-up">
+                            </i></span></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Project.svg" class="img-fluid rounded-start">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- all broker supported with two half circles -->
+    <div class="custom_container">
+        <div style="margin-left: 20%;margin-right:20%;">
+            <div class="halfCircle"></div>
+            <div class="custom_containerText reveal">
+                <h1 style="margin-top: 100px;"><b>All Brokers Supported</b></h1>
+                <h4 class="mt-3 "><i>AlgoDelta's Algo Trading Platform is compatible with various standard trading
+                        API providers and brokers.
+                    </i></h4>
+                <p class="reveal">Our compatibility with multiple brokers ensures that our clients have a wide range of
+                    options to
+                    choose
+                    from,
+                    based on their preferences and trading strategies. Whether you use a broker for low latency
+                    execution,
+                    high-frequency trading, or for a simple and cost-effective way to trade, we have you covered.We
+                    understand
+                    the importance of using a trusted and reliable broker, which is why we make sure to work with
+                    only
+                    the
+                    best
+                    providers in the industry. Our team regularly tests and evaluates the performance of our
+                    supported
+                    brokers
+                    to make sure that they are providing our clients with the best possible trading experience.</p>
+            </div>
+            <img src="images/bottomLogo1.png" width="40px" style="border-radius:6px; margin:3px;">
+            <img src="images/bottomLogo2.svg" width="40px" style="border-radius:6px;margin:3px;">
+            <img src="images/bottomLogo3.webp" width="40px" style="border-radius:6px;margin:3px;">
+            <img src="images/bottomLogo4.svg" width="40px" style="border-radius:6px;margin:3px;">
+            <img src="images/bottomLogo5.svg" width="40px" style="border-radius:6px;margin:3px;">
+            <img src="images/bottomLogo6.svg" width="40px" style="border-radius:6px;margin:3px;">
+            <img src="images/bottomLogo7.webp" width="40px" style="border-radius:6px;margin:3px;">
+            <span style="margin-left: 5px; color:rgb(255, 81, 0)">28 more</span>
+            <div >
+                <button onclick="window.location.href='login.html'" class="accountOpenBtn mt-5" style="margin-bottom:120px ; ">Don't have an account? Open
+                    here</button> 
+                   
+            </div>
+            <div class="bottomOrangeCircle"></div>
+        </div>
+    </div>
+
+
+    <!-- who we are -->
+    <div class="textAndImage mt-5">
+        <div class="textBesideImage">
+            <p style="color:rgb(255, 81, 0)">-WHO WE ARE</p>
+            <h1>Best Trading Software Provider in India</h1>
+            <p class="reveal">ALGODELTA is a technology company that specializes in developing algorithmic trading
+                software for the
+                financial market. We have a team of experienced developers and traders who are dedicated to creating
+                advanced solutions that make the trading process more efficient. With over 14 years of experience
+                and a
+                focus on innovation, ALGODELTA is a trusted provider of advanced trading solutions for clients,
+                powering
+                their trades with cutting-edge technology tailored to meet evolving market demands.
+
+                ALGODELTA has a strong focus on quality, security, and user experience, and ALGODELTA have a
+                reputation
+                for
+                delivering customized software that meets and exceeds client expectations. Our proprietary trading
+                platform
+                is equipped with advanced tools and features for manual traders, as well as fully-automated trading
+                systems
+                for professional traders and asset managers.</p>
+            <p onclick="window.location.href='./login.html'" class="accountOpenBtn mt-5">Don't have an account? Open here
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-md-12 reveal">
+            <div class="row">
+                <div class="card_1">
+                    <p>PROJECTS</p>
+                    <p style="color: rgb(202, 127, 35); font-size:50px"><b>250+</b></p>
+                    <p>Projects delivered on time</p>
+                </div>
+                <div class="card_2 mt-5">
+                    <p>CLIENTS</p>
+                    <p style="color: rgb(202, 127, 35); font-size:50px"><b>5000+</b></p>
+                    <p>Happy Customer We have across India.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card_3">
+                    <p>YEARS</p>
+                    <p style="color: rgb(202, 127, 35); font-size:50px"><b>14+</b></p>
+                    <p>Years of experience in the financial industry.</p>
+                </div>
+                <div class="card_4 mt-4">
+                    <p>COLLABORATION</p>
+                    <p style="color: rgb(202, 127, 35); font-size:50px"><b>13+</b></p>
+                    <p>Organizations trading backend system is powred by algodelta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom_container2">
+        <div class="container_content">
+            <div class="container" id="CollectionOfimages" style="width:200%;margin-top:200px">
+                <div class="upperCollage">
+                    <img src="images/img1.jpg" width="30%" style="border-radius: 8px;margin-right:20px">
+                    <img src="images/img2.jpg" width="40%" height="10%" style="border-radius: 8px; margin-top:150px">
+                </div>
+                <div class="bottomCollage">
+                    <img src="images/img3.jpg" width="40%" height="10%"
+                        style="border-radius: 8px;margin-right:20px; margin-left:30px">
+                    <img src="images/img4.jpg" width="30%" height="100px"
+                        style="border-radius: 8px; margin-bottom:50px">
+                </div>
+            </div>
+            <img src="images/Screenshot 2025-08-19 150755.png" width="50%" class="showImg" style="display: none;">
+            <div>
+                <p style="color:rgb(255, 81, 0)">-Why AlgoDelta?</p>
+                <p style="font-size: xx-large; font-weight:bold;">Why Working The Algodelta As Your Trading Software
+                    Development Company?</p>
+                <div class="imagesWithText">
+                    <img src="images/experience.png" width="10%" height="10%" class="mt-5">
+                    <div class="m-3">
+                        <span style="font-size: 25px; font-weight:500">Experienced & Skilled Resources</span><br>
+                        <span style="font-size: large;">With over 14 years of experience in the financial field and
+                            a
+                            proven track record of
+                            delivering
+                            high-quality software solutions, ALGODELTA has the expertise to develop trading software
+                            that meets
+                            your
+                            needs.</span>
+                    </div>
+                </div>
+                <div class="imagesWithText">
+                    <img src="images/on-time.png" width="10%" height="10%" class="mt-5">
+                    <div class="m-3">
+                        <span style="font-size: 25px; font-weight:500">Cost-effective & On-time Delivery</span><br>
+                        <span style="font-size: large;">At ALGODELTA, we understand that cost and time are important
+                            factors when it comes to custom software development. That's why we aim to provide
+                            cost-effective solutions that are delivered on time, every time.</span>
+                    </div>
+                </div>
+                <div class="imagesWithText">
+                    <img src="images/Project.svg" width="10%" height="10%" class="mt-5">
+                    <div class="m-3">
+                        <span style="font-size: 25px; font-weight:500">Quality and Security</span><br>
+                        <span style="font-size: large;">At ALGODELTA, we prioritize quality and security to ensure
+                            that
+                            our solutions are reliable and secure for our clients.</span>
+                    </div>
+                </div>
+                <div class="imagesWithText">
+                    <img src="images/online-learning.png" width="10%" height="10%" class="mt-5">
+                    <div class="m-3">
+                        <span style="font-size: 25px; font-weight:500">Customization</span><br>
+                        <span style="font-size: large;">Our team can provide customized solutions that cater to your
+                            specific requirements, allowing you to stand out from the competition.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- strategies we provide -->
+    <div class="backgroungGradient">
+        <div style="margin-left:50px ;margin-right:80px;">
+            <p style="color:rgb(255, 81, 0);text-align:left;">-We Work In</p>
+            <p style="font-size: 40px; font-weight:bold;text-align:left;">Types of Algo Trading Strategies We
+                Develop
+            </p>
+            <div class="row justify-content-between">
+                <div class="col lg-12">
+                    <div class="whatWeDo">
+                        <div class="IconAndData ">
+                            <div class="smallImages">
+                                <img src="images/icon1.png" width="80%">
+                            </div>
+                            <span>Option-Based Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon2.png" width="80%">
+                            </div>
+                            <span>Price Action Strategies</span>
+
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon3.png" width="80%">
+                            </div>
+                            <span>Fundamental Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon4.png" width="80%">
+                            </div>
+                            <span>Quantitative Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon5.png" width="80%">
+                            </div>
+                            <span>Swing Trading Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon6.png" width="80%">
+                            </div>
+                            <span>Day Trading Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon7.png" width="80%">
+                            </div>
+                            <span>Options Spread Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon8.svg" width="80%">
+                            </div>
+                            <span>Trend Following Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon9.png" width="80%">
+                            </div>
+                            <span>Mean Reversion Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon10.png" width="80%">
+                            </div>
+                            <span>Options Volatility Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon11.png" width="80%">
+                            </div>
+                            <span>Position Trading Strategies</span>
+                        </div>
+                        <div class="IconAndData">
+                            <div class="smallImages">
+                                <img src="images/icon12.png" width="80%">
+                            </div>
+                            <span>Pair Trading Strategies</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- since when this exist -->
+        <div class="row " id="conclusionCard">
+            <div class="col-lg-6">
+                <p style="font-size: 35px; font-weight:500; margin-top:50px; margin-left:50px; margin-right:50px;">
+                    Trusted Trading Software Company Since 2018</p>
+            </div>
+            <div class="col-lg-6 mt60 mmt40">
+                <p style="margin:50px;text-align:left;">ALGODELTA has been a
+                    trusted and reliable provider of trading software development since 2018.With years
+                    of
+                    experience in the industry, we have established ourselves as a leader in providing innovative
+                    solutions
+                    for
+                    the trading and investment industry. Our focus on quality, security, and user experience has earned
+                    us a
+                    reputation for delivering cost-effective and on-time solutions for our clients. Whether you need a
+                    custom
+                    trading platform, market scanning tools, or any other software related to trading and investments,
+                    you
+                    can
+                    trust ALGODELTA to be your trusted partner in achieving your goals.</p>
+            </div>
+        </div>
+
+
+        <!-- review carousels -->
+        <div style="margin-top: 100px;background-color:rgb(24, 24, 24); padding:50px">
+            <div class="container">
+                <p style="color:rgb(255, 81, 0);">Review/Feedback</p>
+                <h2>Our Happy Clients</h2>
+                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-4">
+                                    <div class="custom_card p-4 h-100 shadow rounded-3">
+                                        <h3 class="Name">Mohit Bhanvadiya1</h3>
+                                        <p class="role">Investment Banker</p>
+                                        <p class="mt-4 " style="text-align: left;">Working with Algodelta was a great
+                                            experience. They helped us
+                                            develop a custom
+                                            trading tool that has enabled us to make smarter, more informed investment
+                                            decisions.
+                                            The team's expertise in trading technology and their commitment to
+                                            delivering a
+                                            quality
+                                            product was evident throughout the project.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4 d-none d-lg-block">
+                                    <div class="custom_card p-4 h-100 shadow rounded-3">
+                                        <h3 class="Name">Mohit Bhanvadiya2</h3>
+                                        <p class="role">Investment Banker</p>
+                                        <p class="mt-4" style="text-align: left;">Working with Algodelta was a great
+                                            experience. They helped us
+                                            develop a custom
+                                            trading tool that has enabled us to make smarter, more informed investment
+                                            decisions.
+                                            The team's expertise in trading technology and their commitment to
+                                            delivering a
+                                            quality
+                                            product was evident throughout the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-4">
+                                    <div class="custom_card p-4 h-100 shadow rounded-3">
+                                        <h3 class="Name">Mohit Bhanvadiya3</h3>
+                                        <p class="role">Investment Banker</p>
+                                        <p class="mt-4" style="text-align: left;">Working with Algodelta was a great
+                                            experience. They helped us
+                                            develop a custom
+                                            trading tool that has enabled us to make smarter, more informed investment
+                                            decisions.
+                                            The team's expertise in trading technology and their commitment to
+                                            delivering a
+                                            quality
+                                            product was evident throughout the project.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4 d-none d-lg-block">
+                                    <div class="custom_card p-4 h-100 shadow rounded-3">
+                                        <h3 class="Name">Mohit Bhanvadiya2</h3>
+                                        <p class="role">Investment Banker</p>
+                                        <p class="mt-4" style="text-align: left;">Working with Algodelta was a great
+                                            experience. They helped us
+                                            develop a custom
+                                            trading tool that has enabled us to make smarter, more informed investment
+                                            decisions.
+                                            The team's expertise in trading technology and their commitment to
+                                            delivering a
+                                            quality
+                                            product was evident throughout the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <button id="prevBtn" class="fa-solid fa-arrow-left-long" type="button"
+                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"></button>
+                    <button id="nextBtn" class="fa-solid fa-arrow-right-long" type="button"
+                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="container m-5">
+            <img src="C:\Users\admin\Downloads\logo.png" width="25%" style="display:flex;">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 mt-5 listHeading">
+                    <p>Send Us An Email:</p>
+                    <h5>
+                        contact@algodelta.com</h5>
+                    <p class="mt-5">Give Us a Call (Mon-Sat, 9 AM - 6 PM):</p>
+                    <p style="font-size: larger;">Support Team : <i class="fa-solid fa-tty"
+                            style="margin-right: 10px;"></i><i class="fab fa-whatsapp"
+                            style="margin-right: 10px;"></i>+911234567891</p>
+                    <p style="font-size: larger;">Sales and Franchise support : <i class="fa-solid fa-tty"
+                            style="margin-right: 10px;"></i><i class="fab fa-whatsapp"
+                            style="margin-right: 10px;"></i>+911234567891</p>
+                    <p style="opacity: 0.7; margin-top:50px">Follow us</p>
+                    <div style=" font-size:x-large"><i class="fab fa-twitter m-3"></i><i class="fab fa-facebook "></i><i
+                            class="fab fa-youtube m-3"></i><i class="fab fa-linkedin"></i><i
+                            class="fab fa-instagram m-3"></i></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row mt40 ">
+                        <div class="col-lg-4 col-md-6 col-6 ">
+                            <div class="footer-links">
+                                <h5 class="listHeading headingOfList">Company Links</h5>
+                                <ul class="nav flex-column listHeading ">
+                                    <li class="footerLinks">About Us</li>
+                                    <li class="footerLinks">Contact Us</li>
+                                    <li class="footerLinks">Services</li>
+                                    <li class="footerLinks">Our Products</li>
+                                    <li class="footerLinks">Copy Trading</li>
+                                    <li class="footerLinks">Pricing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mt30">
+                            <div class="footer-links">
+                                <h5 class="listHeading headingOfList">Exchange</h5>
+                                <ul class="nav flex-column listHeading">
+                                    <li class="footerLinks">BSE India</li>
+                                    <li class="footerLinks">NSE India</li>
+                                    <li class="footerLinks">MCX India</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mt30">
+                            <div class="footer-links">
+                                <h5 class="listHeading headingOfList">Our Services</h5>
+                                <ul class="nav flex-column listHeading ">
+                                    <li class="footerLinks">Algo Trading Platform</li>
+                                    <li class="footerLinks">Market Scanning Tools</li>
+                                    <li class="footerLinks">Multi User System</li>
+                                    <li class="footerLinks">Integration with Brokers</li>
+                                    <li class="footerLinks">Multi Brokers System</li>
+                                    <li class="footerLinks">Consulting and Advisory Services.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="lastGradient">
+            <div class="container">
+                <hr>
+                <div class="footerLast">
+                    <p class="listHeading">© 2025 All Rights Reserved By <span class="footerEnd">ALGODELTA</span></p>
+                    <p><span class="footerEnd">Refund Policy</span><span class="footerEnd"> • Terms of Use </span><span
+                            class="footerEnd">•Privacy policy</span></p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+        <script>
+            window.addEventListener("scroll", () => {
+                document.querySelectorAll(".reveal").forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 50) {
+                        el.classList.add("active");
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>

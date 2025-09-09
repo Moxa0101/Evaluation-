@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>AlgoDelta</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-body">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap w-100 align-items-center">
+                        <div class="p-1 flex-fill flex-md-auto" style="min-width:120px;">
+                            <a class="nav-link text-center active" href="#" data-type="strategy_order">Strategy
+                                Order</a>
+                        </div>
+                        <div class="p-1 flex-fill flex-md-auto" style="min-width:120px;">
+                            <a class="nav-link text-center" href="#" data-type="limit_order">Limit Order</a>
+                        </div>
+                        <div class="p-1 flex-fill flex-md-auto" style="min-width:120px;">
+                            <a class="nav-link text-center" href="#" data-type="sl_order">SL Order</a>
+                        </div>
+                        <div class="p-1 flex-fill flex-md-auto" style="min-width:120px;">
+                            <a class="nav-link text-center" href="#" data-type="squareoff_position">SquareOff
+                                position</a>
+                        </div>
+                        <div class="p-1 flex-fill flex-md-auto" style="min-width:120px;">
+                            <a class="nav-link text-center" href="#" data-type="cancel_order">Cancel Order</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <hr style="color: white;">
+            <div class="row   customRow">
+                <div class="col-md-6 col-sm-12 leftSide">
+                    <div class="row ">
+                        <div class="mb-3 col-md-6 col-sm-12" id="scriptType">
+                            <b>Script Type<span class="text-muted">*</span></b>
+                            <!-- <input type="select" placeholder="Select Scirpt Type"> -->
+                            <div>
+                                <div class="mt-2 select-wrapper">
+                                    <select id="dropdown1">
+                                        <option selected hidden disabled >Select Scirpt Type </option>
+                                        <option value="EQ">Equity</option>
+                                        <option value="CE">CE</option>
+                                        <option value="PE">PE </option>
+                                        <option value="FUT">Future</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mb-3 col-md-6 col-sm-12" style="display: none;" id="optionSelection">
+                            <b>Selected Type <span class="text-muted">*</span></b>
+                            <div>
+                                <div class="select-wrapper">
+                                    <select id="atmdropdown" class="mt-2">
+                                        <option selected hidden value="">Select Selection Type </option>
+                                        <option value="SYMBOL_BASED">Symbol Based</option>
+                                        <option value="PREMIUM_BASED">Premium Based</option>
+                                        <option value="ATM_BASED">ATM Based</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" style="display: none;" id="scriptsearchbox">
+                            <b>Script <span class="text-muted">*</span></b>
+                            <div>
+                                <div class="mt-2" style="display: flex;flex-direction:row;">
+                                    <input type="text" id="search" placeholder="Select Symbol">
+                                    <ul id="dropdown" class="dropdownList"></ul>
+                                    <button class="arrow"><i class="bi bi-chevron-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" style="display: none;" id="premiumval">
+                            <b>Premium <span class="text-muted">*</span><span class="details" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Enter the target premium.An option strike closest to this value will be automatically selected.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="premiumbox" placeholder="Enter  Premium">
+                                <small id="premiumvalError" style="color:red; display:none;">Premium can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" style="display: none;" id="maxvariationCtn">
+                            <div class="maxvariation">
+                                <b>Max Variation <span class="text-muted">*</span><span class="details"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Maximum allowed deviation between the actual premium and your target value">
+                                      <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                    </span></b>
+                                <div>
+                                    <input type="number" class="mt-2" id="maxvariationbox" value="10" placeholder="Enter Expiry Gap">
+                                    <small id="maxvariationError" style="color:red; display:none;">Max variation
+                                        can't
+                                        be
+                                        less than 10.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" style="display: none;" id="AtmGap">
+                            <div class="maxvariation">
+                                <b>ATM Gap <span class="text-muted">*</span><span class="details"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Set 0 foe ATM,positive for OTM(eg. , 1= ATM+1),negative for ITM(eg. -1 =ATM-1).">
+                                      <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                    </span></b>
+                                <div>
+                                    <input type="number" class="mt-2" id="atmgapbox" placeholder="Enter Atm Gap">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 col-md-6 col-sm-12" style="display: none;" id="expiryGap">
+                            <b>Expiry Gap <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Use this to choose how many upcoming expiries to skip based on the selected expiry type(Weeklu orMonthly).A gap of 0 selects the nearest expiry,1 skips one and picks the next,2 skips two and picks the third,and so on">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="futExpiryGap" placeholder="Enter Expiry Gap">
+                                <small id="futExpiryGapError" style="color:red; display:none;">Expiry Gap can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" style="display: none;" id="expiryType">
+                            <b>Expiry type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select whether you want to trade Weekly or Monthly expiry contracts for the selected script.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <div class="mt-2 select-wrapper">
+                                    <select id="timelineDropdown">
+                                        <option selected hidden value="">Select Expiry time </option>
+                                        <option value="weekly">Weekly</option>
+                                        <option value="monthly">Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12 " style="display: none;" id="productType">
+                            <b>Product <span class="text-muted">*</span></b>
+                            <div>
+                                <div class="mt-2 select-wrapper">
+                                    <select id="productDropdown">
+                                        <option selected hidden value="">Select Product</option>
+                                        <option value="INTRADAY">INTRADAY</option>
+                                        <Option value="CARRYFORWARD">CARRYFORWARD</Option>
+                                        <Option value="DELIVERY">DELIVERY</Option>
+                                        <Option value="MARGIN">MARGIN</Option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12 " style="display: none;" id="quantityBlock">
+                            <b>Quantity <span class="text-muted">*</span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="quantityBox" class="mt-2" placeholder="Enter Quantity">
+                                <small id="quantityError" style="color:red; display:none;">Quantity must be greater than
+                                    0.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12 " style="display: none;" id="limitPrice">
+                            <b> Price <span class="text-muted">*</span><span class="details" data-bs-toggle="tooltip"
+                                    data-bs-placement="top">
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="priceLimit" placeholder="Enter Price">
+                                <small id="PriceError" style="color:red; display:none;">Price can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 col-md-6 col-sm-12 " style="display: none;" id="triggerPrice">
+                            <b>Trigger Price <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top">
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="triggerpriceBox" placeholder="Enter Price">
+                                <small id="triggerPriceError" style="color:red; display:none;"> Trigger Price can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12 " style="display: none;" id="BtnGroup">
+                            <button class="buyBtn">BUY</button>
+                            <button class="sellBtn">SELL</button>
+                        </div>
+                        <div style="display: none;" id="toggleSwitchGroup" class="mb-3 col-md-6 col-sm-12">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck1">
+                                <label class="form-check-label ml-2" for="flexSwitchCheck">Exit on purpose </label>
+                                <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enable this to automatically exit the position when opposite signal generated.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span>
+                            </div>
+                            <div class="form-check form-switch" id="rolloverSwitch" style="display:none;">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck5">
+                                <label class="form-check-label ml-2" for="flexSwitchCheck">RollOver </label>
+                                <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enable this to rollover the position to the next expiry automatically.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck2">
+                                <label class="form-check-label ml-2" for="flexSwitchCheck">Target </label>
+                                <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enable this to set a profile target for automatically exiting the position. ">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck3">
+                                <label class="form-check-label ml-2" for="flexSwitchCheck">Stoploss </label>
+                                <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enable stoploss to automatically exit the trade if the prrice moves against you.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck4">
+                                <label class="form-check-label ml-2" for="flexSwitchCheck">Trailing </label>
+                                <span class="details" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enable this to trail your stoploss as the price moves in your favour,helping you lock in profits automatically. ">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="rollover_value" style="display: none;">
+                            <b>RollOver Gap <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the number of days from expiry day to trigger the rollover.For example, 0= expiry day, 1=one day after expiry.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" id="rollovervalbox" placeholder="Enter Target Value">
+                                <small id="rolloverError" style="color:red; display:none;">Target value can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="rollover_time" style="display:none">
+                            <b>RollOver Time <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select time to auto-roll your position on the rollover day.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="time" id="timeBox" value="00:00">
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="targetDropdownCtn" style="display: none;">
+                            <b>Target Type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select how to define your target - using fixed points,percentage relative to the entry price,or a specific LTP value.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <div class="mt-2 select-wrapper ">
+                                    <select id="targetdropdown">
+                                        <option selected hidden value="">Select Target Type </option>
+                                        <option value="LTP">LTP</option>
+                                        <option value="POINT">POINT</option>
+                                        <option value="PERCENTAGE">PERCENTAGE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="target_value" style="display:none">
+                            <b>Target Value <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the target value based on the selected type-fixed points,percentage or a specific LTP value.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="targetValbox" placeholder="Enter Target Value">
+                                <small id="targetError" style="color:red; display:none;">Target value can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="stoplossDropdownCtn" style="display: none;">
+                            <b>Stoploss Type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Select how to define the stoploos - choose from fixed points,percentage of entry price,or an absolute LTP-based value">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <div class="mt-2 select-wrapper">
+                                    <select id="stoplossdropdown">
+                                        <option selected hidden value="">Select Stoploss Type </option>
+                                        <option value="LTP">LTP</option>
+                                        <option value="POINT">POINT</option>
+                                        <option value="PERCENTAGE">PERCENTAGE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="stoploss_value" style="display:none">
+                            <b>Stoploss Value <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the stoploss value based on your selected method -fixed points,percentage of entry price, or a specific LTP value.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="stoplossValbox" placeholder="Enter Target Value">
+                                <small id="stoplossError" style="color:red; display:none;">stoploss value can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 col-md-6 col-sm-12" id="trailingDropdownCtn" style="display: none;">
+                            <b class="mt-3">Trail Type <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Choose how the trailing stoploss should be applied - using a fixed value,point movement,percentage,or based on LTP.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <div class="mt-2 select-wrapper">
+                                    <select id="trailingdropdown">
+                                        <option selected hidden value="">Select Trail Type </option>
+                                        <option value="LTP">LTP</option>
+                                        <option value="POINT">POINT</option>
+                                        <option value="PERCENTAGE">PERCENTAGE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="trailingtrigger_value" style="display:none;">
+                            <b>Trail trigger <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter the value at which the trail stoploss mechanism should trigger based on your selected method - fixed points,percentage,or a specific LTP value.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="trailtriggerValbox" placeholder="Enter Trail Trigger">
+                                <small id="trailTriggerError" style="color:red; display:none;">Trail trigger can't
+                                    be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="trailinggap_value" style="display:none;">
+                            <b>Trail Gap <span class="text-muted">*</span><span class="details" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Specify the gap to maintain between the price and the trail stop after each movement. ">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="trailGapValbox" placeholder="Enter Trail Gap">
+                                <small id="trailGapError" style="color:red; display:none;">Trail Gap can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6 col-sm-12" id="trailingpoint_value" style="display:none;">
+                            <b>Trail Point <span class="text-muted">*</span><span class="details"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Define the price movement requrired to shift the trail stop by the specified gap.">
+                                  <i class="bi bi-info-circle ml-2 text-muted" style="margin-right:20px"></i>
+                                </span></b>
+                            <div>
+                                <input type="number" class="mt-2" id="trailPointValbox" placeholder="Enter Trail Trigger">
+                                <small id="trailPointError" style="color:red; display:none;">Trail Point can't be
+                                    negative.</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-12 rightCtn">
+                    <div class="textAndButtonContainer mb-3">
+                        <b>Generated Code</b>
+                        <div>
+                            <button class="btn btn-warning" id="copyBtn"><i class="bi bi-copy"></i></button>
+                            <div id="copyAlert" style="
+                                position: fixed;
+                                top: 20px;
+                                right: 50%;
+                                background: white;
+                                color: black;
+                                padding: 10px 20px;
+                                border-radius: 5px;
+                                display: none;
+                                z-index: 9999;
+                            ">Copied!</div>
+                            <button class="btn btn-danger" id="deleteBtn"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="generatedCode">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/monaco-editor@0.52.0/min/vs/loader.js"></script>
+    <script src="apply.js"></script>
+</body>
+
+</html>

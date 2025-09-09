@@ -1,0 +1,774 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 189,
+            "patches": [
+                {
+                    "date": 1755748319252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755748357897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,12 +122,13 @@\n     overflow-y: auto;\r\n     position: absolute;\r\n     width: 200px;\r\n     display: none;\r\n-  .suggestions-list li {\r\n+}\r\n+  .dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n   }\r\n-  .suggestions-list li:hover {\r\n+  .dropdownList li:hover {\r\n     background: #eee;\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755749230122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,7 +128,6 @@\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n   }\r\n   .dropdownList li:hover {\r\n-    background: #eee;\r\n+    background: rgb(32, 112, 186);\r\n   }\r\n\\ No newline at end of file\n-}\n"
+                },
+                {
+                    "date": 1755749256935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,9 @@\n     list-style: none;\r\n     padding: 5px;\r\n     margin: 0;\r\n     border: 1px solid rgb(32, 112, 186);\r\n+    background: var(--backgroundOf-feature);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: absolute;\r\n     width: 200px;\r\n@@ -129,5 +130,5 @@\n     cursor: pointer;\r\n   }\r\n   .dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n-  }\n\\ No newline at end of file\n+  }\r\n"
+                },
+                {
+                    "date": 1755749301709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n     border: 1px solid rgb(32, 112, 186);\r\n     background: var(--backgroundOf-feature);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n-    position: absolute;\r\n+    position: relative;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755749341318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,15 +120,16 @@\n     border: 1px solid rgb(32, 112, 186);\r\n     background: var(--backgroundOf-feature);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n-    position: relative;\r\n+    position: ;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n+    color: var(--font-color);\r\n   }\r\n   .dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n   }\r\n"
+                },
+                {
+                    "date": 1755749360982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,8 +118,9 @@\n     padding: 5px;\r\n     margin: 0;\r\n     border: 1px solid rgb(32, 112, 186);\r\n     background: var(--backgroundOf-feature);\r\n+     color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: ;\r\n     width: 200px;\r\n@@ -127,9 +128,9 @@\n }\r\n   .dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n-    color: var(--font-color);\r\n+   \r\n   }\r\n   .dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n   }\r\n"
+                },
+                {
+                    "date": 1755749368174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n     background: var(--backgroundOf-feature);\r\n      color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n-    position: ;\r\n+    position: absolute;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755749489402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n+    border: none;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n@@ -118,9 +119,9 @@\n     padding: 5px;\r\n     margin: 0;\r\n     border: 1px solid rgb(32, 112, 186);\r\n     background: var(--backgroundOf-feature);\r\n-     color: var(--font-color);\r\n+    color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: absolute;\r\n     width: 200px;\r\n"
+                },
+                {
+                    "date": 1755749803359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,8 +123,9 @@\n     color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: absolute;\r\n+    margin-top: 10px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755749878765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,16 @@\n     color: var(--font-color);\r\n     border: none;\r\n }\r\n \r\n+.textbox{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+}\r\n+\r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n \r\n"
+                },
+                {
+                    "date": 1755749903393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,9 @@\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n+    border-right: none;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755749935388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,12 @@\n     border: none;\r\n     border-right: none;\r\n }\r\n \r\n+.arrow{\r\n+    border: none;\r\n+}\r\n+\r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n \r\n"
+                },
+                {
+                    "date": 1755750006883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,16 +69,18 @@\n \r\n .textbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n-    border-radius: 8px;\r\n+    border-top-left-radius: 8px;\r\n+    border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n-    border-right: none;\r\n }\r\n \r\n .arrow{\r\n     border: none;\r\n+    border-top-right-radius: 8px;\r\n+    border-bottom-right-radius:8px ;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755750055517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     border-radius: 8px;\r\n     border: none;\r\n }\r\n \r\n-select ,.textbox{\r\n+select {\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755750083211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n .arrow{\r\n     border: none;\r\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n+    background: var(--backgroundOf-feature);\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755750098663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n .arrow{\r\n     border: none;\r\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n-    background: var(--backgroundOf-feature);\r\n+    background:  rgb(42, 48, 56);\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755750178095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n     border: none;\r\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n+    border-left: solid white;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755750195599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n     border: none;\r\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n-    border-left: solid white;\r\n+    border-left: 1px solid white;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755750567839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,9 @@\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n+    margin-left: -5px;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755750865089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n-    margin-left: -5px;\r\n+    color: var(--font-color);\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755751120847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,9 @@\n     color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: absolute;\r\n-    margin-top: 10px;\r\n+    margin-top: 20px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755751163410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,9 @@\n     color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: absolute;\r\n-    margin-top: 20px;\r\n+    margin-top: 50px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755751179498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,9 @@\n     color: var(--font-color);\r\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     position: absolute;\r\n-    margin-top: 50px;\r\n+    margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755751317877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \r\n @media (max-width:1118px){\r\n     .leftCtn{\r\n         flex-direction: column !important;\r\n-        justify-content: space-between !important;\r\n+        justify-content: flex-start !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755751326034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \r\n @media (max-width:1118px){\r\n     .leftCtn{\r\n         flex-direction: column !important;\r\n-        justify-content: flex-start !important;\r\n+        justify-content: space-between !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755751333665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     }\r\n }\r\n \r\n @media (max-width:1118px){\r\n-    .leftCtn{\r\n+    .leftCtn,.rightCtn{\r\n         flex-direction: column !important;\r\n         justify-content: space-between !important;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1755751384428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     }\r\n }\r\n \r\n @media (max-width:1118px){\r\n-    .leftCtn,.rightCtn{\r\n+    .leftCtn{\r\n         flex-direction: column !important;\r\n         justify-content: space-between !important;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1755751399039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \r\n @media (max-width:1118px){\r\n     .leftCtn{\r\n         flex-direction: column !important;\r\n-        justify-content: space-between !important;\r\n+        justify-content: flex-start !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755751527292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,9 @@\n .textPlusDropdown1,.textPlusDropdown2{\r\n     display: flex;\r\n     flex-direction: column;\r\n     margin: 5px;\r\n+    width: 100%;\r\n }\r\n \r\n .dropdownList{\r\n     list-style: none;\r\n"
+                },
+                {
+                    "date": 1755751540117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,8 @@\n .textPlusDropdown1,.textPlusDropdown2{\r\n     display: flex;\r\n     flex-direction: column;\r\n     margin: 5px;\r\n-    width: 100%;\r\n }\r\n \r\n .dropdownList{\r\n     list-style: none;\r\n"
+                },
+                {
+                    "date": 1755751739105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n     border: 1px solid rgb(32, 112, 186);\r\n     background: var(--backgroundOf-feature);\r\n     color: var(--font-color);\r\n     max-height: 150px;\r\n-    overflow-y: auto;\r\n+    overflow: hidden;\r\n     position: absolute;\r\n     margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n"
+                },
+                {
+                    "date": 1755751800374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,8 +144,9 @@\n     position: absolute;\r\n     margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n+    z-index: 2;\r\n }\r\n   .dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1755751862358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,8 +149,9 @@\n }\r\n   .dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n+    z-index: 2;\r\n    \r\n   }\r\n   .dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n"
+                },
+                {
+                    "date": 1755751882924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,14 +144,12 @@\n     position: absolute;\r\n     margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n-    z-index: 2;\r\n }\r\n   .dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n-    z-index: 2;\r\n    \r\n   }\r\n   .dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n"
+                },
+                {
+                    "date": 1755752052836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,8 @@\n }\r\n \r\n .leftCtn {\r\n     border: 1px solid #ccc;\r\n-    opacity: 0.5;\r\n     border-radius: 8px;\r\n     padding: 10px;\r\n     width: 45%;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755752121380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,10 +114,10 @@\n     border: 1px solid #ccc;\r\n     border-radius: 8px;\r\n     padding: 10px;\r\n     width: 45%;\r\n-    display: flex;\r\n-    flex-direction: row;\r\n+    /* display: flex;\r\n+    flex-direction: row; */\r\n     justify-content: space-around;\r\n }\r\n \r\n .textAndButtonContainer {\r\n"
+                },
+                {
+                    "date": 1755752492164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n     margin: 4%;\r\n }\r\n \r\n .generatedCode {\r\n-    background-color: rgb(42, 48, 56);\r\n+    background-color: rgb(42,48,56);\r\n     border-radius: 8px;\r\n     width: 100%;\r\n     height: 500px;\r\n     font-size: larger;\r\n"
+                },
+                {
+                    "date": 1755752501835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,9 @@\n     border-radius: 8px;\r\n     width: 100%;\r\n     height: 500px;\r\n     font-size: larger;\r\n+    z-index: -2;\r\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n"
+                },
+                {
+                    "date": 1755752555927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,8 @@\n     border-radius: 8px;\r\n     width: 100%;\r\n     height: 500px;\r\n     font-size: larger;\r\n-    z-index: -2;\r\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n"
+                },
+                {
+                    "date": 1755752567065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,9 @@\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n+    z-index: -2;\r\n }\r\n \r\n .leftCtn {\r\n     border: 1px solid #ccc;\r\n"
+                },
+                {
+                    "date": 1755752605511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n \r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n+    z-index: -5;\r\n \r\n }\r\n \r\n .card-body1 {\r\n"
+                },
+                {
+                    "date": 1755752626496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,8 +109,9 @@\n \r\n .rightCtn {\r\n     width: 50%;\r\n     z-index: -2;\r\n+    visibility: visible;\r\n }\r\n \r\n .leftCtn {\r\n     border: 1px solid #ccc;\r\n"
+                },
+                {
+                    "date": 1755752670320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n \r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n+    position: relative;\r\n     z-index: -5;\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755752679989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,8 @@\n \r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n-    position: relative;\r\n     z-index: -5;\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755752696019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,8 @@\n \r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n-    z-index: -5;\r\n \r\n }\r\n \r\n .card-body1 {\r\n@@ -108,9 +107,8 @@\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n-    z-index: -2;\r\n     visibility: visible;\r\n }\r\n \r\n .leftCtn {\r\n"
+                },
+                {
+                    "date": 1755752738715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,9 @@\n     border-radius: 8px;\r\n     width: 100%;\r\n     height: 500px;\r\n     font-size: larger;\r\n+    z-index: -2;\r\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n"
+                },
+                {
+                    "date": 1755752970357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,8 @@\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n-    visibility: visible;\r\n }\r\n \r\n .leftCtn {\r\n     border: 1px solid #ccc;\r\n"
+                },
+                {
+                    "date": 1755753016306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,8 @@\n     border-radius: 8px;\r\n     width: 100%;\r\n     height: 500px;\r\n     font-size: larger;\r\n-    z-index: -2;\r\n }\r\n \r\n .rightCtn {\r\n     width: 50%;\r\n@@ -115,10 +114,10 @@\n     border: 1px solid #ccc;\r\n     border-radius: 8px;\r\n     padding: 10px;\r\n     width: 45%;\r\n-    /* display: flex;\r\n-    flex-direction: row; */\r\n+    display: flex;\r\n+    flex-direction: row;\r\n     justify-content: space-around;\r\n }\r\n \r\n .textAndButtonContainer {\r\n"
+                },
+                {
+                    "date": 1755753250023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,10 @@\n     border: 1px solid rgb(32, 112, 186);\r\n     background: var(--backgroundOf-feature);\r\n     color: var(--font-color);\r\n     max-height: 150px;\r\n-    overflow: hidden;\r\n+    overflow-y: auto;\r\n+    z-index: 9999;\r\n     position: absolute;\r\n     margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n"
+                },
+                {
+                    "date": 1755760049214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,4 +153,9 @@\n   }\r\n   .dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n   }\r\n+  \r\n+\r\n+  .text-muted{\r\n+    color: rgb(109 122 135 / 75%) !important;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755760270194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1,.textPlusDropdown2{\r\n+.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n     display: flex;\r\n     flex-direction: column;\r\n     margin: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760288795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,10 +125,10 @@\n     justify-content: space-between;\r\n }\r\n \r\n .textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n-    display: flex;\r\n-    flex-direction: column;\r\n+    /* display: flex;\r\n+    flex-direction: column; */\r\n     margin: 5px;\r\n }\r\n \r\n .dropdownList{\r\n"
+                },
+                {
+                    "date": 1755760335833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,10 +125,10 @@\n     justify-content: space-between;\r\n }\r\n \r\n .textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n-    /* display: flex;\r\n-    flex-direction: column; */\r\n+    display: flex;\r\n+    flex-direction: column;\r\n     margin: 5px;\r\n }\r\n \r\n .dropdownList{\r\n"
+                },
+                {
+                    "date": 1755760443825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,9 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     color: var(--font-color);\r\n+    padding: 5px;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755760499293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n }\r\n \r\n .textbox{\r\n     background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n+    padding: 5px;\r\n     border-top-left-radius: 8px;\r\n     border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n"
+                },
+                {
+                    "date": 1755760517766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n }\r\n \r\n .textbox{\r\n     background-color: rgb(42, 48, 56);\r\n-    padding: 5px;\r\n+    padding: 7px;\r\n     border-top-left-radius: 8px;\r\n     border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n"
+                },
+                {
+                    "date": 1755760586392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n body {\r\n     background: black;\r\n }\r\n \r\n-@media (max-width:538px) {\r\n+@media (max-width:727px) {\r\n \r\n     .card-body1 {\r\n         display: flex;\r\n         flex-direction: column !important;\r\n@@ -82,9 +82,9 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     color: var(--font-color);\r\n-    padding: 5px;\r\n+    padding: 7px;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755760659958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,12 @@\n     .leftCtn {\r\n         width: 100% !important;\r\n         margin-top: 20px;\r\n     }\r\n+\r\n+    .textbox{\r\n+        width: 90% !important;\r\n+    }\r\n }\r\n \r\n @media (max-width:1118px){\r\n     .leftCtn{\r\n"
+                },
+                {
+                    "date": 1755760699223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,18 +19,19 @@\n         width: 100% !important;\r\n         margin-top: 20px;\r\n     }\r\n \r\n-    .textbox{\r\n-        width: 90% !important;\r\n-    }\r\n+    \r\n }\r\n \r\n @media (max-width:1118px){\r\n     .leftCtn{\r\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n+    .textbox{\r\n+        width: 90% !important;\r\n+    }\r\n \r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755760709382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n     .textbox{\r\n-        width: 90% !important;\r\n+        width: 95% !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755760717676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n     .textbox{\r\n-        width: 95% !important;\r\n+        width: 92% !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755760724796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,167 @@\n+:root {\r\n+    --font-color: white;\r\n+    --backgroundOf-feature: rgb(25, 28, 36);\r\n+}\r\n+\r\n+body {\r\n+    background: black;\r\n+}\r\n+\r\n+@media (max-width:727px) {\r\n+\r\n+    .card-body1 {\r\n+        display: flex;\r\n+        flex-direction: column !important;\r\n+    }\r\n+\r\n+    .rightCtn,\r\n+    .leftCtn {\r\n+        width: 100% !important;\r\n+        margin-top: 20px;\r\n+    }\r\n+\r\n+    \r\n+}\r\n+\r\n+@media (max-width:1118px){\r\n+    .leftCtn{\r\n+        flex-direction: column !important;\r\n+        justify-content: flex-start !important;\r\n+    }\r\n+    .textbox{\r\n+        width: 90% !important;\r\n+    }\r\n+\r\n+}\r\n+\r\n+\r\n+.card {\r\n+    background: var(--backgroundOf-feature);\r\n+    border-radius: 8px;\r\n+    margin: 20px;\r\n+    color: var(--font-color);\r\n+}\r\n+\r\n+.syntax_generator {\r\n+    border: none;\r\n+    padding: 15px;\r\n+    color: var(--font-color);\r\n+    background: var(--backgroundOf-feature);\r\n+    font-weight: 450;\r\n+    margin: 10px;\r\n+}\r\n+\r\n+.active {\r\n+    background: rgb(42, 48, 56);\r\n+    border: 1px solid var(--font-color);\r\n+    border-radius: 12px;\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(198, 195, 195, 0.35) 0px 5px 10px;\r\n+}\r\n+\r\n+option {\r\n+    border-radius: 8px;\r\n+    border: none;\r\n+}\r\n+\r\n+select {\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+}\r\n+\r\n+.textbox{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-top-left-radius: 8px;\r\n+    border-bottom-left-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+}\r\n+\r\n+.arrow{\r\n+    border: none;\r\n+    border-top-right-radius: 8px;\r\n+    border-bottom-right-radius:8px ;\r\n+    background:  rgb(42, 48, 56);\r\n+    border-left: 1px solid white;\r\n+    color: var(--font-color);\r\n+    padding: 7px;\r\n+}\r\n+\r\n+.card1 {\r\n+    border-radius: 8px;\r\n+    border: 1px solid var(--font-color);\r\n+\r\n+}\r\n+\r\n+.card-body1 {\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    justify-content: space-between;\r\n+    margin: 4%;\r\n+}\r\n+\r\n+.generatedCode {\r\n+    background-color: rgb(42,48,56);\r\n+    border-radius: 8px;\r\n+    width: 100%;\r\n+    height: 500px;\r\n+    font-size: larger;\r\n+}\r\n+\r\n+.rightCtn {\r\n+    width: 50%;\r\n+}\r\n+\r\n+.leftCtn {\r\n+    border: 1px solid #ccc;\r\n+    border-radius: 8px;\r\n+    padding: 10px;\r\n+    width: 45%;\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    justify-content: space-around;\r\n+}\r\n+\r\n+.textAndButtonContainer {\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+}\r\n+\r\n+.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    margin: 5px;\r\n+}\r\n+\r\n+.dropdownList{\r\n+    list-style: none;\r\n+    padding: 5px;\r\n+    margin: 0;\r\n+    border: 1px solid rgb(32, 112, 186);\r\n+    background: var(--backgroundOf-feature);\r\n+    color: var(--font-color);\r\n+    max-height: 150px;\r\n+    overflow-y: auto;\r\n+    z-index: 9999;\r\n+    position: absolute;\r\n+    margin-top: 40px;\r\n+    width: 200px;\r\n+    display: none;\r\n+}\r\n+  .dropdownList li {\r\n+    padding: 5px 10px;\r\n+    cursor: pointer;\r\n+   \r\n+  }\r\n+  .dropdownList li:hover {\r\n+    background: rgb(32, 112, 186);\r\n+  }\r\n+  \r\n+\r\n+  .text-muted{\r\n+    color: rgb(109 122 135 / 75%) !important;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755760751446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,179 +30,15 @@\n     }\r\n     .textbox{\r\n         width: 90% !important;\r\n     }\r\n-\r\n-}\r\n-\r\n-\r\n-.card {\r\n-    background: var(--backgroundOf-feature);\r\n-    border-radius: 8px;\r\n-    margin: 20px;\r\n-    color: var(--font-color);\r\n-}\r\n-\r\n-.syntax_generator {\r\n-    border: none;\r\n-    padding: 15px;\r\n-    color: var(--font-color);\r\n-    background: var(--backgroundOf-feature);\r\n-    font-weight: 450;\r\n-    margin: 10px;\r\n-}\r\n-\r\n-.active {\r\n-    background: rgb(42, 48, 56);\r\n-    border: 1px solid var(--font-color);\r\n-    border-radius: 12px;\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(198, 195, 195, 0.35) 0px 5px 10px;\r\n-}\r\n-\r\n-option {\r\n-    border-radius: 8px;\r\n-    border: none;\r\n-}\r\n-\r\n-select {\r\n-    background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n-    border-radius: 8px;\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-}\r\n-\r\n-.textbox{\r\n-    background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n-    border-top-left-radius: 8px;\r\n-    border-bottom-left-radius: 8px;\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-}\r\n-\r\n-.arrow{\r\n-    border: none;\r\n-    border-top-right-radius: 8px;\r\n-    border-bottom-right-radius:8px ;\r\n-    background:  rgb(42, 48, 56);\r\n-    border-left: 1px solid white;\r\n-    color: var(--font-color);\r\n-    padding: 7px;\r\n-}\r\n-\r\n-.card1 {\r\n-    border-radius: 8px;\r\n-    border: 1px solid var(--font-color);\r\n-\r\n-}\r\n-\r\n-.card-body1 {\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    justify-content: space-between;\r\n-    margin: 4%;\r\n-}\r\n-\r\n-.generatedCode {\r\n-    background-color: rgb(42,48,56);\r\n-    border-radius: 8px;\r\n-    width: 100%;\r\n-    height: 500px;\r\n-    font-size: larger;\r\n-}\r\n-\r\n-.rightCtn {\r\n-    width: 50%;\r\n-}\r\n-\r\n-.leftCtn {\r\n-    border: 1px solid #ccc;\r\n-    border-radius: 8px;\r\n-    padding: 10px;\r\n-    width: 45%;\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    justify-content: space-around;\r\n-}\r\n-\r\n-.textAndButtonContainer {\r\n-    display: flex;\r\n-    justify-content: space-between;\r\n-}\r\n-\r\n-.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n-    display: flex;\r\n-    flex-direction: column;\r\n-    margin: 5px;\r\n-}\r\n-\r\n-.dropdownList{\r\n-    list-style: none;\r\n-    padding: 5px;\r\n-    margin: 0;\r\n-    border: 1px solid rgb(32, 112, 186);\r\n-    background: var(--backgroundOf-feature);\r\n-    color: var(--font-color);\r\n-    max-height: 150px;\r\n-    overflow-y: auto;\r\n-    z-index: 9999;\r\n-    position: absolute;\r\n-    margin-top: 40px;\r\n-    width: 200px;\r\n-    display: none;\r\n-}\r\n-  .dropdownList li {\r\n-    padding: 5px 10px;\r\n-    cursor: pointer;\r\n-   \r\n-  }\r\n-  .dropdownList li:hover {\r\n-    background: rgb(32, 112, 186);\r\n-  }\r\n-  \r\n-\r\n-  .text-muted{\r\n-    color: rgb(109 122 135 / 75%) !important;\r\n-  }\n-:root {\r\n-    --font-color: white;\r\n-    --backgroundOf-feature: rgb(25, 28, 36);\r\n-}\r\n-\r\n-body {\r\n-    background: black;\r\n-}\r\n-\r\n-@media (max-width:727px) {\r\n-\r\n-    .card-body1 {\r\n-        display: flex;\r\n-        flex-direction: column !important;\r\n-    }\r\n-\r\n-    .rightCtn,\r\n-    .leftCtn {\r\n+    .arrow{\r\n         width: 100% !important;\r\n-        margin-top: 20px;\r\n     }\r\n \r\n-    \r\n }\r\n \r\n-@media (max-width:1118px){\r\n-    .leftCtn{\r\n-        flex-direction: column !important;\r\n-        justify-content: flex-start !important;\r\n-    }\r\n-    .textbox{\r\n-        width: 92% !important;\r\n-    }\r\n \r\n-}\r\n-\r\n-\r\n .card {\r\n     background: var(--backgroundOf-feature);\r\n     border-radius: 8px;\r\n     margin: 20px;\r\n"
+                },
+                {
+                    "date": 1755760766626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     .textbox{\r\n         width: 90% !important;\r\n     }\r\n     .arrow{\r\n-        width: 100% !important;\r\n+        width: 5% !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755760777815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     .textbox{\r\n         width: 90% !important;\r\n     }\r\n     .arrow{\r\n-        width: 5% !important;\r\n+        width: 10% !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755760786213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     .textbox{\r\n         width: 90% !important;\r\n     }\r\n     .arrow{\r\n-        width: 10% !important;\r\n+        width: 8% !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755760793463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     .textbox{\r\n         width: 90% !important;\r\n     }\r\n     .arrow{\r\n-        width: 8% !important;\r\n+        width: 9% !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755760802034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,8 @@\n     }\r\n     .textbox{\r\n         width: 90% !important;\r\n     }\r\n-    .arrow{\r\n-        width: 9% !important;\r\n-    }\r\n \r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755760822728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,8 @@\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n-    color: var(--font-color);\r\n     padding: 7px;\r\n }\r\n \r\n .card1 {\r\n"
+                },
+                {
+                    "date": 1755760928112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     padding: 7px;\r\n+    width: 5%;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755760938027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,8 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     padding: 7px;\r\n-    width: 5%;\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755761134482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n     .textbox{\r\n-        width: 90% !important;\r\n+        width: auto !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755761177030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n     .textbox{\r\n-        width: auto !important;\r\n+        width: fit-content !important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755761211541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n     .textbox{\r\n-        width: fit-content !important;\r\n+        width: max-content!important;\r\n     }\r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755761241961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n     .leftCtn{\r\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n-    .textbox{\r\n+    /* .textbox{\r\n         width: max-content!important;\r\n-    }\r\n+    } */\r\n \r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755761282387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,8 @@\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     z-index: 9999;\r\n     position: absolute;\r\n-    margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755761374127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     padding: 7px;\r\n+    color: var(--font-color);\r\n }\r\n \r\n .card1 {\r\n     border-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1755761424029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,11 +87,14 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     padding: 7px;\r\n-    color: var(--font-color);\r\n }\r\n \r\n+.arrow:hover{\r\n+    color: grey !important;\r\n+}\r\n+\r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n \r\n"
+                },
+                {
+                    "date": 1755761585751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n     padding: 7px;\r\n+    color: #ccc;\r\n }\r\n \r\n .arrow:hover{\r\n     color: grey !important;\r\n"
+                },
+                {
+                    "date": 1755761866698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,5 +166,9 @@\n   \r\n \r\n   .text-muted{\r\n     color: rgb(109 122 135 / 75%) !important;\r\n+  }\r\n+\r\n+  .svg{\r\n+    fill: var(--font-color);\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755761983037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,7 +168,7 @@\n   .text-muted{\r\n     color: rgb(109 122 135 / 75%) !important;\r\n   }\r\n \r\n-  .svg{\r\n-    fill: var(--font-color);\r\n-  }\n\\ No newline at end of file\n+ .arrow img{\r\n+    color: white;\r\n+ }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755762012036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,6 +169,7 @@\n     color: rgb(109 122 135 / 75%) !important;\r\n   }\r\n \r\n  .arrow img{\r\n+    filter: brightness(0) invert(1); \r\n     color: white;\r\n  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755762021573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,6 +170,5 @@\n   }\r\n \r\n  .arrow img{\r\n     filter: brightness(0) invert(1); \r\n-    color: white;\r\n  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755762577189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n }\r\n \r\n .textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n     display: flex;\r\n-    flex-direction: column;\r\n+    flex-direction: column !important;\r\n     margin: 5px;\r\n }\r\n \r\n .dropdownList{\r\n"
+                },
+                {
+                    "date": 1755762601697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n }\r\n \r\n .textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n     display: flex;\r\n-    flex-direction: column !important;\r\n+    flex-direction: column ;\r\n     margin: 5px;\r\n }\r\n \r\n .dropdownList{\r\n"
+                },
+                {
+                    "date": 1755762650955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n+.textPlusDropdown1{\r\n     display: flex;\r\n     flex-direction: column ;\r\n     margin: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755762677210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1{\r\n+.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n     display: flex;\r\n     flex-direction: column ;\r\n     margin: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755762862210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,5 +170,9 @@\n   }\r\n \r\n  .arrow img{\r\n     filter: brightness(0) invert(1); \r\n- }\n\\ No newline at end of file\n+ }\r\n+\r\n+ select option[disabled] {\r\n+  color: grey;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755762874650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,6 +173,6 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n  select option[disabled] {\r\n-  color: grey;\r\n+  color: grey !important;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755762983640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,7 +172,7 @@\n  .arrow img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n- select option[disabled] {\r\n-  color: grey !important;\r\n+.arrow img :hover{\r\n+    filter: blur(1);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755763013290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,12 +90,8 @@\n     padding: 7px;\r\n     color: #ccc;\r\n }\r\n \r\n-.arrow:hover{\r\n-    color: grey !important;\r\n-}\r\n-\r\n .card1 {\r\n     border-radius: 8px;\r\n     border: 1px solid var(--font-color);\r\n \r\n"
+                },
+                {
+                    "date": 1755763032409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,6 +169,6 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n .arrow img :hover{\r\n-    filter: blur(1);\r\n+    filter:grayscale(8);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755763057724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,7 +168,7 @@\n  .arrow img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n-.arrow img :hover{\r\n+.arrow img:hover{\r\n     filter:grayscale(8);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755763078998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,6 +169,6 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n .arrow img:hover{\r\n-    filter:grayscale(8);\r\n+    transform: rotateX('angle');\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755763139286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,6 +169,6 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n .arrow img:hover{\r\n-    transform: rotateX('angle');\r\n+    filter: blur(5px);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755763153991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,6 +169,6 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n .arrow img:hover{\r\n-    filter: blur(5px);\r\n+    filter: blur(3px);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755763257142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,8 +86,9 @@\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n+    margin-top: 40px;\r\n     padding: 7px;\r\n     color: #ccc;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755763279020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius:8px ;\r\n     background:  rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n-    margin-top: 40px;\r\n+    \r\n     padding: 7px;\r\n     color: #ccc;\r\n }\r\n \r\n@@ -148,8 +148,9 @@\n     max-height: 150px;\r\n     overflow-y: auto;\r\n     z-index: 9999;\r\n     position: absolute;\r\n+    margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n   .dropdownList li {\r\n"
+                },
+                {
+                    "date": 1755771861641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,8 +124,9 @@\n     width: 45%;\r\n     display: flex;\r\n     flex-direction: row;\r\n     justify-content: space-around;\r\n+    overflow: hidden;\r\n }\r\n \r\n .textAndButtonContainer {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755771884818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,8 @@\n     width: 45%;\r\n     display: flex;\r\n     flex-direction: row;\r\n     justify-content: space-around;\r\n-    overflow: hidden;\r\n }\r\n \r\n .textAndButtonContainer {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755772544661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,8 +126,10 @@\n     flex-direction: row;\r\n     justify-content: space-around;\r\n }\r\n \r\n+\r\n+\r\n .textAndButtonContainer {\r\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n"
+                },
+                {
+                    "date": 1755772632165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,8 +123,9 @@\n     padding: 10px;\r\n     width: 45%;\r\n     display: flex;\r\n     flex-direction: row;\r\n+    flex-wrap: wrap;\r\n     justify-content: space-around;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755772654954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     width: 45%;\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n-    justify-content: space-around;\r\n+    justify-content: flex-start;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755772700990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,8 +125,9 @@\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     justify-content: flex-start;\r\n+    align-items: flex-start;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755772733747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     justify-content: flex-start;\r\n-    align-items: flex-start;\r\n+    align-content: flex-start;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755773785507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,5 +176,14 @@\n  }\r\n \r\n .arrow img:hover{\r\n     filter: blur(3px);\r\n+}\r\n+\r\n+.numberbox{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-top-left-radius: 8px;\r\n+    border-bottom-left-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755773798576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,8 @@\n \r\n .numberbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n-    border-top-left-radius: 8px;\r\n-    border-bottom-left-radius: 8px;\r\n+    border-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755773927356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,5 +184,6 @@\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n+    margin-left: 5px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755774950893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n .arrow img:hover{\r\n     filter: blur(3px);\r\n }\r\n \r\n-.numberbox{\r\n+#quantityBox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755835382207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n .generatedCode {\r\n     background-color: rgb(42,48,56);\r\n     border-radius: 8px;\r\n     width: 100%;\r\n-    height: 500px;\r\n+    height: 700px;\r\n     font-size: larger;\r\n }\r\n \r\n .rightCtn {\r\n@@ -170,9 +170,9 @@\n   .text-muted{\r\n     color: rgb(109 122 135 / 75%) !important;\r\n   }\r\n \r\n- .arrow img{\r\n+ .arrow img {\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n .arrow img:hover{\r\n@@ -185,5 +185,11 @@\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n     margin-left: 5px;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+.details img{\r\n+    filter: brightness(0) invert(1); \r\n+ }\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1755835530007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,5 +191,43 @@\n .details img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n+ .tooltip {\r\n+  position: relative;\r\n+  display: inline-block;\r\n+  border-bottom: 1px dotted black;\r\n+}\r\n \r\n+.tooltip .tooltiptext {\r\n+  visibility: hidden;\r\n+  width: 120px;\r\n+  background-color: #555;\r\n+  color: #fff;\r\n+  text-align: center;\r\n+  border-radius: 6px;\r\n+  padding: 5px 0;\r\n+  position: absolute;\r\n+  z-index: 1;\r\n+  bottom: 125%;\r\n+  left: 50%;\r\n+  margin-left: -60px;\r\n+  opacity: 0;\r\n+  transition: opacity 0.3s;\r\n+}\r\n+\r\n+.tooltip .tooltiptext::after {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  top: 100%;\r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: #555 transparent transparent transparent;\r\n+}\r\n+\r\n+.tooltip:hover .tooltiptext {\r\n+  visibility: visible;\r\n+  opacity: 1;\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1755835554173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,9 +193,8 @@\n  }\r\n \r\n  .tooltip {\r\n   position: relative;\r\n-  display: inline-block;\r\n   border-bottom: 1px dotted black;\r\n }\r\n \r\n .tooltip .tooltiptext {\r\n"
+                },
+                {
+                    "date": 1755835559851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,9 +193,9 @@\n  }\r\n \r\n  .tooltip {\r\n   position: relative;\r\n-  border-bottom: 1px dotted black;\r\n+  \r\n }\r\n \r\n .tooltip .tooltiptext {\r\n   visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755835574232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,9 +193,9 @@\n  }\r\n \r\n  .tooltip {\r\n   position: relative;\r\n-  \r\n+  filter: brightness(0) invert(1);\r\n }\r\n \r\n .tooltip .tooltiptext {\r\n   visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755835602895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -194,8 +194,9 @@\n \r\n  .tooltip {\r\n   position: relative;\r\n   filter: brightness(0) invert(1);\r\n+  color: white;\r\n }\r\n \r\n .tooltip .tooltiptext {\r\n   visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755835613210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,8 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n  .tooltip {\r\n-  position: relative;\r\n   filter: brightness(0) invert(1);\r\n   color: white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755835626555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,42 +191,5 @@\n .details img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n- .tooltip {\r\n-  filter: brightness(0) invert(1);\r\n-  color: white;\r\n-}\r\n \r\n-.tooltip .tooltiptext {\r\n-  visibility: hidden;\r\n-  width: 120px;\r\n-  background-color: #555;\r\n-  color: #fff;\r\n-  text-align: center;\r\n-  border-radius: 6px;\r\n-  padding: 5px 0;\r\n-  position: absolute;\r\n-  z-index: 1;\r\n-  bottom: 125%;\r\n-  left: 50%;\r\n-  margin-left: -60px;\r\n-  opacity: 0;\r\n-  transition: opacity 0.3s;\r\n-}\r\n-\r\n-.tooltip .tooltiptext::after {\r\n-  content: \"\";\r\n-  position: absolute;\r\n-  top: 100%;\r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: #555 transparent transparent transparent;\r\n-}\r\n-\r\n-.tooltip:hover .tooltiptext {\r\n-  visibility: visible;\r\n-  opacity: 1;\r\n-}\r\n-\r\n"
+                },
+                {
+                    "date": 1755835872346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,5 +191,44 @@\n .details img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n+ .tooltip {\r\n+  position: relative;\r\n+  display: inline-block;\r\n+  border-bottom: 1px dotted black;\r\n+}\r\n \r\n+.tooltip .tooltiptext {\r\n+  visibility: hidden;\r\n+  width: 120px;\r\n+  background-color: #555;\r\n+  color: #fff;\r\n+  text-align: center;\r\n+  border-radius: 6px;\r\n+  padding: 5px 0;\r\n+  position: absolute;\r\n+  z-index: 1;\r\n+  bottom: 125%;\r\n+  left: 50%;\r\n+  margin-left: -60px;\r\n+  opacity: 0;\r\n+  transition: opacity 0.3s;\r\n+}\r\n+\r\n+.tooltip .tooltiptext::after {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  top: 100%;\r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: #555 transparent transparent transparent;\r\n+}\r\n+\r\n+.tooltip:hover .tooltiptext {\r\n+  visibility: visible;\r\n+  opacity: 1;\r\n+}\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1755835916868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -222,9 +222,9 @@\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n-  border-color: #555 transparent transparent transparent;\r\n+  border-color: black transparent transparent transparent;\r\n }\r\n \r\n .tooltip:hover .tooltiptext {\r\n   visibility: visible;\r\n"
+                },
+                {
+                    "date": 1755835931944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -194,9 +194,9 @@\n \r\n  .tooltip {\r\n   position: relative;\r\n   display: inline-block;\r\n-  border-bottom: 1px dotted black;\r\n+  border-bottom: 1px dotted white;\r\n }\r\n \r\n .tooltip .tooltiptext {\r\n   visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755835940544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,44 +191,5 @@\n .details img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n- .tooltip {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-  border-bottom: 1px dotted white;\r\n-}\r\n \r\n-.tooltip .tooltiptext {\r\n-  visibility: hidden;\r\n-  width: 120px;\r\n-  background-color: #555;\r\n-  color: #fff;\r\n-  text-align: center;\r\n-  border-radius: 6px;\r\n-  padding: 5px 0;\r\n-  position: absolute;\r\n-  z-index: 1;\r\n-  bottom: 125%;\r\n-  left: 50%;\r\n-  margin-left: -60px;\r\n-  opacity: 0;\r\n-  transition: opacity 0.3s;\r\n-}\r\n-\r\n-.tooltip .tooltiptext::after {\r\n-  content: \"\";\r\n-  position: absolute;\r\n-  top: 100%;\r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: black transparent transparent transparent;\r\n-}\r\n-\r\n-.tooltip:hover .tooltiptext {\r\n-  visibility: visible;\r\n-  opacity: 1;\r\n-}\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1755838540251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,5 +191,10 @@\n .details img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n+ .BtnGroup{\r\n+    padding: 5px;\r\n+    border:none;\r\n+ }\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1755838662576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,13 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n  .BtnGroup{\r\n-    padding: 5px;\r\n-    border:none;\r\n+    \r\n  }\r\n \r\n+.buyBtn{\r\n+    padding: 5px;\r\n+    background: var(--backgroundOf-feature);\r\n+}\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1755838711932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,11 @@\n     \r\n  }\r\n \r\n .buyBtn{\r\n-    padding: 5px;\r\n+    padding: 15px;\r\n     background: var(--backgroundOf-feature);\r\n+    color: var(--font-color);\r\n+    border: none;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755838724390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,7 +200,8 @@\n     padding: 15px;\r\n     background: var(--backgroundOf-feature);\r\n     color: var(--font-color);\r\n     border: none;\r\n+    font-size: larger;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755838747192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,8 +197,10 @@\n  }\r\n \r\n .buyBtn{\r\n     padding: 15px;\r\n+    padding-left: 15px;\r\n+    padding-right: 15px;\r\n     background: var(--backgroundOf-feature);\r\n     color: var(--font-color);\r\n     border: none;\r\n     font-size: larger;\r\n"
+                },
+                {
+                    "date": 1755838757057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,8 @@\n     \r\n  }\r\n \r\n .buyBtn{\r\n-    padding: 15px;\r\n     padding-left: 15px;\r\n     padding-right: 15px;\r\n     background: var(--backgroundOf-feature);\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755838775205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,10 +196,11 @@\n     \r\n  }\r\n \r\n .buyBtn{\r\n-    padding-left: 15px;\r\n-    padding-right: 15px;\r\n+    padding: 15px;\r\n+    padding-left: 55px;\r\n+    padding-right: 55px;\r\n     background: var(--backgroundOf-feature);\r\n     color: var(--font-color);\r\n     border: none;\r\n     font-size: larger;\r\n"
+                },
+                {
+                    "date": 1755838814837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,12 +192,14 @@\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n  .BtnGroup{\r\n-    \r\n+    display: flex;\r\n+    flex-wrap: wrap;\r\n+    flex-direction: column;\r\n  }\r\n \r\n-.buyBtn{\r\n+.buyBtn,.sellBtn{\r\n     padding: 15px;\r\n     padding-left: 55px;\r\n     padding-right: 55px;\r\n     background: var(--backgroundOf-feature);\r\n"
+                },
+                {
+                    "date": 1755838855772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n .buyBtn,.sellBtn{\r\n     padding: 15px;\r\n     padding-left: 55px;\r\n     padding-right: 55px;\r\n-    background: var(--backgroundOf-feature);\r\n+    background:  rgb(42, 48, 56);\r\n     color: var(--font-color);\r\n     border: none;\r\n     font-size: larger;\r\n }\r\n"
+                },
+                {
+                    "date": 1755838872367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,9 @@\n  .BtnGroup{\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n     flex-direction: column;\r\n+    cursor: pointer;\r\n  }\r\n \r\n .buyBtn,.sellBtn{\r\n     padding: 15px;\r\n"
+                },
+                {
+                    "date": 1755838945456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,5 +208,10 @@\n     border: none;\r\n     font-size: larger;\r\n }\r\n \r\n+#quantityEnterShow{\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    flex-wrap: wrap;\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1755839002304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,10 +208,8 @@\n     border: none;\r\n     font-size: larger;\r\n }\r\n \r\n-#quantityEnterShow{\r\n+.toggleSwitchGroup{\r\n     display: flex;\r\n-    flex-direction: row;\r\n-    flex-wrap: wrap;\r\n+    flex-direction: column;\r\n }\r\n-\r\n"
+                },
+                {
+                    "date": 1755839068061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,8 +208,12 @@\n     border: none;\r\n     font-size: larger;\r\n }\r\n \r\n-.toggleSwitchGroup{\r\n+.toggleSwitchGroup ,.form-check{\r\n     display: flex;\r\n-    flex-direction: column;\r\n+    flex-direction: row;\r\n }\r\n+\r\n+.form-check {\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1755839084964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,9 +208,10 @@\n     border: none;\r\n     font-size: larger;\r\n }\r\n \r\n-.toggleSwitchGroup ,.form-check{\r\n+.toggleSwitchGroup ,.form-check {\r\n+    padding: 5px;\r\n     display: flex;\r\n     flex-direction: row;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755839095244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,8 @@\n     font-size: larger;\r\n }\r\n \r\n .toggleSwitchGroup ,.form-check {\r\n-    padding: 5px;\r\n     display: flex;\r\n     flex-direction: row;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755839104564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,6 +214,6 @@\n     flex-direction: row;\r\n }\r\n \r\n .form-check {\r\n-\r\n+    padding: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755839131023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,7 +213,7 @@\n     display: flex;\r\n     flex-direction: row;\r\n }\r\n \r\n-.form-check {\r\n+.form-check ,.form-switch {\r\n     padding: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755839137928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,6 +214,6 @@\n     flex-direction: row;\r\n }\r\n \r\n .form-check ,.form-switch {\r\n-    padding: 5px;\r\n+    padding: 55px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755839149396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -211,8 +211,9 @@\n \r\n .toggleSwitchGroup ,.form-check {\r\n     display: flex;\r\n     flex-direction: row;\r\n+    flex-wrap: wrap;\r\n }\r\n \r\n .form-check ,.form-switch {\r\n     padding: 55px;\r\n"
+                },
+                {
+                    "date": 1755839161529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,6 +215,6 @@\n     flex-wrap: wrap;\r\n }\r\n \r\n .form-check ,.form-switch {\r\n-    padding: 55px;\r\n+    padding: 15px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755839173592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,7 +214,5 @@\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n }\r\n \r\n-.form-check ,.form-switch {\r\n-    padding: 15px;\r\n-}\r\n+\r\n"
+                },
+                {
+                    "date": 1755839185514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -212,7 +212,8 @@\n .toggleSwitchGroup ,.form-check {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n+    margin-top: 10px;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755839200453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,7 +213,8 @@\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n+    justify-content: space-between;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755840542382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,9 +191,9 @@\n .details img{\r\n     filter: brightness(0) invert(1); \r\n  }\r\n \r\n- .BtnGroup{\r\n+ #BtnGroup{\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n     flex-direction: column;\r\n     cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1755852160983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,5 +216,14 @@\n     margin-top: 10px;\r\n     justify-content: space-between;\r\n }\r\n \r\n+#target_value{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+    margin-left: 5px;\r\n+}\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1755852255530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n     margin-top: 10px;\r\n     justify-content: space-between;\r\n }\r\n \r\n-#target_value{\r\n+#targetValbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755852998634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,238 @@\n+:root {\r\n+    --font-color: white;\r\n+    --backgroundOf-feature: rgb(25, 28, 36);\r\n+}\r\n+\r\n+body {\r\n+    background: black;\r\n+}\r\n+\r\n+@media (max-width:727px) {\r\n+\r\n+    .card-body1 {\r\n+        display: flex;\r\n+        flex-direction: column !important;\r\n+    }\r\n+\r\n+    .rightCtn,\r\n+    .leftCtn {\r\n+        width: 100% !important;\r\n+        margin-top: 20px;\r\n+    }\r\n+\r\n+    \r\n+}\r\n+\r\n+@media (max-width:1118px){\r\n+    .leftCtn{\r\n+        flex-direction: column !important;\r\n+        justify-content: flex-start !important;\r\n+    }\r\n+    /* .textbox{\r\n+        width: max-content!important;\r\n+    } */\r\n+\r\n+}\r\n+\r\n+\r\n+.card {\r\n+    background: var(--backgroundOf-feature);\r\n+    border-radius: 8px;\r\n+    margin: 20px;\r\n+    color: var(--font-color);\r\n+}\r\n+\r\n+.syntax_generator {\r\n+    border: none;\r\n+    padding: 15px;\r\n+    color: var(--font-color);\r\n+    background: var(--backgroundOf-feature);\r\n+    font-weight: 450;\r\n+    margin: 10px;\r\n+}\r\n+\r\n+.active {\r\n+    background: rgb(42, 48, 56);\r\n+    border: 1px solid var(--font-color);\r\n+    border-radius: 12px;\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(198, 195, 195, 0.35) 0px 5px 10px;\r\n+}\r\n+\r\n+option {\r\n+    border-radius: 8px;\r\n+    border: none;\r\n+}\r\n+\r\n+select {\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+}\r\n+\r\n+.textbox{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-top-left-radius: 8px;\r\n+    border-bottom-left-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+}\r\n+\r\n+.arrow{\r\n+    border: none;\r\n+    border-top-right-radius: 8px;\r\n+    border-bottom-right-radius:8px ;\r\n+    background:  rgb(42, 48, 56);\r\n+    border-left: 1px solid white;\r\n+    \r\n+    padding: 7px;\r\n+    color: #ccc;\r\n+}\r\n+\r\n+.card1 {\r\n+    border-radius: 8px;\r\n+    border: 1px solid var(--font-color);\r\n+\r\n+}\r\n+\r\n+.card-body1 {\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    justify-content: space-between;\r\n+    margin: 4%;\r\n+}\r\n+\r\n+.generatedCode {\r\n+    background-color: rgb(42,48,56);\r\n+    border-radius: 8px;\r\n+    width: 100%;\r\n+    height: 700px;\r\n+    font-size: larger;\r\n+}\r\n+\r\n+.rightCtn {\r\n+    width: 50%;\r\n+}\r\n+\r\n+.leftCtn {\r\n+    border: 1px solid #ccc;\r\n+    border-radius: 8px;\r\n+    padding: 10px;\r\n+    width: 45%;\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    flex-wrap: wrap;\r\n+    justify-content: flex-start;\r\n+    align-content: flex-start;\r\n+}\r\n+\r\n+\r\n+\r\n+.textAndButtonContainer {\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+}\r\n+\r\n+.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n+    display: flex;\r\n+    flex-direction: column ;\r\n+    margin: 5px;\r\n+}\r\n+\r\n+.dropdownList{\r\n+    list-style: none;\r\n+    padding: 5px;\r\n+    margin: 0;\r\n+    border: 1px solid rgb(32, 112, 186);\r\n+    background: var(--backgroundOf-feature);\r\n+    color: var(--font-color);\r\n+    max-height: 150px;\r\n+    overflow-y: auto;\r\n+    z-index: 9999;\r\n+    position: absolute;\r\n+    margin-top: 40px;\r\n+    width: 200px;\r\n+    display: none;\r\n+}\r\n+  .dropdownList li {\r\n+    padding: 5px 10px;\r\n+    cursor: pointer;\r\n+   \r\n+  }\r\n+  .dropdownList li:hover {\r\n+    background: rgb(32, 112, 186);\r\n+  }\r\n+  \r\n+\r\n+  .text-muted{\r\n+    color: rgb(109 122 135 / 75%) !important;\r\n+  }\r\n+\r\n+ .arrow img {\r\n+    filter: brightness(0) invert(1); \r\n+ }\r\n+\r\n+.arrow img:hover{\r\n+    filter: blur(3px);\r\n+}\r\n+\r\n+#quantityBox{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+    margin-left: 5px;\r\n+}\r\n+\r\n+.details img{\r\n+    filter: brightness(0) invert(1); \r\n+ }\r\n+\r\n+ #BtnGroup{\r\n+    display: flex;\r\n+    flex-wrap: wrap;\r\n+    flex-direction: column;\r\n+    cursor: pointer;\r\n+ }\r\n+\r\n+.buyBtn,.sellBtn{\r\n+    padding: 15px;\r\n+    padding-left: 55px;\r\n+    padding-right: 55px;\r\n+    background:  rgb(42, 48, 56);\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+    font-size: larger;\r\n+}\r\n+\r\n+.toggleSwitchGroup , {\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    flex-wrap: wrap;\r\n+    margin-top: 10px;\r\n+    justify-content: space-between;\r\n+}\r\n+\r\n+.form-check {\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    flex-wrap: wrap;\r\n+    margin-top: 10px;\r\n+    justify-content: space-between;\r\n+}\r\n+\r\n+#targetValbox{\r\n+    background-color: rgb(42, 48, 56);\r\n+    padding: 7px;\r\n+    border-radius: 8px;\r\n+    color: var(--font-color);\r\n+    border: none;\r\n+    margin-left: 5px;\r\n+}\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1755853004096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,9 +208,9 @@\n     border: none;\r\n     font-size: larger;\r\n }\r\n \r\n-.toggleSwitchGroup , {\r\n+.toggleSwitchGroup  {\r\n     display: flex;\r\n     flex-direction: column;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n@@ -235,233 +235,4 @@\n }\r\n \r\n \r\n \r\n-:root {\r\n-    --font-color: white;\r\n-    --backgroundOf-feature: rgb(25, 28, 36);\r\n-}\r\n-\r\n-body {\r\n-    background: black;\r\n-}\r\n-\r\n-@media (max-width:727px) {\r\n-\r\n-    .card-body1 {\r\n-        display: flex;\r\n-        flex-direction: column !important;\r\n-    }\r\n-\r\n-    .rightCtn,\r\n-    .leftCtn {\r\n-        width: 100% !important;\r\n-        margin-top: 20px;\r\n-    }\r\n-\r\n-    \r\n-}\r\n-\r\n-@media (max-width:1118px){\r\n-    .leftCtn{\r\n-        flex-direction: column !important;\r\n-        justify-content: flex-start !important;\r\n-    }\r\n-    /* .textbox{\r\n-        width: max-content!important;\r\n-    } */\r\n-\r\n-}\r\n-\r\n-\r\n-.card {\r\n-    background: var(--backgroundOf-feature);\r\n-    border-radius: 8px;\r\n-    margin: 20px;\r\n-    color: var(--font-color);\r\n-}\r\n-\r\n-.syntax_generator {\r\n-    border: none;\r\n-    padding: 15px;\r\n-    color: var(--font-color);\r\n-    background: var(--backgroundOf-feature);\r\n-    font-weight: 450;\r\n-    margin: 10px;\r\n-}\r\n-\r\n-.active {\r\n-    background: rgb(42, 48, 56);\r\n-    border: 1px solid var(--font-color);\r\n-    border-radius: 12px;\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(198, 195, 195, 0.35) 0px 5px 10px;\r\n-}\r\n-\r\n-option {\r\n-    border-radius: 8px;\r\n-    border: none;\r\n-}\r\n-\r\n-select {\r\n-    background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n-    border-radius: 8px;\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-}\r\n-\r\n-.textbox{\r\n-    background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n-    border-top-left-radius: 8px;\r\n-    border-bottom-left-radius: 8px;\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-}\r\n-\r\n-.arrow{\r\n-    border: none;\r\n-    border-top-right-radius: 8px;\r\n-    border-bottom-right-radius:8px ;\r\n-    background:  rgb(42, 48, 56);\r\n-    border-left: 1px solid white;\r\n-    \r\n-    padding: 7px;\r\n-    color: #ccc;\r\n-}\r\n-\r\n-.card1 {\r\n-    border-radius: 8px;\r\n-    border: 1px solid var(--font-color);\r\n-\r\n-}\r\n-\r\n-.card-body1 {\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    justify-content: space-between;\r\n-    margin: 4%;\r\n-}\r\n-\r\n-.generatedCode {\r\n-    background-color: rgb(42,48,56);\r\n-    border-radius: 8px;\r\n-    width: 100%;\r\n-    height: 700px;\r\n-    font-size: larger;\r\n-}\r\n-\r\n-.rightCtn {\r\n-    width: 50%;\r\n-}\r\n-\r\n-.leftCtn {\r\n-    border: 1px solid #ccc;\r\n-    border-radius: 8px;\r\n-    padding: 10px;\r\n-    width: 45%;\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    flex-wrap: wrap;\r\n-    justify-content: flex-start;\r\n-    align-content: flex-start;\r\n-}\r\n-\r\n-\r\n-\r\n-.textAndButtonContainer {\r\n-    display: flex;\r\n-    justify-content: space-between;\r\n-}\r\n-\r\n-.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n-    display: flex;\r\n-    flex-direction: column ;\r\n-    margin: 5px;\r\n-}\r\n-\r\n-.dropdownList{\r\n-    list-style: none;\r\n-    padding: 5px;\r\n-    margin: 0;\r\n-    border: 1px solid rgb(32, 112, 186);\r\n-    background: var(--backgroundOf-feature);\r\n-    color: var(--font-color);\r\n-    max-height: 150px;\r\n-    overflow-y: auto;\r\n-    z-index: 9999;\r\n-    position: absolute;\r\n-    margin-top: 40px;\r\n-    width: 200px;\r\n-    display: none;\r\n-}\r\n-  .dropdownList li {\r\n-    padding: 5px 10px;\r\n-    cursor: pointer;\r\n-   \r\n-  }\r\n-  .dropdownList li:hover {\r\n-    background: rgb(32, 112, 186);\r\n-  }\r\n-  \r\n-\r\n-  .text-muted{\r\n-    color: rgb(109 122 135 / 75%) !important;\r\n-  }\r\n-\r\n- .arrow img {\r\n-    filter: brightness(0) invert(1); \r\n- }\r\n-\r\n-.arrow img:hover{\r\n-    filter: blur(3px);\r\n-}\r\n-\r\n-#quantityBox{\r\n-    background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n-    border-radius: 8px;\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-    margin-left: 5px;\r\n-}\r\n-\r\n-.details img{\r\n-    filter: brightness(0) invert(1); \r\n- }\r\n-\r\n- #BtnGroup{\r\n-    display: flex;\r\n-    flex-wrap: wrap;\r\n-    flex-direction: column;\r\n-    cursor: pointer;\r\n- }\r\n-\r\n-.buyBtn,.sellBtn{\r\n-    padding: 15px;\r\n-    padding-left: 55px;\r\n-    padding-right: 55px;\r\n-    background:  rgb(42, 48, 56);\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-    font-size: larger;\r\n-}\r\n-\r\n-.toggleSwitchGroup ,.form-check {\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    flex-wrap: wrap;\r\n-    margin-top: 10px;\r\n-    justify-content: space-between;\r\n-}\r\n-\r\n-#targetValbox{\r\n-    background-color: rgb(42, 48, 56);\r\n-    padding: 7px;\r\n-    border-radius: 8px;\r\n-    color: var(--font-color);\r\n-    border: none;\r\n-    margin-left: 5px;\r\n-}\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1755853115588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,9 +135,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3{\r\n+.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3,#EQOption2{\r\n     display: flex;\r\n     flex-direction: column ;\r\n     margin: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755853266708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,9 +135,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3,#EQOption2{\r\n+.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3,#EQOption2,#showNumberBox{\r\n     display: flex;\r\n     flex-direction: column ;\r\n     margin: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755853648673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,9 +210,9 @@\n }\r\n \r\n .toggleSwitchGroup  {\r\n     display: flex;\r\n-    flex-direction: column;\r\n+    flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n     justify-content: space-between;\r\n }\r\n"
+                },
+                {
+                    "date": 1755853665063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,17 +210,17 @@\n }\r\n \r\n .toggleSwitchGroup  {\r\n     display: flex;\r\n-    flex-direction: row;\r\n+    flex-direction: column;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n     justify-content: space-between;\r\n }\r\n \r\n .form-check {\r\n     display: flex;\r\n-    flex-direction: column;\r\n+    flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n     justify-content: space-between;\r\n }\r\n"
+                },
+                {
+                    "date": 1755853697317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,9 +221,9 @@\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n-    justify-content: space-between;\r\n+    justify-content: flex-start;\r\n }\r\n \r\n #targetValbox{\r\n     background-color: rgb(42, 48, 56);\r\n"
+                },
+                {
+                    "date": 1755853722480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,9 +210,9 @@\n }\r\n \r\n .toggleSwitchGroup  {\r\n     display: flex;\r\n-    flex-direction: column;\r\n+    flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n     justify-content: space-between;\r\n }\r\n"
+                },
+                {
+                    "date": 1755853879346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,15 @@\n     .leftCtn {\r\n         width: 100% !important;\r\n         margin-top: 20px;\r\n     }\r\n+    \r\n+}\r\n \r\n+@media (max-width:415px) {\r\n+    .toggleSwitchGroup{\r\n+        flex-direction: column !important;\r\n+    }\r\n     \r\n }\r\n \r\n @media (max-width:1118px){\r\n"
+                },
+                {
+                    "date": 1755855656658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,9 +230,9 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox{\r\n+#targetValbox , #stoplossValbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755857104024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,9 +230,9 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox , #stoplossValbox{\r\n+#targetValbox , #stoplossValbox , #trailtriggerValbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755863966392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,9 +230,9 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox , #stoplossValbox , #trailtriggerValbox{\r\n+#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755924359057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,9 @@\n .textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3,#EQOption2,#showNumberBox{\r\n     display: flex;\r\n     flex-direction: column ;\r\n     margin: 5px;\r\n+    margin-right: 15px;\r\n }\r\n \r\n .dropdownList{\r\n     list-style: none;\r\n"
+                },
+                {
+                    "date": 1755925027277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n     color: rgb(109 122 135 / 75%) !important;\r\n   }\r\n \r\n  .arrow img {\r\n-    filter: brightness(0) invert(1); \r\n+    filter: brightness(0) invert(0.5); \r\n  }\r\n \r\n .arrow img:hover{\r\n     filter: blur(3px);\r\n"
+                },
+                {
+                    "date": 1755925128048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n     color: rgb(109 122 135 / 75%) !important;\r\n   }\r\n \r\n  .arrow img {\r\n-    filter: brightness(0) invert(0.5); \r\n+    filter: brightness(0) invert(0.2); \r\n  }\r\n \r\n .arrow img:hover{\r\n     filter: blur(3px);\r\n"
+                },
+                {
+                    "date": 1755925171815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n     color: rgb(109 122 135 / 75%) !important;\r\n   }\r\n \r\n  .arrow img {\r\n-    filter: brightness(0) invert(0.2); \r\n+    filter: brightness(0) invert(1); \r\n  }\r\n \r\n .arrow img:hover{\r\n     filter: blur(3px);\r\n"
+                },
+                {
+                    "date": 1755925178470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n     margin-left: 5px;\r\n }\r\n \r\n .details img{\r\n-    filter: brightness(0) invert(1); \r\n+    filter: brightness(0) invert(0.5); \r\n  }\r\n \r\n  #BtnGroup{\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755925218173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n     margin-left: 5px;\r\n }\r\n \r\n .details img{\r\n-    filter: brightness(0) invert(0.5); \r\n+    filter: brightness(0) invert(0.3); \r\n  }\r\n \r\n  #BtnGroup{\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755927032661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,9 +231,9 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox{\r\n+#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox,#futExpiryGap{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755927810476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,6 +240,10 @@\n     border: none;\r\n     margin-left: 5px;\r\n }\r\n \r\n+.disabled{\r\n+    color: grey !important;\r\n+}\r\n \r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1755927859000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n     border: none;\r\n     margin-left: 5px;\r\n }\r\n \r\n-.disabled{\r\n+select:disabled{\r\n     color: grey !important;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755927867530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,9 +241,9 @@\n     margin-left: 5px;\r\n }\r\n \r\n select:disabled{\r\n-    color: grey !important;\r\n+    opacity: 0.5;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755930563457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n-    justify-content: space-between;\r\n+    justify-content: flex-start;\r\n }\r\n \r\n .form-check {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755937851236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,6 +244,11 @@\n select:disabled{\r\n     opacity: 0.5;\r\n }\r\n \r\n+#futSwitchshowCtn{\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    flex-wrap: wrap;\r\n+}\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755939916947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,9 +231,9 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox,#futExpiryGap{\r\n+#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox,#futExpiryGap ,#rollovervalbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755942463387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,9 +231,9 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox,#futExpiryGap ,#rollovervalbox{\r\n+#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox,#futExpiryGap ,#rollovervalbox,#timeBox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755949266365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,23 +18,24 @@\n     .leftCtn {\r\n         width: 100% !important;\r\n         margin-top: 20px;\r\n     }\r\n-    \r\n+\r\n }\r\n \r\n @media (max-width:415px) {\r\n-    .toggleSwitchGroup{\r\n+    .toggleSwitchGroup {\r\n         flex-direction: column !important;\r\n     }\r\n-    \r\n+\r\n }\r\n \r\n-@media (max-width:1118px){\r\n-    .leftCtn{\r\n+@media (max-width:1118px) {\r\n+    .leftCtn {\r\n         flex-direction: column !important;\r\n         justify-content: flex-start !important;\r\n     }\r\n+\r\n     /* .textbox{\r\n         width: max-content!important;\r\n     } */\r\n \r\n@@ -77,24 +78,24 @@\n     color: var(--font-color);\r\n     border: none;\r\n }\r\n \r\n-.textbox{\r\n+.textbox {\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-top-left-radius: 8px;\r\n     border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n }\r\n \r\n-.arrow{\r\n+.arrow {\r\n     border: none;\r\n     border-top-right-radius: 8px;\r\n-    border-bottom-right-radius:8px ;\r\n-    background:  rgb(42, 48, 56);\r\n+    border-bottom-right-radius: 8px;\r\n+    background: rgb(42, 48, 56);\r\n     border-left: 1px solid white;\r\n-    \r\n+\r\n     padding: 7px;\r\n     color: #ccc;\r\n }\r\n \r\n@@ -111,9 +112,9 @@\n     margin: 4%;\r\n }\r\n \r\n .generatedCode {\r\n-    background-color: rgb(42,48,56);\r\n+    background-color: rgb(42, 48, 56);\r\n     border-radius: 8px;\r\n     width: 100%;\r\n     height: 700px;\r\n     font-size: larger;\r\n@@ -141,16 +142,20 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1,.textPlusDropdown2,.textPlusDropdown3,#EQOption2,#showNumberBox{\r\n+.textPlusDropdown1,\r\n+.textPlusDropdown2,\r\n+.textPlusDropdown3,\r\n+#EQOption2,\r\n+#showNumberBox {\r\n     display: flex;\r\n-    flex-direction: column ;\r\n+    flex-direction: column;\r\n     margin: 5px;\r\n     margin-right: 15px;\r\n }\r\n \r\n-.dropdownList{\r\n+.dropdownList {\r\n     list-style: none;\r\n     padding: 5px;\r\n     margin: 0;\r\n     border: 1px solid rgb(32, 112, 186);\r\n@@ -163,61 +168,64 @@\n     margin-top: 40px;\r\n     width: 200px;\r\n     display: none;\r\n }\r\n-  .dropdownList li {\r\n+\r\n+.dropdownList li {\r\n     padding: 5px 10px;\r\n     cursor: pointer;\r\n-   \r\n-  }\r\n-  .dropdownList li:hover {\r\n+\r\n+}\r\n+\r\n+.dropdownList li:hover {\r\n     background: rgb(32, 112, 186);\r\n-  }\r\n-  \r\n+}\r\n \r\n-  .text-muted{\r\n+\r\n+.text-muted {\r\n     color: rgb(109 122 135 / 75%) !important;\r\n-  }\r\n+}\r\n \r\n- .arrow img {\r\n-    filter: brightness(0) invert(1); \r\n- }\r\n+.arrow img {\r\n+    filter: brightness(0) invert(1);\r\n+}\r\n \r\n-.arrow img:hover{\r\n+.arrow img:hover {\r\n     filter: blur(3px);\r\n }\r\n \r\n-#quantityBox{\r\n+#quantityBox {\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n     margin-left: 5px;\r\n }\r\n \r\n-.details img{\r\n-    filter: brightness(0) invert(0.3); \r\n- }\r\n+.details img {\r\n+    filter: brightness(0) invert(0.3);\r\n+}\r\n \r\n- #BtnGroup{\r\n+#BtnGroup {\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n     flex-direction: column;\r\n     cursor: pointer;\r\n- }\r\n+}\r\n \r\n-.buyBtn,.sellBtn{\r\n+.buyBtn,\r\n+.sellBtn {\r\n     padding: 15px;\r\n     padding-left: 55px;\r\n     padding-right: 55px;\r\n-    background:  rgb(42, 48, 56);\r\n+    background: rgb(42, 48, 56);\r\n     color: var(--font-color);\r\n     border: none;\r\n     font-size: larger;\r\n }\r\n \r\n-.toggleSwitchGroup  {\r\n+.toggleSwitchGroup {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     margin-top: 10px;\r\n@@ -231,24 +239,30 @@\n     margin-top: 10px;\r\n     justify-content: flex-start;\r\n }\r\n \r\n-#targetValbox , #stoplossValbox , #trailtriggerValbox,#trailPointValbox,#trailGapValbox,#futExpiryGap ,#rollovervalbox,#timeBox{\r\n+#targetValbox,\r\n+#stoplossValbox,\r\n+#trailtriggerValbox,\r\n+#trailPointValbox,\r\n+#trailGapValbox,\r\n+#futExpiryGap,\r\n+#rollovervalbox,\r\n+#timeBox,\r\n+#premiumbox {\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n     margin-left: 5px;\r\n }\r\n \r\n-select:disabled{\r\n+select:disabled {\r\n     opacity: 0.5;\r\n }\r\n \r\n-#futSwitchshowCtn{\r\n+#futSwitchshowCtn {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n-}\r\n-\r\n-\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755951358239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,9 +247,9 @@\n #trailGapValbox,\r\n #futExpiryGap,\r\n #rollovervalbox,\r\n #timeBox,\r\n-#premiumbox {\r\n+#premiumbox ,#maxvariationbox{\r\n     background-color: rgb(42, 48, 56);\r\n     padding: 7px;\r\n     border-radius: 8px;\r\n     color: var(--font-color);\r\n"
+                },
+                {
+                    "date": 1755952165214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -260,9 +260,9 @@\n select:disabled {\r\n     opacity: 0.5;\r\n }\r\n \r\n-#futSwitchshowCtn {\r\n+#futSwitchshowCtn ,#CEcontentreuse {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756059341010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -264,5 +264,9 @@\n #futSwitchshowCtn ,#CEcontentreuse {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n+}\r\n+\r\n+b{\r\n+    margin-left: 5px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756059672392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,9 @@\n \r\n .card-body1 {\r\n     display: flex;\r\n     flex-direction: row;\r\n+    flex-wrap: wrap;\r\n     justify-content: space-between;\r\n     margin: 4%;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1756059715282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,9 @@\n     border-top-left-radius: 8px;\r\n     border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n+    max-width: 150px;\r\n }\r\n \r\n .arrow {\r\n     border: none;\r\n"
+                },
+                {
+                    "date": 1756060345145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n     border-top-left-radius: 8px;\r\n     border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n-    max-width: 150px;\r\n+    max-width: 100%;\r\n }\r\n \r\n .arrow {\r\n     border: none;\r\n"
+                },
+                {
+                    "date": 1756060455694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n     border-top-left-radius: 8px;\r\n     border-bottom-left-radius: 8px;\r\n     color: var(--font-color);\r\n     border: none;\r\n-    max-width: 100%;\r\n+    max-width: 150px;\r\n }\r\n \r\n .arrow {\r\n     border: none;\r\n"
+                },
+                {
+                    "date": 1756060712707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,17 @@\n     border: none;\r\n     max-width: 150px;\r\n }\r\n \r\n+.textPlusDropdown2,\r\n+.CEpremium,\r\n+#CEcontentreuse {\r\n+  flex-direction: row !important;  /* force row inside this block */\r\n+  align-items: center;\r\n+  gap: 10px;                        /* spacing between items */\r\n+}\r\n+\r\n+\r\n .arrow {\r\n     border: none;\r\n     border-top-right-radius: 8px;\r\n     border-bottom-right-radius: 8px;\r\n"
+                },
+                {
+                    "date": 1756060736323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,15 +88,8 @@\n     border: none;\r\n     max-width: 150px;\r\n }\r\n \r\n-.textPlusDropdown2,\r\n-.CEpremium,\r\n-#CEcontentreuse {\r\n-  flex-direction: row !important;  /* force row inside this block */\r\n-  align-items: center;\r\n-  gap: 10px;                        /* spacing between items */\r\n-}\r\n \r\n \r\n .arrow {\r\n     border: none;\r\n"
+                },
+                {
+                    "date": 1756060822479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,11 +146,11 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-.textPlusDropdown1,\r\n+/* .textPlusDropdown1,\r\n .textPlusDropdown2,\r\n-.textPlusDropdown3,\r\n+.textPlusDropdown3, */\r\n #EQOption2,\r\n #showNumberBox {\r\n     display: flex;\r\n     flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1756061016139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,11 +146,8 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-/* .textPlusDropdown1,\r\n-.textPlusDropdown2,\r\n-.textPlusDropdown3, */\r\n #EQOption2,\r\n #showNumberBox {\r\n     display: flex;\r\n     flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1756061191131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,8 +154,13 @@\n     margin: 5px;\r\n     margin-right: 15px;\r\n }\r\n \r\n+.textPlusDropdown2,\r\n+.CEpremium {\r\n+  margin-right: 0 !important;  /* remove old uneven spacing */\r\n+}\r\n+\r\n .dropdownList {\r\n     list-style: none;\r\n     padding: 5px;\r\n     margin: 0;\r\n"
+                },
+                {
+                    "date": 1756061261073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,13 +154,10 @@\n     margin: 5px;\r\n     margin-right: 15px;\r\n }\r\n \r\n-.textPlusDropdown2,\r\n-.CEpremium {\r\n-  margin-right: 0 !important;  /* remove old uneven spacing */\r\n-}\r\n \r\n+\r\n .dropdownList {\r\n     list-style: none;\r\n     padding: 5px;\r\n     margin: 0;\r\n"
+                },
+                {
+                    "date": 1756061657595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,15 +146,15 @@\n     display: flex;\r\n     justify-content: space-between;\r\n }\r\n \r\n-#EQOption2,\r\n+/* #EQOption2,\r\n #showNumberBox {\r\n     display: flex;\r\n     flex-direction: column;\r\n     margin: 5px;\r\n     margin-right: 15px;\r\n-}\r\n+} */\r\n \r\n \r\n \r\n .dropdownList {\r\n"
+                },
+                {
+                    "date": 1756099425055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,9 +263,9 @@\n select:disabled {\r\n     opacity: 0.5;\r\n }\r\n \r\n-#futSwitchshowCtn ,#CEcontentreuse {\r\n+#futSwitchshowCtn ,#CEcontentreuse ,#ceSwitchCtn{\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n }\r\n"
+                }
+            ],
+            "date": 1755748319252,
+            "name": "Commit-0",
+            "content": ":root {\r\n    --font-color: white;\r\n    --backgroundOf-feature: rgb(25, 28, 36);\r\n}\r\n\r\nbody {\r\n    background: black;\r\n}\r\n\r\n@media (max-width:538px) {\r\n\r\n    .card-body1 {\r\n        display: flex;\r\n        flex-direction: column !important;\r\n    }\r\n\r\n    .rightCtn,\r\n    .leftCtn {\r\n        width: 100% !important;\r\n        margin-top: 20px;\r\n    }\r\n}\r\n\r\n@media (max-width:1118px){\r\n    .leftCtn{\r\n        flex-direction: column !important;\r\n        justify-content: space-between !important;\r\n    }\r\n\r\n}\r\n\r\n\r\n.card {\r\n    background: var(--backgroundOf-feature);\r\n    border-radius: 8px;\r\n    margin: 20px;\r\n    color: var(--font-color);\r\n}\r\n\r\n.syntax_generator {\r\n    border: none;\r\n    padding: 15px;\r\n    color: var(--font-color);\r\n    background: var(--backgroundOf-feature);\r\n    font-weight: 450;\r\n    margin: 10px;\r\n}\r\n\r\n.active {\r\n    background: rgb(42, 48, 56);\r\n    border: 1px solid var(--font-color);\r\n    border-radius: 12px;\r\n    box-sizing: border-box;\r\n    box-shadow: rgba(198, 195, 195, 0.35) 0px 5px 10px;\r\n}\r\n\r\noption {\r\n    border-radius: 8px;\r\n    border: none;\r\n}\r\n\r\nselect ,.textbox{\r\n    background-color: rgb(42, 48, 56);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    color: var(--font-color);\r\n}\r\n\r\n.card1 {\r\n    border-radius: 8px;\r\n    border: 1px solid var(--font-color);\r\n\r\n}\r\n\r\n.card-body1 {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    margin: 4%;\r\n}\r\n\r\n.generatedCode {\r\n    background-color: rgb(42, 48, 56);\r\n    border-radius: 8px;\r\n    width: 100%;\r\n    height: 500px;\r\n    font-size: larger;\r\n}\r\n\r\n.rightCtn {\r\n    width: 50%;\r\n}\r\n\r\n.leftCtn {\r\n    border: 1px solid #ccc;\r\n    opacity: 0.5;\r\n    border-radius: 8px;\r\n    padding: 10px;\r\n    width: 45%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-around;\r\n}\r\n\r\n.textAndButtonContainer {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.textPlusDropdown1,.textPlusDropdown2{\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin: 5px;\r\n}\r\n\r\n.dropdownList{\r\n    list-style: none;\r\n    padding: 5px;\r\n    margin: 0;\r\n    border: 1px solid rgb(32, 112, 186);\r\n    max-height: 150px;\r\n    overflow-y: auto;\r\n    position: absolute;\r\n    width: 200px;\r\n    display: none;\r\n  .suggestions-list li {\r\n    padding: 5px 10px;\r\n    cursor: pointer;\r\n  }\r\n  .suggestions-list li:hover {\r\n    background: #eee;\r\n  }\r\n}"
+        }
+    ]
+}

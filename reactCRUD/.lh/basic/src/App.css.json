@@ -1,0 +1,406 @@
+{
+    "sourceFile": "basic/src/App.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 97,
+            "patches": [
+                {
+                    "date": 1757072898838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757072906693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,6 @@\n }\n \n .start{\n   padding: 5px;\n+  color: aqua;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757072912101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,6 +38,5 @@\n }\n \n .start{\n   padding: 5px;\n-  color: aqua;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757072939438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,4 @@\n   to {\n     transform: rotate(360deg);\n   }\n }\n-\n-.start{\n-  padding: 5px;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757073165035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,4 +35,10 @@\n   to {\n     transform: rotate(360deg);\n   }\n }\n+\n+.start{\n+  padding: 8px;\n+  border-radius: 8px;\n+  background-color: blue;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757073181753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,5 +40,7 @@\n .start{\n   padding: 8px;\n   border-radius: 8px;\n   background-color: blue;\n+  color: white;\n+  border: none;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757073383763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,11 +36,4 @@\n     transform: rotate(360deg);\n   }\n }\n \n-.start{\n-  padding: 8px;\n-  border-radius: 8px;\n-  background-color: blue;\n-  color: white;\n-  border: none;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074102774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,4 +36,7 @@\n     transform: rotate(360deg);\n   }\n }\n \n+.ml-2{\n+  margin-left: 5px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074108566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,6 @@\n   }\n }\n \n .ml-2{\n-  margin-left: 5px;\n+  margin-left: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074297600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,6 @@\n }\n \n .ml-2{\n   margin-left: 10px;\n+  border-radius: 20px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074304134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,6 +38,5 @@\n }\n \n .ml-2{\n   margin-left: 10px;\n-  border-radius: 20px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074326081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,10 @@\n }\n \n .ml-2{\n   margin-left: 10px;\n+}\n+\n+input{\n+  padding: 15px;\n+  border-radius: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074339843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,8 @@\n   margin-left: 10px;\n }\n \n input{\n-  padding: 15px;\n+  padding: 10px;\n   border-radius: 10px;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757074362593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,6 @@\n \n input{\n   padding: 10px;\n   border-radius: 10px;\n-\n+  border: 1px solid grey;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757308606332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,15 +34,5 @@\n   }\n   to {\n     transform: rotate(360deg);\n   }\n-}\n-\n-.ml-2{\n-  margin-left: 10px;\n-}\n-\n-input{\n-  padding: 10px;\n-  border-radius: 10px;\n-  border: 1px solid grey;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757314173681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,9 @@\n   }\n   to {\n     transform: rotate(360deg);\n   }\n+}\n+\n+body{\n+  background:black;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757314207792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,10 @@\n }\n \n body{\n   background:black;\n+}\n+\n+.card{\n+  background: #282c34;\n+  border: 1px solid rgb(46, 46, 46);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757314218565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,6 @@\n \n .card{\n   background: #282c34;\n   border: 1px solid rgb(46, 46, 46);\n+  color: white;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757314300583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,5 @@\n .card{\n   background: #282c34;\n   border: 1px solid rgb(46, 46, 46);\n   color: white;\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1757314369584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,7 +42,7 @@\n }\n \n .card{\n   background: #282c34;\n-  border: 1px solid rgb(46, 46, 46);\n+  border: 1px solid rgb(156, 90, 90);\n   color: white;\n }\n"
+                },
+                {
+                    "date": 1757314380887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,7 +42,7 @@\n }\n \n .card{\n   background: #282c34;\n-  border: 1px solid rgb(156, 90, 90);\n+  border: 1px solid grey;\n   color: white;\n }\n"
+                },
+                {
+                    "date": 1757314393671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,6 @@\n .card{\n   background: #282c34;\n   border: 1px solid grey;\n   color: white;\n+  padding: 10px;\n }\n"
+                },
+                {
+                    "date": 1757314709122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,14 @@\n   background:black;\n }\n \n .card{\n-  background: #282c34;\n+  background: #bdc3c7;  /* fallback for old browsers */\n+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */\n+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n+\n   border: 1px solid grey;\n   color: white;\n   padding: 10px;\n }\n+\n+\n"
+                },
+                {
+                    "date": 1757314744580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,11 +41,11 @@\n   background:black;\n }\n \n .card{\n-  background: #bdc3c7;  /* fallback for old browsers */\n-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */\n-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n+  background: #000000;  /* fallback for old browsers */\n+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */\n+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n \n   border: 1px solid grey;\n   color: white;\n   padding: 10px;\n"
+                },
+                {
+                    "date": 1757314767558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n .card{\n   background: #000000;  /* fallback for old browsers */\n background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */\n background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n-\n+font-family: sans-serif;\n   border: 1px solid grey;\n   color: white;\n   padding: 10px;\n }\n"
+                },
+                {
+                    "date": 1757314858529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   }\n }\n \n body{\n-  background:black;\n+  background:rgb(81, 80, 80);\n }\n \n .card{\n   background: #000000;  /* fallback for old browsers */\n"
+                },
+                {
+                    "date": 1757314875424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,17 +37,17 @@\n   }\n }\n \n body{\n-  background:rgb(81, 80, 80);\n+  background:black;\n }\n \n .card{\n   background: #000000;  /* fallback for old browsers */\n background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */\n background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n font-family: sans-serif;\n-  border: 1px solid grey;\n+  border: 2px solid grey;\n   color: white;\n   padding: 10px;\n }\n \n"
+                },
+                {
+                    "date": 1757314933520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,11 @@\n }\n \n .card{\n   background: #000000;  /* fallback for old browsers */\n-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */\n-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n+background: linear-gradient(to right, #434343, #000000); \n font-family: sans-serif;\n-  border: 2px solid grey;\n+  border: 1px solid grey;\n   color: white;\n   padding: 10px;\n }\n \n"
+                },
+                {
+                    "date": 1757314942566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,8 @@\n   background:black;\n }\n \n .card{\n-  background: #000000;  /* fallback for old browsers */\n background: linear-gradient(to right, #434343, #000000); \n font-family: sans-serif;\n   border: 1px solid grey;\n   color: white;\n"
+                },
+                {
+                    "date": 1757315297948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,6 +47,8 @@\n   border: 1px solid grey;\n   color: white;\n   padding: 10px;\n }\n+button{\n+  margin: 5px;\n+}\n \n-\n"
+                },
+                {
+                    "date": 1757315338240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,4 +51,8 @@\n button{\n   margin: 5px;\n }\n \n+input{\n+  background: linear-gradient(to right, #434343, #000000); \n+}\n+\n"
+                },
+                {
+                    "date": 1757315349639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,6 +53,7 @@\n }\n \n input{\n   background: linear-gradient(to right, #434343, #000000); \n+  color: white;\n }\n \n"
+                },
+                {
+                    "date": 1757315367918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,6 @@\n }\n \n input{\n   background: linear-gradient(to right, #434343, #000000); \n-  color: white;\n }\n \n"
+                },
+                {
+                    "date": 1757315373612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,8 @@\n button{\n   margin: 5px;\n }\n \n-input{\n+input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n }\n \n"
+                },
+                {
+                    "date": 1757315390931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,6 +53,7 @@\n }\n \n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n+  color: white;\n }\n \n"
+                },
+                {
+                    "date": 1757315405095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,7 @@\n }\n \n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n-  color: white;\n+  color: white !important;\n }\n \n"
+                },
+                {
+                    "date": 1757315416293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,7 @@\n }\n \n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n-  color: white !important;\n+  color: white ;\n }\n \n"
+                },
+                {
+                    "date": 1757315426476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,7 @@\n }\n \n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n-  color: white ;\n+  color: white !important;\n }\n \n"
+                },
+                {
+                    "date": 1757315630275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,4 +56,7 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n+.disabled{\n+  color: white !important;\n+}\n"
+                },
+                {
+                    "date": 1757315644979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,7 @@\n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n-\n-.disabled{\n+disabled{\n   color: white !important;\n }\n"
+                },
+                {
+                    "date": 1757315651677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,4 @@\n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n-disabled{\n-  color: white !important;\n-}\n"
+                },
+                {
+                    "date": 1757315721155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n   border: 1px solid grey;\n   color: white;\n   padding: 10px;\n }\n+\n button{\n   margin: 5px;\n }\n \n"
+                },
+                {
+                    "date": 1757315746147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   }\n }\n \n body{\n-  background:black;\n+  background:rgba(0, 0, 0, 0.301);\n }\n \n .card{\n background: linear-gradient(to right, #434343, #000000); \n"
+                },
+                {
+                    "date": 1757315759511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   }\n }\n \n body{\n-  background:rgba(0, 0, 0, 0.301);\n+  background:rgba(0, 0, 0, 0.922);\n }\n \n .card{\n background: linear-gradient(to right, #434343, #000000); \n"
+                },
+                {
+                    "date": 1757315770939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   }\n }\n \n body{\n-  background:rgba(0, 0, 0, 0.922);\n+  background:black;\n }\n \n .card{\n background: linear-gradient(to right, #434343, #000000); \n"
+                },
+                {
+                    "date": 1757316804449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,67 @@\n+.App {\n+  text-align: center;\n+}\n+\n+.App-logo {\n+  height: 40vmin;\n+  pointer-events: none;\n+}\n+\n+@media (prefers-reduced-motion: no-preference) {\n+  .App-logo {\n+    animation: App-logo-spin infinite 20s linear;\n+  }\n+}\n+\n+.App-header {\n+  background-color: #282c34;\n+  min-height: 100vh;\n+  display: flex;\n+  flex-direction: column;\n+  align-items: center;\n+  justify-content: center;\n+  font-size: calc(10px + 2vmin);\n+  color: white;\n+}\n+\n+.App-link {\n+  color: #61dafb;\n+}\n+\n+@keyframes App-logo-spin {\n+  from {\n+    transform: rotate(0deg);\n+  }\n+  to {\n+    transform: rotate(360deg);\n+  }\n+}\n+\n+body{\n+  background:black;\n+}\n+\n+.card{\n+background: linear-gradient(to right, #434343, #000000); \n+font-family: sans-serif;\n+  border: 1px solid grey;\n+  color: white;\n+  padding: 10px;\n+}\n+\n+button{\n+  margin: 5px;\n+}\n+\n+input,textarea{\n+  background: linear-gradient(to right, #434343, #000000); \n+  color: white !important;\n+}\n+\n+.title {\n+  display: -webkit-box;\n+  -webkit-line-clamp: 2;\n+  -webkit-box-orient: vertical;\n+  overflow: hidden;\n+}\n+\n"
+                },
+                {
+                    "date": 1757316810772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,70 +57,5 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-.title {\n-  display: -webkit-box;\n-  -webkit-line-clamp: 2;\n-  -webkit-box-orient: vertical;\n-  overflow: hidden;\n-}\n \n-.App {\n-  text-align: center;\n-}\n-\n-.App-logo {\n-  height: 40vmin;\n-  pointer-events: none;\n-}\n-\n-@media (prefers-reduced-motion: no-preference) {\n-  .App-logo {\n-    animation: App-logo-spin infinite 20s linear;\n-  }\n-}\n-\n-.App-header {\n-  background-color: #282c34;\n-  min-height: 100vh;\n-  display: flex;\n-  flex-direction: column;\n-  align-items: center;\n-  justify-content: center;\n-  font-size: calc(10px + 2vmin);\n-  color: white;\n-}\n-\n-.App-link {\n-  color: #61dafb;\n-}\n-\n-@keyframes App-logo-spin {\n-  from {\n-    transform: rotate(0deg);\n-  }\n-  to {\n-    transform: rotate(360deg);\n-  }\n-}\n-\n-body{\n-  background:black;\n-}\n-\n-.card{\n-background: linear-gradient(to right, #434343, #000000); \n-font-family: sans-serif;\n-  border: 1px solid grey;\n-  color: white;\n-  padding: 10px;\n-}\n-\n-button{\n-  margin: 5px;\n-}\n-\n-input,textarea{\n-  background: linear-gradient(to right, #434343, #000000); \n-  color: white !important;\n-}\n"
+                },
+                {
+                    "date": 1757318046850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,21 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n+.title {\n+  font-weight: bold;\n+  margin-bottom: 4px;\n+  white-space: nowrap;\n+  overflow: hidden;\n+  text-overflow: ellipsis; /* Single line ellipsis */\n+}\n \n+.body {\n+  margin-top: 8px;\n+  margin-bottom: 8px;\n+  display: -webkit-box;\n+  -webkit-line-clamp: 5; /* Show 5 lines */\n+  -webkit-box-orient: vertical;\n+  overflow: hidden;\n+  text-overflow: ellipsis;\n+}\n"
+                },
+                {
+                    "date": 1757318054395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,21 +57,5 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-.title {\n-  font-weight: bold;\n-  margin-bottom: 4px;\n-  white-space: nowrap;\n-  overflow: hidden;\n-  text-overflow: ellipsis; /* Single line ellipsis */\n-}\n \n-.body {\n-  margin-top: 8px;\n-  margin-bottom: 8px;\n-  display: -webkit-box;\n-  -webkit-line-clamp: 5; /* Show 5 lines */\n-  -webkit-box-orient: vertical;\n-  overflow: hidden;\n-  text-overflow: ellipsis;\n-}\n"
+                },
+                {
+                    "date": 1757318186879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,21 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n+.title {\n+  font-weight: bold;\n+  margin-bottom: 4px;\n+  white-space: nowrap;\n+  overflow: hidden;\n+  text-overflow: ellipsis; /* Single line ellipsis */\n+}\n \n+.body {\n+  margin-top: 8px;\n+  margin-bottom: 8px;\n+  display: -webkit-box;\n+  -webkit-line-clamp: 5; /* Show 5 lines */\n+  -webkit-box-orient: vertical;\n+  overflow: hidden;\n+  text-overflow: ellipsis;\n+}\n"
+                },
+                {
+                    "date": 1757318197665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,21 +57,5 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-.title {\n-  font-weight: bold;\n-  margin-bottom: 4px;\n-  white-space: nowrap;\n-  overflow: hidden;\n-  text-overflow: ellipsis; /* Single line ellipsis */\n-}\n \n-.body {\n-  margin-top: 8px;\n-  margin-bottom: 8px;\n-  display: -webkit-box;\n-  -webkit-line-clamp: 5; /* Show 5 lines */\n-  -webkit-box-orient: vertical;\n-  overflow: hidden;\n-  text-overflow: ellipsis;\n-}\n"
+                },
+                {
+                    "date": 1757318203152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,5 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-\n+  \n"
+                },
+                {
+                    "date": 1757318556499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,21 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-  \n+.title {\n+  font-weight: bold;\n+  margin-bottom: 4px;\n+  white-space: nowrap;\n+  overflow: hidden;\n+  text-overflow: ellipsis; /* Single line ellipsis */\n+}\n+\n+.body {\n+  margin-top: 8px;\n+  margin-bottom: 8px;\n+  display: -webkit-box;\n+  -webkit-line-clamp: 5; /* Show 5 lines */\n+  -webkit-box-orient: vertical;\n+  overflow: hidden;\n+  text-overflow: ellipsis;\n+}\n"
+                },
+                {
+                    "date": 1757318565357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,16 +62,16 @@\n   font-weight: bold;\n   margin-bottom: 4px;\n   white-space: nowrap;\n   overflow: hidden;\n-  text-overflow: ellipsis; /* Single line ellipsis */\n+  text-overflow: ellipsis; \n }\n \n .body {\n   margin-top: 8px;\n   margin-bottom: 8px;\n   display: -webkit-box;\n-  -webkit-line-clamp: 5; /* Show 5 lines */\n+  -webkit-line-clamp: 5; \n   -webkit-box-orient: vertical;\n   overflow: hidden;\n   text-overflow: ellipsis;\n }\n"
+                },
+                {
+                    "date": 1757318598294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n   margin-bottom: 4px;\n   white-space: nowrap;\n   overflow: hidden;\n   text-overflow: ellipsis; \n+  -webkit-line-clamp: 1;\n }\n \n .body {\n   margin-top: 8px;\n"
+                },
+                {
+                    "date": 1757318661554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,6 @@\n   -webkit-line-clamp: 5; \n   -webkit-box-orient: vertical;\n   overflow: hidden;\n   text-overflow: ellipsis;\n+  line-height: 1.4em;\n }\n"
+                },
+                {
+                    "date": 1757318699853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,5 @@\n   -webkit-line-clamp: 5; \n   -webkit-box-orient: vertical;\n   overflow: hidden;\n   text-overflow: ellipsis;\n-  line-height: 1.4em;\n }\n"
+                },
+                {
+                    "date": 1757318709752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,6 @@\n   -webkit-line-clamp: 5; \n   -webkit-box-orient: vertical;\n   overflow: hidden;\n   text-overflow: ellipsis;\n+  line-height: 1.4em;\n }\n"
+                },
+                {
+                    "date": 1757318717329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,5 @@\n   -webkit-line-clamp: 5; \n   -webkit-box-orient: vertical;\n   overflow: hidden;\n   text-overflow: ellipsis;\n-  line-height: 1.4em;\n }\n"
+                },
+                {
+                    "date": 1757318880300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,16 +63,14 @@\n   margin-bottom: 4px;\n   white-space: nowrap;\n   overflow: hidden;\n   text-overflow: ellipsis; \n-  -webkit-line-clamp: 1;\n }\n \n .body {\n   margin-top: 8px;\n   margin-bottom: 8px;\n   display: -webkit-box;\n-  -webkit-line-clamp: 5; \n   -webkit-box-orient: vertical;\n   overflow: hidden;\n   text-overflow: ellipsis;\n }\n"
+                },
+                {
+                    "date": 1757318898317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,20 +57,5 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-.title {\n-  font-weight: bold;\n-  margin-bottom: 4px;\n-  white-space: nowrap;\n-  overflow: hidden;\n-  text-overflow: ellipsis; \n-}\n \n-.body {\n-  margin-top: 8px;\n-  margin-bottom: 8px;\n-  display: -webkit-box;\n-  -webkit-box-orient: vertical;\n-  overflow: hidden;\n-  text-overflow: ellipsis;\n-}\n"
+                },
+                {
+                    "date": 1757321263982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,7 @@\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n \n-\n+placeholder{\n+  color: white !important;\n+}\n"
+                },
+                {
+                    "date": 1757321276917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,4 @@\n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n-\n-placeholder{\n-  color: white !important;\n-}\n"
+                },
+                {
+                    "date": 1757321404458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,4 +56,8 @@\n input,textarea{\n   background: linear-gradient(to right, #434343, #000000); \n   color: white !important;\n }\n+\n+input::placeholder, textarea::placeholder{\n+  color: white !important;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757321421440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,6 +58,6 @@\n   color: white !important;\n }\n \n input::placeholder, textarea::placeholder{\n-  color: white !important;\n+  color: white ;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757321429808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,6 +58,6 @@\n   color: white !important;\n }\n \n input::placeholder, textarea::placeholder{\n-  color: white ;\n+  color: white !important;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757321847801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,5 +59,29 @@\n }\n \n input::placeholder, textarea::placeholder{\n   color: white !important;\n+}\n+\n+.modal-backdrop {\n+  position: fixed;\n+  top: 0;\n+  left: 0;\n+  width: 100%;\n+  height: 100%;\n+  background: rgba(0,0,0,0.5);\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+  z-index: 1000;\n+}\n+\n+/* Modal box */\n+.modal {\n+  background: #fff;\n+  padding: 24px;\n+  border-radius: 8px;\n+  max-width: 500px;\n+  width: 90%;\n+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);\n+  z-index: 1001;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757321858782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,28 +60,4 @@\n \n input::placeholder, textarea::placeholder{\n   color: white !important;\n }\n-\n-.modal-backdrop {\n-  position: fixed;\n-  top: 0;\n-  left: 0;\n-  width: 100%;\n-  height: 100%;\n-  background: rgba(0,0,0,0.5);\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n-  z-index: 1000;\n-}\n-\n-/* Modal box */\n-.modal {\n-  background: #fff;\n-  padding: 24px;\n-  border-radius: 8px;\n-  max-width: 500px;\n-  width: 90%;\n-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);\n-  z-index: 1001;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757322386241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,4 +60,28 @@\n \n input::placeholder, textarea::placeholder{\n   color: white !important;\n }\n+\n+.modal-backdrop {\n+  position: fixed;\n+  top: 0;\n+  left: 0;\n+  width: 100%;\n+  height: 100%;\n+  background: rgba(0,0,0,0.5);\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+  z-index: 1000;\n+}\n+\n+/* Modal box */\n+.modal {\n+  background: #fff;\n+  padding: 24px;\n+  border-radius: 8px;\n+  max-width: 500px;\n+  width: 90%;\n+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);\n+  z-index: 1001;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757322472564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,20 +68,9 @@\n   left: 0;\n   width: 100%;\n   height: 100%;\n   background: rgba(0,0,0,0.5);\n+  z-index: 1000;\n   display: flex;\n   justify-content: center;\n   align-items: center;\n-  z-index: 1000;\n }\n-\n-/* Modal box */\n-.modal {\n-  background: #fff;\n-  padding: 24px;\n-  border-radius: 8px;\n-  max-width: 500px;\n-  width: 90%;\n-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);\n-  z-index: 1001;\n\\ No newline at end of file\n-}\n"
+                },
+                {
+                    "date": 1757322657117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,15 +62,15 @@\n   color: white !important;\n }\n \n .modal-backdrop {\n-  position: fixed;\n-  top: 0;\n-  left: 0;\n-  width: 100%;\n-  height: 100%;\n-  background: rgba(0,0,0,0.5);\n-  z-index: 1000;\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n+    position: fixed;\n+    top: 0;\n+    left: 0;\n+    width: 100%;\n+    height: 100%;\n+    background: rgba(0,0,0,0.5);\n+    z-index: 1000;\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n }\n"
+                },
+                {
+                    "date": 1757323194045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,16 +61,4 @@\n input::placeholder, textarea::placeholder{\n   color: white !important;\n }\n \n-.modal-backdrop {\n-    position: fixed;\n-    top: 0;\n-    left: 0;\n-    width: 100%;\n-    height: 100%;\n-    background: rgba(0,0,0,0.5);\n-    z-index: 1000;\n-    display: flex;\n-    justify-content: center;\n-    align-items: center;\n-}\n"
+                },
+                {
+                    "date": 1757323417711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,4 +61,8 @@\n input::placeholder, textarea::placeholder{\n   color: white !important;\n }\n \n+.modal-content{\n+  background: grey;\n+  color: white;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757323428667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,7 +62,7 @@\n   color: white !important;\n }\n \n .modal-content{\n-  background: grey;\n+  background: rgb(23, 23, 23);\n   color: white;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757323560515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,5 +64,9 @@\n \n .modal-content{\n   background: rgb(23, 23, 23);\n   color: white;\n+}\n+\n+.btn-close{\n+  filter: brightness(1) invert(0.5);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757323566945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,6 @@\n   color: white;\n }\n \n .btn-close{\n-  filter: brightness(1) invert(0.5);\n+  filter: brightness(0) invert(1);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757323711042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,5 +68,10 @@\n }\n \n .btn-close{\n   filter: brightness(0) invert(1);\n+}\n+.btn-submit {\n+    background: linear-gradient(45deg, #4ade80, #16a34a);\n+    color: white;\n+    border: none;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757323963202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,7 @@\n \n .btn-close{\n   filter: brightness(0) invert(1);\n }\n-.btn-submit {\n+.btn-primary:hover {\n     background: linear-gradient(45deg, #4ade80, #16a34a);\n-    color: white;\n-    border: none;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324002076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,7 +69,4 @@\n \n .btn-close{\n   filter: brightness(0) invert(1);\n }\n-.btn-primary:hover {\n-    background: linear-gradient(45deg, #4ade80, #16a34a);\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324323563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,42 +31,55 @@\n @keyframes App-logo-spin {\n   from {\n     transform: rotate(0deg);\n   }\n+\n   to {\n     transform: rotate(360deg);\n   }\n }\n \n-body{\n-  background:black;\n+body {\n+  background: black;\n }\n \n-.card{\n-background: linear-gradient(to right, #434343, #000000); \n-font-family: sans-serif;\n+.card {\n+  background: linear-gradient(to right, #434343, #000000);\n+  font-family: sans-serif;\n   border: 1px solid grey;\n   color: white;\n   padding: 10px;\n }\n \n-button{\n+button {\n   margin: 5px;\n }\n \n-input,textarea{\n-  background: linear-gradient(to right, #434343, #000000); \n+input,\n+textarea {\n+  background: linear-gradient(to right, #434343, #000000);\n   color: white !important;\n }\n \n-input::placeholder, textarea::placeholder{\n+input::placeholder,\n+textarea::placeholder {\n   color: white !important;\n }\n \n-.modal-content{\n+.modal-content {\n   background: rgb(23, 23, 23);\n   color: white;\n }\n \n-.btn-close{\n+.btn-close {\n   filter: brightness(0) invert(1);\n }\n+\n+.btn-submit,\n+.btn-reset,\n+.btn-delete,\n+.btn-edit {\n+  padding: 8px;\n+  border-radius: 12px;\n+  color: white;\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324344938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,6 +80,8 @@\n .btn-edit {\n   padding: 8px;\n   border-radius: 12px;\n   color: white;\n+  border:none;\n+  background: ;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324361603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,7 +81,7 @@\n   padding: 8px;\n   border-radius: 12px;\n   color: white;\n   border:none;\n-  background: ;\n+  background: rgb(13,110,253);\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324371745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n .btn-reset,\n .btn-delete,\n .btn-edit {\n   padding: 8px;\n-  border-radius: 12px;\n+  border-radius: 8px;\n   color: white;\n   border:none;\n   background: rgb(13,110,253);\n \n"
+                },
+                {
+                    "date": 1757324390899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,6 +82,7 @@\n   border-radius: 8px;\n   color: white;\n   border:none;\n   background: rgb(13,110,253);\n+  min-width: 10px;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324397399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,7 @@\n   border-radius: 8px;\n   color: white;\n   border:none;\n   background: rgb(13,110,253);\n-  min-width: 10px;\n+  min-width: 20px;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324405937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,5 @@\n   border-radius: 8px;\n   color: white;\n   border:none;\n   background: rgb(13,110,253);\n-  min-width: 20px;\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324425384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,5 +82,9 @@\n   border-radius: 8px;\n   color: white;\n   border:none;\n   background: rgb(13,110,253);\n+}\n+\n+.btn-submit:hover{\n+  background: green;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324468511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,11 +80,16 @@\n .btn-edit {\n   padding: 8px;\n   border-radius: 8px;\n   color: white;\n-  border:none;\n-  background: rgb(13,110,253);\n+  border: none;\n+  background: rgb(13, 110, 253);\n }\n \n-.btn-submit:hover{\n+.btn-submit:hover {\n   background: green;\n+}\n+\n+.btn-close:hover,\n+.btn-delete:hover {\n+  background: red;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324482555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,8 @@\n .btn-submit:hover {\n   background: green;\n }\n \n-.btn-close:hover,\n+.btn-reset:hover,\n .btn-delete:hover {\n   background: red;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324511875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,5 +91,9 @@\n \n .btn-reset:hover,\n .btn-delete:hover {\n   background: red;\n+}\n+\n+.btn-edit:hover{\n+  background: yellow;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757324523129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,5 +95,6 @@\n }\n \n .btn-edit:hover{\n   background: yellow;\n+  color: black;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757325783146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,11 +74,9 @@\n   filter: brightness(0) invert(1);\n }\n \n .btn-submit,\n-.btn-reset,\n-.btn-delete,\n-.btn-edit {\n+.btn-reset {\n   padding: 8px;\n   border-radius: 8px;\n   color: white;\n   border: none;\n@@ -88,13 +86,8 @@\n .btn-submit:hover {\n   background: green;\n }\n \n-.btn-reset:hover,\n-.btn-delete:hover {\n+.btn-reset:hover {\n   background: red;\n }\n \n-.btn-edit:hover{\n-  background: yellow;\n-  color: black;\n\\ No newline at end of file\n-}\n"
+                },
+                {
+                    "date": 1757329027548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n .card {\n   background: linear-gradient(to right, #434343, #000000);\n   font-family: sans-serif;\n   border: 1px solid grey;\n-  color: white;\n+  color: white !important;\n   padding: 10px;\n }\n \n button {\n"
+                },
+                {
+                    "date": 1757329036946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n   }\n }\n \n body {\n-  background: black;\n+  background: black !important;\n }\n \n .card {\n   background: linear-gradient(to right, #434343, #000000);\n"
+                },
+                {
+                    "date": 1757329055080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n   padding: 10px;\n }\n \n button {\n-  margin: 5px;\n+  margin: 5px !important;\n }\n \n input,\n textarea {\n"
+                },
+                {
+                    "date": 1757329413856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,10 +53,9 @@\n button {\n   margin: 5px !important;\n }\n \n-input,\n-textarea {\n+input {\n   background: linear-gradient(to right, #434343, #000000);\n   color: white !important;\n }\n \n"
+                },
+                {
+                    "date": 1757329475284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   color: white !important;\n }\n \n .modal-content {\n-  background: rgb(23, 23, 23);\n+  background: rgb(23, 23, 23) !important;\n   color: white;\n }\n \n .btn-close {\n"
+                },
+                {
+                    "date": 1757329598771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,13 +65,13 @@\n }\n \n .modal-content {\n   background: rgb(23, 23, 23) !important;\n-  color: white;\n+  color: white !important;\n }\n \n .btn-close {\n-  filter: brightness(0) invert(1);\n+  filter: brightness(0) invert(1) !important;\n }\n \n .btn-submit,\n .btn-reset {\n"
+                }
+            ],
+            "date": 1757072898838,
+            "name": "Commit-0",
+            "content": ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n.start{\n  padding: 5px;\n}"
+        }
+    ]
+}

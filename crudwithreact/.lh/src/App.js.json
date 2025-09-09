@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1757336973845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757337018212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n import './App.css';\n-import \n+import crud from \"../component/Crud.jsx\"\n \n function App() {\n   return (\n     <></>\n"
+                },
+                {
+                    "date": 1757337033246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\n+import './App.css';\n+import crud from \"../component/Crud.jsx\"\n+\n+function App() {\n+  return (\n+<crud/>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1757337095259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\n+import './App.css';\n+import Crud from \"./component/Crud\"\n+\n+function App() {\n+  return (\n+    <Crud />\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1757337592901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,33 +1,14 @@\n \n import './App.css';\n import Crud from \"./component/Crud\"\n+import 'bootstrap/dist/css/bootstrap.min.css';\n+import 'bootstrap-icons/font/bootstrap-icons.css';\n \n+\n function App() {\n   return (\n     <Crud />\n   );\n }\n \n export default App;\n-\n-import './App.css';\n-import crud from \"../component/Crud.jsx\"\n-\n-function App() {\n-  return (\n-<crud/>\n-  );\n-}\n-\n-export default App;\n-\n-import './App.css';\n-import crud from \"../component/Crud.jsx\"\n-\n-function App() {\n-  return (\n-    <></>\n-  );\n-}\n-\n-export default App;\n"
+                },
+                {
+                    "date": 1757337614069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+\n+import './App.css';\n+import Crud from \"./component/Crud\";\n+import 'bootstrap/dist/css/bootstrap.min.css';\n+\n+\n+function App() {\n+  return (\n+    <Crud />\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1757337624426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,8 @@\n \n import './App.css';\n import Crud from \"./component/Crud\";\n import 'bootstrap/dist/css/bootstrap.min.css';\n-\n-\n-function App() {\n-  return (\n-    <Crud />\n-  );\n-}\n-\n-export default App;\n-\n-import './App.css';\n-import Crud from \"./component/Crud\"\n-import 'bootstrap/dist/css/bootstrap.min.css';\n import 'bootstrap-icons/font/bootstrap-icons.css';\n \n \n function App() {\n"
+                }
+            ],
+            "date": 1757336973845,
+            "name": "Commit-0",
+            "content": "\nimport './App.css';\nimport \n\nfunction App() {\n  return (\n    <></>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

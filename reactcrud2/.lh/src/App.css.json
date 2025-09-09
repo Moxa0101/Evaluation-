@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/App.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1757355235675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757390589551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,4 +31,8 @@\n   to {\n     transform: rotate(360deg);\n   }\n }\n+\n+.ml-20{\n+  margin-left: 20px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757390595644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,6 @@\n   }\n }\n \n .ml-20{\n-  margin-left: 20px;\n+  margin-left: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757408941295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,10 @@\n   }\n }\n \n .ml-20{\n-  margin-left: 10px;\n+  margin-left: 15px;\n+}\n+\n+.card{\n+  padding: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757408960373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,6 @@\n }\n \n .card{\n   padding: 10px;\n+  cursor: pointer;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1757355235675,
+            "name": "Commit-0",
+            "content": ".App {\n  text-align: center;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "test.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1755747947838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755747973113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n <script>\r\n   const searchBox = document.getElementById('searchBox');\r\n   const suggestions = document.getElementById('suggestions');\r\n \r\n-  const data = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Fig\", \"Grape\", \"Mango\"]; // Example data\r\n+  const data = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"a\", \"a\", \"a\"]; // Example data\r\n \r\n   searchBox.addEventListener('input', () => {\r\n     const input = searchBox.value.toLowerCase();\r\n     suggestions.innerHTML = '';\r\n"
+                },
+                {
+                    "date": 1755748633306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n <script>\r\n   const searchBox = document.getElementById('searchBox');\r\n   const suggestions = document.getElementById('suggestions');\r\n \r\n-  const data = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"a\", \"a\", \"a\"]; // Example data\r\n+  const data = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Fig\", \"Grape\", \"\"]; // Example data\r\n \r\n   searchBox.addEventListener('input', () => {\r\n     const input = searchBox.value.toLowerCase();\r\n     suggestions.innerHTML = '';\r\n"
+                }
+            ],
+            "date": 1755747947837,
+            "name": "Commit-0",
+            "content": "<input type=\"text\" id=\"searchBox\" placeholder=\"Search...\" />\r\n<ul id=\"suggestions\" class=\"suggestions-list\"></ul>\r\n\r\n<style>\r\n  .suggestions-list {\r\n    list-style: none;\r\n    padding: 0;\r\n    margin: 0;\r\n    border: 1px solid #ccc;\r\n    max-height: 150px;\r\n    overflow-y: auto;\r\n    position: absolute;\r\n    width: 200px;\r\n    background: white;\r\n    display: none;\r\n  }\r\n  .suggestions-list li {\r\n    padding: 5px 10px;\r\n    cursor: pointer;\r\n  }\r\n  .suggestions-list li:hover {\r\n    background: #eee;\r\n  }\r\n</style>\r\n\r\n<script>\r\n  const searchBox = document.getElementById('searchBox');\r\n  const suggestions = document.getElementById('suggestions');\r\n\r\n  const data = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Fig\", \"Grape\", \"Mango\"]; // Example data\r\n\r\n  searchBox.addEventListener('input', () => {\r\n    const input = searchBox.value.toLowerCase();\r\n    suggestions.innerHTML = '';\r\n    if (input) {\r\n      const filtered = data.filter(item => item.toLowerCase().includes(input));\r\n      filtered.forEach(item => {\r\n        const li = document.createElement('li');\r\n        li.textContent = item;\r\n        li.onclick = () => {\r\n          searchBox.value = item;\r\n          suggestions.style.display = 'none';\r\n        };\r\n        suggestions.appendChild(li);\r\n      });\r\n      suggestions.style.display = filtered.length ? 'block' : 'none';\r\n    } else {\r\n      suggestions.style.display = 'none';\r\n    }\r\n  });\r\n\r\n  document.addEventListener('click', (e) => {\r\n    if (!searchBox.contains(e.target)) suggestions.style.display = 'none';\r\n  });\r\n</script>\r\n"
+        }
+    ]
+}

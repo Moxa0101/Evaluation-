@@ -1,0 +1,22 @@
+{
+    "sourceFile": "test.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1755087082113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755087100211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n \r\n <script>\r\n   const container = document.getElementById(\"container\");\r\n \r\n-  function loadItems(count = 5) {\r\n+  function loadItems(count = 20) {\r\n     for (let i = 0; i < count; i++) {\r\n       const div = document.createElement(\"div\");\r\n       div.className = \"item\";\r\n       div.textContent = \"New Item \" + (container.children.length + 1);\r\n"
+                }
+            ],
+            "date": 1755087082113,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n  <style>\r\n    body {\r\n      font-family: sans-serif;\r\n      margin: 0;\r\n      padding: 0;\r\n    }\r\n\r\n    #container {\r\n      padding: 20px;\r\n    }\r\n\r\n    .item {\r\n      background: #4CAF50;\r\n      color: white;\r\n      margin: 10px 0;\r\n      padding: 20px;\r\n      border-radius: 5px;\r\n      opacity: 0;\r\n      transform: translateY(20px);\r\n      animation: fadeUp 0.5s ease forwards;\r\n    }\r\n\r\n    @keyframes fadeUp {\r\n      to {\r\n        opacity: 1;\r\n        transform: translateY(0);\r\n      }\r\n    }\r\n  </style>\r\n</head>\r\n<body>\r\n\r\n<div id=\"container\"></div>\r\n\r\n<script>\r\n  const container = document.getElementById(\"container\");\r\n\r\n  function loadItems(count = 5) {\r\n    for (let i = 0; i < count; i++) {\r\n      const div = document.createElement(\"div\");\r\n      div.className = \"item\";\r\n      div.textContent = \"New Item \" + (container.children.length + 1);\r\n      container.appendChild(div);\r\n    }\r\n  }\r\n\r\n  loadItems(); // Initial load\r\n\r\n  window.addEventListener(\"scroll\", () => {\r\n    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {\r\n      loadItems();\r\n    }\r\n  });\r\n</script>\r\n\r\n</body>\r\n</html>\r\n"
+        }
+    ]
+}

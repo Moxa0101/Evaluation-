@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 314,
             "patches": [
                 {
                     "date": 1755000286040,
@@ -32,6 +32,1238 @@
                 {
                     "date": 1755001189488,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,4 @@\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n-\r\n-.carousel-item div {\r\n-  font-size: 0.85rem;\r\n-  background-color: #f8f9fa;\r\n-  border: 1px solid #ddd;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755062269532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: rgb(111, 159, 218);\r\n+    background-color: rgb(244,250,253);\r\n }\r\n \r\n .desc {\r\n     width: 100%;\r\n"
+                },
+                {
+                    "date": 1755062295668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+#showBtn {\r\n+    margin-top: 10px;\r\n+    margin-left: 45%;\r\n+    margin-right: 35%;\r\n+}\r\n+\r\n+.profile-img {\r\n+    width: 90px;\r\n+    height: 90px;\r\n+    object-fit: cover;\r\n+    border-radius: 50%;\r\n+    margin: auto;\r\n+    display: block;\r\n+}\r\n+\r\n+.carousel-item {\r\n+    text-align: center;\r\n+    padding: 20px;\r\n+    background-color: rgb(244,250,253);\r\n+}\r\n+\r\n+.desc {\r\n+    width: 100%;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n+    border-radius: 6px;\r\n+    background-color: white;\r\n+    font-size: larger;\r\n+    padding: 20px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755062317242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,41 +24,9 @@\n     align-items: center;\r\n     justify-content: center;\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n-    border-radius: 6px;\r\n+    border-radius: 2px;\r\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n-#showBtn {\r\n-    margin-top: 10px;\r\n-    margin-left: 45%;\r\n-    margin-right: 35%;\r\n-}\r\n-\r\n-.profile-img {\r\n-    width: 90px;\r\n-    height: 90px;\r\n-    object-fit: cover;\r\n-    border-radius: 50%;\r\n-    margin: auto;\r\n-    display: block;\r\n-}\r\n-\r\n-.carousel-item {\r\n-    text-align: center;\r\n-    padding: 20px;\r\n-    background-color: rgb(244,250,253);\r\n-}\r\n-\r\n-.desc {\r\n-    width: 100%;\r\n-    align-items: center;\r\n-    justify-content: center;\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n-    border-radius: 12px;\r\n-    background-color: white;\r\n-    font-size: larger;\r\n-    padding: 20px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755062326734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     align-items: center;\r\n     justify-content: center;\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n-    border-radius: 2px;\r\n+    border-radius: 5px;\r\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755062379236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+#showBtn {\r\n+    margin-top: 10px;\r\n+    margin-left: 45%;\r\n+    margin-right: 35%;\r\n+}\r\n+\r\n+.profile-img {\r\n+    width: 90px;\r\n+    height: 90px;\r\n+    object-fit: cover;\r\n+    border-radius: 50%;\r\n+    margin: auto;\r\n+    display: block;\r\n+}\r\n+\r\n+.carousel-item {\r\n+    text-align: center;\r\n+    padding: 20px;\r\n+    background-color: rgb(244,250,253);\r\n+}\r\n+\r\n+.desc {\r\n+    width: 100%;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+    border-radius: 5px;\r\n+    background-color: white;\r\n+    font-size: larger;\r\n+    padding: 20px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755062971231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-#showBtn {\r\n+/* #showBtn {\r\n     margin-top: 10px;\r\n     margin-left: 45%;\r\n     margin-right: 35%;\r\n-}\r\n+} */\r\n \r\n .profile-img {\r\n     width: 90px;\r\n     height: 90px;\r\n@@ -29,36 +29,4 @@\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n-#showBtn {\r\n-    margin-top: 10px;\r\n-    margin-left: 45%;\r\n-    margin-right: 35%;\r\n-}\r\n-\r\n-.profile-img {\r\n-    width: 90px;\r\n-    height: 90px;\r\n-    object-fit: cover;\r\n-    border-radius: 50%;\r\n-    margin: auto;\r\n-    display: block;\r\n-}\r\n-\r\n-.carousel-item {\r\n-    text-align: center;\r\n-    padding: 20px;\r\n-    background-color: rgb(244,250,253);\r\n-}\r\n-\r\n-.desc {\r\n-    width: 100%;\r\n-    align-items: center;\r\n-    justify-content: center;\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n-    border-radius: 5px;\r\n-    background-color: white;\r\n-    font-size: larger;\r\n-    padding: 20px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755063013168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-/* #showBtn {\r\n+#showBtn {\r\n     margin-top: 10px;\r\n     margin-left: 45%;\r\n     margin-right: 35%;\r\n-} */\r\n+}\r\n \r\n .profile-img {\r\n     width: 90px;\r\n     height: 90px;\r\n"
+                },
+                {
+                    "date": 1755063096913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #showBtn {\r\n-    margin-top: 10px;\r\n-    margin-left: 45%;\r\n-    margin-right: 35%;\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    \r\n }\r\n \r\n .profile-img {\r\n     width: 90px;\r\n"
+                },
+                {
+                    "date": 1755063114538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n+    margin: 10px;\r\n     \r\n }\r\n \r\n .profile-img {\r\n"
+                },
+                {
+                    "date": 1755063135096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n-    \r\n }\r\n \r\n .profile-img {\r\n     width: 90px;\r\n"
+                },
+                {
+                    "date": 1755063593798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,4 +29,27 @@\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n+\r\n+.dot-container {\r\n+  text-align: center;\r\n+  padding: 20px;\r\n+  background: #ddd;\r\n+}\r\n+\r\n+/* The dots/bullets/indicators */\r\n+.dot {\r\n+  cursor: pointer;\r\n+  height: 15px;\r\n+  width: 15px;\r\n+  margin: 0 2px;\r\n+  background-color: #bbb;\r\n+  border-radius: 50%;\r\n+  display: inline-block;\r\n+  transition: background-color 0.6s ease;\r\n+}\r\n+\r\n+/* Add a background color to the active dot/circle */\r\n+.active, .dot:hover {\r\n+  background-color: #717171;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755063637093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,8 @@\n \r\n .dot-container {\r\n   text-align: center;\r\n   padding: 20px;\r\n-  background: #ddd;\r\n }\r\n \r\n /* The dots/bullets/indicators */\r\n .dot {\r\n"
+                },
+                {
+                    "date": 1755063673714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,7 +48,7 @@\n   transition: background-color 0.6s ease;\r\n }\r\n \r\n /* Add a background color to the active dot/circle */\r\n-.active, .dot:hover {\r\n+ .dot:hover {\r\n   background-color: #717171;\r\n }\r\n"
+                },
+                {
+                    "date": 1755063710868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,4 @@\n   display: inline-block;\r\n   transition: background-color 0.6s ease;\r\n }\r\n \r\n-/* Add a background color to the active dot/circle */\r\n- .dot:hover {\r\n-  background-color: #717171;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755063817761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n }\r\n \r\n .dot-container {\r\n   text-align: center;\r\n-  padding: 20px;\r\n+  padding: 10px;\r\n }\r\n \r\n /* The dots/bullets/indicators */\r\n .dot {\r\n"
+                },
+                {
+                    "date": 1755063883094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,12 +38,12 @@\n \r\n /* The dots/bullets/indicators */\r\n .dot {\r\n   cursor: pointer;\r\n-  height: 15px;\r\n-  width: 15px;\r\n+  height: 10px;\r\n+  width: 10px;\r\n   margin: 0 2px;\r\n-  background-color: #bbb;\r\n+  background-color: rgb(20,157,221);\r\n   border-radius: 50%;\r\n   display: inline-block;\r\n   transition: background-color 0.6s ease;\r\n }\r\n"
+                },
+                {
+                    "date": 1755063894497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n   cursor: pointer;\r\n   height: 10px;\r\n   width: 10px;\r\n   margin: 0 2px;\r\n-  background-color: rgb(20,157,221);\r\n+  background-color: #bbb;\r\n   border-radius: 50%;\r\n   display: inline-block;\r\n   transition: background-color 0.6s ease;\r\n }\r\n"
+                },
+                {
+                    "date": 1755063916877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n   height: 10px;\r\n   width: 10px;\r\n   margin: 0 2px;\r\n   background-color: #bbb;\r\n+  border: 0.1px solid rgb(20,157,221);\r\n   border-radius: 50%;\r\n   display: inline-block;\r\n   transition: background-color 0.6s ease;\r\n }\r\n"
+                },
+                {
+                    "date": 1755063926213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n   height: 10px;\r\n   width: 10px;\r\n   margin: 0 2px;\r\n   background-color: #bbb;\r\n-  border: 0.1px solid rgb(20,157,221);\r\n+  border: 1px solid rgb(20,157,221);\r\n   border-radius: 50%;\r\n   display: inline-block;\r\n   transition: background-color 0.6s ease;\r\n }\r\n"
+                },
+                {
+                    "date": 1755063937835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n \r\n /* The dots/bullets/indicators */\r\n .dot {\r\n   cursor: pointer;\r\n-  height: 10px;\r\n-  width: 10px;\r\n+  height: 15px;\r\n+  width: 15px;\r\n   margin: 0 2px;\r\n   background-color: #bbb;\r\n   border: 1px solid rgb(20,157,221);\r\n   border-radius: 50%;\r\n"
+                },
+                {
+                    "date": 1755063960191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n   cursor: pointer;\r\n   height: 15px;\r\n   width: 15px;\r\n   margin: 0 2px;\r\n-  background-color: #bbb;\r\n+  background-color:white;\r\n   border: 1px solid rgb(20,157,221);\r\n   border-radius: 50%;\r\n   display: inline-block;\r\n   transition: background-color 0.6s ease;\r\n"
+                },
+                {
+                    "date": 1755063984195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n /* The dots/bullets/indicators */\r\n .dot {\r\n   cursor: pointer;\r\n   height: 15px;\r\n-  width: 15px;\r\n+  width: 10px;\r\n   margin: 0 2px;\r\n   background-color:white;\r\n   border: 1px solid rgb(20,157,221);\r\n   border-radius: 50%;\r\n"
+                },
+                {
+                    "date": 1755063991479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n \r\n /* The dots/bullets/indicators */\r\n .dot {\r\n   cursor: pointer;\r\n-  height: 15px;\r\n+  height: 10px;\r\n   width: 10px;\r\n   margin: 0 2px;\r\n   background-color:white;\r\n   border: 1px solid rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755064578721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n \r\n /* The dots/bullets/indicators */\r\n .dot {\r\n   cursor: pointer;\r\n-  height: 10px;\r\n-  width: 10px;\r\n+  height: 12px;\r\n+  width: 12px;\r\n   margin: 0 2px;\r\n   background-color:white;\r\n   border: 1px solid rgb(20,157,221);\r\n   border-radius: 50%;\r\n"
+                },
+                {
+                    "date": 1755065083118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,22 +30,43 @@\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n \r\n-.dot-container {\r\n+.trunacated-text{\r\n+    white-space:nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    max-width:150px;\r\n+    display: inline-block;\r\n+    vertical-align: middle;\r\n+    cursor: pointer; \r\n+}\r\n+.trunacated-text .tooltip {\r\n+   visibility: hidden;\r\n+  width: 120px;\r\n+  background-color: rgb(67, 67, 203);\r\n+  color:white;\r\n   text-align: center;\r\n-  padding: 10px;\r\n+  border-radius: 6px;\r\n+  padding: 5px 0;\r\n+  position: absolute;\r\n+  z-index: 1;\r\n+  top: 100%;\r\n+  left: 50%;\r\n+  margin-left: -60px;\r\n }\r\n \r\n-/* The dots/bullets/indicators */\r\n-.dot {\r\n-  cursor: pointer;\r\n-  height: 12px;\r\n-  width: 12px;\r\n-  margin: 0 2px;\r\n-  background-color:white;\r\n-  border: 1px solid rgb(20,157,221);\r\n-  border-radius: 50%;\r\n-  display: inline-block;\r\n-  transition: background-color 0.6s ease;\r\n+.trunacated-text .tooltip::after {\r\n+  content: \" \";\r\n+  position: absolute;\r\n+  bottom: 100%;  \r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: transparent transparent rgb(67, 67, 203) transparent;\r\n }\r\n \r\n+.trunacated-text:hover .tooltip {\r\n+  visibility: visible;\r\n+  opacity: 1;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755065444625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n .trunacated-text{\r\n     white-space:nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    max-width:150px;\r\n+    max-width:500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer; \r\n }\r\n"
+                },
+                {
+                    "date": 1755065464287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n .trunacated-text{\r\n     white-space:nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    max-width:500px;\r\n+    max-width:1000px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer; \r\n }\r\n"
+                },
+                {
+                    "date": 1755065490614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n .trunacated-text{\r\n     white-space:nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    max-width:1000px;\r\n+    max-width:700px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer; \r\n }\r\n"
+                },
+                {
+                    "date": 1755065533472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n }\r\n .trunacated-text .tooltip {\r\n    visibility: hidden;\r\n   width: 120px;\r\n-  background-color: rgb(67, 67, 203);\r\n+  background-color: black;\r\n   color:white;\r\n   text-align: center;\r\n   border-radius: 6px;\r\n   padding: 5px 0;\r\n"
+                },
+                {
+                    "date": 1755065559700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: rgb(244,250,253);\r\n+    background-color: rgb(244, 250, 253);\r\n }\r\n \r\n .desc {\r\n     width: 100%;\r\n@@ -30,43 +30,44 @@\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n \r\n-.trunacated-text{\r\n-    white-space:nowrap;\r\n+.trunacated-text {\r\n+    white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    max-width:700px;\r\n+    max-width: 700px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n-    cursor: pointer; \r\n+    cursor: pointer;\r\n }\r\n+\r\n .trunacated-text .tooltip {\r\n-   visibility: hidden;\r\n-  width: 120px;\r\n-  background-color: black;\r\n-  color:white;\r\n-  text-align: center;\r\n-  border-radius: 6px;\r\n-  padding: 5px 0;\r\n-  position: absolute;\r\n-  z-index: 1;\r\n-  top: 100%;\r\n-  left: 50%;\r\n-  margin-left: -60px;\r\n+    visibility: hidden;\r\n+    width: 120px;\r\n+    background-color: black;\r\n+    color: white;\r\n+    text-align: center;\r\n+    border-radius: 6px;\r\n+    padding: 5px 0;\r\n+    position: absolute;\r\n+    z-index: 1;\r\n+    bottom: 100%;\r\n+    left: 50%;\r\n+    margin-left: -60px;\r\n }\r\n \r\n .trunacated-text .tooltip::after {\r\n-  content: \" \";\r\n-  position: absolute;\r\n-  bottom: 100%;  \r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: transparent transparent rgb(67, 67, 203) transparent;\r\n+    content: \" \";\r\n+    position: absolute;\r\n+    bottom: 100%;\r\n+    left: 50%;\r\n+    margin-left: -5px;\r\n+    border-width: 5px;\r\n+    border-style: solid;\r\n+    border-color: transparent transparent rgb(67, 67, 203) transparent;\r\n }\r\n \r\n .trunacated-text:hover .tooltip {\r\n-  visibility: visible;\r\n-  opacity: 1;\r\n-}\r\n+    visibility: visible;\r\n+    opacity: 1;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755065581302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n-    border-color: transparent transparent rgb(67, 67, 203) transparent;\r\n+    border-color:   rgb(67, 67, 203) transparent transparent transparent;\r\n }\r\n \r\n .trunacated-text:hover .tooltip {\r\n     visibility: visible;\r\n"
+                },
+                {
+                    "date": 1755065592877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n-    border-color:   rgb(67, 67, 203) transparent transparent transparent;\r\n+    border-color: black transparent transparent transparent;\r\n }\r\n \r\n .trunacated-text:hover .tooltip {\r\n     visibility: visible;\r\n"
+                },
+                {
+                    "date": 1755065749461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n-    bottom: 100%;\r\n+    top: 100%;\r\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755065796469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n-    top: 100%;\r\n+    bottom: 100%;\r\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755065816415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n-    bottom: 100%;\r\n+    top: 100%;\r\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755065830758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n-    width: 120px;\r\n+    width: 500px;\r\n     background-color: black;\r\n     color: white;\r\n     text-align: center;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1755065839886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     position: absolute;\r\n     z-index: 1;\r\n     bottom: 100%;\r\n     left: 50%;\r\n-    margin-left: -60px;\r\n+    margin-left: -250px;\r\n }\r\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n"
+                },
+                {
+                    "date": 1755065976494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,19 +42,19 @@\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n-    width: 500px;\r\n-    background-color: black;\r\n-    color: white;\r\n-    text-align: center;\r\n-    border-radius: 6px;\r\n-    padding: 5px 0;\r\n-    position: absolute;\r\n-    z-index: 1;\r\n-    bottom: 100%;\r\n-    left: 50%;\r\n-    margin-left: -250px;\r\n+  width: 500px;\r\n+  background-color: black;\r\n+  color: #fff;\r\n+  text-align: center;\r\n+  border-radius: 6px;\r\n+  padding: 5px 0;\r\n+  position: absolute;\r\n+  z-index: 1;\r\n+  bottom: 150%;\r\n+  left: 50%;\r\n+  margin-left: -250px;\r\n }\r\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n"
+                },
+                {
+                    "date": 1755066052749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,19 +42,19 @@\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n-  width: 500px;\r\n-  background-color: black;\r\n-  color: #fff;\r\n-  text-align: center;\r\n-  border-radius: 6px;\r\n-  padding: 5px 0;\r\n-  position: absolute;\r\n-  z-index: 1;\r\n-  bottom: 150%;\r\n-  left: 50%;\r\n-  margin-left: -250px;\r\n+    width: 500px;\r\n+    background-color: black;\r\n+    color: white;\r\n+    text-align: center;\r\n+    border-radius: 6px;\r\n+    padding: 5px 0;\r\n+    position: absolute;\r\n+    z-index: 1;\r\n+    bottom: 100%;\r\n+    left: 50%;\r\n+    margin-left: -px;\r\n }\r\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n"
+                },
+                {
+                    "date": 1755066072365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     border-radius: 6px;\r\n     padding: 5px 0;\r\n     position: absolute;\r\n     z-index: 1;\r\n-    bottom: 100%;\r\n+    bottom: 150%;\r\n     left: 50%;\r\n     margin-left: -px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755066088483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     border-radius: 6px;\r\n     padding: 5px 0;\r\n     position: absolute;\r\n     z-index: 1;\r\n-    bottom: 150%;\r\n+    bottom: 100%;\r\n     left: 50%;\r\n     margin-left: -px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755066095633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     position: absolute;\r\n     z-index: 1;\r\n     bottom: 100%;\r\n     left: 50%;\r\n-    margin-left: -px;\r\n+    margin-left: -250px;\r\n }\r\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n"
+                },
+                {
+                    "date": 1755066128672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,8 @@\n     border-color: black transparent transparent transparent;\r\n }\r\n \r\n .trunacated-text:hover .tooltip {\r\n+    z-index: 3;\r\n     visibility: visible;\r\n     opacity: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755066388147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     border-radius: 6px;\r\n     padding: 5px 0;\r\n     position: absolute;\r\n     z-index: 1;\r\n-    bottom: 100%;\r\n+    bottom: 200%;\r\n     left: 50%;\r\n     margin-left: -250px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755066410168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     border-radius: 6px;\r\n     padding: 5px 0;\r\n     position: absolute;\r\n     z-index: 1;\r\n-    bottom: 200%;\r\n+    bottom: 100%;\r\n     left: 50%;\r\n     margin-left: -250px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755066441556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n-    top: 100%;\r\n+    top: 0%;\r\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755066457652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n-    top: 0%;\r\n+    top: 20%;\r\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755066472962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .trunacated-text .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n-    top: 20%;\r\n+    top: 100%;\r\n     left: 50%;\r\n     margin-left: -5px;\r\n     border-width: 5px;\r\n     border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755066517986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,7 @@\n     border-color: black transparent transparent transparent;\r\n }\r\n \r\n .trunacated-text:hover .tooltip {\r\n-    z-index: 3;\r\n     visibility: visible;\r\n     opacity: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755066761346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n     padding: 20px;\r\n }\r\n \r\n .trunacated-text {\r\n+    position: relative;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     max-width: 700px;\r\n"
+                },
+                {
+                    "date": 1755066828573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     text-align: center;\r\n     border-radius: 6px;\r\n     padding: 5px 0;\r\n     position: absolute;\r\n-    z-index: 1;\r\n+    z-index: 9999;\r\n     bottom: 100%;\r\n     left: 50%;\r\n     margin-left: -250px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755067105730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     display: block;\r\n }\r\n \r\n .carousel-item {\r\n+    \r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n@@ -32,15 +33,19 @@\n }\r\n \r\n .trunacated-text {\r\n     position: relative;\r\n+  display: inline-block;\r\n+  border-bottom: 1px dotted black;\r\n+\r\n+    /* position: relative;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     max-width: 700px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n-    cursor: pointer;\r\n+    cursor: pointer; */\r\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755067141008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,8 @@\n \r\n .trunacated-text {\r\n     position: relative;\r\n   display: inline-block;\r\n-  border-bottom: 1px dotted black;\r\n \r\n     /* position: relative;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n"
+                },
+                {
+                    "date": 1755067166217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,19 +32,17 @@\n     padding: 20px;\r\n }\r\n \r\n .trunacated-text {\r\n+\r\n     position: relative;\r\n-  display: inline-block;\r\n-\r\n-    /* position: relative;\r\n     white-space: nowrap;\r\n-    overflow: hidden;\r\n+    /* overflow: hidden; */\r\n     text-overflow: ellipsis;\r\n     max-width: 700px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n-    cursor: pointer; */\r\n+    cursor: pointer;\r\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755067198315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n-    width: 500px;\r\n+    width: 400px;\r\n     background-color: black;\r\n     color: white;\r\n     text-align: center;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1755067225831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n }\r\n \r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n-    width: 400px;\r\n+    width: 500px;\r\n     background-color: black;\r\n     color: white;\r\n     text-align: center;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1755067231013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     position: relative;\r\n     white-space: nowrap;\r\n     /* overflow: hidden; */\r\n     text-overflow: ellipsis;\r\n-    max-width: 700px;\r\n+    max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n"
+                },
+                {
+                    "date": 1755067246287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n .trunacated-text {\r\n \r\n     position: relative;\r\n     white-space: nowrap;\r\n-    /* overflow: hidden; */\r\n+    overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n"
+                },
+                {
+                    "date": 1755067264451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     display: block;\r\n }\r\n \r\n .carousel-item {\r\n-    \r\n+    overflow: scroll;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n"
+                },
+                {
+                    "date": 1755067281396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     display: block;\r\n }\r\n \r\n .carousel-item {\r\n-    overflow: scroll;\r\n+    overflow: visible;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n"
+                },
+                {
+                    "date": 1755067308937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n     display: block;\r\n }\r\n \r\n .carousel-item {\r\n-    overflow: visible;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n"
+                },
+                {
+                    "date": 1755067321277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n .trunacated-text {\r\n \r\n     position: relative;\r\n     white-space: nowrap;\r\n-    overflow: hidden;\r\n+    \r\n     text-overflow: ellipsis;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n"
+                },
+                {
+                    "date": 1755067341939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,5 +71,6 @@\n \r\n .trunacated-text:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n+    overflow: scroll;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755067353209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,6 +71,6 @@\n \r\n .trunacated-text:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n-    overflow: scroll;\r\n+    overflow: visible;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755067381907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,8 @@\n .trunacated-text {\r\n \r\n     position: relative;\r\n     white-space: nowrap;\r\n-    \r\n     text-overflow: ellipsis;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n"
+                },
+                {
+                    "date": 1755067388644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n \r\n     position: relative;\r\n     white-space: nowrap;\r\n     text-overflow: ellipsis;\r\n-    max-width: 500px;\r\n+    max-width: 400px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n"
+                },
+                {
+                    "date": 1755067411720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n \r\n     position: relative;\r\n     white-space: nowrap;\r\n     text-overflow: ellipsis;\r\n-    max-width: 400px;\r\n+    max-width: 700px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n"
+                },
+                {
+                    "date": 1755067423462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,11 +33,9 @@\n \r\n .trunacated-text {\r\n \r\n     position: relative;\r\n-    white-space: nowrap;\r\n-    text-overflow: ellipsis;\r\n-    max-width: 700px;\r\n+    max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n"
+                },
+                {
+                    "date": 1755067449631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n \r\n .trunacated-text {\r\n \r\n     position: relative;\r\n+    white-space: nowrap;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1755067463256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \r\n .trunacated-text {\r\n \r\n     position: relative;\r\n-    white-space: nowrap;\r\n+    white-space: wrap;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1755067481031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,10 @@\n \r\n .trunacated-text {\r\n \r\n     position: relative;\r\n-    white-space: wrap;\r\n+    white-space: nowrap;\r\n+    text-overflow: ellipsis\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1755067516439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,10 @@\n .trunacated-text {\r\n \r\n     position: relative;\r\n     white-space: nowrap;\r\n-    text-overflow: ellipsis\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n@@ -70,6 +71,5 @@\n \r\n .trunacated-text:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n-    overflow: visible;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755067578308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     display: block;\r\n }\r\n \r\n .carousel-item {\r\n+    overflow: visible !important;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n"
+                },
+                {
+                    "date": 1755067669639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n     background-color: rgb(244, 250, 253);\r\n }\r\n \r\n .desc {\r\n+    position: relative;\r\n     width: 100%;\r\n     align-items: center;\r\n     justify-content: center;\r\n     box-sizing: border-box;\r\n@@ -33,9 +34,9 @@\n }\r\n \r\n .trunacated-text {\r\n \r\n-    position: relative;\r\n+    \r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     max-width: 500px;\r\n"
+                },
+                {
+                    "date": 1755067710889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,5 +73,17 @@\n \r\n .trunacated-text:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n+}\r\n+\r\n+.tooltip {\r\n+    position: absolute;\r\n+    z-index: 9999;\r\n+    visibility: hidden;\r\n+    opacity: 0;\r\n+}\r\n+\r\n+.desc:hover .tooltip {\r\n+    visibility: visible;\r\n+    opacity: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755067809874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,22 +30,23 @@\n     border-radius: 5px;\r\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n-}\r\n-\r\n-.trunacated-text {\r\n-\r\n-    \r\n-    white-space: nowrap;\r\n+     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n \r\n+. {\r\n+\r\n+    \r\n+   \r\n+}\r\n+\r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n     width: 500px;\r\n     background-color: black;\r\n@@ -75,15 +76,4 @@\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n \r\n-.tooltip {\r\n-    position: absolute;\r\n-    z-index: 9999;\r\n-    visibility: hidden;\r\n-    opacity: 0;\r\n-}\r\n-\r\n-.desc:hover .tooltip {\r\n-    visibility: visible;\r\n-    opacity: 1;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755067815952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,14 +39,9 @@\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n \r\n-. {\r\n \r\n-    \r\n-   \r\n-}\r\n-\r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n     width: 500px;\r\n     background-color: black;\r\n"
+                },
+                {
+                    "date": 1755067835834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,18 +30,22 @@\n     border-radius: 5px;\r\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n-     white-space: nowrap;\r\n+}\r\n+\r\n+.desc {\r\n+\r\n+    \r\n+    white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n \r\n-\r\n .trunacated-text .tooltip {\r\n     visibility: hidden;\r\n     width: 500px;\r\n     background-color: black;\r\n"
+                },
+                {
+                    "date": 1755067846720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,8 @@\n     \r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    max-width: 500px;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n"
+                },
+                {
+                    "date": 1755067889339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     vertical-align: middle;\r\n     cursor: pointer;\r\n }\r\n \r\n-.trunacated-text .tooltip {\r\n+.desc .tooltip {\r\n     visibility: hidden;\r\n     width: 500px;\r\n     background-color: black;\r\n     color: white;\r\n@@ -58,9 +58,9 @@\n     left: 50%;\r\n     margin-left: -250px;\r\n }\r\n \r\n-.trunacated-text .tooltip::after {\r\n+.desc .tooltip::after {\r\n     content: \" \";\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n@@ -69,9 +69,9 @@\n     border-style: solid;\r\n     border-color: black transparent transparent transparent;\r\n }\r\n \r\n-.trunacated-text:hover .tooltip {\r\n+.desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755068087669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,17 +32,16 @@\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n \r\n-.desc {\r\n-\r\n-    \r\n+.desc .truncated-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n     vertical-align: middle;\r\n     cursor: pointer;\r\n+    max-width: 700px;\r\n }\r\n \r\n .desc .tooltip {\r\n     visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755068517835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n \r\n-.desc {\r\n+/* .desc {\r\n     position: relative;\r\n     width: 100%;\r\n     align-items: center;\r\n     justify-content: center;\r\n@@ -72,5 +72,46 @@\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n+ */\r\n \r\n+ .desc {\r\n+    position: relative;\r\n+    max-width: 700px;\r\n+    white-space: nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    cursor: pointer;\r\n+}\r\n+\r\n+/* Tooltip */\r\n+.desc .tooltip {\r\n+    visibility: hidden;\r\n+    background: black;\r\n+    color: white;\r\n+    padding: 5px 8px;\r\n+    border-radius: 6px;\r\n+    position: absolute;\r\n+    bottom: 100%;\r\n+    left: 50%;\r\n+    transform: translateX(-50%);\r\n+    z-index: 9999;\r\n+    white-space: normal;  /* allow wrapping in tooltip */\r\n+    max-width: inherit;   /* match desc width */\r\n+    box-sizing: border-box;\r\n+}\r\n+\r\n+.desc .tooltip::after {\r\n+    content: \"\";\r\n+    position: absolute;\r\n+    top: 100%;\r\n+    left: 50%;\r\n+    margin-left: -5px;\r\n+    border-width: 5px;\r\n+    border-style: solid;\r\n+    border-color: black transparent transparent transparent;\r\n+}\r\n+\r\n+.desc:hover .tooltip {\r\n+    visibility: visible;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755068565596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n \r\n-/* .desc {\r\n+ .desc {\r\n     position: relative;\r\n     width: 100%;\r\n     align-items: center;\r\n     justify-content: center;\r\n@@ -31,9 +31,9 @@\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n-\r\n+/*\r\n .desc .truncated-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n"
+                },
+                {
+                    "date": 1755068573329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n \r\n- .desc {\r\n+/* .desc {\r\n     position: relative;\r\n     width: 100%;\r\n     align-items: center;\r\n     justify-content: center;\r\n@@ -31,9 +31,9 @@\n     background-color: white;\r\n     font-size: larger;\r\n     padding: 20px;\r\n }\r\n-/*\r\n+\r\n .desc .truncated-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n"
+                },
+                {
+                    "date": 1755068596316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,10 @@\n }\r\n  */\r\n \r\n  .desc {\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     position: relative;\r\n     max-width: 700px;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n"
+                },
+                {
+                    "date": 1755068613350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n  .desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     position: relative;\r\n-    max-width: 700px;\r\n+    max-width: 100%;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1755068639197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,10 @@\n \r\n  .desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+    padding: 10px;\r\n+    border-radius: 6px;\r\n     position: relative;\r\n     max-width: 100%;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n"
+                },
+                {
+                    "date": 1755068650448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n+    background-color: white;\r\n     position: relative;\r\n     max-width: 100%;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n"
+                },
+                {
+                    "date": 1755068695803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,5 +118,6 @@\n }\r\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n+    overflow: visible;\r\n }\r\n"
+                },
+                {
+                    "date": 1755068702812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,6 +118,5 @@\n }\r\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n-    overflow: visible;\r\n }\r\n"
+                },
+                {
+                    "date": 1755068730438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,8 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n-    transform: translateX(-50%);\r\n     z-index: 9999;\r\n     white-space: normal;  /* allow wrapping in tooltip */\r\n     max-width: inherit;   /* match desc width */\r\n     box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1755068739046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n+    transform: translateX(-50%);\r\n     z-index: 9999;\r\n     white-space: normal;  /* allow wrapping in tooltip */\r\n     max-width: inherit;   /* match desc width */\r\n     box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1755068861218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,24 +74,26 @@\n     opacity: 1;\r\n }\r\n  */\r\n \r\n- .desc {\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n-    padding: 10px;\r\n-    border-radius: 6px;\r\n-    background-color: white;\r\n+.desc {\r\n     position: relative;\r\n-    max-width: 100%;\r\n+    max-width: 700px;\r\n+    cursor: pointer;\r\n+}\r\n+\r\n+/* Truncated text is separate so it doesn't hide tooltip */\r\n+.desc-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    cursor: pointer;\r\n+    display: inline-block;\r\n+    max-width: 100%;\r\n+    vertical-align: middle;\r\n }\r\n \r\n-/* Tooltip */\r\n-.desc .tooltip {\r\n+/* Tooltip styling */\r\n+.tooltip {\r\n     visibility: hidden;\r\n     background: black;\r\n     color: white;\r\n     padding: 5px 8px;\r\n@@ -100,14 +102,14 @@\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     z-index: 9999;\r\n-    white-space: normal;  /* allow wrapping in tooltip */\r\n-    max-width: inherit;   /* match desc width */\r\n+    white-space: normal;  \r\n+    max-width: 100%;      /* match .desc width */\r\n     box-sizing: border-box;\r\n }\r\n \r\n-.desc .tooltip::after {\r\n+.tooltip::after {\r\n     content: \"\";\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n"
+                },
+                {
+                    "date": 1755068873302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,26 +74,24 @@\n     opacity: 1;\r\n }\r\n  */\r\n \r\n-.desc {\r\n+ .desc {\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+    padding: 10px;\r\n+    border-radius: 6px;\r\n+    background-color: white;\r\n     position: relative;\r\n-    max-width: 700px;\r\n-    cursor: pointer;\r\n-}\r\n-\r\n-/* Truncated text is separate so it doesn't hide tooltip */\r\n-.desc-text {\r\n+    max-width: 100%;\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    display: inline-block;\r\n-    max-width: 100%;\r\n-    vertical-align: middle;\r\n+    cursor: pointer;\r\n }\r\n \r\n-/* Tooltip styling */\r\n-.tooltip {\r\n+/* Tooltip */\r\n+.desc .tooltip {\r\n     visibility: hidden;\r\n     background: black;\r\n     color: white;\r\n     padding: 5px 8px;\r\n@@ -102,14 +100,14 @@\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     z-index: 9999;\r\n-    white-space: normal;  \r\n-    max-width: 100%;      /* match .desc width */\r\n+    white-space: normal;  /* allow wrapping in tooltip */\r\n+    max-width: inherit;   /* match desc width */\r\n     box-sizing: border-box;\r\n }\r\n \r\n-.tooltip::after {\r\n+.desc .tooltip::after {\r\n     content: \"\";\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n"
+                },
+                {
+                    "date": 1755068884374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,5 +118,6 @@\n }\r\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n+    opacity: 1;\r\n }\r\n"
+                },
+                {
+                    "date": 1755068920173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n-    z-index: 9999;\r\n+    z-index: 9999 !important;\r\n     white-space: normal;  /* allow wrapping in tooltip */\r\n     max-width: inherit;   /* match desc width */\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755068926230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n-    z-index: 9999 !important;\r\n+    z-index: 9999 ;\r\n     white-space: normal;  /* allow wrapping in tooltip */\r\n     max-width: inherit;   /* match desc width */\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755069060917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,18 @@\n     opacity: 1;\r\n }\r\n  */\r\n \r\n+.desc-text {\r\n+    white-space: nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    display: inline-block;\r\n+    max-width: 100%;\r\n+}\r\n+\r\n  .desc {\r\n+    overflow: visible;\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n@@ -99,9 +108,9 @@\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n-    z-index: 9999 ;\r\n+    z-index: 1;\r\n     white-space: normal;  /* allow wrapping in tooltip */\r\n     max-width: inherit;   /* match desc width */\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755069084955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,8 @@\n     max-width: 100%;\r\n }\r\n \r\n  .desc {\r\n-    overflow: visible;\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1755069093687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,15 +74,8 @@\n     opacity: 1;\r\n }\r\n  */\r\n \r\n-.desc-text {\r\n-    white-space: nowrap;\r\n-    overflow: hidden;\r\n-    text-overflow: ellipsis;\r\n-    display: inline-block;\r\n-    max-width: 100%;\r\n-}\r\n \r\n  .desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n"
+                },
+                {
+                    "date": 1755069099360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,8 +74,15 @@\n     opacity: 1;\r\n }\r\n  */\r\n \r\n+.desc-text {\r\n+    white-space: nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    display: inline-block;\r\n+    max-width: 100%;\r\n+}\r\n \r\n  .desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n"
+                },
+                {
+                    "date": 1755069136619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n     max-width: 100%;\r\n+    color: black;\r\n }\r\n \r\n  .desc {\r\n     box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1755069243639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,59 +74,24 @@\n     opacity: 1;\r\n }\r\n  */\r\n \r\n-.desc-text {\r\n-    white-space: nowrap;\r\n-    overflow: hidden;\r\n-    text-overflow: ellipsis;\r\n-    display: inline-block;\r\n-    max-width: 100%;\r\n-    color: black;\r\n-}\r\n-\r\n- .desc {\r\n+.desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n     background-color: white;\r\n     position: relative;\r\n     max-width: 100%;\r\n+    cursor: pointer;\r\n+    overflow: visible; /* allow tooltip to overflow */\r\n+}\r\n+\r\n+.desc-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    cursor: pointer;\r\n+    display: inline-block;\r\n+    max-width: 100%;\r\n+    vertical-align: middle;\r\n }\r\n-\r\n-/* Tooltip */\r\n-.desc .tooltip {\r\n-    visibility: hidden;\r\n-    background: black;\r\n-    color: white;\r\n-    padding: 5px 8px;\r\n-    border-radius: 6px;\r\n-    position: absolute;\r\n-    bottom: 100%;\r\n-    left: 50%;\r\n-    transform: translateX(-50%);\r\n-    z-index: 1;\r\n-    white-space: normal;  /* allow wrapping in tooltip */\r\n-    max-width: inherit;   /* match desc width */\r\n-    box-sizing: border-box;\r\n-}\r\n-\r\n-.desc .tooltip::after {\r\n-    content: \"\";\r\n-    position: absolute;\r\n-    top: 100%;\r\n-    left: 50%;\r\n-    margin-left: -5px;\r\n-    border-width: 5px;\r\n-    border-style: solid;\r\n-    border-color: black transparent transparent transparent;\r\n-}\r\n-\r\n-.desc:hover .tooltip {\r\n-    visibility: visible;\r\n-    opacity: 1;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755069253639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,4 +94,24 @@\n     display: inline-block;\r\n     max-width: 100%;\r\n     vertical-align: middle;\r\n }\r\n+\r\n+.desc .tooltip {\r\n+    visibility: hidden;\r\n+    background: black;\r\n+    color: white;\r\n+    padding: 5px 8px;\r\n+    border-radius: 6px;\r\n+    position: absolute;\r\n+    bottom: 100%;\r\n+    left: 50%;\r\n+    transform: translateX(-50%);\r\n+    z-index: 9999; /* was 1 — increase so it appears above carousel */\r\n+    white-space: normal;\r\n+    max-width: inherit;\r\n+    box-sizing: border-box;\r\n+}\r\n+\r\n+.desc:hover .tooltip {\r\n+    visibility: visible;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755069272785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,5 +113,6 @@\n }\r\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n+    opacity: 1;\r\n }\r\n"
+                },
+                {
+                    "date": 1755069295207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,8 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n-    transform: translateX(-50%);\r\n     z-index: 9999; /* was 1 — increase so it appears above carousel */\r\n     white-space: normal;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1755069305039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,8 +104,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n+    transform: translateX(-50%);\r\n     z-index: 9999; /* was 1 — increase so it appears above carousel */\r\n     white-space: normal;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1755069323057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n-    z-index: 9999; /* was 1 — increase so it appears above carousel */\r\n+    z-index: 9999; \r\n     white-space: normal;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755069330822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,9 +106,8 @@\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     z-index: 9999; \r\n-    white-space: normal;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755069540663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,10 @@\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip {\r\n+     white-space: normal; /* allow full wrapping text */\r\n+    max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n     color: white;\r\n     padding: 5px 8px;\r\n"
+                },
+                {
+                    "date": 1755069573544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,14 +91,14 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: 100%;\r\n+    max-width: 700px;\r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip {\r\n-     white-space: normal; /* allow full wrapping text */\r\n+     white-space: normal; \r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n     color: white;\r\n"
+                },
+                {
+                    "date": 1755069611158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n #showBtn {\r\n+    overflow: visible;\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755069617220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n #showBtn {\r\n-    overflow: visible;\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755069691102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,16 @@\n     margin: auto;\r\n     display: block;\r\n }\r\n \r\n+\r\n+.carousel,\r\n+.carousel-inner,\r\n .carousel-item {\r\n     overflow: visible !important;\r\n+}\r\n+\r\n+.carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n"
+                },
+                {
+                    "date": 1755069736782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,9 @@\n     transform: translateX(-50%);\r\n     z-index: 9999; \r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n+    border-color: black transparent transparent transparent;\r\n }\r\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n"
+                },
+                {
+                    "date": 1755069745892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,8 @@\n     transform: translateX(-50%);\r\n     z-index: 9999; \r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n-    border-color: black transparent transparent transparent;\r\n }\r\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n"
+                },
+                {
+                    "date": 1755069815824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,9 +101,40 @@\n     max-width: 700px;\r\n     vertical-align: middle;\r\n }\r\n \r\n-.desc .tooltip {\r\n+.desc .tooltiptext {\r\n+  visibility: hidden;\r\n+  width: 120px;\r\n+  background-color: black;\r\n+  color: #fff;\r\n+  text-align: center;\r\n+  border-radius: 6px;\r\n+  padding: 5px 0;\r\n+  position: absolute;\r\n+  z-index: 1;\r\n+  bottom: 150%;\r\n+  left: 50%;\r\n+  margin-left: -60px;\r\n+}\r\n+\r\n+.desc .tooltiptext::after {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  top: 100%;\r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: black transparent transparent transparent;\r\n+}\r\n+\r\n+.desc:hover .tooltiptext {\r\n+  visibility: visible;\r\n+  opacity: 1;\r\n+}\r\n+\r\n+/* .desc .tooltip {\r\n      white-space: normal; \r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n@@ -118,8 +149,10 @@\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n+\r\n+\r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n-}\r\n+} */\r\n"
+                },
+                {
+                    "date": 1755069829367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,40 +101,9 @@\n     max-width: 700px;\r\n     vertical-align: middle;\r\n }\r\n \r\n-.desc .tooltiptext {\r\n-  visibility: hidden;\r\n-  width: 120px;\r\n-  background-color: black;\r\n-  color: #fff;\r\n-  text-align: center;\r\n-  border-radius: 6px;\r\n-  padding: 5px 0;\r\n-  position: absolute;\r\n-  z-index: 1;\r\n-  bottom: 150%;\r\n-  left: 50%;\r\n-  margin-left: -60px;\r\n-}\r\n-\r\n-.desc .tooltiptext::after {\r\n-  content: \"\";\r\n-  position: absolute;\r\n-  top: 100%;\r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: black transparent transparent transparent;\r\n-}\r\n-\r\n-.desc:hover .tooltiptext {\r\n-  visibility: visible;\r\n-  opacity: 1;\r\n-}\r\n-\r\n-/* .desc .tooltip {\r\n+.desc .tooltip {\r\n      white-space: normal; \r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n@@ -154,5 +123,5 @@\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n-} */\r\n+}\r\n"
+                },
+                {
+                    "date": 1755069861476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,63 +25,10 @@\n     padding: 20px;\r\n     background-color: rgb(244, 250, 253);\r\n }\r\n \r\n-/* .desc {\r\n-    position: relative;\r\n-    width: 100%;\r\n-    align-items: center;\r\n-    justify-content: center;\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n-    border-radius: 5px;\r\n-    background-color: white;\r\n-    font-size: larger;\r\n-    padding: 20px;\r\n-}\r\n \r\n-.desc .truncated-text {\r\n-    white-space: nowrap;\r\n-    overflow: hidden;\r\n-    text-overflow: ellipsis;\r\n-    display: inline-block;\r\n-    vertical-align: middle;\r\n-    cursor: pointer;\r\n-    max-width: 700px;\r\n-}\r\n \r\n-.desc .tooltip {\r\n-    visibility: hidden;\r\n-    width: 500px;\r\n-    background-color: black;\r\n-    color: white;\r\n-    text-align: center;\r\n-    border-radius: 6px;\r\n-    padding: 5px 0;\r\n-    position: absolute;\r\n-    z-index: 9999;\r\n-    bottom: 100%;\r\n-    left: 50%;\r\n-    margin-left: -250px;\r\n-}\r\n-\r\n-.desc .tooltip::after {\r\n-    content: \" \";\r\n-    position: absolute;\r\n-    top: 100%;\r\n-    left: 50%;\r\n-    margin-left: -5px;\r\n-    border-width: 5px;\r\n-    border-style: solid;\r\n-    border-color: black transparent transparent transparent;\r\n-}\r\n-\r\n-.desc:hover .tooltip {\r\n-    visibility: visible;\r\n-    opacity: 1;\r\n-}\r\n- */\r\n-\r\n .desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n"
+                },
+                {
+                    "date": 1755069979599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     background-color: white;\r\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n-    overflow: visible; /* allow tooltip to overflow */\r\n+    overflow: visible;\r\n }\r\n \r\n .desc-text {\r\n     white-space: nowrap;\r\n@@ -49,9 +49,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip {\r\n-     white-space: normal; \r\n+    white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n     color: white;\r\n@@ -60,9 +60,9 @@\n     position: absolute;\r\n     bottom: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n-    z-index: 9999; \r\n+    z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n@@ -70,5 +70,5 @@\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n-}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755069988455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     color: white;\r\n     padding: 5px 8px;\r\n     border-radius: 6px;\r\n     position: absolute;\r\n-    bottom: 100%;\r\n+    top: 100%;\r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n"
+                },
+                {
+                    "date": 1755070007646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(-50%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070029415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n+    transform: translatey(-50%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070039045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translatey(-50%);\r\n+    transform: translatey(-20%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070049079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translatey(-20%);\r\n+    transform: translatey(-0%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070071775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translatey(-0%);\r\n+    transform: translatex(-70%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070083968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translatex(-70%);\r\n+    transform: translateX(-70%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070091726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(-70%);\r\n+    transform: translateX(-20%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070097962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(-20%);\r\n+    transform: translateX(-50%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070109689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(-50%);\r\n+    transform: translateX(50%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070118213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(50%);\r\n+    transform: translateX(20%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070131159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(20%);\r\n+    transform: translateX(30%);\r\n     z-index: 9999;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755070185356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,19 @@\n     max-width: 700px;\r\n     vertical-align: middle;\r\n }\r\n \r\n+.desc .tooltiptext::after {\r\n+  content: \" \";\r\n+  position: absolute;\r\n+  bottom: 100%;  /* At the top of the tooltip */\r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: transparent transparent black transparent;\r\n+}\r\n+\r\n .desc .tooltip {\r\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n"
+                },
+                {
+                    "date": 1755070208662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n     max-width: 700px;\r\n     vertical-align: middle;\r\n }\r\n \r\n-.desc .tooltiptext::after {\r\n+.desc .tooltip::after {\r\n   content: \" \";\r\n   position: absolute;\r\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n"
+                },
+                {
+                    "date": 1755070227781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n+    margin: 5px;\r\n   content: \" \";\r\n   position: absolute;\r\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n"
+                },
+                {
+                    "date": 1755070238595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,8 @@\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n-    margin: 5px;\r\n   content: \" \";\r\n   position: absolute;\r\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n"
+                },
+                {
+                    "date": 1755070247734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n   border-color: transparent transparent black transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n+    margin: 5px;\r\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n"
+                },
+                {
+                    "date": 1755070255953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n   border-color: transparent transparent black transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n-    margin: 5px;\r\n+    margin: 10px;\r\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: black;\r\n"
+                },
+                {
+                    "date": 1755070266330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     margin: 10px;\r\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n-    background: black;\r\n+    background: white;\r\n     color: white;\r\n     padding: 5px 8px;\r\n     border-radius: 6px;\r\n     position: absolute;\r\n"
+                },
+                {
+                    "date": 1755070272201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n     background: white;\r\n-    color: white;\r\n+    color: black;\r\n     padding: 5px 8px;\r\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n"
+                },
+                {
+                    "date": 1755070289551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n-  border-color: transparent transparent black transparent;\r\n+  border-color: transparent transparent white transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755070345350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n-  border-color: transparent transparent white transparent;\r\n+  border-color: transparent transparent rgb(20,157,221) transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755070373869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n   border-color: transparent transparent rgb(20,157,221) transparent;\r\n+  border: 1px solid ;\r\n }\r\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755070382606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n   border-color: transparent transparent rgb(20,157,221) transparent;\r\n-  border: 1px solid ;\r\n+  border: 1px solid rgb(20,157,221);\r\n }\r\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755070391911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n   border-color: transparent transparent rgb(20,157,221) transparent;\r\n-  border: 1px solid rgb(20,157,221);\r\n }\r\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755070404926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,8 @@\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n-  border-style: solid;\r\n   border-color: transparent transparent rgb(20,157,221) transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n"
+                },
+                {
+                    "date": 1755070423943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,9 @@\n     visibility: hidden;\r\n     background: white;\r\n     color: black;\r\n     padding: 5px 8px;\r\n+    border: solid rgb(20,157,221);\r\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n"
+                },
+                {
+                    "date": 1755070436118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n+    margin: 5px;\r\n   content: \" \";\r\n   position: absolute;\r\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n"
+                },
+                {
+                    "date": 1755070446765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,8 @@\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n-    margin: 5px;\r\n   content: \" \";\r\n   position: absolute;\r\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n@@ -67,9 +66,8 @@\n     visibility: hidden;\r\n     background: white;\r\n     color: black;\r\n     padding: 5px 8px;\r\n-    border: solid rgb(20,157,221);\r\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n"
+                },
+                {
+                    "date": 1755070464831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n   bottom: 100%;  /* At the top of the tooltip */\r\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n+  border-style: solid;\r\n   border-color: transparent transparent rgb(20,157,221) transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n"
+                },
+                {
+                    "date": 1755070490014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     margin: 10px;\r\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n-    background: white;\r\n+    background: rgb(20,157,221);\r\n     color: black;\r\n     padding: 5px 8px;\r\n     border-radius: 6px;\r\n     position: absolute;\r\n"
+                },
+                {
+                    "date": 1755070509832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,86 @@\n+#showBtn {\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    margin: 10px;\r\n+}\r\n+\r\n+.profile-img {\r\n+    width: 90px;\r\n+    height: 90px;\r\n+    object-fit: cover;\r\n+    border-radius: 50%;\r\n+    margin: auto;\r\n+    display: block;\r\n+}\r\n+\r\n+\r\n+.carousel,\r\n+.carousel-inner,\r\n+.carousel-item {\r\n+    overflow: visible !important;\r\n+}\r\n+\r\n+.carousel-item {\r\n+    text-align: center;\r\n+    padding: 20px;\r\n+    background-color: rgb(244, 250, 253);\r\n+}\r\n+\r\n+\r\n+\r\n+.desc {\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+    padding: 10px;\r\n+    border-radius: 6px;\r\n+    background-color: white;\r\n+    position: relative;\r\n+    max-width: 100%;\r\n+    cursor: pointer;\r\n+    overflow: visible;\r\n+}\r\n+\r\n+.desc-text {\r\n+    white-space: nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    display: inline-block;\r\n+    max-width: 700px;\r\n+    vertical-align: middle;\r\n+}\r\n+\r\n+.desc .tooltip::after {\r\n+  content: \" \";\r\n+  position: absolute;\r\n+  bottom: 100%;  /* At the top of the tooltip */\r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: transparent transparent rgb(20,157,221) transparent;\r\n+}\r\n+\r\n+.desc .tooltip {\r\n+    margin: 10px;\r\n+    white-space: normal;\r\n+    max-width: 300px;\r\n+    visibility: hidden;\r\n+    background: rgb(115, 160, 181);\r\n+    color: black;\r\n+    padding: 5px 8px;\r\n+    border-radius: 6px;\r\n+    position: absolute;\r\n+    top: 100%;\r\n+    left: 50%;\r\n+    transform: translateX(30%);\r\n+    z-index: 9999;\r\n+    max-width: inherit;\r\n+    box-sizing: border-box;\r\n+}\r\n+\r\n+\r\n+\r\n+.desc:hover .tooltip {\r\n+    visibility: visible;\r\n+    opacity: 1;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755070517174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     margin: 10px;\r\n     white-space: normal;\r\n     max-width: 300px;\r\n     visibility: hidden;\r\n-    background: rgb(115, 160, 181);\r\n+    background: rgb(106, 186, 222);\r\n     color: black;\r\n     padding: 5px 8px;\r\n     border-radius: 6px;\r\n     position: absolute;\r\n@@ -82,91 +82,5 @@\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n-}\n-#showBtn {\r\n-    display: flex;\r\n-    justify-content: center;\r\n-    margin: 10px;\r\n-}\r\n-\r\n-.profile-img {\r\n-    width: 90px;\r\n-    height: 90px;\r\n-    object-fit: cover;\r\n-    border-radius: 50%;\r\n-    margin: auto;\r\n-    display: block;\r\n-}\r\n-\r\n-\r\n-.carousel,\r\n-.carousel-inner,\r\n-.carousel-item {\r\n-    overflow: visible !important;\r\n-}\r\n-\r\n-.carousel-item {\r\n-    text-align: center;\r\n-    padding: 20px;\r\n-    background-color: rgb(244, 250, 253);\r\n-}\r\n-\r\n-\r\n-\r\n-.desc {\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n-    padding: 10px;\r\n-    border-radius: 6px;\r\n-    background-color: white;\r\n-    position: relative;\r\n-    max-width: 100%;\r\n-    cursor: pointer;\r\n-    overflow: visible;\r\n-}\r\n-\r\n-.desc-text {\r\n-    white-space: nowrap;\r\n-    overflow: hidden;\r\n-    text-overflow: ellipsis;\r\n-    display: inline-block;\r\n-    max-width: 700px;\r\n-    vertical-align: middle;\r\n-}\r\n-\r\n-.desc .tooltip::after {\r\n-  content: \" \";\r\n-  position: absolute;\r\n-  bottom: 100%;  /* At the top of the tooltip */\r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: transparent transparent rgb(20,157,221) transparent;\r\n-}\r\n-\r\n-.desc .tooltip {\r\n-    margin: 10px;\r\n-    white-space: normal;\r\n-    max-width: 300px;\r\n-    visibility: hidden;\r\n-    background: rgb(20,157,221);\r\n-    color: black;\r\n-    padding: 5px 8px;\r\n-    border-radius: 6px;\r\n-    position: absolute;\r\n-    top: 100%;\r\n-    left: 50%;\r\n-    transform: translateX(30%);\r\n-    z-index: 9999;\r\n-    max-width: inherit;\r\n-    box-sizing: border-box;\r\n-}\r\n-\r\n-\r\n-\r\n-.desc:hover .tooltip {\r\n-    visibility: visible;\r\n-    opacity: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755070563047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n-  border-color: transparent transparent rgb(20,157,221) transparent;\r\n+  border-color: transparent transparent rgb(106, 186, 222) transparent;\r\n }\r\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755072929156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,5 +82,9 @@\n \r\n .desc:hover .tooltip {\r\n     visibility: visible;\r\n     opacity: 1;\r\n+}\r\n+\r\n+#carouselIndicators{\r\n+    color:blue;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755072942245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,5 +86,7 @@\n }\r\n \r\n #carouselIndicators{\r\n     color:blue;\r\n+    padding: 10px;\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755072959535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,6 +87,6 @@\n \r\n #carouselIndicators{\r\n     color:blue;\r\n     padding: 10px;\r\n-    \r\n+    margin: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755073009505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n \r\n-#carouselIndicators{\r\n+.carousel-indicators{\r\n     color:blue;\r\n     padding: 10px;\r\n     margin: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755073163657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,8 @@\n     opacity: 1;\r\n }\r\n \r\n .carousel-indicators{\r\n-    color:blue;\r\n+    color:blue !important;\r\n     padding: 10px;\r\n     margin: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755073169092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,8 @@\n     opacity: 1;\r\n }\r\n \r\n .carousel-indicators{\r\n-    color:blue !important;\r\n+    color:blue;\r\n     padding: 10px;\r\n     margin: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755073283306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,14 @@\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n \r\n-.carousel-indicators{\r\n-    color:blue;\r\n-    padding: 10px;\r\n-    margin: 10px;\r\n-}\n\\ No newline at end of file\n+.carousel-indicators [data-bs-target] {\r\n+  width: 10px;\r\n+  height: 10px;\r\n+  border-radius: 50%;\r\n+  background-color: #555;\r\n+}\r\n+\r\n+.carousel-indicators .active {\r\n+  background-color: #000;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755073313410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,14 +84,5 @@\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n \r\n-.carousel-indicators [data-bs-target] {\r\n-  width: 10px;\r\n-  height: 10px;\r\n-  border-radius: 50%;\r\n-  background-color: #555;\r\n-}\r\n-\r\n-.carousel-indicators .active {\r\n-  background-color: #000;\r\n-}\r\n+.carousel-indicators\r\n"
+                },
+                {
+                    "date": 1755073367865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,5 +84,9 @@\n     visibility: visible;\r\n     opacity: 1;\r\n }\r\n \r\n-.carousel-indicators\r\n+.carousel-indicators [data-bs-target]{\r\n+    width:10px;\r\n+    height: 10px;\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1755073380088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,6 +87,7 @@\n \r\n .carousel-indicators [data-bs-target]{\r\n     width:10px;\r\n     height: 10px;\r\n+    margin: 10px;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1755073395770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,7 +87,6 @@\n \r\n .carousel-indicators [data-bs-target]{\r\n     width:10px;\r\n     height: 10px;\r\n-    margin: 10px;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1755073415614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,6 +87,7 @@\n \r\n .carousel-indicators [data-bs-target]{\r\n     width:10px;\r\n     height: 10px;\r\n+    border:solid blue;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1755073467227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,7 +87,7 @@\n \r\n .carousel-indicators [data-bs-target]{\r\n     width:10px;\r\n     height: 10px;\r\n-    border:solid blue;\r\n+    border:solid rgb(20,157,221);\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1755073482611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,6 +88,7 @@\n .carousel-indicators [data-bs-target]{\r\n     width:10px;\r\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n+    border-radius: 50%;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1755073495089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,6 +89,7 @@\n     width:10px;\r\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n+    background-color: white;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1755073518804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,6 +90,9 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n+}\r\n \r\n+.carousel-indicators:active{\r\n+    background-color: rgb(20,157,221);\r\n }\r\n"
+                },
+                {
+                    "date": 1755073533301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,7 +92,7 @@\n     border-radius: 50%;\r\n     background-color: white;\r\n }\r\n \r\n-.carousel-indicators:active{\r\n+.carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n"
+                },
+                {
+                    "date": 1755073676744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,8 +90,9 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n+    margin: 10px;\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755073688590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n-    margin: 10px;\r\n+    margin-top: 10px;\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755073721572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n-    margin-top: 10px;\r\n+    margin-top: 20px;\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755073726919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n-    margin-top: 20px;\r\n+    margin-top: 30px;\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755073738483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n-    margin-top: 30px;\r\n+    margin-top: 10%;\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755073787860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,8 @@\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n     background-color: white;\r\n-    margin-top: 10%;\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755075742597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: 700px;\r\n+    \r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755075753786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    \r\n+    max-width: 700px;\r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755075795113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: 700px;\r\n+    max-width: 200px;\r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755076906901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n     transform: translateX(30%);\r\n-    z-index: 9999;\r\n+    z-index: 1;\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755076921366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n     transform: translateX(30%);\r\n-    z-index: 1;\r\n+    /* z-index: 1; */\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755076931430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,8 @@\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n     transform: translateX(30%);\r\n-    /* z-index: 1; */\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755077011836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \r\n .desc .tooltip::after {\r\n   content: \" \";\r\n   position: absolute;\r\n-  bottom: 100%;  /* At the top of the tooltip */\r\n+  bottom: 100%;  \r\n   left: 50%;\r\n   margin-left: -5px;\r\n   border-width: 5px;\r\n   border-style: solid;\r\n"
+                },
+                {
+                    "date": 1755077193829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,10 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: 200px;\r\n+    max-width: flex;\r\n+    flex-wrap: wrap;\r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755077209785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: flex;\r\n+    max-width: 200px;\r\n     flex-wrap: wrap;\r\n     vertical-align: middle;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755077220096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: 200px;\r\n+    max-width: auto;\r\n     flex-wrap: wrap;\r\n     vertical-align: middle;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755077299976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: auto;\r\n+    max-width: flex;\r\n     flex-wrap: wrap;\r\n     vertical-align: middle;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755077325711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,10 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: inline-block;\r\n-    max-width: flex;\r\n-    flex-wrap: wrap;\r\n+    max-width: 200px;\r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755077474197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,11 @@\n .desc-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    display: inline-block;\r\n-    max-width: 200px;\r\n+    display: flex;\r\n+    flex-wrap: wrap;\r\n+    \r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755077507505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,10 @@\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n-    \r\n+    align-items: center;\r\n+    justify-content: center;\r\n     vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755077517045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,8 @@\n     display: flex;\r\n     flex-wrap: wrap;\r\n     align-items: center;\r\n     justify-content: center;\r\n-    vertical-align: middle;\r\n }\r\n \r\n .desc .tooltip::after {\r\n   content: \" \";\r\n"
+                },
+                {
+                    "date": 1755077559123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n .desc-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    display: flex;\r\n+    display: inline-block;\r\n     flex-wrap: wrap;\r\n     align-items: center;\r\n     justify-content: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1755077568543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n .desc-text {\r\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n-    display: inline-block;\r\n+    display: flex;\r\n     flex-wrap: wrap;\r\n     align-items: center;\r\n     justify-content: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1755077605984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: flex;\r\n-    flex-wrap: wrap;\r\n+    flex-direction: column;\r\n     align-items: center;\r\n     justify-content: center;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755077644145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n     text-overflow: ellipsis;\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n-    justify-content: center;\r\n }\r\n \r\n .desc .tooltip::after {\r\n   content: \" \";\r\n"
+                },
+                {
+                    "date": 1755077651474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,8 @@\n     white-space: nowrap;\r\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: flex;\r\n-    flex-direction: column;\r\n     align-items: center;\r\n }\r\n \r\n .desc .tooltip::after {\r\n"
+                },
+                {
+                    "date": 1755077680530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     overflow: hidden;\r\n     text-overflow: ellipsis;\r\n     display: flex;\r\n     align-items: center;\r\n+    justify-content: center;\r\n }\r\n \r\n .desc .tooltip::after {\r\n   content: \" \";\r\n"
+                },
+                {
+                    "date": 1755077741208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: rgb(244, 250, 253);\r\n+    background-color: white;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755077755174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: white;\r\n+    background-color: rgb(163, 175, 181);\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755077768232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: rgb(163, 175, 181);\r\n+    background-color: rgb(244, 250, 253);\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755078321167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,10 @@\n+body{\r\n+    background-color: black;\r\n+    color:white\r\n+}\r\n+\r\n+\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755078344229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n-body{\r\n-    background-color: black;\r\n-    color:white\r\n-}\r\n \r\n \r\n+\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755078367539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n+body{\r\n+    background-color: black;\r\n+}\r\n \r\n \r\n-\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755078390063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n-body{\r\n-    background-color: black;\r\n-}\r\n \r\n \r\n+\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755078645892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,15 @@\n \r\n+:root{\r\n+    --card-background: rgb(244, 250, 253);\r\n+    --background-color: white;\r\n+    --color:black;\r\n+}\r\n \r\n+.darkMode{\r\n \r\n+}\r\n+\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755078682050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,110 @@\n+\r\n+:root{\r\n+    --card-background: rgb(244, 250, 253);\r\n+    --background-color: white;\r\n+    --color:black;\r\n+}\r\n+\r\n+.darkMode{\r\n+    --card-background: grey;\r\n+    --background-color: black;\r\n+    --color:white;\r\n+}\r\n+\r\n+#showBtn {\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    margin: 10px;\r\n+}\r\n+\r\n+.profile-img {\r\n+    width: 90px;\r\n+    height: 90px;\r\n+    object-fit: cover;\r\n+    border-radius: 50%;\r\n+    margin: auto;\r\n+    display: block;\r\n+}\r\n+\r\n+\r\n+.carousel,\r\n+.carousel-inner,\r\n+.carousel-item {\r\n+    overflow: visible !important;\r\n+}\r\n+\r\n+.carousel-item {\r\n+    text-align: center;\r\n+    padding: 20px;\r\n+    background-color: rgb(244, 250, 253);\r\n+}\r\n+\r\n+\r\n+\r\n+.desc {\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+    padding: 10px;\r\n+    border-radius: 6px;\r\n+    background-color: white;\r\n+    position: relative;\r\n+    max-width: 100%;\r\n+    cursor: pointer;\r\n+    overflow: visible;\r\n+}\r\n+\r\n+.desc-text {\r\n+    white-space: nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    display: flex;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+}\r\n+\r\n+.desc .tooltip::after {\r\n+  content: \" \";\r\n+  position: absolute;\r\n+  bottom: 100%;  \r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: transparent transparent rgb(106, 186, 222) transparent;\r\n+}\r\n+\r\n+.desc .tooltip {\r\n+    margin: 10px;\r\n+    white-space: normal;\r\n+    max-width: 300px;\r\n+    visibility: hidden;\r\n+    background: rgb(106, 186, 222);\r\n+    color: black;\r\n+    padding: 5px 8px;\r\n+    border-radius: 6px;\r\n+    position: absolute;\r\n+    top: 100%;\r\n+    left: 50%;\r\n+    transform: translateX(30%);\r\n+    max-width: inherit;\r\n+    box-sizing: border-box;\r\n+}\r\n+\r\n+\r\n+\r\n+.desc:hover .tooltip {\r\n+    visibility: visible;\r\n+    opacity: 1;\r\n+}\r\n+\r\n+.carousel-indicators [data-bs-target]{\r\n+    width:10px;\r\n+    height: 10px;\r\n+    border:solid rgb(20,157,221);\r\n+    border-radius: 50%;\r\n+    background-color: white;\r\n+}\r\n+\r\n+.carousel-indicators .active{\r\n+    background-color: rgb(20,157,221);\r\n+}\r\n"
+                },
+                {
+                    "date": 1755078718015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,116 +10,10 @@\n     --background-color: black;\r\n     --color:white;\r\n }\r\n \r\n-#showBtn {\r\n-    display: flex;\r\n-    justify-content: center;\r\n-    margin: 10px;\r\n-}\r\n+body{\r\n \r\n-.profile-img {\r\n-    width: 90px;\r\n-    height: 90px;\r\n-    object-fit: cover;\r\n-    border-radius: 50%;\r\n-    margin: auto;\r\n-    display: block;\r\n-}\r\n-\r\n-\r\n-.carousel,\r\n-.carousel-inner,\r\n-.carousel-item {\r\n-    overflow: visible !important;\r\n-}\r\n-\r\n-.carousel-item {\r\n-    text-align: center;\r\n-    padding: 20px;\r\n-    background-color: rgb(244, 250, 253);\r\n-}\r\n-\r\n-\r\n-\r\n-.desc {\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n-    padding: 10px;\r\n-    border-radius: 6px;\r\n-    background-color: white;\r\n-    position: relative;\r\n-    max-width: 100%;\r\n-    cursor: pointer;\r\n-    overflow: visible;\r\n-}\r\n-\r\n-.desc-text {\r\n-    white-space: nowrap;\r\n-    overflow: hidden;\r\n-    text-overflow: ellipsis;\r\n-    display: flex;\r\n-    align-items: center;\r\n-    justify-content: center;\r\n-}\r\n-\r\n-.desc .tooltip::after {\r\n-  content: \" \";\r\n-  position: absolute;\r\n-  bottom: 100%;  \r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: transparent transparent rgb(106, 186, 222) transparent;\r\n-}\r\n-\r\n-.desc .tooltip {\r\n-    margin: 10px;\r\n-    white-space: normal;\r\n-    max-width: 300px;\r\n-    visibility: hidden;\r\n-    background: rgb(106, 186, 222);\r\n-    color: black;\r\n-    padding: 5px 8px;\r\n-    border-radius: 6px;\r\n-    position: absolute;\r\n-    top: 100%;\r\n-    left: 50%;\r\n-    transform: translateX(30%);\r\n-    max-width: inherit;\r\n-    box-sizing: border-box;\r\n-}\r\n-\r\n-\r\n-\r\n-.desc:hover .tooltip {\r\n-    visibility: visible;\r\n-    opacity: 1;\r\n-}\r\n-\r\n-.carousel-indicators [data-bs-target]{\r\n-    width:10px;\r\n-    height: 10px;\r\n-    border:solid rgb(20,157,221);\r\n-    border-radius: 50%;\r\n-    background-color: white;\r\n-}\r\n-\r\n-.carousel-indicators .active{\r\n-    background-color: rgb(20,157,221);\r\n-}\r\n-\r\n-:root{\r\n-    --card-background: rgb(244, 250, 253);\r\n-    --background-color: white;\r\n-    --color:black;\r\n-}\r\n-\r\n-.darkMode{\r\n-\r\n-}\r\n-\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n     margin: 10px;\r\n@@ -215,4 +109,5 @@\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755078739567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n     --background-color: black;\r\n     --color:white;\r\n }\r\n \r\n-body{\r\n \r\n #showBtn {\r\n     display: flex;\r\n     justify-content: center;\r\n@@ -109,5 +108,4 @@\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755079086452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: rgb(244, 250, 253);\r\n+    background-color: var(--card-background);\r\n }\r\n \r\n \r\n \r\n@@ -46,9 +46,9 @@\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n-    background-color: white;\r\n+    background-color: var(--background-color);\r\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n@@ -102,9 +102,9 @@\n     width:10px;\r\n     height: 10px;\r\n     border:solid rgb(20,157,221);\r\n     border-radius: 50%;\r\n-    background-color: white;\r\n+    background-color: var(--background-color);\r\n }\r\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n"
+                },
+                {
+                    "date": 1755079181516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,13 @@\n     --color:white;\r\n }\r\n \r\n \r\n+\r\n+\r\n #showBtn {\r\n     display: flex;\r\n-    justify-content: center;\r\n+    justify-content: space-between;\r\n     margin: 10px;\r\n }\r\n \r\n .profile-img {\r\n"
+                },
+                {
+                    "date": 1755079899176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,4 +110,15 @@\n \r\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n+\r\n+\r\n+#theme-toggle{\r\n+    background-color: white;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+    height: 50px;\r\n+    width: 50px;\r\n+    border-radius: 50%;\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755079944089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,9 +113,9 @@\n }\r\n \r\n \r\n #theme-toggle{\r\n-    background-color: white;\r\n+    background-color: var(--background-color);\r\n     justify-content: center;\r\n     align-items: center;\r\n     height: 50px;\r\n     width: 50px;\r\n"
+                },
+                {
+                    "date": 1755080053212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,8 @@\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     justify-content: center;\r\n     align-items: center;\r\n-    height: 50px;\r\n-    width: 50px;\r\n-    border-radius: 50%;\r\n+    height: 20px;\r\n+    width: 20px;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755080058907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,8 @@\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     justify-content: center;\r\n     align-items: center;\r\n-    height: 20px;\r\n-    width: 20px;\r\n+    height: 50px;\r\n+    width: 50px;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755080066890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,8 @@\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     justify-content: center;\r\n     align-items: center;\r\n-    height: 50px;\r\n+    height: 30px;\r\n     width: 50px;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755080278291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\r\n \r\n \r\n \r\n-\r\n+body{\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     margin: 10px;\r\n@@ -119,5 +119,6 @@\n     align-items: center;\r\n     height: 30px;\r\n     width: 50px;\r\n     \r\n+}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755080627596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,13 +112,6 @@\n     background-color: rgb(20,157,221);\r\n }\r\n \r\n \r\n-#theme-toggle{\r\n-    background-color: var(--background-color);\r\n-    justify-content: center;\r\n-    align-items: center;\r\n-    height: 30px;\r\n-    width: 50px;\r\n-    \r\n-}\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755081149037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,6 +112,13 @@\n     background-color: rgb(20,157,221);\r\n }\r\n \r\n \r\n-\r\n+#theme-toggle{\r\n+    background-color: var(--background-color);\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+    height: 30px;\r\n+    width: 50px;\r\n+    \r\n+}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755081444454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,10 @@\n \r\n \r\n \r\n body{\r\n+background-color: var(--background-color);\r\n+\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     margin: 10px;\r\n"
+                },
+                {
+                    "date": 1755082049752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,13 +114,15 @@\n     background-color: rgb(20,157,221);\r\n }\r\n \r\n \r\n+\r\n+}\r\n+\r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     justify-content: center;\r\n     align-items: center;\r\n     height: 30px;\r\n     width: 50px;\r\n     \r\n-}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755082111853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color: black;\r\n+    --background-color: rgb(121, 112, 112);\r\n     --color:white;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755082148235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color: rgb(121, 112, 112);\r\n+    --background-color: ;\r\n     --color:white;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755082197469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color: ;\r\n+    --background-color: white;\r\n     --color:white;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755082219214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color: white;\r\n+    --background-color: black;\r\n     --color:white;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755082252984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color: black;\r\n+    --background-color: ;\r\n     --color:white;\r\n }\r\n \r\n \r\n@@ -55,8 +55,9 @@\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n+    color:var(--background-color)\r\n }\r\n \r\n .desc-text {\r\n     white-space: nowrap;\r\n"
+                },
+                {
+                    "date": 1755082292056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \r\n :root{\r\n     --card-background: rgb(244, 250, 253);\r\n+    --text-color:black;\r\n     --background-color: white;\r\n     --color:black;\r\n }\r\n \r\n@@ -55,9 +56,9 @@\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n-    color:var(--background-color)\r\n+    color:var(--text-color)\r\n }\r\n \r\n .desc-text {\r\n     white-space: nowrap;\r\n"
+                },
+                {
+                    "date": 1755082319640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n .darkMode{\r\n     --card-background: grey;\r\n     --background-color: ;\r\n     --color:white;\r\n+    --text-color:white\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755082346983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color: ;\r\n+    --background-color:black ;\r\n     --color:white;\r\n-    --text-color:white\r\n+    --text-color:white;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755082371231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n .darkMode{\r\n     --card-background: grey;\r\n-    --background-color:black ;\r\n+    --background-color:rgba(0, 0, 0, 0.339) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755082429007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,6 +126,7 @@\n     justify-content: center;\r\n     align-items: center;\r\n     height: 30px;\r\n     width: 50px;\r\n+    border-radius: 50%;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755082445611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,11 +122,12 @@\n }\r\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n-    justify-content: center;\r\n-    align-items: center;\r\n     height: 30px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n     \r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755082463008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,9 @@\n }\r\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n+    color: black;\r\n     height: 30px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n     justify-content: center;\r\n"
+                },
+                {
+                    "date": 1755082468350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n }\r\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n-    color: black;\r\n+    \r\n     height: 30px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n     justify-content: center;\r\n"
+                },
+                {
+                    "date": 1755082502865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n .darkMode{\r\n-    --card-background: grey;\r\n+    \r\n     --background-color:rgba(0, 0, 0, 0.339) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755082518756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n .darkMode{\r\n-    \r\n+    --card-background: grey;\r\n     --background-color:rgba(0, 0, 0, 0.339) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755082585088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n-    background-color: var(--background-color);\r\n+    /* background-color: var(--background-color); */\r\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n"
+                },
+                {
+                    "date": 1755082593318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n-    /* background-color: var(--background-color); */\r\n+    background-color: var(--background-color);\r\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n"
+                },
+                {
+                    "date": 1755082984594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,10 +45,17 @@\n     padding: 20px;\r\n     background-color: var(--card-background);\r\n }\r\n \r\n+.name{\r\n+    color: var(--text-color);\r\n+}\r\n \r\n+.position{\r\n+    color: var(--text-color);\r\n+}\r\n \r\n+\r\n .desc {\r\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n"
+                },
+                {
+                    "date": 1755083248155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n \r\n \r\n }\r\n \r\n-#theme-toggle{\r\n+/* #theme-toggle{\r\n     background-color: var(--background-color);\r\n     \r\n     height: 30px;\r\n     width: 50px;\r\n@@ -137,5 +137,5 @@\n     justify-content: center;\r\n     align-items: center;\r\n     \r\n     \r\n-}\n\\ No newline at end of file\n+} */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755084001453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n \r\n \r\n }\r\n \r\n-/* #theme-toggle{\r\n+#theme-toggle{\r\n     background-color: var(--background-color);\r\n     \r\n     height: 30px;\r\n     width: 50px;\r\n@@ -137,5 +137,5 @@\n     justify-content: center;\r\n     align-items: center;\r\n     \r\n     \r\n-} */\n\\ No newline at end of file\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755084034762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     \r\n-    height: 30px;\r\n+    height: 50px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n     justify-content: center;\r\n     align-items: center;\r\n"
+                },
+                {
+                    "date": 1755084050495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,8 @@\n }\r\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n-    \r\n     height: 50px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n     justify-content: center;\r\n"
+                },
+                {
+                    "date": 1755084132585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,5 @@\n     background-color: var(--background-color);\r\n     height: 50px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n-    justify-content: center;\r\n-    align-items: center;\r\n-    \r\n-    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755084311448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,14 +123,13 @@\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n \r\n-\r\n-\r\n-}\r\n-\r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     height: 50px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1755085036142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     --background-color: white;\r\n     --color:black;\r\n }\r\n \r\n-.darkMode{\r\n+body.darkMode{\r\n     --card-background: grey;\r\n     --background-color:rgba(0, 0, 0, 0.339) ;\r\n     --color:white;\r\n     --text-color:white;\r\n"
+                },
+                {
+                    "date": 1755085876685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,14 +44,13 @@\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: var(--card-background);\r\n }\r\n-\r\n-.name{\r\n+#name{\r\n     color: var(--text-color);\r\n }\r\n \r\n-.position{\r\n+#position{\r\n     color: var(--text-color);\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755086009569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background: grey;\r\n+    --card-background: black;\r\n     --background-color:rgba(0, 0, 0, 0.339) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755086020973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background: black;\r\n+    --card-background: grey;\r\n     --background-color:rgba(0, 0, 0, 0.339) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755086042443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background: grey;\r\n-    --background-color:rgba(0, 0, 0, 0.339) ;\r\n+    --background-color:rgba(0, 0, 0, 0.043) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755086049524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background: grey;\r\n-    --background-color:rgba(0, 0, 0, 0.043) ;\r\n+    --background-color:rgba(0, 0, 0, 0.574) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755086116653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n-    background-color: var(--background-color);\r\n+    background-color: white;\r\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n"
+                },
+                {
+                    "date": 1755086126050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n-    color:var(--text-color)\r\n+\r\n }\r\n \r\n .desc-text {\r\n     white-space: nowrap;\r\n"
+                },
+                {
+                    "date": 1755086142645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,14 +58,14 @@\n     box-sizing: border-box;\r\n     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n     padding: 10px;\r\n     border-radius: 6px;\r\n-    background-color: white;\r\n+    background-color: var(--background-color);\r\n     position: relative;\r\n     max-width: 100%;\r\n     cursor: pointer;\r\n     overflow: visible;\r\n-\r\n+    color:var(--text-color);\r\n }\r\n \r\n .desc-text {\r\n     white-space: nowrap;\r\n"
+                },
+                {
+                    "date": 1755086201766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,13 +122,13 @@\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n \r\n+}\r\n+\r\n+\r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     height: 50px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n }\r\n-\r\n-}\r\n-\r\n"
+                },
+                {
+                    "date": 1755086332059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,5 +130,6 @@\n     background-color: var(--background-color);\r\n     height: 50px;\r\n     width: 50px;\r\n     border-radius: 50%;\r\n+    border: solid  rgb(20,157,221) ;\r\n }\r\n"
+                },
+                {
+                    "date": 1755086499665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background: grey;\r\n+    --card-background: rgba(34, 34, 128, 0.583);\r\n     --background-color:rgba(0, 0, 0, 0.574) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755086514610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background: rgba(34, 34, 128, 0.583);\r\n-    --background-color:rgba(0, 0, 0, 0.574) ;\r\n+    --background-color:blue ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755086523764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background: rgba(34, 34, 128, 0.583);\r\n-    --background-color:blue ;\r\n+    --background-color:rgba(71, 71, 194, 0.578) ;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755086603336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background: rgba(34, 34, 128, 0.583);\r\n-    --background-color:rgba(71, 71, 194, 0.578) ;\r\n+    --card-background: grey;\r\n+    --background-color: rgb(76, 74, 74);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755086661034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background: grey;\r\n-    --background-color: rgb(76, 74, 74);\r\n+    --background-color: rgb(41, 40, 40);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755087747047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background: grey;\r\n+    --card-background:rgba(49, 49, 188, 0.612);\r\n     --background-color: rgb(41, 40, 40);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755087775720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(49, 49, 188, 0.612);\r\n-    --background-color: rgb(41, 40, 40);\r\n+    --background-color:rgba(91, 91, 170, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755087802342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(49, 49, 188, 0.612);\r\n-    --background-color:rgba(91, 91, 170, 0.648);\r\n+    --background-color:rgba(77, 77, 187, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755087813855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background:rgba(49, 49, 188, 0.612);\r\n+    --card-background:rgba(58, 58, 145, 0.612);\r\n     --background-color:rgba(77, 77, 187, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755087876330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n }\r\n \r\n \r\n \r\n-body{\r\n-background-color: var(--background-color);\r\n \r\n+/* background-color: var(--background-color); */\r\n+\r\n #showBtn {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     margin: 10px;\r\n@@ -122,11 +122,11 @@\n .carousel-indicators .active{\r\n     background-color: rgb(20,157,221);\r\n }\r\n \r\n-}\r\n \r\n \r\n+\r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     height: 50px;\r\n     width: 50px;\r\n"
+                },
+                {
+                    "date": 1755087901272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,12 @@\n     --text-color:white;\r\n }\r\n \r\n \r\n+body{\r\n+    background-color: var(--background-color);\r\n+}\r\n \r\n-\r\n /* background-color: var(--background-color); */\r\n \r\n #showBtn {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1755088012979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background:rgba(58, 58, 145, 0.612);\r\n-    --background-color:rgba(77, 77, 187, 0.648);\r\n+    --card-background:rgba(77, 77, 187, 0.648);\r\n+    --background-color:rgba(58, 58, 145, 0.612);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088031774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(77, 77, 187, 0.648);\r\n-    --background-color:rgba(58, 58, 145, 0.612);\r\n+    --background-color:rgba(32, 32, 148, 0.612);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088080675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background:rgba(77, 77, 187, 0.648);\r\n-    --background-color:rgba(32, 32, 148, 0.612);\r\n+    --card-background:rgba(58, 58, 145, 0.612);\r\n+    --background-color:rgba(77, 77, 187, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088093204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(58, 58, 145, 0.612);\r\n-    --background-color:rgba(77, 77, 187, 0.648);\r\n+    /* --background-color:rgba(77, 77, 187, 0.648); */\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088100931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(58, 58, 145, 0.612);\r\n-    /* --background-color:rgba(77, 77, 187, 0.648); */\r\n+    --background-color:rgba(77, 77, 187, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088138126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n     overflow: visible !important;\r\n }\r\n \r\n .carousel-item {\r\n+    z-index: 2;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: var(--card-background);\r\n }\r\n"
+                },
+                {
+                    "date": 1755088147384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     overflow: visible !important;\r\n }\r\n \r\n .carousel-item {\r\n-    z-index: 2;\r\n+    z-index: 9999;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: var(--card-background);\r\n }\r\n"
+                },
+                {
+                    "date": 1755088155714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,8 @@\n     overflow: visible !important;\r\n }\r\n \r\n .carousel-item {\r\n-    z-index: 9999;\r\n     text-align: center;\r\n     padding: 20px;\r\n     background-color: var(--card-background);\r\n }\r\n"
+                },
+                {
+                    "date": 1755088186337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background:rgba(58, 58, 145, 0.612);\r\n-    --background-color:rgba(77, 77, 187, 0.648);\r\n+    --card-background:rgba(243, 243, 248, 0.612);\r\n+    --background-color:rgba(25, 25, 28, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088200556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background:rgba(243, 243, 248, 0.612);\r\n+    --card-background:rgba(17, 17, 18, 0.612);\r\n     --background-color:rgba(25, 25, 28, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088210505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --color:black;\r\n }\r\n \r\n body.darkMode{\r\n-    --card-background:rgba(17, 17, 18, 0.612);\r\n+    --card-background:rgba(173, 173, 190, 0.612);\r\n     --background-color:rgba(25, 25, 28, 0.648);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088243056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,8 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    background-color: var(--card-background);\r\n }\r\n #name{\r\n     color: var(--text-color);\r\n }\r\n"
+                },
+                {
+                    "date": 1755088268364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,11 @@\n .carousel-item {\r\n     overflow: visible !important;\r\n }\r\n \r\n+.container{\r\n+    background-color: var(--card-background);\r\n+}\r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088285268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(173, 173, 190, 0.612);\r\n-    --background-color:rgba(25, 25, 28, 0.648);\r\n+    --background-color:black;\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088292976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,139 @@\n+\r\n+:root{\r\n+    --card-background: rgb(244, 250, 253);\r\n+    --text-color:black;\r\n+    --background-color: white;\r\n+    --color:black;\r\n+}\r\n+\r\n+body.darkMode{\r\n+    --card-background:rgba(173, 173, 190, 0.612);\r\n+    --background-color:rgba(0, 0, 0, 0.429);\r\n+    --color:white;\r\n+    --text-color:white;\r\n+}\r\n+\r\n+\r\n+body{\r\n+    background-color: var(--background-color);\r\n+}\r\n+\r\n+/* background-color: var(--background-color); */\r\n+\r\n+#showBtn {\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    margin: 10px;\r\n+}\r\n+\r\n+.profile-img {\r\n+    width: 90px;\r\n+    height: 90px;\r\n+    object-fit: cover;\r\n+    border-radius: 50%;\r\n+    margin: auto;\r\n+    display: block;\r\n+}\r\n+\r\n+\r\n+.carousel,\r\n+.carousel-inner,\r\n+.carousel-item {\r\n+    overflow: visible !important;\r\n+}\r\n+\r\n+.container{\r\n+    background-color: var(--card-background);\r\n+}\r\n+.carousel-item {\r\n+    text-align: center;\r\n+    padding: 20px;\r\n+}\r\n+#name{\r\n+    color: var(--text-color);\r\n+}\r\n+\r\n+#position{\r\n+    color: var(--text-color);\r\n+}\r\n+\r\n+\r\n+.desc {\r\n+    box-sizing: border-box;\r\n+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+    padding: 10px;\r\n+    border-radius: 6px;\r\n+    background-color: var(--background-color);\r\n+    position: relative;\r\n+    max-width: 100%;\r\n+    cursor: pointer;\r\n+    overflow: visible;\r\n+    color:var(--text-color);\r\n+}\r\n+\r\n+.desc-text {\r\n+    white-space: nowrap;\r\n+    overflow: hidden;\r\n+    text-overflow: ellipsis;\r\n+    display: flex;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+}\r\n+\r\n+.desc .tooltip::after {\r\n+  content: \" \";\r\n+  position: absolute;\r\n+  bottom: 100%;  \r\n+  left: 50%;\r\n+  margin-left: -5px;\r\n+  border-width: 5px;\r\n+  border-style: solid;\r\n+  border-color: transparent transparent rgb(106, 186, 222) transparent;\r\n+}\r\n+\r\n+.desc .tooltip {\r\n+    margin: 10px;\r\n+    white-space: normal;\r\n+    max-width: 300px;\r\n+    visibility: hidden;\r\n+    background: rgb(106, 186, 222);\r\n+    color: black;\r\n+    padding: 5px 8px;\r\n+    border-radius: 6px;\r\n+    position: absolute;\r\n+    top: 100%;\r\n+    left: 50%;\r\n+    transform: translateX(30%);\r\n+    max-width: inherit;\r\n+    box-sizing: border-box;\r\n+}\r\n+\r\n+\r\n+\r\n+.desc:hover .tooltip {\r\n+    visibility: visible;\r\n+    opacity: 1;\r\n+}\r\n+\r\n+.carousel-indicators [data-bs-target]{\r\n+    width:10px;\r\n+    height: 10px;\r\n+    border:solid rgb(20,157,221);\r\n+    border-radius: 50%;\r\n+    background-color: var(--background-color);\r\n+}\r\n+\r\n+.carousel-indicators .active{\r\n+    background-color: rgb(20,157,221);\r\n+}\r\n+\r\n+\r\n+\r\n+\r\n+#theme-toggle{\r\n+    background-color: var(--background-color);\r\n+    height: 50px;\r\n+    width: 50px;\r\n+    border-radius: 50%;\r\n+    border: solid  rgb(20,157,221) ;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755088301899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n }\r\n \r\n body.darkMode{\r\n     --card-background:rgba(173, 173, 190, 0.612);\r\n-    --background-color:rgba(0, 0, 0, 0.429);\r\n+    --background-color:rgba(0, 0, 0, 0.742);\r\n     --color:white;\r\n     --text-color:white;\r\n }\r\n \r\n@@ -136,143 +136,4 @@\n     width: 50px;\r\n     border-radius: 50%;\r\n     border: solid  rgb(20,157,221) ;\r\n }\r\n-\r\n-:root{\r\n-    --card-background: rgb(244, 250, 253);\r\n-    --text-color:black;\r\n-    --background-color: white;\r\n-    --color:black;\r\n-}\r\n-\r\n-body.darkMode{\r\n-    --card-background:rgba(173, 173, 190, 0.612);\r\n-    --background-color:black;\r\n-    --color:white;\r\n-    --text-color:white;\r\n-}\r\n-\r\n-\r\n-body{\r\n-    background-color: var(--background-color);\r\n-}\r\n-\r\n-/* background-color: var(--background-color); */\r\n-\r\n-#showBtn {\r\n-    display: flex;\r\n-    justify-content: space-between;\r\n-    margin: 10px;\r\n-}\r\n-\r\n-.profile-img {\r\n-    width: 90px;\r\n-    height: 90px;\r\n-    object-fit: cover;\r\n-    border-radius: 50%;\r\n-    margin: auto;\r\n-    display: block;\r\n-}\r\n-\r\n-\r\n-.carousel,\r\n-.carousel-inner,\r\n-.carousel-item {\r\n-    overflow: visible !important;\r\n-}\r\n-\r\n-.container{\r\n-    background-color: var(--card-background);\r\n-}\r\n-.carousel-item {\r\n-    text-align: center;\r\n-    padding: 20px;\r\n-}\r\n-#name{\r\n-    color: var(--text-color);\r\n-}\r\n-\r\n-#position{\r\n-    color: var(--text-color);\r\n-}\r\n-\r\n-\r\n-.desc {\r\n-    box-sizing: border-box;\r\n-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n-    padding: 10px;\r\n-    border-radius: 6px;\r\n-    background-color: var(--background-color);\r\n-    position: relative;\r\n-    max-width: 100%;\r\n-    cursor: pointer;\r\n-    overflow: visible;\r\n-    color:var(--text-color);\r\n-}\r\n-\r\n-.desc-text {\r\n-    white-space: nowrap;\r\n-    overflow: hidden;\r\n-    text-overflow: ellipsis;\r\n-    display: flex;\r\n-    align-items: center;\r\n-    justify-content: center;\r\n-}\r\n-\r\n-.desc .tooltip::after {\r\n-  content: \" \";\r\n-  position: absolute;\r\n-  bottom: 100%;  \r\n-  left: 50%;\r\n-  margin-left: -5px;\r\n-  border-width: 5px;\r\n-  border-style: solid;\r\n-  border-color: transparent transparent rgb(106, 186, 222) transparent;\r\n-}\r\n-\r\n-.desc .tooltip {\r\n-    margin: 10px;\r\n-    white-space: normal;\r\n-    max-width: 300px;\r\n-    visibility: hidden;\r\n-    background: rgb(106, 186, 222);\r\n-    color: black;\r\n-    padding: 5px 8px;\r\n-    border-radius: 6px;\r\n-    position: absolute;\r\n-    top: 100%;\r\n-    left: 50%;\r\n-    transform: translateX(30%);\r\n-    max-width: inherit;\r\n-    box-sizing: border-box;\r\n-}\r\n-\r\n-\r\n-\r\n-.desc:hover .tooltip {\r\n-    visibility: visible;\r\n-    opacity: 1;\r\n-}\r\n-\r\n-.carousel-indicators [data-bs-target]{\r\n-    width:10px;\r\n-    height: 10px;\r\n-    border:solid rgb(20,157,221);\r\n-    border-radius: 50%;\r\n-    background-color: var(--background-color);\r\n-}\r\n-\r\n-.carousel-indicators .active{\r\n-    background-color: rgb(20,157,221);\r\n-}\r\n-\r\n-\r\n-\r\n-\r\n-#theme-toggle{\r\n-    background-color: var(--background-color);\r\n-    height: 50px;\r\n-    width: 50px;\r\n-    border-radius: 50%;\r\n-    border: solid  rgb(20,157,221) ;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755088331899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,7 +133,7 @@\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     height: 50px;\r\n     width: 50px;\r\n-    border-radius: 50%;\r\n+    border-radius: 45%;\r\n     border: solid  rgb(20,157,221) ;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088348527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,8 +132,8 @@\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n     height: 50px;\r\n-    width: 50px;\r\n-    border-radius: 45%;\r\n+    width: 45px;\r\n+    border-radius: 50%;\r\n     border: solid  rgb(20,157,221) ;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088361029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n \r\n \r\n #theme-toggle{\r\n     background-color: var(--background-color);\r\n-    height: 50px;\r\n+    height: 45px;\r\n     width: 45px;\r\n     border-radius: 50%;\r\n     border: solid  rgb(20,157,221) ;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088409948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,8 +130,9 @@\n \r\n \r\n \r\n #theme-toggle{\r\n+    \r\n     background-color: var(--background-color);\r\n     height: 45px;\r\n     width: 45px;\r\n     border-radius: 50%;\r\n"
+                },
+                {
+                    "date": 1755088502576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,10 @@\n \r\n \r\n \r\n #theme-toggle{\r\n-    \r\n+    justify-content: center;\r\n+    align-items: center;\r\n     background-color: var(--background-color);\r\n     height: 45px;\r\n     width: 45px;\r\n     border-radius: 50%;\r\n"
+                },
+                {
+                    "date": 1755088524729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n body{\r\n     background-color: var(--background-color);\r\n }\r\n \r\n-/* background-color: var(--background-color); */\r\n \r\n #showBtn {\r\n     display: flex;\r\n     justify-content: space-between;\r\n@@ -48,8 +47,10 @@\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n }\r\n+\r\n+\r\n #name{\r\n     color: var(--text-color);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755088534400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n \r\n .container{\r\n     background-color: var(--card-background);\r\n }\r\n+\r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088547885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,13 @@\n     background-color: var(--background-color);\r\n }\r\n \r\n \r\n-#showBtn {\r\n+/* #showBtn {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     margin: 10px;\r\n-}\r\n+} */\r\n \r\n .profile-img {\r\n     width: 90px;\r\n     height: 90px;\r\n"
+                },
+                {
+                    "date": 1755088557544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,13 @@\n     background-color: var(--background-color);\r\n }\r\n \r\n \r\n-/* #showBtn {\r\n+#showBtn {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     margin: 10px;\r\n-} */\r\n+}\r\n \r\n .profile-img {\r\n     width: 90px;\r\n     height: 90px;\r\n"
+                },
+                {
+                    "date": 1755088607045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     background-color: var(--background-color);\r\n }\r\n \r\n \r\n-#showBtn {\r\n+#header {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     margin: 10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1755088728670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n+    border-radius: 12px;\r\n }\r\n \r\n \r\n #name{\r\n"
+                },
+                {
+                    "date": 1755088752500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,8 @@\n \r\n .carousel-item {\r\n     text-align: center;\r\n     padding: 20px;\r\n-    border-radius: 12px;\r\n }\r\n \r\n \r\n #name{\r\n"
+                },
+                {
+                    "date": 1755088774216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n }\r\n \r\n .container{\r\n     background-color: var(--card-background);\r\n+    border-radius: 12px;\r\n }\r\n \r\n .carousel-item {\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1755089126721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n .carousel-item {\r\n     overflow: visible !important;\r\n }\r\n \r\n-.container{\r\n+#carouselExampleAutoplaying{\r\n     background-color: var(--card-background);\r\n     border-radius: 12px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755089244986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,8 @@\n }\r\n \r\n #carouselExampleAutoplaying{\r\n     background-color: var(--card-background);\r\n-    border-radius: 12px;\r\n }\r\n \r\n .carousel-item {\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1755089602918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(30%);\r\n+    transform: translateX(10%);\r\n     max-width: inherit;\r\n     box-sizing: border-box;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755089625506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n     white-space: normal;\r\n-    max-width: 300px;\r\n+    max-width: 200px;\r\n     visibility: hidden;\r\n     background: rgb(106, 186, 222);\r\n     color: black;\r\n     padding: 5px 8px;\r\n"
+                },
+                {
+                    "date": 1755089643158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n     white-space: normal;\r\n-    max-width: 200px;\r\n+    max-width: 100px;\r\n     visibility: hidden;\r\n     background: rgb(106, 186, 222);\r\n     color: black;\r\n     padding: 5px 8px;\r\n"
+                },
+                {
+                    "date": 1755089651934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n     white-space: normal;\r\n-    max-width: 100px;\r\n+    max-width: 300px;\r\n     visibility: hidden;\r\n     background: rgb(106, 186, 222);\r\n     color: black;\r\n     padding: 5px 8px;\r\n"
+                },
+                {
+                    "date": 1755089658416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n     white-space: normal;\r\n-    max-width: 300px;\r\n+    /* max-width: 300px; */\r\n     visibility: hidden;\r\n     background: rgb(106, 186, 222);\r\n     color: black;\r\n     padding: 5px 8px;\r\n"
+                },
+                {
+                    "date": 1755089669252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,8 @@\n \r\n .desc .tooltip {\r\n     margin: 10px;\r\n     white-space: normal;\r\n-    /* max-width: 300px; */\r\n     visibility: hidden;\r\n     background: rgb(106, 186, 222);\r\n     color: black;\r\n     padding: 5px 8px;\r\n"
+                },
+                {
+                    "date": 1755089766529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,9 @@\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n     transform: translateX(10%);\r\n-    max-width: inherit;\r\n+    max-width: 200px;\r\n     box-sizing: border-box;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755089785033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,9 @@\n     border-radius: 6px;\r\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n-    transform: translateX(10%);\r\n+    transform: translateX(15%);\r\n     max-width: 200px;\r\n     box-sizing: border-box;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755089804599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,9 @@\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n     transform: translateX(15%);\r\n-    max-width: 200px;\r\n+    /* max-width: 300px; */\r\n     box-sizing: border-box;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1755089820664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,9 @@\n     position: absolute;\r\n     top: 100%;\r\n     left: 50%;\r\n     transform: translateX(15%);\r\n-    /* max-width: 300px; */\r\n+    max-width: 500px;\r\n     box-sizing: border-box;\r\n }\r\n \r\n \r\n"
                 }
             ],
             "date": 1755000286040,
