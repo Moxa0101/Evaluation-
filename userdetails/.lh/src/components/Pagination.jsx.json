@@ -1,0 +1,94 @@
+{
+    "sourceFile": "src/components/Pagination.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1757659280942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757660670396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                     key={idx}\r\n                     onClick={() => setPage(idx + 1)}\r\n                     style={{\r\n                         margin: \"5px\",\r\n-                        background: page === idx + 1 ? \"blue\" : \"white\",\r\n+                        background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n                         color: page === idx + 1 ? \"white\" : \"black\",\r\n                         border: \"1px solid black\",\r\n                         borderRadius: \"8px\",\r\n                         padding: \"5px 10px\",\r\n"
+                },
+                {
+                    "date": 1757660723139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding: \"5px 10px\",\r\n+                    padding: \"5px 5px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660730450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding: \"5px 5px\",\r\n+                    padding: \" 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660735700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding: \" 10px\",\r\n+                    padding: \"1px 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660765619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding: \"1px 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660792679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n+                    padding:\"0px 5px 0px 5px\"\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660812702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding:\"0px 5px 0px 5px\"\r\n+                    padding:\"0px 5px 0px 5px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n@@ -37,9 +37,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev + 1)}\r\n                 disabled={page === totalPages}\r\n                 style={{\r\n-                    padding: \"5px 10px\",\r\n+                    padding:\"0px 5px 0px 5px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660834396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev + 1)}\r\n                 disabled={page === totalPages}\r\n                 style={{\r\n-                    padding:\"0px 5px 0px 5px\",\r\n+                    padding:\"5px 5px 0px 5px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660853386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev + 1)}\r\n                 disabled={page === totalPages}\r\n                 style={{\r\n-                    padding:\"5px 5px 0px 5px\",\r\n+                    padding:\"0px 10px 0px 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757660860348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding:\"0px 5px 0px 5px\",\r\n+                    padding:\"0px 10px 0px 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757661134159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             >\r\n                 Prev\r\n             </button>\r\n \r\n-            {Array.from({ length: totalPages }, (_, idx) => (\r\n+            {[...Array(totalPages)].map({ length: totalPages }, (_, idx) => (\r\n                 <button\r\n                     key={idx}\r\n                     onClick={() => setPage(idx + 1)}\r\n                     style={{\r\n"
+                },
+                {
+                    "date": 1757661146917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             >\r\n                 Prev\r\n             </button>\r\n \r\n-            {[...Array(totalPages)].map({ length: totalPages }, (_, idx) => (\r\n+            {[...Array(totalPages)].map( (_, idx) => (\r\n                 <button\r\n                     key={idx}\r\n                     onClick={() => setPage(idx + 1)}\r\n                     style={{\r\n"
+                },
+                {
+                    "date": 1757661237822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n \r\n-function Pagination({ total, cardPerPage, page, setPage }) {\r\n-    const totalPages = Math.ceil(total / cardPerPage);\r\n+function Pagination({ total, detailPerPage, page, setPage }) {\r\n+    const totalPages = Math.ceil(total / detailPerPage);\r\n \r\n     return (\r\n         <div className=\"d-flex justify-content-center mt-3\">\r\n             <button\r\n@@ -16,9 +16,9 @@\n             >\r\n                 Prev\r\n             </button>\r\n \r\n-            {[...Array(totalPages)].map( (_, idx) => (\r\n+            {[...Array(totalPages)].map((_, idx) => (\r\n                 <button\r\n                     key={idx}\r\n                     onClick={() => setPage(idx + 1)}\r\n                     style={{\r\n"
+                },
+                {
+                    "date": 1757661572600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n \r\n-function Pagination({ total, detailPerPage, page, setPage }) {\r\n-    const totalPages = Math.ceil(total / detailPerPage);\r\n+function Pagination({ total, cardPerPage, page, setPage }) {\r\n+    const totalPages = Math.ceil(total / cardPerPage);\r\n \r\n     return (\r\n         <div className=\"d-flex justify-content-center mt-3\">\r\n             <button\r\n"
+                },
+                {
+                    "date": 1757666971985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,38 +8,41 @@\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n-                    padding:\"0px 10px 0px 10px\",\r\n+                    padding: \"0px 10px 0px 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n                 Prev\r\n             </button>\r\n \r\n-            {[...Array(totalPages)].map((_, idx) => (\r\n-                <button\r\n-                    key={idx}\r\n-                    onClick={() => setPage(idx + 1)}\r\n-                    style={{\r\n-                        margin: \"5px\",\r\n-                        background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n-                        color: page === idx + 1 ? \"white\" : \"black\",\r\n-                        border: \"1px solid black\",\r\n-                        borderRadius: \"8px\",\r\n-                        padding: \"5px 10px\",\r\n-                    }}\r\n-                >\r\n-                    {idx + 1}\r\n-                </button>\r\n+            \r\n+                { totalPages>0 &&\r\n+                [...Array(totalPages)].map((_, idx) => (\r\n+            <button\r\n+                key={idx}\r\n+                onClick={() => setPage(idx + 1)}\r\n+                style={{\r\n+                    margin: \"5px\",\r\n+                    background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n+                    color: page === idx + 1 ? \"white\" : \"black\",\r\n+                    border: \"1px solid black\",\r\n+                    borderRadius: \"8px\",\r\n+                    padding: \"5px 10px\",\r\n+                }}\r\n+            >\r\n+                {idx + 1}\r\n+            </button>\r\n             ))}\r\n+        \r\n \r\n             <button\r\n                 onClick={() => setPage((prev) => prev + 1)}\r\n                 disabled={page === totalPages}\r\n                 style={{\r\n-                    padding:\"0px 10px 0px 10px\",\r\n+                    padding: \"0px 10px 0px 10px\",\r\n                     borderRadius: \"8px\",\r\n                     border: \"1px solid black\",\r\n                 }}\r\n             >\r\n"
+                },
+                {
+                    "date": 1757672239951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n function Pagination({ total, cardPerPage, page, setPage }) {\r\n     const totalPages = Math.ceil(total / cardPerPage);\r\n \r\n     return (\r\n-        <div className=\"d-flex justify-content-center mt-3\">\r\n+        <div className=\"d-flex justify-content-center \">\r\n             <button\r\n                 onClick={() => setPage((prev) => prev - 1)}\r\n                 disabled={page === 1}\r\n                 style={{\r\n"
+                },
+                {
+                    "date": 1757677390189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                 key={idx}\r\n                 onClick={() => setPage(idx + 1)}\r\n                 style={{\r\n                     margin: \"5px\",\r\n-                    background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n+                    // background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n                     color: page === idx + 1 ? \"white\" : \"black\",\r\n                     border: \"1px solid black\",\r\n                     borderRadius: \"8px\",\r\n                     padding: \"5px 10px\",\r\n"
+                },
+                {
+                    "date": 1757677399723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                 key={idx}\r\n                 onClick={() => setPage(idx + 1)}\r\n                 style={{\r\n                     margin: \"5px\",\r\n-                    // background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n+                    background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n                     color: page === idx + 1 ? \"white\" : \"black\",\r\n                     border: \"1px solid black\",\r\n                     borderRadius: \"8px\",\r\n                     padding: \"5px 10px\",\r\n"
+                },
+                {
+                    "date": 1757677411002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,28 +16,28 @@\n             >\r\n                 Prev\r\n             </button>\r\n \r\n-            \r\n-                { totalPages>0 &&\r\n+\r\n+            {totalPages > 0 &&\r\n                 [...Array(totalPages)].map((_, idx) => (\r\n-            <button\r\n-                key={idx}\r\n-                onClick={() => setPage(idx + 1)}\r\n-                style={{\r\n-                    margin: \"5px\",\r\n-                    background: page === idx + 1 ? \"rgb(36,94,226)\" : \"white\",\r\n-                    color: page === idx + 1 ? \"white\" : \"black\",\r\n-                    border: \"1px solid black\",\r\n-                    borderRadius: \"8px\",\r\n-                    padding: \"5px 10px\",\r\n-                }}\r\n-            >\r\n-                {idx + 1}\r\n-            </button>\r\n-            ))}\r\n-        \r\n+                    <button\r\n+                        key={idx}\r\n+                        onClick={() => setPage(idx + 1)}\r\n+                        style={{\r\n+                            margin: \"5px\",\r\n+                            background: page === idx + 1 ? \" linear-gradient(135deg, #4f46e5, #7c3aed)\" : \"white\",\r\n+                            color: page === idx + 1 ? \"white\" : \"black\",\r\n+                            border: \"1px solid black\",\r\n+                            borderRadius: \"8px\",\r\n+                            padding: \"5px 10px\",\r\n+                        }}\r\n+                    >\r\n+                        {idx + 1}\r\n+                    </button>\r\n+                ))}\r\n \r\n+\r\n             <button\r\n                 onClick={() => setPage((prev) => prev + 1)}\r\n                 disabled={page === totalPages}\r\n                 style={{\r\n"
+                }
+            ],
+            "date": 1757659280942,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nfunction Pagination({ total, cardPerPage, page, setPage }) {\r\n    const totalPages = Math.ceil(total / cardPerPage);\r\n\r\n    return (\r\n        <div className=\"d-flex justify-content-center mt-3\">\r\n            <button\r\n                onClick={() => setPage((prev) => prev - 1)}\r\n                disabled={page === 1}\r\n                style={{\r\n                    padding: \"5px 10px\",\r\n                    borderRadius: \"8px\",\r\n                    border: \"1px solid black\",\r\n                }}\r\n            >\r\n                Prev\r\n            </button>\r\n\r\n            {Array.from({ length: totalPages }, (_, idx) => (\r\n                <button\r\n                    key={idx}\r\n                    onClick={() => setPage(idx + 1)}\r\n                    style={{\r\n                        margin: \"5px\",\r\n                        background: page === idx + 1 ? \"blue\" : \"white\",\r\n                        color: page === idx + 1 ? \"white\" : \"black\",\r\n                        border: \"1px solid black\",\r\n                        borderRadius: \"8px\",\r\n                        padding: \"5px 10px\",\r\n                    }}\r\n                >\r\n                    {idx + 1}\r\n                </button>\r\n            ))}\r\n\r\n            <button\r\n                onClick={() => setPage((prev) => prev + 1)}\r\n                disabled={page === totalPages}\r\n                style={{\r\n                    padding: \"5px 10px\",\r\n                    borderRadius: \"8px\",\r\n                    border: \"1px solid black\",\r\n                }}\r\n            >\r\n                Next\r\n            </button>\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default Pagination;\r\n"
+        }
+    ]
+}

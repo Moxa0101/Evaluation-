@@ -1,0 +1,210 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 48,
+            "patches": [
+                {
+                    "date": 1757565972517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757565977808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import logo from './logo.svg';\n import './App.css';\n \n function App() {\n   \n"
+                },
+                {
+                    "date": 1757566862597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import './App.css';\n+import Main from \"./components/Main\"\n \n function App() {\n   \n }\n"
+                },
+                {
+                    "date": 1757566876775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import './App.css';\n-import Main from \"./components/Main\"\n+import Main from \"./components/Main\";\n \n function App() {\n-  \n+  <Main/>\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757567272438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import './App.css';\n import Main from \"./components/Main\";\n \n function App() {\n+    return(\n   <Main/>\n+    )\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757567882489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import './App.css';\n import Main from \"./components/Main\";\n \n-function App() {\n+function App() ()\n     return(\n   <Main/>\n     )\n }\n"
+                },
+                {
+                    "date": 1757568434122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import './App.css';\n import Main from \"./components/Main\";\n+import bootstrap from \"react-bootstrap\"\n \n-function App() ()\n+function App() {\n     return(\n   <Main/>\n     )\n }\n"
+                },
+                {
+                    "date": 1757568440247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import './App.css';\n import Main from \"./components/Main\";\n-import bootstrap from \"react-bootstrap\"\n \n function App() {\n     return(\n   <Main/>\n"
+                },
+                {
+                    "date": 1757568679737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import './App.css';\n import Main from \"./components/Main\";\n+import 'bootstrap/dist/css/bootstrap.min.css';\n \n+\n function App() {\n     return(\n   <Main/>\n     )\n"
+                },
+                {
+                    "date": 1757572027698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import './App.css';\n-import Main from \"./components/Main\";\n+import CardList from \"./components/Card\";\n import 'bootstrap/dist/css/bootstrap.min.css';\n \n \n function App() {\n"
+                },
+                {
+                    "date": 1757572032820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n \n function App() {\n     return(\n-  <Main/>\n+  <CardList/>\n     )\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757572601659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,18 @@\n-import './App.css';\n-import CardList from \"./components/Card\";\n-import 'bootstrap/dist/css/bootstrap.min.css';\n+export default App;\n \n+import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n+import UsersList from \"./UsersList\";\n+import UserDetails from \"./UserDetails\";\n \n function App() {\n-    return(\n-  <CardList/>\n-    )\n+    return (\n+        <Router>\n+            <Routes>\n+                <Route path=\"/\" element={<UsersList />} />\n+                <Route path=\"/users/:id\" element={<UserDetails />} />\n+            </Routes>\n+        </Router>\n+    );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757572610029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-export default App;\n-\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n import UsersList from \"./UsersList\";\n import UserDetails from \"./UserDetails\";\n \n"
+                },
+                {
+                    "date": 1757572643885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import UsersList from \"./UsersList\";\n-import UserDetails from \"./UserDetails\";\n+import UsersList from \"./components/Card\";\n+import UserDetails from \"./components/FullCardDetails\";\n \n function App() {\n     return (\n         <Router>\n"
+                },
+                {
+                    "date": 1757572762522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import UsersList from \"./components/Card\";\n+import CardList from \"./components/Card\";\n import UserDetails from \"./components/FullCardDetails\";\n \n function App() {\n     return (\n"
+                },
+                {
+                    "date": 1757572899629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n function App() {\n     return (\n         <Router>\n             <Routes>\n-                <Route path=\"/\" element={<UsersList />} />\n+                <Route path=\"/\" element={<CardList/>} />\n                 <Route path=\"/users/:id\" element={<UserDetails />} />\n             </Routes>\n         </Router>\n     );\n"
+                },
+                {
+                    "date": 1757572917783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,19 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import CardList from \"./components/Card\";\n-import UserDetails from \"./components/FullCardDetails\";\n+import Card from \"./components/Card\";\n+import FullCardDetails from \"./components/FullCardDetails\";\n \n function App() {\n-    return (\n-        <Router>\n-            <Routes>\n-                <Route path=\"/\" element={<CardList/>} />\n-                <Route path=\"/users/:id\" element={<UserDetails />} />\n-            </Routes>\n-        </Router>\n-    );\n+  return (\n+    <Router>\n+      <Routes>\n+        {/* Home route → shows all cards */}\n+        <Route path=\"/\" element={<Card />} />\n+\n+        {/* Dynamic route → shows one card details */}\n+        <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+      </Routes>\n+    </Router>\n+  );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1757573538769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n import Card from \"./components/Card\";\n import FullCardDetails from \"./components/FullCardDetails\";\n+import \"bootstrap/dist/css/bootstrap.min.css\";\n \n+\n function App() {\n   return (\n     <Router>\n       <Routes>\n"
+                },
+                {
+                    "date": 1757580267097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n import Card from \"./components/Card\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n+import 'bootstrap-icons/font/bootstrap-icons.css';\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1757586188093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import Card from \"./components/Card\";\n+import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n \n"
+                },
+                {
+                    "date": 1757590035519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n+import \"../App.css\";\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1757590044091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n-import \"../App.css\";\n+import \"./App.css\"\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1757594255332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n-import \"./App.css\"\n+import \"./App.css\";\n+import Posts from \"./components/CardPosts\"\n \n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1757594309824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n         <Route path=\"/\" element={<Card />} />\n \n         {/* Dynamic route → shows one card details */}\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+        <Route path=\"/posts/:userId\"\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757594325003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <Route path=\"/\" element={<Card />} />\n \n         {/* Dynamic route → shows one card details */}\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        <Route path=\"/posts/:userId\"\n+        <Route path=\"/posts/:userId\" />\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757594975892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <Route path=\"/\" element={<Card />} />\n \n         {/* Dynamic route → shows one card details */}\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        <Route path=\"/posts/:userId\" />\n+        <Route path=\"/posts/:id\" />\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757594997181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <Route path=\"/\" element={<Card />} />\n \n         {/* Dynamic route → shows one card details */}\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        <Route path=\"/posts/:id\" />\n+        <Route path=\"/posts/:id\" element={<Posts/>} />\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757595190229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n-import Posts from \"./components/CardPosts\"\n+//import Posts from \"./components/CardPosts\"\n \n \n function App() {\n   return (\n@@ -15,9 +15,9 @@\n         <Route path=\"/\" element={<Card />} />\n \n         {/* Dynamic route → shows one card details */}\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        <Route path=\"/posts/:id\" element={<Posts/>} />\n+        {/* <Route path=\"/posts/:id\" element={<Posts/>} /> */}\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757595944536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,21 +3,18 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n-//import Posts from \"./components/CardPosts\"\n+import Posts from \"./components/CardPosts\"\n \n \n function App() {\n   return (\n     <Router>\n       <Routes>\n-        {/* Home route → shows all cards */}\n         <Route path=\"/\" element={<Card />} />\n-\n-        {/* Dynamic route → shows one card details */}\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        {/* <Route path=\"/posts/:id\" element={<Posts/>} /> */}\n+         <Route path=\"/posts/:id\" element={<Posts/>} /> \n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757596127500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,18 +3,16 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n-import Posts from \"./components/CardPosts\"\n \n \n function App() {\n   return (\n     <Router>\n       <Routes>\n         <Route path=\"/\" element={<Card />} />\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-         <Route path=\"/posts/:id\" element={<Posts/>} /> \n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757751482495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n+import Login from \"./components/login\";\n \n-\n function App() {\n   return (\n     <Router>\n       <Routes>\n"
+                },
+                {
+                    "date": 1757751496114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     <Router>\n       <Routes>\n         <Route path=\"/\" element={<Card />} />\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+        <Login/>\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757751519290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n-import Login from \"./components/login\";\n+import Login from \"./components/Login\";\n \n function App() {\n   return (\n     <Router>\n"
+                },
+                {
+                    "date": 1757751682344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n function App() {\n   return (\n     <Router>\n       <Routes>\n+        <Route path=\"/login\" element={<Login />} />\n         <Route path=\"/\" element={<Card />} />\n         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        <Login/>\n       </Routes>\n     </Router>\n   );\n }\n"
+                },
+                {
+                    "date": 1757752773841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n-import Login from \"./components/Login\";\n+import Login from \"./components/login\";\n \n function App() {\n   return (\n     <Router>\n"
+                },
+                {
+                    "date": 1757752798599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n-import Login from \"./components/login\";\n+import Login from \"./components/Login\";\n \n function App() {\n   return (\n     <Router>\n"
+                },
+                {
+                    "date": 1757754371259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,28 @@\n import \"./App.css\";\n import Login from \"./components/Login\";\n \n function App() {\n-  return (\n-    <Router>\n-      <Routes>\n-        <Route path=\"/login\" element={<Login />} />\n-        <Route path=\"/\" element={<Card />} />\n-        <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-      </Routes>\n-    </Router>\n-  );\n+  const [isAuthenticated, setIsAuthenticated] = useState(false);\n+  const [checkingAuth, setCheckingAuth] = useState(true);\n+\n+  useEffect(() => {\n+    // Check if user is already authenticated\n+    const authStatus = localStorage.getItem(\"isAuthenticated\") === \"true\";\n+    setIsAuthenticated(authStatus);\n+    setCheckingAuth(false);\n+  }, []);\n+\n+  if (checkingAuth) {\n+    return (\n+      <Router>\n+        <Routes>\n+          <Route path=\"/login\" element={<Login />} />\n+          <Route path=\"/\" element={<Card />} />\n+          <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+        </Routes>\n+      </Router>\n+    );\n+  }\n }\n \n-export default App;\n+  export default App;\n"
+                },
+                {
+                    "date": 1757754414494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n+import { useEffect } from \"react\";\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n@@ -18,16 +19,23 @@\n   }, []);\n \n   if (checkingAuth) {\n     return (\n-      <Router>\n-        <Routes>\n-          <Route path=\"/login\" element={<Login />} />\n-          <Route path=\"/\" element={<Card />} />\n-          <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-        </Routes>\n-      </Router>\n+      <div className=\"loading-container\">\n+        <div className=\"spinner-border text-primary\" role=\"status\">\n+          <span className=\"visually-hidden\">Loading...</span>\n+        </div>\n+      </div>\n     );\n   }\n+  return (\n+    <Router>\n+      <Routes>\n+        <Route path=\"/login\" element={<Login />} />\n+        <Route path=\"/\" element={<Card />} />\n+        <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+      </Routes>\n+    </Router>\n+  );\n }\n \n-  export default App;\n+export default App;\n"
+                },
+                {
+                    "date": 1757754425580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import { useEffect } from \"react\";\n+import {useState, useEffect } from \"react\";\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n"
+                },
+                {
+                    "date": 1757754728338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import {useState, useEffect } from \"react\";\n+import { useState, useEffect } from \"react\";\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n@@ -29,13 +29,25 @@\n   }\n   return (\n     <Router>\n       <Routes>\n-        <Route path=\"/login\" element={<Login />} />\n-        <Route path=\"/\" element={<Card />} />\n-        <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-      </Routes>\n-    </Router>\n-  );\n+        <Router>\n+          <Routes>\n+            {/* Public route - only accessible when NOT authenticated */}\n+            <Route\n+              path=\"/login\"\n+              element={\n+                !isAuthenticated ? (\n+                  <Login setIsAuthenticated={setIsAuthenticated} />\n+                ) : (\n+                  <Navigate to=\"/\" replace />\n+                )\n+              }\n+            />\n+            <Route path=\"/\" element={<Card />} />\n+            <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+          </Routes>\n+        </Router>\n+        );\n }\n \n-export default App;\n+        export default App;\n"
+                },
+                {
+                    "date": 1757754764461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n-import { useState, useEffect } from \"react\";\n+import {useState, useEffect } from \"react\";\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n@@ -28,26 +28,22 @@\n     );\n   }\n   return (\n     <Router>\n-      <Routes>\n-        <Router>\n-          <Routes>\n-            {/* Public route - only accessible when NOT authenticated */}\n-            <Route\n-              path=\"/login\"\n-              element={\n-                !isAuthenticated ? (\n-                  <Login setIsAuthenticated={setIsAuthenticated} />\n-                ) : (\n-                  <Navigate to=\"/\" replace />\n-                )\n-              }\n-            />\n-            <Route path=\"/\" element={<Card />} />\n-            <Route path=\"/users/:id\" element={<FullCardDetails />} />\n-          </Routes>\n-        </Router>\n-        );\n+        <Route \n+          path=\"/login\" \n+          element={\n+            !isAuthenticated ? (\n+              <Login setIsAuthenticated={setIsAuthenticated} />\n+            ) : (\n+              <Navigate to=\"/\" replace />\n+            )\n+          } \n+        />\n+        <Route path=\"/\" element={<Card />} />\n+        <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+      </Routes>\n+    </Router>\n+  );\n }\n \n-        export default App;\n+export default App;\n"
+                },
+                {
+                    "date": 1757754822539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\n+import { BrowserRouter as Router, Routes, Route , Navigate } from \"react-router-dom\";\n import {useState, useEffect } from \"react\";\n import Card from \"./components/UserDetails\";\n import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n@@ -28,8 +28,9 @@\n     );\n   }\n   return (\n     <Router>\n+      <Routes>\n         <Route \n           path=\"/login\" \n           element={\n             !isAuthenticated ? (\n"
+                },
+                {
+                    "date": 1757755085081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,64 @@\n-import { BrowserRouter as Router, Routes, Route , Navigate } from \"react-router-dom\";\n-import {useState, useEffect } from \"react\";\n-import Card from \"./components/UserDetails\";\n-import FullCardDetails from \"./components/FullCardDetails\";\n+// import { BrowserRouter as Router, Routes, Route , Navigate } from \"react-router-dom\";\n+// import {useState, useEffect } from \"react\";\n+// import Card from \"./components/UserDetails\";\n+// import FullCardDetails from \"./components/FullCardDetails\";\n+// import \"bootstrap/dist/css/bootstrap.min.css\";\n+// import 'bootstrap-icons/font/bootstrap-icons.css';\n+// import \"./App.css\";\n+// import Login from \"./components/Login\";\n+\n+// function App() {\n+//   const [isAuthenticated, setIsAuthenticated] = useState(false);\n+//   const [checkingAuth, setCheckingAuth] = useState(true);\n+\n+//   useEffect(() => {\n+//     // Check if user is already authenticated\n+//     const authStatus = localStorage.getItem(\"isAuthenticated\") === \"true\";\n+//     setIsAuthenticated(authStatus);\n+//     setCheckingAuth(false);\n+//   }, []);\n+\n+//   if (checkingAuth) {\n+//     return (\n+//       <div className=\"loading-container\">\n+//         <div className=\"spinner-border text-primary\" role=\"status\">\n+//           <span className=\"visually-hidden\">Loading...</span>\n+//         </div>\n+//       </div>\n+//     );\n+//   }\n+//   return (\n+//     <Router>\n+//       <Routes>\n+//         <Route \n+//           path=\"/login\" \n+//           element={\n+//             !isAuthenticated ? (\n+//               <Login setIsAuthenticated={setIsAuthenticated} />\n+//             ) : (\n+//               <Navigate to=\"/\" replace />\n+//             )\n+//           } \n+//         />\n+//         <Route path=\"/\" element={<Card />} />\n+//         <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+//       </Routes>\n+//     </Router>\n+//   );\n+// }\n+\n+// export default App;\n+// App.js\n+import { BrowserRouter as Router, Routes, Route, Navigate } from \"react-router-dom\";\n+import { useState, useEffect } from \"react\";\n+import UserDetails from \"./UserDetails\";\n+import FullCardDetails from \"./FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n+import \"@fortawesome/fontawesome-free/css/all.min.css\";\n import \"./App.css\";\n-import Login from \"./components/Login\";\n+import Login from \"./Login\";\n \n function App() {\n   const [isAuthenticated, setIsAuthenticated] = useState(false);\n   const [checkingAuth, setCheckingAuth] = useState(true);\n@@ -26,25 +78,45 @@\n         </div>\n       </div>\n     );\n   }\n+\n   return (\n     <Router>\n       <Routes>\n-        <Route \n-          path=\"/login\" \n+        <Route\n+          path=\"/login\"\n           element={\n             !isAuthenticated ? (\n               <Login setIsAuthenticated={setIsAuthenticated} />\n             ) : (\n               <Navigate to=\"/\" replace />\n             )\n-          } \n+          }\n         />\n-        <Route path=\"/\" element={<Card />} />\n-        <Route path=\"/users/:id\" element={<FullCardDetails />} />\n+        <Route\n+          path=\"/\"\n+          element={\n+            isAuthenticated ? (\n+              <UserDetails setIsAuthenticated={setIsAuthenticated} />\n+            ) : (\n+              <Navigate to=\"/login\" replace />\n+            )\n+          }\n+        />\n+        <Route\n+          path=\"/users/:id\"\n+          element={\n+            isAuthenticated ? (\n+              <FullCardDetails />\n+            ) : (\n+              <Navigate to=\"/login\" replace />\n+            )\n+          }\n+        />\n+        <Route path=\"*\" element={<Navigate to={isAuthenticated ? \"/\" : \"/login\"} replace />} />\n       </Routes>\n     </Router>\n   );\n }\n \n-export default App;\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757755099700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"@fortawesome/fontawesome-free/css/all.min.css\";\n import \"./App.css\";\n-import Login from \"./Login\";\n+import Login from \".components/Login\";\n \n function App() {\n   const [isAuthenticated, setIsAuthenticated] = useState(false);\n   const [checkingAuth, setCheckingAuth] = useState(true);\n"
+                },
+                {
+                    "date": 1757755112418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"@fortawesome/fontawesome-free/css/all.min.css\";\n import \"./App.css\";\n-import Login from \".components/Login\";\n+import Login from \"./components/Login\";\n \n function App() {\n   const [isAuthenticated, setIsAuthenticated] = useState(false);\n   const [checkingAuth, setCheckingAuth] = useState(true);\n"
+                },
+                {
+                    "date": 1757755138950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,8 @@\n import UserDetails from \"./UserDetails\";\n import FullCardDetails from \"./FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n-import \"@fortawesome/fontawesome-free/css/all.min.css\";\n import \"./App.css\";\n import Login from \"./components/Login\";\n \n function App() {\n"
+                },
+                {
+                    "date": 1757755161509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,10 @@\n // export default App;\n // App.js\n import { BrowserRouter as Router, Routes, Route, Navigate } from \"react-router-dom\";\n import { useState, useEffect } from \"react\";\n-import UserDetails from \"./UserDetails\";\n-import FullCardDetails from \"./FullCardDetails\";\n+import Card from \"./components/UserDetails\";\n+ import FullCardDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n import Login from \"./components/Login\";\n"
+                },
+                {
+                    "date": 1757755178913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         <Route\n           path=\"/\"\n           element={\n             isAuthenticated ? (\n-              <UserDetails setIsAuthenticated={setIsAuthenticated} />\n+              <Card setIsAuthenticated={setIsAuthenticated} />\n             ) : (\n               <Navigate to=\"/login\" replace />\n             )\n           }\n"
+                },
+                {
+                    "date": 1757756574166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n // App.js\n import { BrowserRouter as Router, Routes, Route, Navigate } from \"react-router-dom\";\n import { useState, useEffect } from \"react\";\n import Card from \"./components/UserDetails\";\n- import FullCardDetails from \"./components/FullCardDetails\";\n+ import UserDetails from \"./components/FullCardDetails\";\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import 'bootstrap-icons/font/bootstrap-icons.css';\n import \"./App.css\";\n import Login from \"./components/Login\";\n@@ -105,9 +105,9 @@\n         <Route\n           path=\"/users/:id\"\n           element={\n             isAuthenticated ? (\n-              <FullCardDetails />\n+              <UserDetails />\n             ) : (\n               <Navigate to=\"/login\" replace />\n             )\n           }\n"
+                }
+            ],
+            "date": 1757565972517,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  \n}\n\nexport default App;\n"
+        }
+    ]
+}
