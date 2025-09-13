@@ -1,0 +1,26 @@
+{
+    "sourceFile": "public/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1757566039523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757566978645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+  <head>\n+    <meta charset=\"utf-8\" />\n+    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n+    <meta name=\"theme-color\" content=\"#000000\" />\n+    <meta\n+      name=\"description\"\n+      content=\"Web site created using create-react-app\"\n+    />\n+    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n+    <title>React App</title>\n+  </head>\n+  <body>\n+    <noscript>You need to enable JavaScript to run this app.</noscript>\n+    <div id=\"root\"></div>\n+  </body>\n+</html>\n"
+                },
+                {
+                    "date": 1757755334860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,31 +9,11 @@\n       name=\"description\"\n       content=\"Web site created using create-react-app\"\n     />\n     <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n-    <title>React App</title>\n+    <title>User Directory</title>\n   </head>\n   <body>\n     <noscript>You need to enable JavaScript to run this app.</noscript>\n     <div id=\"root\"></div>\n   </body>\n </html>\n-<!DOCTYPE html>\n-<html lang=\"en\">\n-  <head>\n-    <meta charset=\"utf-8\" />\n-    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n-    <meta name=\"theme-color\" content=\"#000000\" />\n-    <meta\n-      name=\"description\"\n-      content=\"Web site created using create-react-app\"\n-    />\n-    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n-    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n-    <title>React App</title>\n-  </head>\n-  <body>\n-    <noscript>You need to enable JavaScript to run this app.</noscript>\n-    <div id=\"root\"></div>\n-  </body>\n-</html>\n"
+                }
+            ],
+            "date": 1757566039523,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Web site created using create-react-app\"\n    />\n    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n    <title>React App</title>\n  </head>\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n"
+        }
+    ]
+}

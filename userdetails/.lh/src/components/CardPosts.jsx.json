@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/components/CardPosts.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1757594174873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757594495443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,8 @@\n-import { useEffect } from \"react\";\n\\ No newline at end of file\n+import { useEffect, useState } from \"react\";\r\n+\r\n+export default function Posts(){\r\n+    const [data,setData]=useState([]);\r\n+    useEffect(()=>{\r\n+        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)\r\n+    })\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757594501484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n \r\n export default function Posts(){\r\n     const [data,setData]=useState([]);\r\n     useEffect(()=>{\r\n-        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)\r\n+        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n     })\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757594544372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { useEffect, useState } from \"react\";\r\n \r\n export default function Posts(){\r\n     const [data,setData]=useState([]);\r\n-    useEffect(()=>{\r\n+    useEffect((id)=>{\r\n         fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n+        .then (res=>res.json())\r\n+        .then(data=>setData(data))\r\n     })\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757595057433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,25 @@\n import { useEffect, useState } from \"react\";\r\n+import { useParams } from \"react-router-dom\";\r\n \r\n-export default function Posts(){\r\n-    const [data,setData]=useState([]);\r\n-    useEffect((id)=>{\r\n-        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n-        .then (res=>res.json())\r\n-        .then(data=>setData(data))\r\n-    })\r\n\\ No newline at end of file\n-}\n+export default function Posts() {\r\n+  const { id } = useParams();\r\n+  const [posts, setPosts] = useState([]);\r\n+\r\n+  useEffect(() => {\r\n+    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n+      .then(res => res.json())\r\n+      .then(data => setPosts(data));\r\n+  }, [id]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <h2>Posts by User {id}</h2>\r\n+      {posts.map(post => (\r\n+        <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n+          <h5>{post.title}</h5>\r\n+          <p>{post.body}</p>\r\n+        </div>\r\n+      ))}\r\n+    </div>\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1757595854527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +0,0 @@\n-import { useEffect, useState } from \"react\";\r\n-import { useParams } from \"react-router-dom\";\r\n-\r\n-export default function Posts() {\r\n-  const { id } = useParams();\r\n-  const [posts, setPosts] = useState([]);\r\n-\r\n-  useEffect(() => {\r\n-    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n-      .then(res => res.json())\r\n-      .then(data => setPosts(data));\r\n-  }, [id]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <h2>Posts by User {id}</h2>\r\n-      {posts.map(post => (\r\n-        <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n-          <h5>{post.title}</h5>\r\n-          <p>{post.body}</p>\r\n-        </div>\r\n-      ))}\r\n-    </div>\r\n-  );\r\n-}\r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757595889481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,25 @@\n-\n+import { useEffect, useState } from \"react\";\r\n+import { useParams } from \"react-router-dom\";\r\n+\r\n+export default function Posts() {\r\n+  const { id } = useParams();\r\n+  const [posts, setPosts] = useState([]);\r\n+\r\n+  useEffect(() => {\r\n+    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n+      .then(res => res.json())\r\n+      .then(data => setPosts(data));\r\n+  }, [id]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <h2>Posts by User {id}</h2>\r\n+      {posts.map(post => (\r\n+        <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n+          <h5>{post.title}</h5>\r\n+          <p>{post.body}</p>\r\n+        </div>\r\n+      ))}\r\n+    </div>\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1757595901178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,25 @@\n-import { useEffect, useState } from \"react\";\r\n-import { useParams } from \"react-router-dom\";\r\n+// import { useEffect, useState } from \"react\";\r\n+// import { useParams } from \"react-router-dom\";\r\n \r\n-export default function Posts() {\r\n-  const { id } = useParams();\r\n-  const [posts, setPosts] = useState([]);\r\n+// export default function Posts() {\r\n+//   const { id } = useParams();\r\n+//   const [posts, setPosts] = useState([]);\r\n \r\n-  useEffect(() => {\r\n-    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n-      .then(res => res.json())\r\n-      .then(data => setPosts(data));\r\n-  }, [id]);\r\n+//   useEffect(() => {\r\n+//     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n+//       .then(res => res.json())\r\n+//       .then(data => setPosts(data));\r\n+//   }, [id]);\r\n \r\n-  return (\r\n-    <div>\r\n-      <h2>Posts by User {id}</h2>\r\n-      {posts.map(post => (\r\n-        <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n-          <h5>{post.title}</h5>\r\n-          <p>{post.body}</p>\r\n-        </div>\r\n-      ))}\r\n-    </div>\r\n-  );\r\n-}\r\n+//   return (\r\n+//     <div>\r\n+//       <h2>Posts by User {id}</h2>\r\n+//       {posts.map(post => (\r\n+//         <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n+//           <h5>{post.title}</h5>\r\n+//           <p>{post.body}</p>\r\n+//         </div>\r\n+//       ))}\r\n+//     </div>\r\n+//   );\r\n+// }\r\n"
+                },
+                {
+                    "date": 1757595918896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,25 @@\n-// import { useEffect, useState } from \"react\";\r\n-// import { useParams } from \"react-router-dom\";\r\n+import { useEffect, useState } from \"react\";\r\n+import { useParams } from \"react-router-dom\";\r\n \r\n-// export default function Posts() {\r\n-//   const { id } = useParams();\r\n-//   const [posts, setPosts] = useState([]);\r\n+export default function Posts() {\r\n+  const { id } = useParams();\r\n+  const [posts, setPosts] = useState([]);\r\n \r\n-//   useEffect(() => {\r\n-//     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n-//       .then(res => res.json())\r\n-//       .then(data => setPosts(data));\r\n-//   }, [id]);\r\n+  useEffect(() => {\r\n+    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n+      .then(res => res.json())\r\n+      .then(data => setPosts(data));\r\n+  }, [id]);\r\n \r\n-//   return (\r\n-//     <div>\r\n-//       <h2>Posts by User {id}</h2>\r\n-//       {posts.map(post => (\r\n-//         <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n-//           <h5>{post.title}</h5>\r\n-//           <p>{post.body}</p>\r\n-//         </div>\r\n-//       ))}\r\n-//     </div>\r\n-//   );\r\n-// }\r\n+  return (\r\n+    <div>\r\n+      <h2>Posts by User {id}</h2>\r\n+      {posts.map(post => (\r\n+        <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n+          <h5>{post.title}</h5>\r\n+          <p>{post.body}</p>\r\n+        </div>\r\n+      ))}\r\n+    </div>\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1757596093093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,25 @@\n-import { useEffect, useState } from \"react\";\r\n-import { useParams } from \"react-router-dom\";\r\n+// import { useEffect, useState } from \"react\";\r\n+// import { useParams } from \"react-router-dom\";\r\n \r\n-export default function Posts() {\r\n-  const { id } = useParams();\r\n-  const [posts, setPosts] = useState([]);\r\n+// export default function Posts() {\r\n+//   const { id } = useParams();\r\n+//   const [posts, setPosts] = useState([]);\r\n \r\n-  useEffect(() => {\r\n-    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n-      .then(res => res.json())\r\n-      .then(data => setPosts(data));\r\n-  }, [id]);\r\n+//   useEffect(() => {\r\n+//     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)\r\n+//       .then(res => res.json())\r\n+//       .then(data => setPosts(data));\r\n+//   }, [id]);\r\n \r\n-  return (\r\n-    <div>\r\n-      <h2>Posts by User {id}</h2>\r\n-      {posts.map(post => (\r\n-        <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n-          <h5>{post.title}</h5>\r\n-          <p>{post.body}</p>\r\n-        </div>\r\n-      ))}\r\n-    </div>\r\n-  );\r\n-}\r\n+//   return (\r\n+//     <div>\r\n+//       <h2>Posts by User {id}</h2>\r\n+//       {posts.map(post => (\r\n+//         <div key={post.id} className=\"card card-dark my-2 p-3\">\r\n+//           <h5>{post.title}</h5>\r\n+//           <p>{post.body}</p>\r\n+//         </div>\r\n+//       ))}\r\n+//     </div>\r\n+//   );\r\n+// }\r\n"
+                }
+            ],
+            "date": 1757594174873,
+            "name": "Commit-0",
+            "content": "import { useEffect } from \"react\";"
+        }
+    ]
+}
