@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
+import { useParams , useNavigate  } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Pagination from "./Pagination";
 import Form from "react-bootstrap/Form";
 import { motion } from "framer-motion";
 import Spinner from "react-bootstrap/Spinner";
+import { useData } from "./DataContext";
 
 export default function UserDetails() {
     const { id } = useParams();
@@ -15,21 +16,26 @@ export default function UserDetails() {
     const [page, setPage] = useState(1);
     const [cardPerPage, setCardPerPage] = useState(3);
     const [search, setSearch] = useState('');
+    const { data } = useData();
 
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-            .then((res) => res.json())
-            .then((data) => setUser(data));
+        if ( data && data.length > 0) {
+            const foundUser = data.find(u => String(u.id) === id);
+            setUser(foundUser || null);
+        }
+    }, [id, data]);
 
+    useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
-            .then((res) => res.json())
-            .then((data) => setPosts(data));
+            .then(res => res.json())
+            .then(setPosts)
+            .catch(console.error);
     }, [id]);
 
     if (!user)
         return (
             <div className="loading-container">
-                <Spinner animation="border" variant="light"/>
+                <Spinner animation="border" variant="light" />
             </div>
         );
 
@@ -54,15 +60,13 @@ export default function UserDetails() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }
     };
 
-
-
     return (
         <div className="container">
             <Card className="p-3 m-3">
                 <Card.Body className="d-flex align-items-center">
                     <Button
                         variant="outline-secondary"
-                        onClick={() => navigate("/")}
+                        onClick={()=>{navigate(-1)}}
                         className="me-3 back-button"
                     >
                         <i className="bi bi-caret-left-fill"></i>
@@ -96,7 +100,6 @@ export default function UserDetails() {
                         <motion.div
                             key={post.id}
                             variants={cardVariants}
-                            // style={{ width: "23rem", display: "flex" }}
                             className="col-lg-4 col-md-6 col-sm-12 d-flex"
                         >
                             <Card
@@ -128,31 +131,33 @@ export default function UserDetails() {
             </motion.div>
 
 
-            {filteredData.length > 0 && (
-                <div className="paginationCtn">
-                    <Form.Select
-                        style={{ maxWidth: "100px", zIndex: "2" }}
-                        value={cardPerPage}
-                        onChange={(e) => {
-                            setCardPerPage(Number(e.target.value));
-                            setPage(1);
-                        }}
-                    >
-                        <option value={3}>3</option>
-                        <option value={5}>5</option>
-                        <option value={10}>All</option>
-                    </Form.Select>
+            {
+                filteredData.length > 0 && (
+                    <div className="paginationCtn">
+                        <Form.Select
+                            style={{ maxWidth: "100px", zIndex: "2" }}
+                            value={cardPerPage}
+                            onChange={(e) => {
+                                setCardPerPage(Number(e.target.value));
+                                setPage(1);
+                            }}
+                        >
+                            <option value={3}>3</option>
+                            <option value={5}>5</option>
+                            <option value={10}>All</option>
+                        </Form.Select>
 
-                    <div className="pagesToShow">
-                        <Pagination
-                            total={filteredData.length}
-                            cardPerPage={cardPerPage}
-                            page={page}
-                            setPage={setPage}
-                        />
+                        <div className="pagesToShow">
+                            <Pagination
+                                total={filteredData.length}
+                                cardPerPage={cardPerPage}
+                                page={page}
+                                setPage={setPage}
+                            />
+                        </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )
+            }
+        </div >
     );
 }

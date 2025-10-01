@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 305,
+            "activePatchIndex": 307,
             "patches": [
                 {
                     "date": 1757565999135,
@@ -1228,6 +1228,14 @@
                 {
                     "date": 1757762234063,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,121 +1,5 @@\n-/* .App {\n-  text-align: center;\n-}\n \n-\n-.App-header {\n-  background-color: #282c34;\n-  min-height: 100vh;\n-  display: flex;\n-  flex-direction: column;\n-  align-items: center;\n-  justify-content: center;\n-  font-size: calc(10px + 2vmin);\n-  color: #cfcdcd;\n-}\n-\n-.App-link {\n-  color: #61dafb;\n-}\n-\n-body {\n-  Background: #c2d0f7 !important;\n-}\n-\n-.card {\n-  border-radius: 16px;\n-  box-sizing: border-box;\n-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);\n-}\n-\n-input {\n-  border: none;\n-  border-radius: 8px;\n-  padding:7px  ;\n-}\n-\n-.btn-primary {\n-  background: linear-gradient(135deg, #2563EB, #1E40AF) !important;\n-  border: none !important;\n-  transition: all 0.3s ease;\n-}\n-\n-.btn-primary:hover {\n-  background: linear-gradient(135deg, #3B82F6, #1D4ED8) !important;\n-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);\n-}\n-\n-.DropdownCtn {\n-  margin-bottom: 55px;\n-  display: flex;\n-  align-items: center;\n-  justify-content: space-between;\n-}\n-\n-.inputBox {\n-  display: flex;\n-  justify-content: flex-end;\n-}\n-\n-@media (max-width:522px) {\n-  .DropdownCtn {\n-    flex-direction: column;\n-  }\n-\n-  .inputBox {\n-    justify-content: flex-start !important;\n-  }\n-}\n-\n-\n-\n-@media (max-width:575px) {\n-  .titleCard {\n-    flex-direction: column !important;\n-    justify-content: flex-start !important;\n-    margin-left: 20px;\n-  }\n-\n-  .ml-20{\n-    margin-left: 60px;\n-  }\n-  \n-}\n-\n-select{\n-  padding: 5px;\n-  margin: 30px !important;\n-  border-radius: 8px;\n-  box-sizing: border-box;\n-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;\n-}\n-\n-.pagesToShow{\n-  display: flex;\n-  flex-grow: 1;\n-  margin-left: -150px;\n-  justify-content: center;\n-}\n-\n-.paginationCtn{\n-  display: flex;\n-  align-items: center ;\n-}\n-\n-@media (max-width:770px) {\n-  .paginationCtn{\n-    flex-direction: column;\n-    justify-content: flex-start !important;\n-  }\n-\n-  .pagesToShow{\n-    margin-left: 0px;\n-  }\n-  \n-} */\n-\n-/* Enhanced App.css */\n .App {\n   text-align: center;\n }\n \n"
+                },
+                {
+                    "date": 1759219344034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n   color: #2d3748 !important;\n   font-weight: 600 !important;\n }\n \n-/* Button Styles */\n .btn-primary {\n   background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;\n   border: none !important;\n   border-radius: 8px !important;\n"
+                },
+                {
+                    "date": 1759219363069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n   color: #2d3748 !important;\n   font-weight: 600 !important;\n }\n \n+/* Button Styles */\n .btn-primary {\n   background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;\n   border: none !important;\n   border-radius: 8px !important;\n"
                 }
             ],
             "date": 1757565999135,

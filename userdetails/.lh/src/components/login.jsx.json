@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1757751376641,
@@ -52,6 +52,10 @@
                 {
                     "date": 1757762152617,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \r\n             // For demo, accept any valid email format and password with min 8 chars\r\n             if (email && password.length >= 8) {\r\n                 setIsAuthenticated(true);\r\n-                localStorage.setItem(\"isLogedIn\", \"true\");\r\n+                localStorage.setItem(\"isAuthenticated\", \"true\");\r\n                 navigate(\"/\");\r\n             } else {\r\n                 setError(\"Invalid credentials\");\r\n             }\r\n"
+                },
+                {
+                    "date": 1759224233263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,8 @@\n     return (\r\n         <div className=\"login-container\">\r\n             <div className=\"login-card\">\r\n                 <div className=\"login-header\">\r\n-                    <h3>User Directory</h3>\r\n                     <p>\r\n                         {view === \"login\" && \"Sign in to access your account\"}\r\n                         {view === \"forgot\" && \"Reset your password\"}\r\n                         {view === \"signup\" && \"Create a new account\"}\r\n"
                 }
             ],
             "date": 1757751376641,

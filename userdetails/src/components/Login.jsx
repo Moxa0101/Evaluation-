@@ -74,7 +74,6 @@ function Login({ setIsAuthenticated }) {
         <div className="login-container">
             <div className="login-card">
                 <div className="login-header">
-                    <h3>User Directory</h3>
                     <p>
                         {view === "login" && "Sign in to access your account"}
                         {view === "forgot" && "Reset your password"}
